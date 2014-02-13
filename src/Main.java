@@ -13,6 +13,7 @@ public class Main {
      //MainGui gui = new MainGui();
 
        MainGui panel = new MainGui();
+        NewGraphGenerator newGraph = new NewGraphGenerator();
 
     }
 

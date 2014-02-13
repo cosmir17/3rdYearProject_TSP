@@ -28,10 +28,7 @@
     </orderEntry>
     <orderEntry type="library" name="java" level="project" />
     <orderEntry type="library" name="lib" level="project" />
-    <orderEntry type="module" module-name="test1" />
-    <orderEntry type="module" module-name="test" />
-    <orderEntry type="module" module-name="main3" />
-    <orderEntry type="module" module-name="main1" />
+    <orderEntry type="library" name="jgraphx" level="project" />
   </component>
 </module>
 
