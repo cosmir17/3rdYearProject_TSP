@@ -650,7 +650,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
     public void colleagueChanged() {
 
         cityTextChanged();
-        startButtonPushed();
+        if (ColleagueButton.pushed) startButtonPushed();
 
     }
 
@@ -658,7 +658,21 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
         //   System.out.println(initButton.getActionCommand());
         //   System.out.println(initButton.getText());
 
-        // initButton.
+        if (initButton.e.getSource() == initButton) {
+            if (panelMap.getComponentCount() > 0) {
+                panelMap.remove(0);
+            }
+            //System.out.println("working");
+            //System.out.println(cityNumberTextField.getText());
+            // panelMap.add(new JLabel("sdf"));
+
+            //System.out.println(cityNumberTextField.getText());
+            NodeDataStore nodeArray = new NodeDataStore(Integer.parseInt(cityNumberTextField.getText()));
+            this.graph = new GraphGenerator(nodeArray);
+            panelMap.add(graph.returnJGraph());
+            pack();
+
+        }
     }
 
     private void cityTextChanged() {
@@ -717,26 +731,9 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
 */
     }
 
+
+    @Override
     public void actionPerformed(ActionEvent e) {
-
-        // System.out.println(initButton.getActionCommand());
-
-        if (e.getSource() == initButton) {
-            if (panelMap.getComponentCount() > 0) {
-                panelMap.remove(0);
-            }
-            //System.out.println("working");
-            //System.out.println(cityNumberTextField.getText());
-            // panelMap.add(new JLabel("sdf"));
-
-            //System.out.println(cityNumberTextField.getText());
-            NodeDataStore nodeArray = new NodeDataStore(Integer.parseInt(cityNumberTextField.getText()));
-            this.graph = new GraphGenerator(nodeArray);
-            panelMap.add(graph.returnJGraph());
-
-            pack();
-
-        }
 
     }
 }

@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="JGraphX may be useful than JGraph">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ButtonHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Colleague.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ColleagueButton.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ColleagueTextField.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mediator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Gui.java" afterPath="$PROJECT_DIR$/src/GuiForTestingSmallparts.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MainGui.java" afterPath="$PROJECT_DIR$/src/TSPGui.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GraphGenerator.java" afterPath="$PROJECT_DIR$/src/GraphGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
+    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="1. Madiator pattern, GUI management (progress)&#10;2. Observer pattern, Jgraph (haven't started)">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ColleagueButton.java" afterPath="$PROJECT_DIR$/src/ColleagueButton.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TSPGui.java" afterPath="$PROJECT_DIR$/src/TSPGui.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="3rd_year_project.iws" />
@@ -78,7 +71,7 @@
       <file leaf-file-name="TSPGui.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TSPGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="668" column="12" selection-start="33061" selection-end="33061" vertical-scroll-proportion="0.460177" vertical-offset="11674" max-vertical-offset="13446">
+            <state line="652" column="0" selection-start="32891" selection-end="32891" vertical-scroll-proportion="-0.0053050397" vertical-offset="11630" max-vertical-offset="13302">
               <folding />
             </state>
           </provider>
@@ -87,7 +80,7 @@
       <file leaf-file-name="ButtonHandler.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ButtonHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="53" selection-start="169" selection-end="169" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
+            <state line="15" column="8" selection-start="369" selection-end="371" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -113,24 +106,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ColleagueButton.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ColleagueButton.java">
+      <file leaf-file-name="CityNameGenerator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CityNameGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="0" selection-start="596" selection-end="596" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="720">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#342#343#0" expanded="true" />
-                <element signature="e#388#389#0" expanded="true" />
-              </folding>
+            <state line="6" column="13" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <file leaf-file-name="GraphGenerator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GraphGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
+            <state line="21" column="0" selection-start="554" selection-end="554" vertical-scroll-proportion="0.0" vertical-offset="702" max-vertical-offset="1620">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ColleagueButton.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ColleagueButton.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="21" selection-start="687" selection-end="687" vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="810">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#453#454#0" expanded="true" />
+                <element signature="e#495#496#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -138,11 +140,11 @@
       <file leaf-file-name="ColleagueTextField.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ColleagueTextField.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="36" selection-start="854" selection-end="854" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
+            <state line="29" column="36" selection-start="696" selection-end="696" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#541#542#0" expanded="true" />
-                <element signature="e#581#582#0" expanded="true" />
+                <element signature="e#384#385#0" expanded="true" />
+                <element signature="e#424#425#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -151,16 +153,7 @@
       <file leaf-file-name="Colleague.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Colleague.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="62" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GuiForTestingSmallparts.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GuiForTestingSmallparts.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="19" selection-start="701" selection-end="701" vertical-scroll-proportion="0.0" vertical-offset="1172" max-vertical-offset="1764">
+            <state line="6" column="62" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="252">
               <folding />
             </state>
           </provider>
@@ -169,7 +162,7 @@
       <file leaf-file-name="Mediator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Mediator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="42" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
+            <state line="4" column="42" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
               <folding />
             </state>
           </provider>
@@ -200,6 +193,8 @@
         <option value="$PROJECT_DIR$/src/ColleagueCitynumberTextField.java" />
         <option value="$PROJECT_DIR$/src/ColleagueTextField.java" />
         <option value="$PROJECT_DIR$/src/ButtonHandler.java" />
+        <option value="$PROJECT_DIR$/src/ButtonExecutor.java" />
+        <option value="$PROJECT_DIR$/src/ActionObject.java" />
         <option value="$PROJECT_DIR$/src/ColleagueButton.java" />
         <option value="$PROJECT_DIR$/src/TSPGui.java" />
       </list>
@@ -593,17 +588,21 @@
       <workItem from="1392647586836" duration="1012000" />
       <workItem from="1392917748997" duration="825000" />
       <workItem from="1392994623450" duration="1262000" />
-      <workItem from="1392997528540" duration="17822000" />
+      <workItem from="1392997528540" duration="19835000" />
     </task>
     <task id="LOCAL-00001" summary="JGraphX may be useful than JGraph">
       <created>1392309152872</created>
       <updated>1392309152872</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1. Madiator pattern, GUI management (progress)&#10;2. Observer pattern, Jgraph (haven't started)">
+      <created>1393022762411</created>
+      <updated>1393022762411</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31509000" />
+    <option name="totallyTimeSpent" value="33522000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1368" height="748" extended-state="0" />
@@ -629,8 +628,8 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32874617" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="-1" y="0" width="1368" height="748" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -652,7 +651,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="JGraphX may be useful than JGraph" />
-    <option name="LAST_COMMIT_MESSAGE" value="JGraphX may be useful than JGraph" />
+    <MESSAGE value="1. Madiator pattern, GUI management (progress)&#10;2. Observer pattern, Jgraph (haven't started)" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. Madiator pattern, GUI management (progress)&#10;2. Observer pattern, Jgraph (haven't started)" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -664,17 +664,12 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/TSPGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="5" selection-start="2313" selection-end="2313" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="13086">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GuiForTestingSmallparts.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="19" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="1836">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -732,7 +727,9 @@
     <entry file="file://$PROJECT_DIR$/src/GuiForTestingSmallparts.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="19" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="1530">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -783,7 +780,9 @@
     <entry file="file://$PROJECT_DIR$/src/GuiForTestingSmallparts.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="19" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="1836">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -834,7 +833,9 @@
     <entry file="file://$PROJECT_DIR$/src/GuiForTestingSmallparts.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="19" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="1530">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -885,7 +886,9 @@
     <entry file="file://$PROJECT_DIR$/src/GuiForTestingSmallparts.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="19" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="1836">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -931,22 +934,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CityNameGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GraphGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="554" selection-end="554" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="1656">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/NearestNeighbourAlgo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="13" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
@@ -956,15 +943,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Colleague.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="62" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+        <state line="6" column="62" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="252">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GuiForTestingSmallparts.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="19" selection-start="701" selection-end="701" vertical-scroll-proportion="0.0" vertical-offset="1172" max-vertical-offset="1764">
-          <folding />
+        <state line="30" column="19" selection-start="636" selection-end="636" vertical-scroll-proportion="0.0" vertical-offset="1172" max-vertical-offset="1764">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -977,7 +966,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0" vertical-offset="78" max-vertical-offset="468">
+        <state line="14" column="0" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
           <folding />
         </state>
       </provider>
@@ -996,9 +985,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mediator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="42" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ButtonHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="53" selection-start="169" selection-end="169" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
+        <state line="15" column="8" selection-start="369" selection-end="371" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1007,36 +1003,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ColleagueTextField.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="36" selection-start="854" selection-end="854" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
+        <state line="29" column="36" selection-start="696" selection-end="696" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#541#542#0" expanded="true" />
-            <element signature="e#581#582#0" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+            <element signature="e#424#425#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mediator.java">
+    <entry file="file://$PROJECT_DIR$/src/CityNameGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="42" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
+        <state line="6" column="13" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GraphGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="554" selection-end="554" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="1656">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ColleagueButton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="596" selection-end="596" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="720">
+        <state line="31" column="21" selection-start="687" selection-end="687" vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="810">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#342#343#0" expanded="true" />
-            <element signature="e#388#389#0" expanded="true" />
+            <element signature="e#453#454#0" expanded="true" />
+            <element signature="e#495#496#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TSPGui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="668" column="12" selection-start="33061" selection-end="33061" vertical-scroll-proportion="0.460177" vertical-offset="11674" max-vertical-offset="13446">
+        <state line="652" column="0" selection-start="32891" selection-end="32891" vertical-scroll-proportion="-0.0053050397" vertical-offset="11630" max-vertical-offset="13302">
           <folding />
         </state>
       </provider>
