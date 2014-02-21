@@ -9,11 +9,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-       // Gui gui = new Gui(new GraphGenerator(4));
-     //MainGui gui = new MainGui();
+        // GuiForTestingSmallparts gui = new GuiForTestingSmallparts(new GraphGenerator(4));
+        //TSPGui gui = new TSPGui();
 
-       MainGui panel = new MainGui();
-        NewGraphGenerator newGraph = new NewGraphGenerator();
+        TSPGui panel = new TSPGui();
+        //NewGraphGenerator newGraph = new NewGraphGenerator();
 
     }
 

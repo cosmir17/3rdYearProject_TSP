@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/jgraphx.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/NewGraphGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3rd_year_project.iml" afterPath="$PROJECT_DIR$/3rd_year_project.iml" />
+    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="JGraphX may be useful than JGraph">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ButtonHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Colleague.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ColleagueButton.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ColleagueTextField.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mediator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Gui.java" afterPath="$PROJECT_DIR$/src/GuiForTestingSmallparts.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MainGui.java" afterPath="$PROJECT_DIR$/src/TSPGui.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GraphGenerator.java" afterPath="$PROJECT_DIR$/src/GraphGenerator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="3rd_year_project.iws" />
@@ -71,20 +75,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainGui.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MainGui.java">
+      <file leaf-file-name="TSPGui.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/TSPGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="9" selection-start="1666" selection-end="1666" vertical-scroll-proportion="0.0" vertical-offset="1170" max-vertical-offset="12924">
+            <state line="668" column="12" selection-start="33061" selection-end="33061" vertical-scroll-proportion="0.460177" vertical-offset="11674" max-vertical-offset="13446">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gui.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Gui.java">
+      <file leaf-file-name="ButtonHandler.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ButtonHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="19" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="1836">
+            <state line="6" column="53" selection-start="169" selection-end="169" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NodeDataStore.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/NodeDataStore.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="13" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="String.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar:///usr/lib/java/jdk1.7.0_51/src.zip!/java/lang/String.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="657" column="0" selection-start="24186" selection-end="24186" vertical-scroll-proportion="0.0" vertical-offset="11107" max-vertical-offset="55368">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ColleagueButton.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ColleagueButton.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="0" selection-start="596" selection-end="596" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="720">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#342#343#0" expanded="true" />
+                <element signature="e#388#389#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -92,37 +129,47 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="3" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="468">
+            <state line="14" column="0" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GraphGenerator.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GraphGenerator.java">
+      <file leaf-file-name="ColleagueTextField.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ColleagueTextField.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="43" selection-start="1446" selection-end="1446" vertical-scroll-proportion="0.0" vertical-offset="864" max-vertical-offset="1764">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewGraphGenerator.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/NewGraphGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="0" selection-start="1262" selection-end="1262" vertical-scroll-proportion="0.60271645" vertical-offset="275" max-vertical-offset="900">
+            <state line="36" column="36" selection-start="854" selection-end="854" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
               <folding>
-                <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
+                <element signature="e#541#542#0" expanded="true" />
+                <element signature="e#581#582#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NearestNeighbourAlgo.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/NearestNeighbourAlgo.java">
+      <file leaf-file-name="Colleague.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Colleague.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="13" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="306">
+            <state line="7" column="62" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GuiForTestingSmallparts.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GuiForTestingSmallparts.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="19" selection-start="701" selection-end="701" vertical-scroll-proportion="0.0" vertical-offset="1172" max-vertical-offset="1764">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Mediator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Mediator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="42" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
               <folding />
             </state>
           </provider>
@@ -142,8 +189,19 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/newGraphGenerator.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/NewGraphGenerator.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/GraphGenerator.java" />
+        <option value="$PROJECT_DIR$/src/Mediator.java" />
+        <option value="$PROJECT_DIR$/src/Colleague.java" />
+        <option value="$PROJECT_DIR$/src/ColleagueButtonInit.java" />
+        <option value="$PROJECT_DIR$/src/MainGui.java" />
+        <option value="$PROJECT_DIR$/src/TestGui.java" />
+        <option value="$PROJECT_DIR$/src/ColleagueCitynumberTextField.java" />
+        <option value="$PROJECT_DIR$/src/ColleagueTextField.java" />
+        <option value="$PROJECT_DIR$/src/ButtonHandler.java" />
+        <option value="$PROJECT_DIR$/src/ColleagueButton.java" />
+        <option value="$PROJECT_DIR$/src/TSPGui.java" />
       </list>
     </option>
   </component>
@@ -242,14 +300,17 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/jgraphx.jar!/" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.lastSelected" value="appearance" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="FullScreen" value="false" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="OverrideImplement.overriding.sorted" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -527,48 +588,59 @@
       <created>1392251354111</created>
       <updated>1392251354111</updated>
       <workItem from="1392251354755" duration="2722000" />
-      <workItem from="1392308672136" duration="410000" />
+      <workItem from="1392308672136" duration="6833000" />
+      <workItem from="1392636149933" duration="1033000" />
+      <workItem from="1392647586836" duration="1012000" />
+      <workItem from="1392917748997" duration="825000" />
+      <workItem from="1392994623450" duration="1262000" />
+      <workItem from="1392997528540" duration="17822000" />
     </task>
+    <task id="LOCAL-00001" summary="JGraphX may be useful than JGraph">
+      <created>1392309152872</created>
+      <updated>1392309152872</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3132000" />
+    <option name="totallyTimeSpent" value="31509000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1368" height="748" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290938" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="-1" y="0" width="1368" height="748" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="-1" y="0" width="1368" height="748" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290938" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3974563" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
-    <option name="RECENTLY_FILTERED_USERS">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
       <collection />
     </option>
   </component>
@@ -579,6 +651,10 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="JGraphX may be useful than JGraph" />
+    <option name="LAST_COMMIT_MESSAGE" value="JGraphX may be useful than JGraph" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -588,14 +664,225 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/MainGui.java">
+    <entry file="file://$PROJECT_DIR$/src/TSPGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="5" selection-start="2313" selection-end="2313" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="13086">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GuiForTestingSmallparts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="19" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="1836">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="35" selection-start="307" selection-end="307" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="468">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CityName.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="12" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="9810">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CityNameGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="936">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GraphGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="43" selection-start="1446" selection-end="1446" vertical-scroll-proportion="0.0" vertical-offset="864" max-vertical-offset="1764">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NewGraphGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="31" selection-start="1496" selection-end="1496" vertical-scroll-proportion="0.0" vertical-offset="702" max-vertical-offset="864">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NearestNeighbourAlgo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="13" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="306">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TSPGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="5" selection-start="2313" selection-end="2313" vertical-scroll-proportion="0.0" vertical-offset="1470" max-vertical-offset="10905">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GuiForTestingSmallparts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="19" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="1530">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="35" selection-start="307" selection-end="307" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="390">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CityNameGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="780">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GraphGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="43" selection-start="1446" selection-end="1446" vertical-scroll-proportion="0.0" vertical-offset="720" max-vertical-offset="1470">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NewGraphGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="31" selection-start="1496" selection-end="1496" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NearestNeighbourAlgo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="13" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TSPGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="5" selection-start="2313" selection-end="2313" vertical-scroll-proportion="0.0" vertical-offset="1305" max-vertical-offset="13086">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GuiForTestingSmallparts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="19" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="1836">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="35" selection-start="307" selection-end="307" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="468">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CityNameGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="936">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GraphGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="43" selection-start="1446" selection-end="1446" vertical-scroll-proportion="0.0" vertical-offset="864" max-vertical-offset="1764">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NewGraphGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="31" selection-start="1496" selection-end="1496" vertical-scroll-proportion="0.0" vertical-offset="702" max-vertical-offset="864">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NearestNeighbourAlgo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="13" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="306">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TSPGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="38" selection-start="2210" selection-end="2210" vertical-scroll-proportion="0.0" vertical-offset="1380" max-vertical-offset="10905">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GuiForTestingSmallparts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="19" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="1530">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="420" selection-end="420" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="390">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CityNameGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="780">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GraphGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="43" selection-start="1446" selection-end="1446" vertical-scroll-proportion="0.0" vertical-offset="720" max-vertical-offset="1470">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NewGraphGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="31" selection-start="1496" selection-end="1496" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NearestNeighbourAlgo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="13" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TSPGui.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="95" column="2" selection-start="2279" selection-end="2279" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="13086">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Gui.java">
+    <entry file="file://$PROJECT_DIR$/src/GuiForTestingSmallparts.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="19" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="1836">
           <folding />
@@ -619,10 +906,7 @@
     <entry file="file://$PROJECT_DIR$/src/NewGraphGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="18" selection-start="1191" selection-end="1191" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="900">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -633,16 +917,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GraphGenerator.java">
+    <entry file="file://$PROJECT_DIR$/src/NewGraphGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="43" selection-start="1446" selection-end="1446" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1656">
+        <state line="39" column="31" selection-start="1496" selection-end="1496" vertical-scroll-proportion="0.0" vertical-offset="239" max-vertical-offset="864">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/CityName.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="3" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
+        <state line="3" column="12" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="9810">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CityNameGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GraphGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="554" selection-end="554" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="1656">
           <folding />
         </state>
       </provider>
@@ -654,27 +954,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Gui.java">
+    <entry file="file://$PROJECT_DIR$/src/Colleague.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="19" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0" vertical-offset="449" max-vertical-offset="1764">
+        <state line="7" column="62" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainGui.java">
+    <entry file="file://$PROJECT_DIR$/src/GuiForTestingSmallparts.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="9" selection-start="1666" selection-end="1666" vertical-scroll-proportion="0.0" vertical-offset="1170" max-vertical-offset="12924">
+        <state line="33" column="19" selection-start="701" selection-end="701" vertical-scroll-proportion="0.0" vertical-offset="1172" max-vertical-offset="1764">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NewGraphGenerator.java">
+    <entry file="jar:///usr/lib/java/jdk1.7.0_51/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1262" selection-end="1262" vertical-scroll-proportion="0.60271645" vertical-offset="275" max-vertical-offset="900">
+        <state line="657" column="0" selection-start="24186" selection-end="24186" vertical-scroll-proportion="0.0" vertical-offset="11107" max-vertical-offset="55368">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0" vertical-offset="78" max-vertical-offset="468">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/java/jdk1.7.0_51/jre/lib/rt.jar!/java/awt/event/MouseListener.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NodeDataStore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ButtonHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="53" selection-start="169" selection-end="169" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
           <folding>
-            <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ColleagueTextField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="36" selection-start="854" selection-end="854" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#541#542#0" expanded="true" />
+            <element signature="e#581#582#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mediator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="42" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ColleagueButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="596" selection-end="596" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="720">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#342#343#0" expanded="true" />
+            <element signature="e#388#389#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TSPGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="668" column="12" selection-start="33061" selection-end="33061" vertical-scroll-proportion="0.460177" vertical-offset="11674" max-vertical-offset="13446">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -735,6 +1098,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -742,7 +1106,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>jgraphx</last-edited>
+          <last-edited>java</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

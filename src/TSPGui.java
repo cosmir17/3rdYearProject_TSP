@@ -1,9 +1,10 @@
+import javax.swing.*;
+import javax.swing.border.TitledBorder;
 import java.awt.*;
-import java.awt.event.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import javax.swing.*;
-import javax.swing.border.*;
 //import com.jgoodies.forms.factories.*;
 /*
  * Created by JFormDesigner on Fri Nov 22 21:50:12 GMT 2013
@@ -13,107 +14,43 @@ import javax.swing.border.*;
 /**
  * @author S K
  */
-public class MainGui extends JFrame implements ActionListener {
+public class TSPGui extends JFrame implements ActionListener, Mediator {
 
     private GraphGenerator graph;
+    public final static String Initialisation = "Initialisation";
 
-
-    public MainGui() {
+    public TSPGui() {
         //  graph = new GraphGenerator();
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setVisible(true);
+        setMinimumSize(new Dimension(1000, 620));
+        setTitle("Third Year Project : Visualisation of Travelling Sales Man Problem");
+        Container contentPane = getContentPane();
+        contentPane.setLayout(new BorderLayout());
 
-        initComponents();
-    }
+        createCollegues();
 
-    private void textArea1KeyTyped(KeyEvent e) {
-        // TODO add your code here
+        contentPane.add(panel2, BorderLayout.CENTER);
 
-        char a = e.getKeyChar();
-        boolean isDigit = (a >= '0' && a <= '9');
-
-        String y = a + "";
-        Pattern p1 = Pattern.compile("[a-zA-Z0-9]");
-        Matcher m1 = p1.matcher(y);
-
-
-        Pattern p2 = Pattern.compile("-?[0-9]+");
-        Matcher m2 = p2.matcher(textField1.getText());
-
-
-        //System.out.println(textField1.getText()+"");
-
-        boolean ok = false;
-        if (m2.matches()) {
-            button4.setEnabled(true);
-            ok = true;
-        }
-
-        if (isDigit && m1.matches()) {
-
-            button4.setEnabled(true);
-
-
-        } else if (ok) {
-            button4.setEnabled(true);
-        } else {
-            button4.setEnabled(false);
-        }
-        try {
-            if (Integer.parseInt(textField1.getText()) > 500) {
-                button4.setEnabled(false);
-            }
-        } catch (NumberFormatException e32) {
-
-        }
-
-
-/*
-        String c = textField1.getText();
-        try {
-            int d = Integer.parseInt(c);
-            button4.setEnabled(true);
-
-        } catch (NumberFormatException e3) {
-
-        }
-*/
+        pack();
+        setLocationRelativeTo(getOwner());
+        colleagueChanged();
     }
 
 
-    public void actionPerformed(ActionEvent e) {
-        if (e.getSource() == button4) {
-            if (panelMap.getComponentCount() > 0) {
-                panelMap.remove(0);
-            }
-            //System.out.println("working");
-            //System.out.println(textField1.getText());
-            // panelMap.add(new JLabel("sdf"));
-
-            //System.out.println(textField1.getText());
-            NodeDataStore nodeArray = new NodeDataStore(Integer.parseInt(textField1.getText()));
-            this.graph = new GraphGenerator(nodeArray);
-            panelMap.add(graph.returnJGraph());
-
-            pack();
-        }
-
-    }
-
-    private void thisWindowClosed(WindowEvent e) {
-
-    }
-
-    private void initComponents() {
-        // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
+    @Override
+    public void createCollegues() {
+        // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:createColleagues
         // Generated using JFormDesigner Evaluation license - S K
         panel2 = new JPanel();
         panel1 = new JPanel();
         panel3 = new JPanel();
         panel4 = new JPanel();
-        button4 = new JButton();
+        initButton = new ColleagueButton(Initialisation);
         button1 = new JButton();
         panel19 = new JPanel();
         label5 = new JLabel();
-        textField1 = new JTextField();
+        cityNumberTextField = new ColleagueTextField("");
         panel5 = new JPanel();
         comboBox1 = new JComboBox();
         panel18 = new JPanel();
@@ -158,13 +95,10 @@ public class MainGui extends JFrame implements ActionListener {
         button8 = new JButton();
         slider1 = new JSlider();
         panelMap = new JPanel();
+
+        ButtonHandler butEvent = new ButtonHandler();
         //======== this ========
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setVisible(true);
-        setMinimumSize(new Dimension(1000, 620));
-        setTitle("Third Year Project : Visualisation of Travelling Sales Man Problem");
-        Container contentPane = getContentPane();
-        contentPane.setLayout(new BorderLayout());
+
 
         //======== panel2 ========
         {
@@ -194,11 +128,11 @@ public class MainGui extends JFrame implements ActionListener {
                     {
                         panel4.setLayout(new GridLayout(1, 2));
 
-                        //---- button4 ----
-                        button4.setText("Initialisation");
-                        button4.setEnabled(false);
-                        button4.addActionListener(this);
-                        panel4.add(button4);
+                        //---- initButton ----
+                        initButton.setMediator(this);
+                        initButton.setEnabled(false);
+                        initButton.addActionListener(initButton);
+                        panel4.add(initButton);
 
                         //---- button1 ----
                         button1.setText("Stop/Reset");
@@ -213,19 +147,14 @@ public class MainGui extends JFrame implements ActionListener {
                         label5.setText("How many cities?");
                         label5.setFont(new Font("Dialog", Font.PLAIN, 16));
 
-                        //---- textField1 ----
-                        textField1.setFont(new Font("Monospaced", Font.PLAIN, 16));
-                        textField1.setAutoscrolls(false);
-                        textField1.setBorder(new BevelBorder(BevelBorder.LOWERED));
-                        textField1.setCursor(Cursor.getPredefinedCursor(Cursor.TEXT_CURSOR));
-                        textField1.addKeyListener(new KeyAdapter() {
-                            @Override
+                        //---- cityNumberTextField ----
 
-                            public void keyReleased(KeyEvent e) {
-                                textArea1KeyTyped(e);
-
-                            }
-                        });
+                        cityNumberTextField.setFont(new Font("Monospaced", Font.PLAIN, 16));
+                        // cityNumberTextField.setAutoscrolls(false);
+                        //  cityNumberTextField.setBorder(new BevelBorder(BevelBorder.LOWERED));
+                        cityNumberTextField.setCursor(Cursor.getPredefinedCursor(Cursor.TEXT_CURSOR));
+                        cityNumberTextField.setMediator(this);
+                        cityNumberTextField.addTextListener(cityNumberTextField);
 
 
                         GroupLayout panel19Layout = new GroupLayout(panel19);
@@ -236,14 +165,14 @@ public class MainGui extends JFrame implements ActionListener {
                                                 .addContainerGap()
                                                 .addComponent(label5)
                                                 .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(textField1, GroupLayout.DEFAULT_SIZE, 108, Short.MAX_VALUE)
+                                                .addComponent(cityNumberTextField, GroupLayout.DEFAULT_SIZE, 108, Short.MAX_VALUE)
                                                 .addContainerGap())
                         );
                         panel19Layout.setVerticalGroup(
                                 panel19Layout.createParallelGroup()
                                         .addGroup(panel19Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                                                 .addComponent(label5)
-                                                .addComponent(textField1, GroupLayout.PREFERRED_SIZE, 23, GroupLayout.PREFERRED_SIZE))
+                                                .addComponent(cityNumberTextField, GroupLayout.PREFERRED_SIZE, 23, GroupLayout.PREFERRED_SIZE))
                         );
                     }
 
@@ -656,10 +585,8 @@ public class MainGui extends JFrame implements ActionListener {
             }
             panel2.add(panel15, BorderLayout.CENTER);
         }
-        contentPane.add(panel2, BorderLayout.CENTER);
-        pack();
-        setLocationRelativeTo(getOwner());
-        // JFormDesigner - End of component initialization  //GEN-END:initComponents
+
+        // JFormDesigner - End of component initialization  //GEN-END:createColleagues
     }
 
     // JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
@@ -668,11 +595,11 @@ public class MainGui extends JFrame implements ActionListener {
     private JPanel panel1;
     private JPanel panel3;
     private JPanel panel4;
-    private JButton button4;
+    private ColleagueButton initButton;
     private JButton button1;
     private JPanel panel19;
     private JLabel label5;
-    private JTextField textField1;
+    private ColleagueTextField cityNumberTextField;
     private JPanel panel5;
     private JComboBox comboBox1;
     private JPanel panel18;
@@ -717,5 +644,99 @@ public class MainGui extends JFrame implements ActionListener {
     private JButton button8;
     private JSlider slider1;
     private JPanel panelMap;
-    // JFormDesigner - End of variables declaration  //GEN-END:variables
+
+
+    @Override
+    public void colleagueChanged() {
+
+        cityTextChanged();
+        startButtonPushed();
+
+    }
+
+    private void startButtonPushed() {
+        //   System.out.println(initButton.getActionCommand());
+        //   System.out.println(initButton.getText());
+
+        // initButton.
+    }
+
+    private void cityTextChanged() {
+
+        char a = 'a';
+        if (cityNumberTextField.getText().length() > 0) {
+            a = cityNumberTextField.getText().charAt(cityNumberTextField.getText().length() - 1);
+        }
+        boolean isDigit = (a >= '0' && a <= '9');
+
+        String y = a + "";
+        Pattern p1 = Pattern.compile("[a-zA-Z0-9]");
+        Matcher m1 = p1.matcher(y);
+
+
+        Pattern p2 = Pattern.compile("-?[0-9]+");
+        Matcher m2 = p2.matcher(cityNumberTextField.getText());
+
+
+        //System.out.println(cityNumberTextField.getText()+"");
+
+        boolean ok = false;
+        if (m2.matches()) {
+            initButton.setColleagueEnabled(true);
+            ok = true;
+        }
+
+        if (isDigit && m1.matches()) {
+
+            initButton.setColleagueEnabled(true);
+
+
+        } else if (ok) {
+            initButton.setColleagueEnabled(true);
+        } else {
+            initButton.setColleagueEnabled(false);
+        }
+        try {
+            if (Integer.parseInt(cityNumberTextField.getText()) > 500) {
+                initButton.setColleagueEnabled(false);
+            }
+        } catch (NumberFormatException e32) {
+
+        }
+
+
+/*
+        String c = cityNumberTextField.getText();
+        try {
+            int d = Integer.parseInt(c);
+            initButton.setEnabled(true);
+
+        } catch (NumberFormatException e3) {
+
+        }
+*/
+    }
+
+    public void actionPerformed(ActionEvent e) {
+
+        // System.out.println(initButton.getActionCommand());
+
+        if (e.getSource() == initButton) {
+            if (panelMap.getComponentCount() > 0) {
+                panelMap.remove(0);
+            }
+            //System.out.println("working");
+            //System.out.println(cityNumberTextField.getText());
+            // panelMap.add(new JLabel("sdf"));
+
+            //System.out.println(cityNumberTextField.getText());
+            NodeDataStore nodeArray = new NodeDataStore(Integer.parseInt(cityNumberTextField.getText()));
+            this.graph = new GraphGenerator(nodeArray);
+            panelMap.add(graph.returnJGraph());
+
+            pack();
+
+        }
+
+    }
 }

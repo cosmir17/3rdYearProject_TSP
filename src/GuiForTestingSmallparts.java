@@ -1,8 +1,5 @@
-import org.jgraph.JGraph;
-
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionListener;
 
 /**
  * Created with IntelliJ IDEA.
@@ -13,14 +10,14 @@ import java.awt.event.ActionListener;
  */
 
 
-public class Gui extends JFrame {
+public class GuiForTestingSmallparts extends JFrame {
 
     private Container TContentPane;
     private JPanel eastPanel = new JPanel();
     private JPanel mapPanel = new JPanel();
     private GraphGenerator graph;
 
-    public Gui(GraphGenerator graph) {
+    public GuiForTestingSmallparts(GraphGenerator graph) {
         this.graph = graph;
         initGui();
 
