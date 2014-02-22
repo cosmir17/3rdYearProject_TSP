@@ -18,7 +18,7 @@ public class GraphGenerator {
     private GraphModel model;
     private GraphLayoutCache view;
     private JGraph graph;
-    private static final Dimension DEFAULT_SIZE = new Dimension(650, 500);
+    private static final Dimension DEFAULT_SIZE = new Dimension(850, 500);
 
     public GraphGenerator(NodeDataStore nodeData) {
         this.nodeData = nodeData;

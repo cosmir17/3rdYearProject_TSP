@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="1. Madiator pattern, GUI management&#10;2. Observer pattern, Jgraph (let's start it)">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ButtonHandler.java" afterPath="$PROJECT_DIR$/src/ButtonHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ColleagueButton.java" afterPath="$PROJECT_DIR$/src/ColleagueButton.java" />
+    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="Shortest Path button added and GUI newly modified">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ColleagueCheckBox.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ColleagueLabel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Observer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GraphGenerator.java" afterPath="$PROJECT_DIR$/src/GraphGenerator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NodeDataStore.java" afterPath="$PROJECT_DIR$/src/NodeDataStore.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TSPGui.java" afterPath="$PROJECT_DIR$/src/TSPGui.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -69,10 +72,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TSPGui.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/TSPGui.java">
+      <file leaf-file-name="ColleagueCheckBox.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ColleagueCheckBox.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="39" selection-start="776" selection-end="776" vertical-scroll-proportion="0.30571428" vertical-offset="271" max-vertical-offset="13608">
+            <state line="29" column="36" selection-start="651" selection-end="651" vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="684">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#403#404#0" expanded="true" />
+                <element signature="e#443#444#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ColleagueLabel.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ColleagueLabel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="5" selection-start="186" selection-end="556" vertical-scroll-proportion="0.0" vertical-offset="7" max-vertical-offset="612">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#345#346#0" expanded="true" />
+                <element signature="e#385#386#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Observer.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Observer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="44" selection-start="114" selection-end="114" vertical-scroll-proportion="0.119008265" vertical-offset="0" max-vertical-offset="605">
               <folding />
             </state>
           </provider>
@@ -92,25 +121,7 @@
       <file leaf-file-name="NodeDataStore.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NodeDataStore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="13" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="String.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar:///usr/lib/java/jdk1.7.0_51/src.zip!/java/lang/String.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="657" column="0" selection-start="24186" selection-end="24186" vertical-scroll-proportion="0.0" vertical-offset="11107" max-vertical-offset="55368">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CityNameGenerator.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CityNameGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="13" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
+            <state line="27" column="0" selection-start="837" selection-end="837" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="900">
               <folding />
             </state>
           </provider>
@@ -119,7 +130,16 @@
       <file leaf-file-name="GraphGenerator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GraphGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="554" selection-end="554" vertical-scroll-proportion="0.0" vertical-offset="702" max-vertical-offset="1620">
+            <state line="20" column="71" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1620">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Node.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Node.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="13" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
               <folding />
             </state>
           </provider>
@@ -128,7 +148,7 @@
       <file leaf-file-name="ColleagueButton.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ColleagueButton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="10" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="792">
+            <state line="33" column="0" selection-start="709" selection-end="745" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="792">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#453#454#0" expanded="true" />
@@ -141,21 +161,12 @@
       <file leaf-file-name="ColleagueTextField.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ColleagueTextField.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="36" selection-start="696" selection-end="696" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
+            <state line="30" column="5" selection-start="221" selection-end="702" vertical-scroll-proportion="0.0" vertical-offset="7" max-vertical-offset="684">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#384#385#0" expanded="true" />
                 <element signature="e#424#425#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Colleague.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Colleague.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="62" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="252">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -185,7 +196,6 @@
         <option value="$PROJECT_DIR$/src/newGraphGenerator.java" />
         <option value="$PROJECT_DIR$/src/NewGraphGenerator.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/GraphGenerator.java" />
         <option value="$PROJECT_DIR$/src/Mediator.java" />
         <option value="$PROJECT_DIR$/src/Colleague.java" />
         <option value="$PROJECT_DIR$/src/ColleagueButtonInit.java" />
@@ -197,7 +207,12 @@
         <option value="$PROJECT_DIR$/src/ButtonExecutor.java" />
         <option value="$PROJECT_DIR$/src/ActionObject.java" />
         <option value="$PROJECT_DIR$/src/ColleagueButton.java" />
+        <option value="$PROJECT_DIR$/src/Observer.java" />
+        <option value="$PROJECT_DIR$/src/ColleagueLabel.java" />
+        <option value="$PROJECT_DIR$/src/ColleagueCheckBox.java" />
         <option value="$PROJECT_DIR$/src/TSPGui.java" />
+        <option value="$PROJECT_DIR$/src/GraphGenerator.java" />
+        <option value="$PROJECT_DIR$/src/NodeDataStore.java" />
       </list>
     </option>
   </component>
@@ -589,7 +604,7 @@
       <workItem from="1392647586836" duration="1012000" />
       <workItem from="1392917748997" duration="825000" />
       <workItem from="1392994623450" duration="1262000" />
-      <workItem from="1392997528540" duration="25476000" />
+      <workItem from="1392997528540" duration="28224000" />
     </task>
     <task id="LOCAL-00001" summary="JGraphX may be useful than JGraph">
       <created>1392309152872</created>
@@ -603,11 +618,15 @@
       <created>1393026468439</created>
       <updated>1393026468439</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Shortest Path button added and GUI newly modified">
+      <created>1393032135956</created>
+      <updated>1393032135956</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39163000" />
+    <option name="totallyTimeSpent" value="41911000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1368" height="748" extended-state="0" />
@@ -634,8 +653,8 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1954612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32874617" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1954612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -658,7 +677,8 @@
     <MESSAGE value="JGraphX may be useful than JGraph" />
     <MESSAGE value="1. Madiator pattern, GUI management (progress)&#10;2. Observer pattern, Jgraph (haven't started)" />
     <MESSAGE value="1. Madiator pattern, GUI management&#10;2. Observer pattern, Jgraph (let's start it)" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. Madiator pattern, GUI management&#10;2. Observer pattern, Jgraph (let's start it)" />
+    <MESSAGE value="Shortest Path button added and GUI newly modified" />
+    <option name="LAST_COMMIT_MESSAGE" value="Shortest Path button added and GUI newly modified" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -670,29 +690,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/GuiForTestingSmallparts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="19" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="1836">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="35" selection-start="307" selection-end="307" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="468">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CityName.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="12" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="9810">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CityNameGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="13" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="936">
@@ -984,13 +981,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NodeDataStore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Mediator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="42" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
@@ -1007,9 +997,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/CityNameGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ColleagueTextField.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="36" selection-start="696" selection-end="696" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
+        <state line="30" column="5" selection-start="221" selection-end="702" vertical-scroll-proportion="0.0" vertical-offset="7" max-vertical-offset="684">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#384#385#0" expanded="true" />
@@ -1018,23 +1015,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CityNameGenerator.java">
+    <entry file="file://$PROJECT_DIR$/src/ColleagueLabel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
-          <folding />
+        <state line="24" column="5" selection-start="186" selection-end="556" vertical-scroll-proportion="0.0" vertical-offset="7" max-vertical-offset="612">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#345#346#0" expanded="true" />
+            <element signature="e#385#386#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GraphGenerator.java">
+    <entry file="file://$PROJECT_DIR$/src/ColleagueCheckBox.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="554" selection-end="554" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="1656">
-          <folding />
+        <state line="29" column="36" selection-start="651" selection-end="651" vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="684">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#403#404#0" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ColleagueButton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="10" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="792">
+        <state line="33" column="0" selection-start="709" selection-end="745" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="792">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#453#454#0" expanded="true" />
@@ -1045,7 +1050,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TSPGui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="39" selection-start="776" selection-end="776" vertical-scroll-proportion="0.30571428" vertical-offset="271" max-vertical-offset="13608">
+        <state line="688" column="0" selection-start="35581" selection-end="35581" vertical-scroll-proportion="-4.0914288" vertical-offset="13708" max-vertical-offset="14058">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="13" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GraphGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="71" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1620">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NodeDataStore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="837" selection-end="837" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="900">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Observer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="44" selection-start="114" selection-end="114" vertical-scroll-proportion="0.119008265" vertical-offset="0" max-vertical-offset="605">
           <folding />
         </state>
       </provider>

@@ -19,8 +19,8 @@ public class NodeDataStore extends Node {
 
             for (int i = 0; i < numberOfNodes; i++)
             {
-                int x = (int)((new Random()).nextInt(600));
-                int y = (int)((new Random()).nextInt(470));
+                int x = (int) ((new Random()).nextInt(830));
+                int y = (int) ((new Random()).nextInt(480));
                 cityName = cityNameArray.returnNameAndDeleteNamefromList();
                Node newNodeObject = new Node(x, y, cityName);
                nodeDataStore.add(newNodeObject);
