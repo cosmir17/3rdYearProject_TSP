@@ -8,7 +8,7 @@ import java.awt.event.ActionListener;
 public class ColleagueButton extends JButton implements Colleague, ActionListener {
     private Mediator mediator;
     public ActionEvent e;
-    static boolean pushed = false;
+    public boolean pushed = false;
 
     public ColleagueButton(String caption) {
         super(caption);

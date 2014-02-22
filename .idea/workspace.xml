@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="1. Madiator pattern, GUI management (progress)&#10;2. Observer pattern, Jgraph (haven't started)">
+    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="1. Madiator pattern, GUI management&#10;2. Observer pattern, Jgraph (let's start it)">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ButtonHandler.java" afterPath="$PROJECT_DIR$/src/ButtonHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ColleagueButton.java" afterPath="$PROJECT_DIR$/src/ColleagueButton.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TSPGui.java" afterPath="$PROJECT_DIR$/src/TSPGui.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -71,7 +72,7 @@
       <file leaf-file-name="TSPGui.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TSPGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="652" column="0" selection-start="32891" selection-end="32891" vertical-scroll-proportion="-0.0053050397" vertical-offset="11630" max-vertical-offset="13302">
+            <state line="27" column="39" selection-start="776" selection-end="776" vertical-scroll-proportion="0.30571428" vertical-offset="271" max-vertical-offset="13608">
               <folding />
             </state>
           </provider>
@@ -127,7 +128,7 @@
       <file leaf-file-name="ColleagueButton.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ColleagueButton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="21" selection-start="687" selection-end="687" vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="810">
+            <state line="10" column="10" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="792">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#453#454#0" expanded="true" />
@@ -588,7 +589,7 @@
       <workItem from="1392647586836" duration="1012000" />
       <workItem from="1392917748997" duration="825000" />
       <workItem from="1392994623450" duration="1262000" />
-      <workItem from="1392997528540" duration="19835000" />
+      <workItem from="1392997528540" duration="25476000" />
     </task>
     <task id="LOCAL-00001" summary="JGraphX may be useful than JGraph">
       <created>1392309152872</created>
@@ -598,16 +599,21 @@
       <created>1393022762411</created>
       <updated>1393022762411</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="1. Madiator pattern, GUI management&#10;2. Observer pattern, Jgraph (let's start it)">
+      <created>1393026468439</created>
+      <updated>1393026468439</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33522000" />
+    <option name="totallyTimeSpent" value="39163000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1368" height="748" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="-1" y="0" width="1368" height="748" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -628,9 +634,8 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32874617" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="-1" y="0" width="1368" height="748" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1954612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32874617" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -652,7 +657,8 @@
     </option>
     <MESSAGE value="JGraphX may be useful than JGraph" />
     <MESSAGE value="1. Madiator pattern, GUI management (progress)&#10;2. Observer pattern, Jgraph (haven't started)" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. Madiator pattern, GUI management (progress)&#10;2. Observer pattern, Jgraph (haven't started)" />
+    <MESSAGE value="1. Madiator pattern, GUI management&#10;2. Observer pattern, Jgraph (let's start it)" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. Madiator pattern, GUI management&#10;2. Observer pattern, Jgraph (let's start it)" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1028,7 +1034,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ColleagueButton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="21" selection-start="687" selection-end="687" vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="810">
+        <state line="10" column="10" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="792">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#453#454#0" expanded="true" />
@@ -1039,7 +1045,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TSPGui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="652" column="0" selection-start="32891" selection-end="32891" vertical-scroll-proportion="-0.0053050397" vertical-offset="11630" max-vertical-offset="13302">
+        <state line="27" column="39" selection-start="776" selection-end="776" vertical-scroll-proportion="0.30571428" vertical-offset="271" max-vertical-offset="13608">
           <folding />
         </state>
       </provider>

@@ -17,13 +17,15 @@ import java.util.regex.Pattern;
 public class TSPGui extends JFrame implements ActionListener, Mediator {
 
     private GraphGenerator graph;
-    public final static String Initialisation = "Initialisation";
+    public final static String INITIALISATION = "Initialisation";
+    public final static String SHORTEST_PATH = "Shortest Path";
+
 
     public TSPGui() {
         //  graph = new GraphGenerator();
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
-        setMinimumSize(new Dimension(1000, 620));
+        setMinimumSize(new Dimension(1200, 620));
         setTitle("Third Year Project : Visualisation of Travelling Sales Man Problem");
         Container contentPane = getContentPane();
         contentPane.setLayout(new BorderLayout());
@@ -46,8 +48,8 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
         panel1 = new JPanel();
         panel3 = new JPanel();
         panel4 = new JPanel();
-        initButton = new ColleagueButton(Initialisation);
-        button1 = new JButton();
+        initButton = new ColleagueButton(INITIALISATION);
+        shortestButton = new ColleagueButton(SHORTEST_PATH);
         panel19 = new JPanel();
         label5 = new JLabel();
         cityNumberTextField = new ColleagueTextField("");
@@ -56,27 +58,27 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
         panel18 = new JPanel();
         button3 = new JButton();
         button2 = new JButton();
-        panel6 = new JPanel();
+        resultPanel = new JPanel();
         panel7 = new JPanel();
-        label1 = new JLabel();
-        label2 = new JLabel();
-        label3 = new JLabel();
+        nameOfHeuristicsLabel = new JLabel();
+        timeLabel = new JLabel();
+        distanceLabel = new JLabel();
         panel8 = new JPanel();
-        checkBox4 = new JCheckBox();
-        textField8 = new JTextField();
-        textField7 = new JTextField();
+        insertionCheckBox = new JCheckBox();
+        insertionTimeTextF = new JTextField();
+        insertionDisTanceTextF = new JTextField();
         panel9 = new JPanel();
-        checkBox5 = new JCheckBox();
-        textField9 = new JTextField();
-        textField11 = new JTextField();
+        nnCheckBox = new JCheckBox();
+        nnTimeTextF = new JTextField();
+        nnDistanceTextF = new JTextField();
         panel10 = new JPanel();
         checkBox6 = new JCheckBox();
-        textField10 = new JTextField();
-        textField14 = new JTextField();
+        optTimeText = new JTextField();
+        optDistanceTextF = new JTextField();
         panel11 = new JPanel();
-        label4 = new JLabel();
+        advancedHeuLabel = new JLabel();
         panel12 = new JPanel();
-        checkBox8 = new JCheckBox();
+        simultedACheckBox = new JCheckBox();
         textField12 = new JTextField();
         textField16 = new JTextField();
         panel13 = new JPanel();
@@ -118,11 +120,11 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
 
             //======== panel1 ========
             {
-                panel1.setPreferredSize(new Dimension(300, 590));
+                panel1.setPreferredSize(new Dimension(350, 590));
 
                 //======== panel3 ========
                 {
-                    panel3.setBorder(new TitledBorder("Initialisation"));
+                    panel3.setBorder(new TitledBorder(INITIALISATION));
 
                     //======== panel4 ========
                     {
@@ -134,10 +136,10 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
                         initButton.addActionListener(initButton);
                         panel4.add(initButton);
 
-                        //---- button1 ----
-                        button1.setText("Stop/Reset");
-                        button1.setEnabled(false);
-                        panel4.add(button1);
+                        //---- shortestButton ----
+                        shortestButton.setEnabled(false);
+                        shortestButton.setMediator(this);
+                        panel4.add(shortestButton);
                     }
 
                     //======== panel19 ========
@@ -212,10 +214,13 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
 
                         //---- button3 ----
                         button3.setText("Run");
+                        button3.setEnabled(false);
                         panel18.add(button3);
+
 
                         //---- button2 ----
                         button2.setText("Stop");
+                        button2.setEnabled(false);
                         panel18.add(button2);
                     }
 
@@ -235,27 +240,27 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
                     );
                 }
 
-                //======== panel6 ========
+                //======== resultPanel ========
                 {
-                    panel6.setBorder(new TitledBorder("Results"));
-                    panel6.setLayout(new GridLayout(8, 0));
+                    resultPanel.setBorder(new TitledBorder("Results"));
+                    resultPanel.setLayout(new GridLayout(8, 0));
 
                     //======== panel7 ========
                     {
                         panel7.setEnabled(false);
                         panel7.setBorder(null);
 
-                        //---- label1 ----
-                        label1.setText("Name of heuristics");
-                        label1.setEnabled(false);
+                        //---- nameOfHeuristicsLabel ----
+                        nameOfHeuristicsLabel.setText("Name of heuristics");
+                        nameOfHeuristicsLabel.setEnabled(false);
 
-                        //---- label2 ----
-                        label2.setText("Distance");
-                        label2.setEnabled(false);
+                        //---- timeLabel ----
+                        timeLabel.setText("Time");
+                        timeLabel.setEnabled(false);
 
-                        //---- label3 ----
-                        label3.setText("Time");
-                        label3.setEnabled(false);
+                        //---- distanceLabel ----
+                        distanceLabel.setText("Distance");
+                        distanceLabel.setEnabled(false);
 
                         GroupLayout panel7Layout = new GroupLayout(panel7);
                         panel7.setLayout(panel7Layout);
@@ -263,11 +268,11 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
                                 panel7Layout.createParallelGroup()
                                         .addGroup(panel7Layout.createSequentialGroup()
                                                 .addGap(18, 18, 18)
-                                                .addComponent(label1, GroupLayout.PREFERRED_SIZE, 126, GroupLayout.PREFERRED_SIZE)
-                                                .addGap(18, 18, 18)
-                                                .addComponent(label2)
-                                                .addGap(12, 12, 12)
-                                                .addComponent(label3, GroupLayout.PREFERRED_SIZE, 36, GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(nameOfHeuristicsLabel, GroupLayout.PREFERRED_SIZE, 150, GroupLayout.PREFERRED_SIZE)
+                                                .addGap(23, 23, 23)
+                                                .addComponent(timeLabel)
+                                                .addGap(30, 30, 30)
+                                                .addComponent(distanceLabel, GroupLayout.PREFERRED_SIZE, 70, GroupLayout.PREFERRED_SIZE)
                                                 .addContainerGap(3, Short.MAX_VALUE))
                         );
                         panel7Layout.setVerticalGroup(
@@ -275,26 +280,26 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
                                         .addGroup(panel7Layout.createSequentialGroup()
                                                 .addGap(0, 14, Short.MAX_VALUE)
                                                 .addGroup(panel7Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
-                                                        .addComponent(label1, GroupLayout.PREFERRED_SIZE, 21, GroupLayout.PREFERRED_SIZE)
-                                                        .addComponent(label3)
-                                                        .addComponent(label2)))
+                                                        .addComponent(nameOfHeuristicsLabel, GroupLayout.PREFERRED_SIZE, 21, GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(distanceLabel)
+                                                        .addComponent(timeLabel)))
                         );
                     }
-                    panel6.add(panel7);
+                    resultPanel.add(panel7);
 
                     //======== panel8 ========
                     {
                         panel8.setBorder(null);
 
-                        //---- checkBox4 ----
-                        checkBox4.setText("Insertion");
-                        checkBox4.setEnabled(false);
+                        //---- insertionCheckBox ----
+                        insertionCheckBox.setText("Insertion");
+                        insertionCheckBox.setEnabled(false);
 
-                        //---- textField8 ----
-                        textField8.setEnabled(false);
+                        //---- insertionTimeTextF ----
+                        insertionTimeTextF.setEnabled(false);
 
-                        //---- textField7 ----
-                        textField7.setEnabled(false);
+                        //---- insertionDisTanceTextF ----
+                        insertionDisTanceTextF.setEnabled(false);
 
                         GroupLayout panel8Layout = new GroupLayout(panel8);
                         panel8.setLayout(panel8Layout);
@@ -302,37 +307,37 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
                                 panel8Layout.createParallelGroup()
                                         .addGroup(panel8Layout.createSequentialGroup()
                                                 .addContainerGap()
-                                                .addComponent(checkBox4, GroupLayout.PREFERRED_SIZE, 122, GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(insertionCheckBox, GroupLayout.PREFERRED_SIZE, 140, GroupLayout.PREFERRED_SIZE)
                                                 .addGap(28, 28, 28)
-                                                .addComponent(textField8, GroupLayout.PREFERRED_SIZE, 48, GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(insertionTimeTextF, GroupLayout.PREFERRED_SIZE, 70, GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(textField7, GroupLayout.DEFAULT_SIZE, 54, Short.MAX_VALUE))
+                                                .addComponent(insertionDisTanceTextF, GroupLayout.DEFAULT_SIZE, 54, 75))
                         );
                         panel8Layout.setVerticalGroup(
                                 panel8Layout.createParallelGroup()
                                         .addGroup(GroupLayout.Alignment.TRAILING, panel8Layout.createSequentialGroup()
                                                 .addGap(0, 10, Short.MAX_VALUE)
                                                 .addGroup(panel8Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
-                                                        .addComponent(checkBox4)
-                                                        .addComponent(textField8, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-                                                        .addComponent(textField7, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
+                                                        .addComponent(insertionCheckBox)
+                                                        .addComponent(insertionTimeTextF, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(insertionDisTanceTextF, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
                         );
                     }
-                    panel6.add(panel8);
+                    resultPanel.add(panel8);
 
                     //======== panel9 ========
                     {
                         panel9.setBorder(null);
 
-                        //---- checkBox5 ----
-                        checkBox5.setText("Nearest Neighbour");
-                        checkBox5.setEnabled(false);
+                        //---- nnCheckBox ----
+                        nnCheckBox.setText("Nearest Neighbour");
+                        nnCheckBox.setEnabled(false);
 
-                        //---- textField9 ----
-                        textField9.setEnabled(false);
+                        //---- nnTimeTextF ----
+                        nnTimeTextF.setEnabled(false);
 
-                        //---- textField11 ----
-                        textField11.setEnabled(false);
+                        //---- nnDistanceTextF ----
+                        nnDistanceTextF.setEnabled(false);
 
                         GroupLayout panel9Layout = new GroupLayout(panel9);
                         panel9.setLayout(panel9Layout);
@@ -340,23 +345,23 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
                                 panel9Layout.createParallelGroup()
                                         .addGroup(panel9Layout.createSequentialGroup()
                                                 .addContainerGap()
-                                                .addComponent(checkBox5, GroupLayout.PREFERRED_SIZE, 148, GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(nnCheckBox, GroupLayout.PREFERRED_SIZE, 166, GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(textField9, GroupLayout.PREFERRED_SIZE, 48, GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(nnTimeTextF, GroupLayout.PREFERRED_SIZE, 70, GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(textField11, GroupLayout.DEFAULT_SIZE, 54, Short.MAX_VALUE))
+                                                .addComponent(nnDistanceTextF, GroupLayout.DEFAULT_SIZE, 54, 75))
                         );
                         panel9Layout.setVerticalGroup(
                                 panel9Layout.createParallelGroup()
                                         .addGroup(GroupLayout.Alignment.TRAILING, panel9Layout.createSequentialGroup()
                                                 .addGap(0, 10, Short.MAX_VALUE)
                                                 .addGroup(panel9Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
-                                                        .addComponent(checkBox5)
-                                                        .addComponent(textField9, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-                                                        .addComponent(textField11, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
+                                                        .addComponent(nnCheckBox)
+                                                        .addComponent(nnTimeTextF, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(nnDistanceTextF, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
                         );
                     }
-                    panel6.add(panel9);
+                    resultPanel.add(panel9);
 
                     //======== panel10 ========
                     {
@@ -366,11 +371,11 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
                         checkBox6.setText("2 opt & 3 opt");
                         checkBox6.setEnabled(false);
 
-                        //---- textField10 ----
-                        textField10.setEnabled(false);
+                        //---- optTimeText ----
+                        optTimeText.setEnabled(false);
 
-                        //---- textField14 ----
-                        textField14.setEnabled(false);
+                        //---- optDistanceTextF ----
+                        optDistanceTextF.setEnabled(false);
 
                         GroupLayout panel10Layout = new GroupLayout(panel10);
                         panel10.setLayout(panel10Layout);
@@ -378,11 +383,11 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
                                 panel10Layout.createParallelGroup()
                                         .addGroup(panel10Layout.createSequentialGroup()
                                                 .addContainerGap()
-                                                .addComponent(checkBox6, GroupLayout.PREFERRED_SIZE, 142, GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(checkBox6, GroupLayout.PREFERRED_SIZE, 160, GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(textField10, GroupLayout.PREFERRED_SIZE, 48, GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(optTimeText, GroupLayout.PREFERRED_SIZE, 70, GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(textField14, GroupLayout.DEFAULT_SIZE, 54, Short.MAX_VALUE))
+                                                .addComponent(optDistanceTextF, GroupLayout.DEFAULT_SIZE, 54, 75))
                         );
                         panel10Layout.setVerticalGroup(
                                 panel10Layout.createParallelGroup()
@@ -390,46 +395,46 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
                                                 .addGap(0, 10, Short.MAX_VALUE)
                                                 .addGroup(panel10Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                                                         .addComponent(checkBox6)
-                                                        .addComponent(textField10, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-                                                        .addComponent(textField14, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
+                                                        .addComponent(optTimeText, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(optDistanceTextF, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
                         );
                     }
-                    panel6.add(panel10);
+                    resultPanel.add(panel10);
 
                     //======== panel11 ========
                     {
                         panel11.setBorder(null);
 
-                        //---- label4 ----
-                        label4.setText("Advanced Heuristics");
-                        label4.setEnabled(false);
+                        //---- advancedHeuLabel ----
+                        advancedHeuLabel.setText("Advanced Heuristics");
+                        advancedHeuLabel.setEnabled(false);
 
                         GroupLayout panel11Layout = new GroupLayout(panel11);
                         panel11.setLayout(panel11Layout);
                         panel11Layout.setHorizontalGroup(
                                 panel11Layout.createParallelGroup()
                                         .addGroup(GroupLayout.Alignment.TRAILING, panel11Layout.createSequentialGroup()
-                                                .addContainerGap(65, Short.MAX_VALUE)
-                                                .addComponent(label4, GroupLayout.PREFERRED_SIZE, 152, GroupLayout.PREFERRED_SIZE)
-                                                .addGap(51, 51, 51))
+                                                .addContainerGap(75, 100)
+                                                .addComponent(advancedHeuLabel, GroupLayout.PREFERRED_SIZE, 152, GroupLayout.PREFERRED_SIZE)
+                                                .addGap(1, 1, 1))
                         );
                         panel11Layout.setVerticalGroup(
                                 panel11Layout.createParallelGroup()
                                         .addGroup(GroupLayout.Alignment.TRAILING, panel11Layout.createSequentialGroup()
-                                                .addContainerGap(14, Short.MAX_VALUE)
-                                                .addComponent(label4)
+                                                .addContainerGap(1, 1)
+                                                .addComponent(advancedHeuLabel)
                                                 .addContainerGap())
                         );
                     }
-                    panel6.add(panel11);
+                    resultPanel.add(panel11);
 
                     //======== panel12 ========
                     {
                         panel12.setBorder(null);
 
-                        //---- checkBox8 ----
-                        checkBox8.setText("Simul.. Annealing");
-                        checkBox8.setEnabled(false);
+                        //---- simultedACheckBox ----
+                        simultedACheckBox.setText("Simulated Annealing");
+                        simultedACheckBox.setEnabled(false);
 
                         //---- textField12 ----
                         textField12.setEnabled(false);
@@ -443,23 +448,23 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
                                 panel12Layout.createParallelGroup()
                                         .addGroup(panel12Layout.createSequentialGroup()
                                                 .addContainerGap()
-                                                .addComponent(checkBox8, GroupLayout.PREFERRED_SIZE, 134, GroupLayout.PREFERRED_SIZE)
-                                                .addGap(20, 20, 20)
-                                                .addComponent(textField16, GroupLayout.PREFERRED_SIZE, 48, GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(simultedACheckBox, GroupLayout.PREFERRED_SIZE, 180, GroupLayout.PREFERRED_SIZE)
+                                                .addGap(0, 0, 0)
+                                                .addComponent(textField16, GroupLayout.PREFERRED_SIZE, 67, GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(textField12, GroupLayout.DEFAULT_SIZE, 54, Short.MAX_VALUE))
+                                                .addComponent(textField12, GroupLayout.DEFAULT_SIZE, 60, 67))
                         );
                         panel12Layout.setVerticalGroup(
                                 panel12Layout.createParallelGroup()
                                         .addGroup(GroupLayout.Alignment.TRAILING, panel12Layout.createSequentialGroup()
                                                 .addGap(0, 10, Short.MAX_VALUE)
                                                 .addGroup(panel12Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
-                                                        .addComponent(checkBox8)
+                                                        .addComponent(simultedACheckBox)
                                                         .addComponent(textField16, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
                                                         .addComponent(textField12, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
                         );
                     }
-                    panel6.add(panel12);
+                    resultPanel.add(panel12);
 
                     //======== panel13 ========
                     {
@@ -482,10 +487,10 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
                                         .addGroup(panel13Layout.createSequentialGroup()
                                                 .addContainerGap()
                                                 .addComponent(checkBox9, GroupLayout.PREFERRED_SIZE, 119, GroupLayout.PREFERRED_SIZE)
-                                                .addGap(35, 35, 35)
-                                                .addComponent(textField13, GroupLayout.PREFERRED_SIZE, 48, GroupLayout.PREFERRED_SIZE)
+                                                .addGap(60, 60, 60)
+                                                .addComponent(textField13, GroupLayout.PREFERRED_SIZE, 67, GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(textField17, GroupLayout.DEFAULT_SIZE, 54, Short.MAX_VALUE))
+                                                .addComponent(textField17, GroupLayout.DEFAULT_SIZE, 65, 67))
                         );
                         panel13Layout.setVerticalGroup(
                                 panel13Layout.createParallelGroup()
@@ -497,7 +502,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
                                                         .addComponent(textField17, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
                         );
                     }
-                    panel6.add(panel13);
+                    resultPanel.add(panel13);
                 }
 
                 //======== panel14 ========
@@ -521,7 +526,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
                         panel1Layout.createParallelGroup()
                                 .addComponent(panel3, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(panel14, GroupLayout.DEFAULT_SIZE, 280, Short.MAX_VALUE)
-                                .addComponent(panel6, GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
+                                .addComponent(resultPanel, GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
                                 .addComponent(panel5, GroupLayout.Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 );
                 panel1Layout.setVerticalGroup(
@@ -529,7 +534,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
                                 .addGroup(panel1Layout.createSequentialGroup()
                                         .addComponent(panel3, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(panel6, GroupLayout.PREFERRED_SIZE, 303, GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(resultPanel, GroupLayout.PREFERRED_SIZE, 303, GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(panel5, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
@@ -596,7 +601,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
     private JPanel panel3;
     private JPanel panel4;
     private ColleagueButton initButton;
-    private JButton button1;
+    private ColleagueButton shortestButton;
     private JPanel panel19;
     private JLabel label5;
     private ColleagueTextField cityNumberTextField;
@@ -605,27 +610,27 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
     private JPanel panel18;
     private JButton button3;
     private JButton button2;
-    private JPanel panel6;
+    private JPanel resultPanel;
     private JPanel panel7;
-    private JLabel label1;
-    private JLabel label2;
-    private JLabel label3;
+    private JLabel nameOfHeuristicsLabel;
+    private JLabel timeLabel;
+    private JLabel distanceLabel;
     private JPanel panel8;
-    private JCheckBox checkBox4;
-    private JTextField textField8;
-    private JTextField textField7;
+    private JCheckBox insertionCheckBox;
+    private JTextField insertionTimeTextF;
+    private JTextField insertionDisTanceTextF;
     private JPanel panel9;
-    private JCheckBox checkBox5;
-    private JTextField textField9;
-    private JTextField textField11;
+    private JCheckBox nnCheckBox;
+    private JTextField nnTimeTextF;
+    private JTextField nnDistanceTextF;
     private JPanel panel10;
     private JCheckBox checkBox6;
-    private JTextField textField10;
-    private JTextField textField14;
+    private JTextField optTimeText;
+    private JTextField optDistanceTextF;
     private JPanel panel11;
-    private JLabel label4;
+    private JLabel advancedHeuLabel;
     private JPanel panel12;
-    private JCheckBox checkBox8;
+    private JCheckBox simultedACheckBox;
     private JTextField textField12;
     private JTextField textField16;
     private JPanel panel13;
@@ -650,15 +655,25 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
     public void colleagueChanged() {
 
         cityTextChanged();
-        if (ColleagueButton.pushed) startButtonPushed();
+        startButtonPushed();
+        shortestButtonPushed();
+
+    }
+
+    private void shortestButtonPushed() {
+        if (shortestButton.pushed) {
+
+        }
 
     }
 
     private void startButtonPushed() {
         //   System.out.println(initButton.getActionCommand());
         //   System.out.println(initButton.getText());
+        if (initButton.pushed)
 
-        if (initButton.e.getSource() == initButton) {
+        {
+            if (initButton.e.getSource() == initButton) {
             if (panelMap.getComponentCount() > 0) {
                 panelMap.remove(0);
             }
@@ -670,8 +685,10 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
             NodeDataStore nodeArray = new NodeDataStore(Integer.parseInt(cityNumberTextField.getText()));
             this.graph = new GraphGenerator(nodeArray);
             panelMap.add(graph.returnJGraph());
-            pack();
+                shortestButton.setColleagueEnabled(true);
+                pack();
 
+            }
         }
     }
 
