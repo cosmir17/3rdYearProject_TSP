@@ -12,8 +12,11 @@ public class Main {
         // GuiForTestingSmallparts gui = new GuiForTestingSmallparts(new GraphGenerator(4));
         //TSPGui gui = new TSPGui();
 
-        TSPGui panel = new TSPGui();
-        //NewGraphGenerator newGraph = new NewGraphGenerator();
+        //TSPGui panel = new TSPGui();
+        // NewGraphGenerator newGraph = new NewGraphGenerator();
+
+        NewGraphGenerator graphG = new NewGraphGenerator();
+        TSPGui panel = new TSPGui(graphG);
 
     }
 

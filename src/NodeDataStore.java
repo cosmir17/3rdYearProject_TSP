@@ -41,5 +41,9 @@ public class NodeDataStore extends Node {
        return nodeDataStore;
     }
 
+    public int size() {
+        return nodeDataStore.size();
+    }
+
 
 }

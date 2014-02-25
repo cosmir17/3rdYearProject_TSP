@@ -5,31 +5,20 @@
 import com.mxgraph.swing.mxGraphComponent;
 import com.mxgraph.view.mxGraph;
 
-public class NewGraphGenerator {
-    mxGraph graph = new mxGraph();
-    Object parent = graph.getDefaultParent();
+import javax.swing.*;
 
-    public NewGraphGenerator() {
+public class NewGraphGenerator2 extends JFrame {
+
+    public NewGraphGenerator2() {
+        super("Hello, World!");
 
 
+        mxGraph graph = new mxGraph();
+        Object parent = graph.getDefaultParent();
         // mxGraph.getCellStyle(graph);
-        //  graph를 받아서 알고리즘
-    }
 
-    public void createGraph(int numberOfCity) {
-        NodeDataStore nodeArray = new NodeDataStore(numberOfCity);
         graph.getModel().beginUpdate();
-        Object[] graphNode = new Object[nodeArray.size()];
         try {
-            for (int i = 0; i < nodeArray.size(); i++) {
-                graphNode[i] = graph.insertVertex(parent, null,
-                        nodeArray.returnNodeArrayList().get(i).cityName,
-                        nodeArray.returnNodeArrayList().get(i).returnX(),
-                        nodeArray.returnNodeArrayList().get(i).returnY(),
-                        30, 15, "ROUNDED");
-
-            }
-/*
             Object v1 = graph.insertVertex(parent, null, "Hello", 20, 20, 30, 15);
             Object v2 = graph.insertVertex(parent, null, "World!", 240, 150, 30, 15);
             graph.insertEdge(parent, null, "Edge", v1, v2);
@@ -39,21 +28,20 @@ public class NewGraphGenerator {
             Object v5 = graph.insertVertex(parent, null, "Hello", 80, 80, 30, 20, ";strokeColor=red;fillColor=green");
             Object v6 = graph.insertVertex(parent, null, "Hello", 120, 120, 30, 20, "defaultVertex;fillColor=blue");
             Object v7 = graph.insertVertex(parent, null, "Hello", 120, 120, 30, 20, "");
-*/
+
 
         } finally {
             graph.getModel().endUpdate();
         }
-    }
 
-    public mxGraphComponent componentGetter() {
+        //  graph를 받아서 알고리즘
+
         mxGraphComponent graphComponent = new mxGraphComponent(graph);
-        return graphComponent;
-        /*
         getContentPane().add(graphComponent);
+
         super.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         super.setSize(500, 520);
         super.setVisible(true);
-    */
+
     }
 }

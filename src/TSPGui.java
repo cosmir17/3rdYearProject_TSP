@@ -16,13 +16,15 @@ import java.util.regex.Pattern;
  */
 public class TSPGui extends JFrame implements ActionListener, Mediator {
 
-    private GraphGenerator graph;
+    //  private GraphGenerator graph;
+    private NewGraphGenerator graphG;
     public final static String INITIALISATION = "Initialisation";
     public final static String SHORTEST_PATH = "Shortest Path";
 
 
-    public TSPGui() {
+    public TSPGui(NewGraphGenerator graphG) {
         //  graph = new GraphGenerator();
+        this.graphG = graphG;
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
         setMinimumSize(new Dimension(1200, 620));
@@ -702,19 +704,33 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
                 if (panelMap.getComponentCount() > 0) {
                     panelMap.remove(0);
                 }
+
+                graphG.createGraph(numberofcityGetter());
+                panelMap.add(graphG.componentGetter());
+                shortestButton.setColleagueEnabled(true);
+
                 //System.out.println("working");
                 //System.out.println(cityNumberTextField.getText());
                 // panelMap.add(new JLabel("sdf"));
 
                 //System.out.println(cityNumberTextField.getText());
-                NodeDataStore nodeArray = new NodeDataStore(Integer.parseInt(cityNumberTextField.getText()));
+                //NodeDataStore nodeArray = new NodeDataStore(Integer.parseInt(cityNumberTextField.getText()));
+
+                /*
+                NodeDataStore nodeArray = new NodeDataStore(numberofcityGetter());
                 this.graph = new GraphGenerator(nodeArray);
                 panelMap.add(graph.returnJGraph());
                 shortestButton.setColleagueEnabled(true);
+                */
 
 
             }
         }
+    }
+
+    private int numberofcityGetter() {
+        int numberofcity = Integer.parseInt(cityNumberTextField.getText());
+        return numberofcity;
     }
 
     private void cityTextChanged() {
