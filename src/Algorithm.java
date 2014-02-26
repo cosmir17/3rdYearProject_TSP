@@ -2,13 +2,14 @@
  * Created by lloydp on 09/02/14.
  */
 public abstract class Algorithm {
-    protected NodeDataStore nodeData;
+    protected NewGraphGenerator graphG;
 
-    Algorithm() {
+    Algorithm(NewGraphGenerator graphG) {
+        this.graphG = graphG;
     }
 
 
-    abstract void run(NodeDataStore nodeData);
+    abstract void run();
 
 
 }

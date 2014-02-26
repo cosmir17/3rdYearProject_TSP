@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="new Graph generator created and activated using mxGraph.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/NewGraphGenerator2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/graphModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Algorithm.java" afterPath="$PROJECT_DIR$/src/Algorithm.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/InsertionAlgo.java" afterPath="$PROJECT_DIR$/src/InsertionAlgo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NearestNeighbourAlgo.java" afterPath="$PROJECT_DIR$/src/NearestNeighbourAlgo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NewGraphGenerator.java" afterPath="$PROJECT_DIR$/src/NewGraphGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NodeDataStore.java" afterPath="$PROJECT_DIR$/src/NodeDataStore.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TSPGui.java" afterPath="$PROJECT_DIR$/src/TSPGui.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -72,19 +71,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ColleagueCheckBox.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ColleagueCheckBox.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="36" selection-start="633" selection-end="633" vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="666">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Observer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Observer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="44" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="216">
+            <state line="4" column="44" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="216">
               <folding />
             </state>
           </provider>
@@ -99,28 +89,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Node.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Node.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="13" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TSPGui.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/TSPGui.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="709" column="57" selection-start="36285" selection-end="36285" vertical-scroll-proportion="0.43318486" vertical-offset="12265" max-vertical-offset="14346">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="NewGraphGenerator2.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NewGraphGenerator2.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="9" column="13" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="846">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Algorithm.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Algorithm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="25" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewGraphGenerator.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/NewGraphGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="68" column="5" selection-start="2658" selection-end="2658" vertical-scroll-proportion="1.6040268" vertical-offset="214" max-vertical-offset="1296">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InsertionAlgo.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/InsertionAlgo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="4" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
               <folding />
             </state>
           </provider>
@@ -196,6 +195,9 @@
         <option value="$PROJECT_DIR$/src/NodeDataStore.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/NewGraphGenerator.java" />
+        <option value="$PROJECT_DIR$/src/Algorithm.java" />
+        <option value="$PROJECT_DIR$/src/NearestNeighbourAlgo.java" />
+        <option value="$PROJECT_DIR$/src/InsertionAlgo.java" />
         <option value="$PROJECT_DIR$/src/TSPGui.java" />
       </list>
     </option>
@@ -306,6 +308,7 @@
     <property name="FullScreen" value="false" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
+    <property name="LayoutCode.rearrangeEntriesJava" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -593,7 +596,7 @@
       <workItem from="1392994623450" duration="1262000" />
       <workItem from="1392997528540" duration="28894000" />
       <workItem from="1393063721600" duration="5176000" />
-      <workItem from="1393336819479" duration="8464000" />
+      <workItem from="1393336819479" duration="10259000" />
     </task>
     <task id="LOCAL-00001" summary="JGraphX may be useful than JGraph">
       <created>1392309152872</created>
@@ -615,11 +618,15 @@
       <created>1393034900034</created>
       <updated>1393034900034</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="new Graph generator created and activated using mxGraph.">
+      <created>1393371943565</created>
+      <updated>1393371943565</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56221000" />
+    <option name="totallyTimeSpent" value="58016000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1362" y="0" width="1688" height="1053" extended-state="6" />
@@ -645,7 +652,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15773809" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328125" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.328125" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="1567" y="179" width="724" height="513" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -685,22 +692,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/NewGraphGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="31" selection-start="1496" selection-end="1496" vertical-scroll-proportion="0.0" vertical-offset="702" max-vertical-offset="864">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NearestNeighbourAlgo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="13" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="306">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TSPGui.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="98" column="5" selection-start="2313" selection-end="2313" vertical-scroll-proportion="0.0" vertical-offset="1470" max-vertical-offset="10905">
@@ -743,9 +734,7 @@
     <entry file="file://$PROJECT_DIR$/src/NewGraphGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="31" selection-start="1496" selection-end="1496" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="720">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -798,9 +787,7 @@
     <entry file="file://$PROJECT_DIR$/src/NewGraphGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="31" selection-start="1496" selection-end="1496" vertical-scroll-proportion="0.0" vertical-offset="702" max-vertical-offset="864">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -853,9 +840,7 @@
     <entry file="file://$PROJECT_DIR$/src/NewGraphGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="31" selection-start="1496" selection-end="1496" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="720">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -901,9 +886,7 @@
     <entry file="file://$PROJECT_DIR$/src/NewGraphGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="18" selection-start="1191" selection-end="1191" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="900">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -917,13 +900,6 @@
     <entry file="file://$PROJECT_DIR$/src/CityName.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="12" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="9810">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NearestNeighbourAlgo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="13" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
           <folding />
         </state>
       </provider>
@@ -991,13 +967,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Observer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="44" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="216">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ColleagueButton.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="66" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
@@ -1008,13 +977,6 @@
     <entry file="file://$PROJECT_DIR$/src/Colleague.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="62" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mediator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="43" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
           <folding />
         </state>
       </provider>
@@ -1047,25 +1009,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mediator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="43" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="25" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="40" selection-start="563" selection-end="563" vertical-scroll-proportion="0.35565314" vertical-offset="0" max-vertical-offset="911">
+        <state line="18" column="42" selection-start="558" selection-end="558" vertical-scroll-proportion="0.54362416" vertical-offset="0" max-vertical-offset="596">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InsertionAlgo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="4" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Observer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="44" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="216">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TSPGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="684" column="44" selection-start="35457" selection-end="35457" vertical-scroll-proportion="0.56946826" vertical-offset="11872" max-vertical-offset="14436">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NearestNeighbourAlgo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="16" selection-start="210" selection-end="210" vertical-scroll-proportion="0.30201343" vertical-offset="0" max-vertical-offset="596">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/NewGraphGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="45" selection-start="1911" selection-end="1911" vertical-scroll-proportion="0.7233809" vertical-offset="223" max-vertical-offset="1188">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TSPGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="709" column="57" selection-start="36285" selection-end="36285" vertical-scroll-proportion="0.43318486" vertical-offset="12265" max-vertical-offset="14346">
+        <state line="68" column="5" selection-start="2658" selection-end="2658" vertical-scroll-proportion="1.6040268" vertical-offset="214" max-vertical-offset="1296">
           <folding />
         </state>
       </provider>

@@ -3,8 +3,12 @@
  */
 public class InsertionAlgo extends Algorithm {
 
+    InsertionAlgo(NewGraphGenerator graphG) {
+        super(graphG);
+    }
+
     @Override
-    void run(NodeDataStore nodeData) {
+    void run() {
 
     }
 }

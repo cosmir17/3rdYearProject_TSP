@@ -27,7 +27,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
         this.graphG = graphG;
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
-        setMinimumSize(new Dimension(1200, 620));
+        setMinimumSize(new Dimension(1300, 620));
         setTitle("Third Year Project : Visualisation of Travelling Sales Man Problem");
         Container contentPane = getContentPane();
         contentPane.setLayout(new BorderLayout());
@@ -677,17 +677,22 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
     private void shortestButtonPushed() {
         if (shortestButton.pushed) {
 
-
             nameOfHeuristicsLabel.setColleagueEnabled(true);
             timeLabel.setColleagueEnabled(true);
             distanceLabel.setColleagueEnabled(true);
-            insertionCheckBox.setColleagueEnabled(true);
-            nnCheckBox.setColleagueEnabled(true);
-            optAlgoCheckBox.setColleagueEnabled(true);
 
-            advancedHeuLabel.setColleagueEnabled(true);
-            simultedACheckBox.setColleagueEnabled(true);
-            tabuCheckBox.setColleagueEnabled(true);
+
+            new InsertionAlgo(graphG).run();
+            insertionCheckBox.setColleagueEnabled(true);
+
+            new NearestNeighbourAlgo(graphG).run();
+            nnCheckBox.setColleagueEnabled(true);
+
+            //optAlgoCheckBox.setColleagueEnabled(true);
+
+            //advancedHeuLabel.setColleagueEnabled(true);
+            //simultedACheckBox.setColleagueEnabled(true);
+            //tabuCheckBox.setColleagueEnabled(true);
 
 
         }

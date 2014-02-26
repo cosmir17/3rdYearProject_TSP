@@ -26,7 +26,8 @@ public class NewGraphGenerator {
                         nodeArray.returnNodeArrayList().get(i).cityName,
                         nodeArray.returnNodeArrayList().get(i).returnX(),
                         nodeArray.returnNodeArrayList().get(i).returnY(),
-                        30, 15, "ROUNDED");
+                        cityNameStringLengthGetter(nodeArray.returnNodeArrayList().get(i).cityName),
+                        15, "ROUNDED");
 
             }
 /*
@@ -55,5 +56,15 @@ public class NewGraphGenerator {
         super.setSize(500, 520);
         super.setVisible(true);
     */
+    }
+
+    private int cityNameStringLengthGetter(String city) {
+        if (city.length() < 3) return 25;
+        else if (city.length() < 5) return 35;
+        else if (city.length() < 8) return 50;
+        else if (city.length() < 10) return 60;
+        else if (city.length() < 12) return 80;
+        else if (city.length() < 14) return 95;
+        else return 110;
     }
 }
