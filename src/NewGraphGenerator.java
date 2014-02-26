@@ -8,7 +8,7 @@ import com.mxgraph.view.mxGraph;
 import java.awt.*;
 
 public class NewGraphGenerator {
-    mxGraph graph = new mxGraph();
+    static mxGraph graph = new mxGraph();
     Object parent = graph.getDefaultParent();
     Object[] graphNodeArray;
 

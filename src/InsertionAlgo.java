@@ -1,3 +1,5 @@
+import com.mxgraph.swing.mxGraphComponent;
+
 /**
  * Created by lloydp on 09/02/14.
  */
@@ -8,7 +10,7 @@ public class InsertionAlgo extends Algorithm {
     }
 
     @Override
-    void run() {
-
+    public mxGraphComponent run() {
+        return graphG.componentGetter();
     }
 }
