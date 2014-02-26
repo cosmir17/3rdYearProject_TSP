@@ -5,9 +5,12 @@
 import com.mxgraph.swing.mxGraphComponent;
 import com.mxgraph.view.mxGraph;
 
+import java.awt.*;
+
 public class NewGraphGenerator {
     mxGraph graph = new mxGraph();
     Object parent = graph.getDefaultParent();
+    Object[] graphNodeArray;
 
     public NewGraphGenerator() {
 
@@ -18,11 +21,13 @@ public class NewGraphGenerator {
 
     public void createGraph(int numberOfCity) {
         NodeDataStore nodeArray = new NodeDataStore(numberOfCity);
+        graph.removeCells(graphNodeArray, true);
         graph.getModel().beginUpdate();
-        Object[] graphNode = new Object[nodeArray.size()];
+        this.graphNodeArray = new Object[nodeArray.size()];
+
         try {
             for (int i = 0; i < nodeArray.size(); i++) {
-                graphNode[i] = graph.insertVertex(parent, null,
+                graphNodeArray[i] = graph.insertVertex(parent, null,
                         nodeArray.returnNodeArrayList().get(i).cityName,
                         nodeArray.returnNodeArrayList().get(i).returnX(),
                         nodeArray.returnNodeArrayList().get(i).returnY(),
@@ -49,6 +54,7 @@ public class NewGraphGenerator {
 
     public mxGraphComponent componentGetter() {
         mxGraphComponent graphComponent = new mxGraphComponent(graph);
+        graphComponent.setPreferredSize(new Dimension(910, 530));
         return graphComponent;
         /*
         getContentPane().add(graphComponent);

@@ -672,20 +672,25 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
         shortestButtonPushed();
 
         pack();
+
+        // System.out.println(initButton.e.getSource());
     }
 
     private void shortestButtonPushed() {
         if (shortestButton.pushed) {
+
+            //  System.out.println("short source =  " + shortestButton.getSource());
+            System.out.println("short actionCommand =  " + shortestButton.getActionCommand());
 
             nameOfHeuristicsLabel.setColleagueEnabled(true);
             timeLabel.setColleagueEnabled(true);
             distanceLabel.setColleagueEnabled(true);
 
 
-            new InsertionAlgo(graphG).run();
+            // new InsertionAlgo(graphG).run();
             insertionCheckBox.setColleagueEnabled(true);
 
-            new NearestNeighbourAlgo(graphG).run();
+            //   new NearestNeighbourAlgo(graphG).run();
             nnCheckBox.setColleagueEnabled(true);
 
             //optAlgoCheckBox.setColleagueEnabled(true);
@@ -694,7 +699,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
             //simultedACheckBox.setColleagueEnabled(true);
             //tabuCheckBox.setColleagueEnabled(true);
 
-
+            shortestButton.pushed = false;
         }
 
     }
@@ -705,7 +710,11 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
         if (initButton.pushed)
 
         {
-            if (initButton.e.getSource() == initButton) {
+            if (initButton.getActionCommand().equals(INITIALISATION)) {
+                // System.out.println("init ac  =   "+initButton.e.getActionCommand());
+                //  System.out.println("init source  =   "+initButton.e.getSource());
+                System.out.println("init something  =   " + initButton.getActionCommand());
+
                 if (panelMap.getComponentCount() > 0) {
                     panelMap.remove(0);
                 }
@@ -727,7 +736,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
                 panelMap.add(graph.returnJGraph());
                 shortestButton.setColleagueEnabled(true);
                 */
-
+                initButton.pushed = false;
 
             }
         }
