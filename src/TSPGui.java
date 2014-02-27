@@ -73,8 +73,8 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
         insertionDisTanceTextF = new JTextField();
         panel9 = new JPanel();
         nnCheckBox = new ColleagueCheckBox("Nearest Neighbour");
-        nnTimeTextF = new JTextField();
-        nnDistanceTextF = new JTextField();
+        nnTimeTextF = new ColleagueSecPanelTextF();
+        nnDistanceTextF = new ColleagueSecPanelTextF();
         panel10 = new JPanel();
         optAlgoCheckBox = new ColleagueCheckBox("2 opt & 3 opt");
         optTimeText = new JTextField();
@@ -345,9 +345,11 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
 
                         //---- nnTimeTextF ----
                         nnTimeTextF.setEnabled(false);
+                        nnTimeTextF.setMediator(this);
 
                         //---- nnDistanceTextF ----
                         nnDistanceTextF.setEnabled(false);
+                        nnTimeTextF.setMediator(this);
 
                         GroupLayout panel9Layout = new GroupLayout(panel9);
                         panel9.setLayout(panel9Layout);
@@ -636,8 +638,8 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
     private JTextField insertionDisTanceTextF;
     private JPanel panel9;
     private ColleagueCheckBox nnCheckBox;
-    private JTextField nnTimeTextF;
-    private JTextField nnDistanceTextF;
+    private ColleagueSecPanelTextF nnTimeTextF;
+    private ColleagueSecPanelTextF nnDistanceTextF;
     private JPanel panel10;
     private ColleagueCheckBox optAlgoCheckBox;
     private JTextField optTimeText;
@@ -769,7 +771,8 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
 
 
         nnCheckBox.setColleagueEnabled(bswitch);
-
+        nnTimeTextF.setColleagueEnabled(bswitch);
+        nnDistanceTextF.setColleagueEnabled(bswitch);
         //optAlgoCheckBox.setColleagueEnabled(true);
 
         //advancedHeuLabel.setColleagueEnabled(true);
