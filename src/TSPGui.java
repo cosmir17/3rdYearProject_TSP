@@ -684,27 +684,35 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
             //  System.out.println("short source =  " + shortestButton.getSource());
             //System.out.println("short actionCommand =  " + shortestButton.getActionCommand());
 
-            nameOfHeuristicsLabel.setColleagueEnabled(true);
-            timeLabel.setColleagueEnabled(true);
-            distanceLabel.setColleagueEnabled(true);
+            //nameOfHeuristicsLabel.setColleagueEnabled(true);
+            //timeLabel.setColleagueEnabled(true);
+            //distanceLabel.setColleagueEnabled(true);
 
 
             //  insertGraphintoPanelMap(new InsertionAlgo(graphG).run());
-            insertionCheckBox.setColleagueEnabled(true);
+            //insertionCheckBox.setColleagueEnabled(true);
 
-
-            insertGraphintoPanelMap(new NearestNeighbourAlgo(graphG).run());
-            nnCheckBox.setColleagueEnabled(true);
+            nearestAlgorithmRunner();
+            // nnCheckBox.setColleagueEnabled(true);
 
             //optAlgoCheckBox.setColleagueEnabled(true);
 
             //advancedHeuLabel.setColleagueEnabled(true);
             //simultedACheckBox.setColleagueEnabled(true);
             //tabuCheckBox.setColleagueEnabled(true);
-
+            disableSecondPanelElements(true);
             shortestButton.pushed = false;
         }
 
+    }
+
+    private void nearestAlgorithmRunner() {
+        long start = System.currentTimeMillis();
+        NearestNeighbourAlgo nnAlgo = new NearestNeighbourAlgo(graphG);
+        long end = System.currentTimeMillis();
+        nnDistanceTextF.setText(String.valueOf(nnAlgo.getTotalDistance()));
+        nnTimeTextF.setText(String.valueOf((end - start)));
+        insertGraphintoPanelMap(nnAlgo.run());
     }
 
     private void startButtonPushed() {

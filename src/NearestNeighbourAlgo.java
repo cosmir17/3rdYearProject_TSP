@@ -10,21 +10,27 @@ import java.util.TreeMap;
  */
 public class NearestNeighbourAlgo extends Algorithm {
 
+    double totalDistance = 0;
 
     NearestNeighbourAlgo(NewGraphGenerator graphG) {
         super(graphG);
+        drawer();
+    }
 
-        //edgeDrawerFromNodeItoJ(3, 4);
-        //distanceTableCreatorFromNodei();
-        drawerIterator(nodeArray.length - 1);
+    private void drawer() {
 
+        int lastNode = drawerIterator(nodeArray.length - 2);
+        edgeDrawerFromBeginningtoEnd(lastNode);
+    }
 
+    private void edgeDrawerFromBeginningtoEnd(int lastNode) {
+        edgeDrawerFromNodeItoJ(lastNode, 0);
     }
 
     private int drawerIterator(int i) {
 
         if (i == 0) {
-            // System.out.println("sdsdfsdfsdgsgd");
+
             int next = edgeDrawerfromItoNextClosestNode(0);
             return next;
         }
@@ -77,8 +83,12 @@ public class NearestNeighbourAlgo extends Algorithm {
     private void edgeDrawerFromNodeItoJ(int i, int j) {
         graph.getModel().beginUpdate();
 
-        graph.insertEdge(parent, null, distanceFinder(i, j), nodeArray[i], nodeArray[j]);
-        graph.getModel().endUpdate();
+        try {
+            graph.insertEdge(parent, null, distanceFinder(i, j), nodeArray[i], nodeArray[j]);
+            totalDistance = totalDistance + distanceFinder(i, j);
+        } finally {
+            graph.getModel().endUpdate();
+        }
 
 
     }
@@ -87,5 +97,9 @@ public class NearestNeighbourAlgo extends Algorithm {
     public mxGraphComponent run() {
         return graphG.componentGetter();
 
+    }
+
+    public double getTotalDistance() {
+        return totalDistance;
     }
 }
