@@ -54,7 +54,7 @@ import org.jgrapht.graph.DefaultEdge;
 
 
 /**
- * A JgrahDemo_notMyProject applet that shows how to use JGraph to visualize JGraphT graphs.
+ * A JgrahDemoNotMyProject applet that shows how to use JGraph to visualize JGraphT graphs.
  *
  * @author Barak Naveh
  * @since Aug 3, 2003
@@ -76,7 +76,7 @@ public class JGraphAdapterDemo
     
 
     /**
-     * An alternative starting point for this JgrahDemo_notMyProject, to also allow running this
+     * An alternative starting point for this JgrahDemoNotMyProject, to also allow running this
      * applet as an application.
      *
      * @param args ignored.

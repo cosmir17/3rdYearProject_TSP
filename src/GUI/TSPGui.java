@@ -1,3 +1,7 @@
+package GUI;
+
+import Algorithm.NearestNeighbourAlgo;
+import Graph.NewGraphGenerator;
 import com.mxgraph.swing.mxGraphComponent;
 
 import javax.swing.*;
@@ -18,14 +22,14 @@ import java.util.regex.Pattern;
  */
 public class TSPGui extends JFrame implements ActionListener, Mediator {
 
-    //  private GraphGenerator graph;
+    //  private Graph.Testing.GraphGenerator graph;
     private NewGraphGenerator graphG;
     public final static String INITIALISATION = "Initialisation";
     public final static String SHORTEST_PATH = "Shortest Path";
 
 
     public TSPGui(NewGraphGenerator graphG) {
-        //  graph = new GraphGenerator();
+        //  graph = new Graph.Testing.GraphGenerator();
         this.graphG = graphG;
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
@@ -102,7 +106,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
         slider1 = new JSlider();
         panelMap = new JPanel();
 
-        //  ButtonHandler butEvent = new ButtonHandler();
+        //  GUI.ButtonHandler butEvent = new GUI.ButtonHandler();
         //======== this ========
 
 
@@ -691,7 +695,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
             //distanceLabel.setColleagueEnabled(true);
 
 
-            //  insertGraphintoPanelMap(new InsertionAlgo(graphG).run());
+            //  insertGraphintoPanelMap(new Algorithm.InsertionAlgo(graphG).run());
             //insertionCheckBox.setColleagueEnabled(true);
 
             nearestAlgorithmRunner();
@@ -738,11 +742,11 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
                 // panelMap.add(new JLabel("sdf"));
 
                 //System.out.println(cityNumberTextField.getText());
-                //NodeDataStore nodeArray = new NodeDataStore(Integer.parseInt(cityNumberTextField.getText()));
+                //Graph.NodeDataStore nodeArray = new Graph.NodeDataStore(Integer.parseInt(cityNumberTextField.getText()));
 
                 /*
-                NodeDataStore nodeArray = new NodeDataStore(numberofcityGetter());
-                this.graph = new GraphGenerator(nodeArray);
+                Graph.NodeDataStore nodeArray = new Graph.NodeDataStore(numberofcityGetter());
+                this.graph = new Graph.Testing.GraphGenerator(nodeArray);
                 panelMap.add(graph.returnJGraph());
                 shortestButton.setColleagueEnabled(true);
                 */

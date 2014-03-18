@@ -46,14 +46,14 @@ import org.jgrapht.traverse.*;
 
 
 /**
- * A simple JgrahDemo_notMyProject to test memory and CPU consumption on a graph with 3 million
+ * A simple JgrahDemoNotMyProject to test memory and CPU consumption on a graph with 3 million
  * elements.
  *
- * <p>NOTE: To run this JgrahDemo_notMyProject you may need to increase the JVM max mem size. In
+ * <p>NOTE: To run this JgrahDemoNotMyProject you may need to increase the JVM max mem size. In
  * Sun's JVM it is done using the "-Xmx" switch. Specify "-Xmx300M" to set it to
  * 300MB.</p>
  *
- * <p>WARNING: Don't run this JgrahDemo_notMyProject as-is on machines with less than 512MB
+ * <p>WARNING: Don't run this JgrahDemoNotMyProject as-is on machines with less than 512MB
  * memory. Your machine will start paging severely. You need to first modify it
  * to have fewer graph elements. This is easily done by changing the loop
  * counters below.</p>
@@ -66,7 +66,7 @@ public final class PerformanceDemo
     
 
     /**
-     * The starting point for the JgrahDemo_notMyProject.
+     * The starting point for the JgrahDemoNotMyProject.
      *
      * @param args ignored.
      */

@@ -1,4 +1,4 @@
-package JgrahDemo_notMyProject;/* ==========================================
+package JgrahDemoNotMyProject.Jgraph;/* ==========================================
  * JGraphT : a free Java graph-theory library
  * ==========================================
  *
@@ -23,14 +23,14 @@ package JgrahDemo_notMyProject;/* ==========================================
  * 59 Temple Place, Suite 330, Boston, MA 02111-1307, USA.
  */
 /* -----------------
- * JgrahDemo_notMyProject.HelloJGraphT.java
+ * JgrahDemoNotMyProject.HelloJGraphT.java
  * -----------------
  * (C) Copyright 2003-2008, by Barak Naveh and Contributors.
  *
  * Original Author:  Barak Naveh
  * Contributor(s):   -
  *
- * $Id: JgrahDemo_notMyProject.HelloJGraphT.java 645 2008-09-30 19:44:48Z perfecthash $
+ * $Id: JgrahDemoNotMyProject.HelloJGraphT.java 645 2008-09-30 19:44:48Z perfecthash $
  *
  * Changes
  * -------
@@ -38,10 +38,14 @@ package JgrahDemo_notMyProject;/* ==========================================
  *
  */
 
-import java.net.*;
+import org.jgrapht.DirectedGraph;
+import org.jgrapht.UndirectedGraph;
+import org.jgrapht.graph.DefaultDirectedGraph;
+import org.jgrapht.graph.DefaultEdge;
+import org.jgrapht.graph.SimpleGraph;
 
-import org.jgrapht.*;
-import org.jgrapht.graph.*;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 
 /**
@@ -50,23 +54,20 @@ import org.jgrapht.graph.*;
  * @author Barak Naveh
  * @since Jul 27, 2003
  */
-public final class HelloJGraphT
-{
+public final class HelloJGraphT {
     //~ Constructors -----------------------------------------------------------
 
-    private HelloJGraphT()
-    {
+    private HelloJGraphT() {
     } // ensure non-instantiability.
 
     //~ Methods ----------------------------------------------------------------
 
     /**
-     * The starting point for the JgrahDemo_notMyProject.
+     * The starting point for the JgrahDemoNotMyProject.
      *
      * @param args ignored.
      */
-    public static void main(String [] args)
-    {
+    public static void main(String[] args) {
         UndirectedGraph<String, DefaultEdge> stringGraph = createStringGraph();
 
         // note undirected edges are printed as: {<v1>,<v2>}
@@ -85,10 +86,9 @@ public final class HelloJGraphT
      *
      * @return a graph based on URL objects.
      */
-    private static DirectedGraph<URL, DefaultEdge> createHrefGraph()
-    {
+    private static DirectedGraph<URL, DefaultEdge> createHrefGraph() {
         DirectedGraph<URL, DefaultEdge> g =
-            new DefaultDirectedGraph<URL, DefaultEdge>(DefaultEdge.class);
+                new DefaultDirectedGraph<URL, DefaultEdge>(DefaultEdge.class);
 
         try {
             URL amazon = new URL("http://www.amazon.com");
@@ -115,10 +115,9 @@ public final class HelloJGraphT
      *
      * @return a graph based on String objects.
      */
-    private static UndirectedGraph<String, DefaultEdge> createStringGraph()
-    {
+    private static UndirectedGraph<String, DefaultEdge> createStringGraph() {
         UndirectedGraph<String, DefaultEdge> g =
-            new SimpleGraph<String, DefaultEdge>(DefaultEdge.class);
+                new SimpleGraph<String, DefaultEdge>(DefaultEdge.class);
 
         String v1 = "v1";
         String v2 = "v2";
@@ -141,4 +140,4 @@ public final class HelloJGraphT
     }
 }
 
-// End JgrahDemo_notMyProject.HelloJGraphT.java
+// End JgrahDemoNotMyProject.HelloJGraphT.java

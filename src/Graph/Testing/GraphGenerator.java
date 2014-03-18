@@ -1,3 +1,7 @@
+package Graph.Testing;
+
+import Graph.Node;
+import Graph.NodeDataStore;
 import org.jgraph.JGraph;
 import org.jgraph.graph.*;
 
@@ -44,7 +48,7 @@ public class GraphGenerator {
         DefaultEdge edge = new DefaultEdge();
 
         for (int i = 0; i < cells.length; i++) {
-            cells[i] = createVertex(nodeArray.get(i).cityName, nodeArray.get(i).returnX(), nodeArray.get(i).returnY(), 70, 18, new Color(1f, 0f, 0f, .5f), true);
+            cells[i] = createVertex(nodeArray.get(i).returnCityName(), nodeArray.get(i).returnX(), nodeArray.get(i).returnY(), 70, 18, new Color(1f, 0f, 0f, .5f), true);
         }
 
 /*

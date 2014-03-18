@@ -105,7 +105,7 @@ public abstract class EulerianCircuit
         UndirectedGraph<V, E> sg = new UndirectedSubgraph<V, E>(g, null, null);
         path.add(sg.vertexSet().iterator().next());
 
-        // Algorithm for finding an Eulerian circuit Basically this will find an
+        // Algorithm.Algorithm for finding an Eulerian circuit Basically this will find an
         // arbitrary circuit, then it will find another arbitrary circuit until
         // every edge has been traversed
         while (sg.edgeSet().size() > 0) {

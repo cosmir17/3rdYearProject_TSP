@@ -61,7 +61,7 @@ public class TouchgraphConverter<V, E>
      * edges) in its own way. The closest Touchgraph has to a graph object is a
      * GraphEltSet but Touchgraph does not provide the visibility to use it
      * easily and one can use a JGraphT graph. While JGraphT nodes can be any
-     * type of objects, TouchGraph uses a set of com.touchgraph.graphlayout.Node
+     * type of objects, TouchGraph uses a set of com.touchgraph.graphlayout.Graph.Node
      * and com.touchgraph.graphlayout.Edge only. Moreover, TouchGraph edges are
      * always directed. Having said that, if you want a nice way to visualize
      * and explore a graph, especially large complex graphs, TouchGraph is very
@@ -71,7 +71,7 @@ public class TouchgraphConverter<V, E>
      * @param tgPanel: the TouchGraph TGPanel
      * @param selfReferencesAllowed: do you want to include self-referenctial
      * edges, ie an edge from a node to itself? Self-referential loops do not
-     * show up in the TG visualization but you may want to subclass TG's Node
+     * show up in the TG visualization but you may want to subclass TG's Graph.Node
      * class to show them
      *
      * @return first node of the TouchGraph graph
@@ -94,7 +94,7 @@ public class TouchgraphConverter<V, E>
                 // if our JGraphT object was a touchGraph node, add it unaltered
                 n = (Node) jgtNodes.get(i);
             } else {
-                // create a TG Node with a "label" and "id" equals to the
+                // create a TG Graph.Node with a "label" and "id" equals to the
                 // objects toString() value
                 n = new Node(jgtNodes.get(i).toString());
             }
@@ -111,7 +111,7 @@ public class TouchgraphConverter<V, E>
             for (int j = 0; j < tgNodes.length; j++) {
                 // self-referential loops do not show up in the TG
                 // visualization but you may want to
-                // subclass TG's Node class to show them
+                // subclass TG's Graph.Node class to show them
                 if ((i != j) || selfReferencesAllowed) {
                     if (graph.getEdge(jgtNodes.get(i), jgtNodes.get(j))
                         != null)

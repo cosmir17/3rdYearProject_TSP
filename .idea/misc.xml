@@ -3,6 +3,9 @@
   <component name="EntryPointsManager">
     <entry_points version="2.0" />
   </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <type id="Osmorc" />
+  </component>
   <component name="IdProvider" IDEtalkID="4B356DDCFA32188D8FD67A76FD25D7D6" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />

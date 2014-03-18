@@ -38,7 +38,7 @@
  *      nf      08/31/97        Initial version
  *      nf      09/07/97        Removed FibHeapData interface
  *      nf      01/20/01        Added synchronization
- *      nf      01/21/01        Made Node an inner class
+ *      nf      01/21/01        Made Graph.Node an inner class
  *      nf      01/05/02        Added clear(), renamed empty() to
  *                              isEmpty(), and renamed printHeap()
  *                              to toString()
@@ -60,7 +60,7 @@ public class FibonacciHeapNode<T>
     
 
     /**
-     * Node data.
+     * Graph.Node data.
      */
     T data;
 

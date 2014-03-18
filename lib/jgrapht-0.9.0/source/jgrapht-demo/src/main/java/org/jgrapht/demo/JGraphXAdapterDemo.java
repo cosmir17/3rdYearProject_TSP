@@ -25,7 +25,7 @@ import org.jgrapht.graph.*;
 
 
 /**
- * A JgrahDemo_notMyProject applet that shows how to use JGraphX to visualize JGraphT graphs.
+ * A JgrahDemoNotMyProject applet that shows how to use JGraphX to visualize JGraphT graphs.
  * Applet based on JGraphAdapterDemo.
  *
  * @since July 9, 2013
@@ -45,7 +45,7 @@ public class JGraphXAdapterDemo
     
 
     /**
-     * An alternative starting point for this JgrahDemo_notMyProject, to also allow running this
+     * An alternative starting point for this JgrahDemoNotMyProject, to also allow running this
      * applet as an application.
      *
      * @param args ignored.

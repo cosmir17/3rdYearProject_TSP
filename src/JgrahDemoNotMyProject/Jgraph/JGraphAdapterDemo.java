@@ -1,4 +1,4 @@
-package JgrahDemo_notMyProject;/* ==========================================
+package JgrahDemoNotMyProject.Jgraph;/* ==========================================
  * JGraphT : a free Java graph-theory library
  * ==========================================
  *
@@ -23,14 +23,14 @@ package JgrahDemo_notMyProject;/* ==========================================
  * 59 Temple Place, Suite 330, Boston, MA 02111-1307, USA.
  */
 /* ----------------------
- * JgrahDemo_notMyProject.JGraphAdapterDemo.java
+ * JgrahDemoNotMyProject.JGraphAdapterDemo.java
  * ----------------------
  * (C) Copyright 2003-2008, by Barak Naveh and Contributors.
  *
  * Original Author:  Barak Naveh
  * Contributor(s):   -
  *
- * $Id: JgrahDemo_notMyProject.JGraphAdapterDemo.java 725 2010-11-26 01:24:28Z perfecthash $
+ * $Id: JgrahDemoNotMyProject.JGraphAdapterDemo.java 725 2010-11-26 01:24:28Z perfecthash $
  *
  * Changes
  * -------
@@ -39,31 +39,32 @@ package JgrahDemo_notMyProject;/* ==========================================
  *
  */
 
-import java.awt.*;
-import java.awt.geom.*;
+import org.jgraph.JGraph;
+import org.jgraph.graph.AttributeMap;
+import org.jgraph.graph.DefaultGraphCell;
+import org.jgraph.graph.GraphConstants;
+import org.jgrapht.DirectedGraph;
+import org.jgrapht.ListenableGraph;
+import org.jgrapht.ext.JGraphModelAdapter;
+import org.jgrapht.graph.DefaultEdge;
+import org.jgrapht.graph.DefaultListenableGraph;
+import org.jgrapht.graph.DirectedMultigraph;
 
 import javax.swing.*;
-
-import org.jgraph.*;
-import org.jgraph.graph.*;
-
-import org.jgrapht.*;
-import org.jgrapht.ext.*;
-import org.jgrapht.graph.*;
+import java.awt.*;
+import java.awt.geom.Rectangle2D;
 
 // resolve ambiguity
-import org.jgrapht.graph.DefaultEdge;
 
 
 /**
- * A JgrahDemo_notMyProject applet that shows how to use JGraph to visualize JGraphT graphs.
+ * A JgrahDemoNotMyProject applet that shows how to use JGraph to visualize JGraphT graphs.
  *
  * @author Barak Naveh
  * @since Aug 3, 2003
  */
 public class JGraphAdapterDemo
-    extends JApplet
-{
+        extends JApplet {
     //~ Static fields/initializers ---------------------------------------------
 
     private static final long serialVersionUID = 3256444702936019250L;
@@ -78,13 +79,12 @@ public class JGraphAdapterDemo
     //~ Methods ----------------------------------------------------------------
 
     /**
-     * An alternative starting point for this JgrahDemo_notMyProject, to also allow running this
+     * An alternative starting point for this JgrahDemoNotMyProject, to also allow running this
      * applet as an application.
      *
      * @param args ignored.
      */
-    public static void main(String [] args)
-    {
+    public static void main(String[] args) {
         JGraphAdapterDemo applet = new JGraphAdapterDemo();
         applet.init();
 
@@ -99,12 +99,11 @@ public class JGraphAdapterDemo
     /**
      * {@inheritDoc}
      */
-    public void init()
-    {
+    public void init() {
         // create a JGraphT graph
         ListenableGraph<String, DefaultEdge> g =
-            new ListenableDirectedMultigraph<String, DefaultEdge>(
-                DefaultEdge.class);
+                new ListenableDirectedMultigraph<String, DefaultEdge>(
+                        DefaultEdge.class);
 
         // create a visualization using JGraph, via an adapter
         jgAdapter = new JGraphModelAdapter<String, DefaultEdge>(g);
@@ -140,8 +139,7 @@ public class JGraphAdapterDemo
         // that's all there is to it!...
     }
 
-    private void adjustDisplaySettings(JGraph jg)
-    {
+    private void adjustDisplaySettings(JGraph jg) {
         jg.setPreferredSize(DEFAULT_SIZE);
 
         Color c = DEFAULT_BG_COLOR;
@@ -160,18 +158,17 @@ public class JGraphAdapterDemo
     }
 
     @SuppressWarnings("unchecked") // FIXME hb 28-nov-05: See FIXME below
-    private void positionVertexAt(Object vertex, int x, int y)
-    {
+    private void positionVertexAt(Object vertex, int x, int y) {
         DefaultGraphCell cell = jgAdapter.getVertexCell(vertex);
         AttributeMap attr = cell.getAttributes();
         Rectangle2D bounds = GraphConstants.getBounds(attr);
 
         Rectangle2D newBounds =
-            new Rectangle2D.Double(
-                x,
-                y,
-                bounds.getWidth(),
-                bounds.getHeight());
+                new Rectangle2D.Double(
+                        x,
+                        y,
+                        bounds.getWidth(),
+                        bounds.getHeight());
 
         GraphConstants.setBounds(attr, newBounds);
 
@@ -187,16 +184,14 @@ public class JGraphAdapterDemo
      * a listenable directed multigraph that allows loops and parallel edges.
      */
     private static class ListenableDirectedMultigraph<V, E>
-        extends DefaultListenableGraph<V, E>
-        implements DirectedGraph<V, E>
-    {
+            extends DefaultListenableGraph<V, E>
+            implements DirectedGraph<V, E> {
         private static final long serialVersionUID = 1L;
 
-        ListenableDirectedMultigraph(Class<E> edgeClass)
-        {
+        ListenableDirectedMultigraph(Class<E> edgeClass) {
             super(new DirectedMultigraph<V, E>(edgeClass));
         }
     }
 }
 
-// End JgrahDemo_notMyProject.JGraphAdapterDemo.java
+// End JgrahDemoNotMyProject.JGraphAdapterDemo.java

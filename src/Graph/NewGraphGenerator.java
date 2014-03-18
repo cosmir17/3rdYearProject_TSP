@@ -1,4 +1,4 @@
-/**
+package Graph; /**
  * Created by lloydp on 13/02/14.
  */
 
@@ -8,9 +8,9 @@ import com.mxgraph.view.mxGraph;
 import java.awt.*;
 
 public class NewGraphGenerator {
-    static mxGraph graph = new mxGraph();
+    public static mxGraph graph = new mxGraph();
     Object parent = graph.getDefaultParent();
-    Object[] graphNodeArray;
+    public Object[] graphNodeArray;
 
     public NewGraphGenerator() {
 

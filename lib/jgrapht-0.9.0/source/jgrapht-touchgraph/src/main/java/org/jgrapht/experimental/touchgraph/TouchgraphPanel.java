@@ -75,7 +75,7 @@ public class TouchgraphPanel<V, E>
 
     /**
      * are self-references allowed? They will not show up in TouchGraph unless
-     * you override Touchgraph's Node or Edge class to do so
+     * you override Touchgraph's Graph.Node or Edge class to do so
      */
     boolean selfReferencesAllowed = true;
 

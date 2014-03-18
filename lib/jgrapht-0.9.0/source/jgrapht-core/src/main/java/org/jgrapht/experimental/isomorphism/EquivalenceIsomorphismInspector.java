@@ -211,7 +211,7 @@ class EquivalenceIsomorphismInspector<V, E>
      * <li>try to match only group of the same size and then hashcode
      * <li>it is enough to choose one from each group to see if a match exist.
      *
-     * <p>Algorithm: hold counters in the two arrays. [a,b,c,d,e] assume groups
+     * <p>Algorithm.Algorithm: hold counters in the two arrays. [a,b,c,d,e] assume groups
      * are:a,(b,c,d),e [a,c,d,b,e] c1=0 , c2=0 check if eqvivalent . if not ,
      * advance , as long as both size and hashcode are the same. if found a
      * match , swap the group positions in array2. if not , throws

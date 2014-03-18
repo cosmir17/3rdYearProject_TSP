@@ -1,3 +1,6 @@
+package Algorithm;
+
+import Graph.NewGraphGenerator;
 import com.mxgraph.model.mxCell;
 import com.mxgraph.swing.mxGraphComponent;
 
@@ -8,11 +11,13 @@ import java.util.TreeMap;
 /**
  * Created by lloydp on 09/02/14.
  */
+
+
 public class NearestNeighbourAlgo extends Algorithm {
 
     double totalDistance = 0;
 
-    NearestNeighbourAlgo(NewGraphGenerator graphG) {
+    public NearestNeighbourAlgo(NewGraphGenerator graphG) {
         super(graphG);
         drawer();
     }

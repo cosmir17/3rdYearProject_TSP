@@ -1,3 +1,5 @@
+package GUI;
+
 import javax.swing.*;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;

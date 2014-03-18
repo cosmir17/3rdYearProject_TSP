@@ -64,7 +64,7 @@ public class SimpleTouchgraphApplet
 
     /**
      * create a graph: code taken from non-visible
-     * org._3pq.jgrapht.JgrahDemo_notMyProject.createStringGraph()
+     * org._3pq.jgrapht.JgrahDemoNotMyProject.createStringGraph()
      */
     public static Graph<String, DefaultEdge> createSamplegraph()
     {

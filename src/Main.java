@@ -1,3 +1,6 @@
+import GUI.TSPGui;
+import Graph.NewGraphGenerator;
+
 /**
  * Created with IntelliJ IDEA.
  * User: lloydp
@@ -9,11 +12,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // GuiForTestingSmallparts gui = new GuiForTestingSmallparts(new GraphGenerator(4));
-        //TSPGui gui = new TSPGui();
+        // GUI.Testing.GuiForTestingSmallparts gui = new GUI.Testing.GuiForTestingSmallparts(new Graph.Testing.GraphGenerator(4));
+        //GUI.TSPGui gui = new GUI.TSPGui();
 
-        //TSPGui panel = new TSPGui();
-        // NewGraphGenerator newGraph = new NewGraphGenerator();
+        //GUI.TSPGui panel = new GUI.TSPGui();
+        // Graph.NewGraphGenerator newGraph = new Graph.NewGraphGenerator();
 
         NewGraphGenerator graphG = new NewGraphGenerator();
         TSPGui panel = new TSPGui(graphG);

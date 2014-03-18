@@ -1,3 +1,6 @@
+package Algorithm;
+
+import Graph.NewGraphGenerator;
 import com.mxgraph.swing.mxGraphComponent;
 
 /**

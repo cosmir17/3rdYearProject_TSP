@@ -1,3 +1,7 @@
+package GUI.Testing;
+
+import Graph.Testing.GraphGenerator;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -63,7 +67,6 @@ public class GuiForTestingSmallparts extends JFrame {
     }
 
     private void createEastPanel() {
-
 
 
     }

@@ -20,7 +20,7 @@
  * the Eclipse Foundation.
  */
 /* -------------------
- * GraphGenerator.java
+ * Graph.Testing.GraphGenerator.java
  * -------------------
  * (C) Copyright 2003-2008, by John V. Sichi and Contributors.
  *
@@ -42,7 +42,7 @@ import org.jgrapht.*;
 
 
 /**
- * GraphGenerator defines an interface for generating new graph structures.
+ * Graph.Testing.GraphGenerator defines an interface for generating new graph structures.
  *
  * @author John V. Sichi
  * @since Sep 16, 2003
@@ -74,4 +74,4 @@ public interface GraphGenerator<V, E, T>
         Map<String, T> resultMap);
 }
 
-// End GraphGenerator.java
+// End Graph.Testing.GraphGenerator.java

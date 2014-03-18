@@ -118,7 +118,7 @@ public class VertexCoversTest
      */
     private Graph<Integer, DefaultEdge> createRandomGraph()
     {
-        // TODO: move random graph generator to be under GraphGenerator
+        // TODO: move random graph generator to be under Graph.Testing.GraphGenerator
         // framework.
         Pseudograph<Integer, DefaultEdge> g =
             new Pseudograph<Integer, DefaultEdge>(DefaultEdge.class);

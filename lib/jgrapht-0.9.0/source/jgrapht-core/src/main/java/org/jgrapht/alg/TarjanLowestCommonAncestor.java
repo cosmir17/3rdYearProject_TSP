@@ -19,7 +19,7 @@ import org.jgrapht.alg.util.*;
 
 
 /**
- * Used to calculate Tarjan's Lowest Common Ancestors Algorithm
+ * Used to calculate Tarjan's Lowest Common Ancestors Algorithm.Algorithm
  *
  * @author Leo Crawford
  */

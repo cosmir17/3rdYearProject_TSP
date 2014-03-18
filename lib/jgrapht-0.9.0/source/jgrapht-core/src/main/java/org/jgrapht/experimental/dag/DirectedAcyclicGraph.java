@@ -52,7 +52,7 @@ import org.jgrapht.graph.*;
  *
  * <p>This is done using a dynamic topological sort which is based on the
  * algorithm PK described in "D. Pearce &amp; P. Kelly, 2007: A Dynamic
- * Topological Sort Algorithm for Directed Acyclic Graphs", (see <a
+ * Topological Sort Algorithm.Algorithm for Directed Acyclic Graphs", (see <a
  * href="http://www.mcs.vuw.ac.nz/~djp/files/PK-JEA07.pdf">Paper</a> or <a
  * href="http://doi.acm.org/10.1145/1187436.1210590">ACM link</a> for details).
  * </p>

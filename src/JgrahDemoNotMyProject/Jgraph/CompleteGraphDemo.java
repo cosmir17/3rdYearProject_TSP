@@ -1,4 +1,4 @@
-package JgrahDemo_notMyProject;/* ==========================================
+package JgrahDemoNotMyProject.Jgraph;/* ==========================================
  * JGraphT : a free Java graph-theory library
  * ==========================================
  *
@@ -23,26 +23,31 @@ package JgrahDemo_notMyProject;/* ==========================================
  * 59 Temple Place, Suite 330, Boston, MA 02111-1307, USA.
  */
 /* --------------------
- * JgrahDemo_notMyProject.CompleteGraphDemo.java
+ * JgrahDemoNotMyProject.CompleteGraphDemo.java
  * --------------------
  * (C) Copyright 2003-2008, by Tim Shearouse and Contributors.
  *
  * Original Author:  Tim Shearouse
  * Contributor(s):   -
  *
- * $Id: JgrahDemo_notMyProject.CompleteGraphDemo.java 645 2008-09-30 19:44:48Z perfecthash $
+ * $Id: JgrahDemoNotMyProject.CompleteGraphDemo.java 645 2008-09-30 19:44:48Z perfecthash $
  *
  * Changes
  * -------
  *
  */
 
-import java.util.*;
+import org.jgrapht.Graph;
+import org.jgrapht.VertexFactory;
+import org.jgrapht.generate.CompleteGraphGenerator;
+import org.jgrapht.graph.ClassBasedVertexFactory;
+import org.jgrapht.graph.DefaultEdge;
+import org.jgrapht.graph.SimpleGraph;
+import org.jgrapht.traverse.DepthFirstIterator;
 
-import org.jgrapht.*;
-import org.jgrapht.generate.*;
-import org.jgrapht.graph.*;
-import org.jgrapht.traverse.*;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
 
 
 public final class CompleteGraphDemo
@@ -124,4 +129,4 @@ public final class CompleteGraphDemo
     }
 }
 
-// End JgrahDemo_notMyProject.CompleteGraphDemo.java
+// End JgrahDemoNotMyProject.CompleteGraphDemo.java

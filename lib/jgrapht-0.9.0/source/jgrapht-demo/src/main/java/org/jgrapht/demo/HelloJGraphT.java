@@ -59,7 +59,7 @@ public final class HelloJGraphT
     
 
     /**
-     * The starting point for the JgrahDemo_notMyProject.
+     * The starting point for the JgrahDemoNotMyProject.
      *
      * @param args ignored.
      */
