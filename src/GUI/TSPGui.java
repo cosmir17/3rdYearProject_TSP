@@ -701,7 +701,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
             //  insertGraphintoPanelMap(new Algorithm.InsertionAlgo(graphG).run());
             //insertionCheckBox.setColleagueEnabled(true);
 
-            //  nearestAlgorithmRunner();
+            nearestAlgorithmRunner();
             // nnCheckBox.setColleagueEnabled(true);
 
             //optAlgoCheckBox.setColleagueEnabled(true);
@@ -709,7 +709,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
             //advancedHeuLabel.setColleagueEnabled(true);
             //simultedACheckBox.setColleagueEnabled(true);
             //tabuCheckBox.setColleagueEnabled(true);
-            disableSecondPanelElements(true);
+            secondPanelElementsSwitch(true);
             shortestButton.pushed = false;
         }
 
@@ -755,7 +755,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
                 shortestButton.setColleagueEnabled(true);
                 */
 
-                disableSecondPanelElements(false);
+                secondPanelElementsSwitch(false);
                 initButton.pushed = false;
 
             }
@@ -769,22 +769,21 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
         panelMap.add(compo);
     }
 
-    private void disableSecondPanelElements(boolean bswitch) {
+    private void secondPanelElementsSwitch(boolean bswitch) {
         nameOfHeuristicsLabel.setColleagueEnabled(bswitch);
         timeLabel.setColleagueEnabled(bswitch);
         distanceLabel.setColleagueEnabled(bswitch);
-
-
-        insertionCheckBox.setColleagueEnabled(bswitch);
 
 
         nnCheckBox.setColleagueEnabled(bswitch);
         nnTimeTextF.setColleagueEnabled(bswitch);
         nnDistanceTextF.setColleagueEnabled(bswitch);
 
-
+        insertionCheckBox.setColleagueEnabled(bswitch);
         insertionDisTanceTextF.setColleagueEnabled(bswitch);
         insertionTimeTextF.setColleagueEnabled(bswitch);
+
+
         //  insertionDisTanceTextF.setColl
 
         //optAlgoCheckBox.setColleagueEnabled(true);
