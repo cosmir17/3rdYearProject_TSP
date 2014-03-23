@@ -16,7 +16,7 @@ public class NewGraphGenerator {
 
 
         // mxGraph.getCellStyle(graph);
-        //  graph를 받아서 알고리즘
+
     }
 
     public void createGraph(int numberOfCity) {
@@ -72,5 +72,16 @@ public class NewGraphGenerator {
         else if (city.length() < 12) return 80;
         else if (city.length() < 14) return 95;
         else return 110;
+    }
+
+    public void allEdgeRemover() {
+        graph.getModel().beginUpdate();
+        try {
+            graph.resetEdges(graphNodeArray);
+
+        } finally {
+            graph.getModel().endUpdate();
+        }
+
     }
 }

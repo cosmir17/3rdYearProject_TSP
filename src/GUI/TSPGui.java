@@ -73,8 +73,8 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
         distanceLabel = new ColleagueLabel("Distance");
         panel8 = new JPanel();
         insertionCheckBox = new ColleagueCheckBox("Insertion");
-        insertionTimeTextF = new JTextField();
-        insertionDisTanceTextF = new JTextField();
+        insertionTimeTextF = new ColleagueSecPanelTextF();
+        insertionDisTanceTextF = new ColleagueSecPanelTextF();
         panel9 = new JPanel();
         nnCheckBox = new ColleagueCheckBox("Nearest Neighbour");
         nnTimeTextF = new ColleagueSecPanelTextF();
@@ -308,10 +308,12 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
                         insertionCheckBox.addItemListener(insertionCheckBox);
                         //---- insertionTimeTextF ----
                         insertionTimeTextF.setEnabled(false);
+                        insertionTimeTextF.setMediator(this);
+
 
                         //---- insertionDisTanceTextF ----
                         insertionDisTanceTextF.setEnabled(false);
-
+                        insertionDisTanceTextF.setMediator(this);
 
                         GroupLayout panel8Layout = new GroupLayout(panel8);
                         panel8.setLayout(panel8Layout);
@@ -638,8 +640,8 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
     private ColleagueLabel distanceLabel;
     private JPanel panel8;
     private ColleagueCheckBox insertionCheckBox;
-    private JTextField insertionTimeTextF;
-    private JTextField insertionDisTanceTextF;
+    private ColleagueSecPanelTextF insertionTimeTextF;
+    private ColleagueSecPanelTextF insertionDisTanceTextF;
     private JPanel panel9;
     private ColleagueCheckBox nnCheckBox;
     private ColleagueSecPanelTextF nnTimeTextF;
@@ -686,6 +688,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
 
     private void shortestButtonPushed() {
         if (shortestButton.pushed) {
+            graphG.allEdgeRemover();
 
             //  System.out.println("short source =  " + shortestButton.getSource());
             //System.out.println("short actionCommand =  " + shortestButton.getActionCommand());
@@ -698,7 +701,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
             //  insertGraphintoPanelMap(new Algorithm.InsertionAlgo(graphG).run());
             //insertionCheckBox.setColleagueEnabled(true);
 
-            nearestAlgorithmRunner();
+            //  nearestAlgorithmRunner();
             // nnCheckBox.setColleagueEnabled(true);
 
             //optAlgoCheckBox.setColleagueEnabled(true);
@@ -711,6 +714,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
         }
 
     }
+
 
     private void nearestAlgorithmRunner() {
         long start = System.currentTimeMillis();
@@ -777,6 +781,12 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
         nnCheckBox.setColleagueEnabled(bswitch);
         nnTimeTextF.setColleagueEnabled(bswitch);
         nnDistanceTextF.setColleagueEnabled(bswitch);
+
+
+        insertionDisTanceTextF.setColleagueEnabled(bswitch);
+        insertionTimeTextF.setColleagueEnabled(bswitch);
+        //  insertionDisTanceTextF.setColl
+
         //optAlgoCheckBox.setColleagueEnabled(true);
 
         //advancedHeuLabel.setColleagueEnabled(true);

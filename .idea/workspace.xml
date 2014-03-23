@@ -1,107 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="NA distance and time are &quot;properly&quot; displayed.&#10;&#10;NA distance and time fields have been added to collegueSecPanelTextF.">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/graphModel.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Algorithm.java" afterPath="$PROJECT_DIR$/src/Algorithm/Algorithm.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ButtonHandler.java" afterPath="$PROJECT_DIR$/src/GUI/ButtonHandler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CityName.java" afterPath="$PROJECT_DIR$/src/Graph/CityName.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CityNameGenerator.java" afterPath="$PROJECT_DIR$/src/Graph/CityNameGenerator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Colleague.java" afterPath="$PROJECT_DIR$/src/GUI/Colleague.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ColleagueButton.java" afterPath="$PROJECT_DIR$/src/GUI/ColleagueButton.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ColleagueCheckBox.java" afterPath="$PROJECT_DIR$/src/GUI/ColleagueCheckBox.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ColleagueLabel.java" afterPath="$PROJECT_DIR$/src/GUI/ColleagueLabel.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ColleagueSecPanelTextF.java" afterPath="$PROJECT_DIR$/src/GUI/ColleagueSecPanelTextF.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ColleagueTextField.java" afterPath="$PROJECT_DIR$/src/GUI/ColleagueTextField.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/GraphGenerator.java" afterPath="$PROJECT_DIR$/src/Graph/Testing/GraphGenerator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/GuiForTestingSmallparts.java" afterPath="$PROJECT_DIR$/src/GUI/Testing/GuiForTestingSmallparts.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/InsertionAlgo.java" afterPath="$PROJECT_DIR$/src/Algorithm/InsertionAlgo.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/JgrahDemo_notMyProject/CompleteGraphDemo.java" afterPath="$PROJECT_DIR$/src/JgrahDemoNotMyProject/Jgraph/CompleteGraphDemo.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/JgrahDemo_notMyProject/HelloJGraphT.java" afterPath="$PROJECT_DIR$/src/JgrahDemoNotMyProject/Jgraph/HelloJGraphT.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/JgrahDemo_notMyProject/JGraphAdapterDemo.java" afterPath="$PROJECT_DIR$/src/JgrahDemoNotMyProject/Jgraph/JGraphAdapterDemo.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/JgrahDemo_notMyProject/PerformanceDemo.java" afterPath="$PROJECT_DIR$/src/JgrahDemoNotMyProject/Jgraph/PerformanceDemo.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/JgrahDemo_notMyProject/design_panel.jfd" afterPath="$PROJECT_DIR$/src/JgrahDemoNotMyProject/Jgraph/design_panel.jfd" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Mediator.java" afterPath="$PROJECT_DIR$/src/GUI/Mediator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/NearestNeighbourAlgo.java" afterPath="$PROJECT_DIR$/src/Algorithm/NearestNeighbourAlgo.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/NewGraphGenerator.java" afterPath="$PROJECT_DIR$/src/Graph/NewGraphGenerator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/NewGraphGenerator2.java" afterPath="$PROJECT_DIR$/src/JgrahDemoNotMyProject/NewGraphGenerator2.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Node.java" afterPath="$PROJECT_DIR$/src/Graph/Node.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/NodeDataStore.java" afterPath="$PROJECT_DIR$/src/Graph/NodeDataStore.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Observer.java" afterPath="$PROJECT_DIR$/src/Graph/Observer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/TSPGui.java" afterPath="$PROJECT_DIR$/src/GUI/TSPGui.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/BronKerboschCliqueFinder.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/BronKerboschCliqueFinder.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/BronKerboschCliqueFinder.java" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/BronKerboschCliqueFinder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/CompleteBipartiteGraphGenerator.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/CompleteBipartiteGraphGenerator.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/demo/CompleteGraphDemo.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/demo/CompleteGraphDemo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/demo/class-use/CompleteGraphDemo.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/demo/class-use/CompleteGraphDemo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/CompleteGraphGenerator.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/CompleteGraphGenerator.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/dag/DirectedAcyclicGraph.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/dag/DirectedAcyclicGraph.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/experimental/dag/DirectedAcyclicGraph.java" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/experimental/dag/DirectedAcyclicGraph.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/EmptyGraphGenerator.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/EmptyGraphGenerator.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/experimental/isomorphism/EquivalenceIsomorphismInspector.java" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/experimental/isomorphism/EquivalenceIsomorphismInspector.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/EulerianCircuit.java" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/EulerianCircuit.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/util/FibonacciHeap.java" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/util/FibonacciHeap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/util/FibonacciHeapNode.java" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/util/FibonacciHeapNode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/class-use/Graph.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/class-use/Graph.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/GraphGenerator.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/GraphGenerator.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/class-use/GraphGenerator.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/class-use/GraphGenerator.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/generate/GraphGenerator.java" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/generate/GraphGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/GraphReader.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/GraphReader.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/GridGraphGenerator.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/GridGraphGenerator.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/demo/HelloJGraphT.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/demo/HelloJGraphT.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/demo/class-use/HelloJGraphT.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/demo/class-use/HelloJGraphT.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-demo/src/main/java/org/jgrapht/demo/HelloJGraphT.java" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-demo/src/main/java/org/jgrapht/demo/HelloJGraphT.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/HyperCubeGraphGenerator.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/HyperCubeGraphGenerator.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/demo/JGraphAdapterDemo.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/demo/JGraphAdapterDemo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/demo/class-use/JGraphAdapterDemo.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/demo/class-use/JGraphAdapterDemo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-demo/src/main/java/org/jgrapht/demo/JGraphAdapterDemo.java" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-demo/src/main/java/org/jgrapht/demo/JGraphAdapterDemo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/demo/JGraphXAdapterDemo.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/demo/JGraphXAdapterDemo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/demo/class-use/JGraphXAdapterDemo.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/demo/class-use/JGraphXAdapterDemo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-demo/src/main/java/org/jgrapht/demo/JGraphXAdapterDemo.java" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-demo/src/main/java/org/jgrapht/demo/JGraphXAdapterDemo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/LinearGraphGenerator.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/LinearGraphGenerator.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/PartiteRandomGraphGenerator.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/PartiteRandomGraphGenerator.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/demo/PerformanceDemo.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/demo/PerformanceDemo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/demo/class-use/PerformanceDemo.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/demo/class-use/PerformanceDemo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-demo/src/main/java/org/jgrapht/demo/PerformanceDemo.java" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-demo/src/main/java/org/jgrapht/demo/PerformanceDemo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/RandomGraphGenerator.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/RandomGraphGenerator.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/RandomGraphHelper.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/RandomGraphHelper.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/RingGraphGenerator.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/RingGraphGenerator.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/ScaleFreeGraphGenerator.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/ScaleFreeGraphGenerator.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-touchgraph/src/main/java/org/jgrapht/experimental/touchgraph/SimpleTouchgraphApplet.java" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-touchgraph/src/main/java/org/jgrapht/experimental/touchgraph/SimpleTouchgraphApplet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/SimpleWeightedBipartiteGraphMatrixGenerator.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/SimpleWeightedBipartiteGraphMatrixGenerator.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/SimpleWeightedGraphMatrixGenerator.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/SimpleWeightedGraphMatrixGenerator.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/StarGraphGenerator.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/StarGraphGenerator.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/StoerWagnerMinimumCut.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/StoerWagnerMinimumCut.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/StoerWagnerMinimumCut.java" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/StoerWagnerMinimumCut.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/TarjanLowestCommonAncestor.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/TarjanLowestCommonAncestor.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/TarjanLowestCommonAncestor.java" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/TarjanLowestCommonAncestor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/cycle/TiernanSimpleCycles.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/cycle/TiernanSimpleCycles.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/cycle/TiernanSimpleCycles.java" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/cycle/TiernanSimpleCycles.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-touchgraph/src/main/java/org/jgrapht/experimental/touchgraph/TouchgraphConverter.java" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-touchgraph/src/main/java/org/jgrapht/experimental/touchgraph/TouchgraphConverter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-touchgraph/src/main/java/org/jgrapht/experimental/touchgraph/TouchgraphPanel.java" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-touchgraph/src/main/java/org/jgrapht/experimental/touchgraph/TouchgraphPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/UniformRandomGraphGenerator.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/UniformRandomGraphGenerator.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/VertexCoversTest.java" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/VertexCoversTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/class-use/VertexFactory.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/class-use/VertexFactory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/WeightedGraphGenerator.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/WeightedGraphGenerator.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/WeightedGraphGeneratorAdapter.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/WeightedGraphGeneratorAdapter.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/WheelGraphGenerator.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/WheelGraphGenerator.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/allclasses-frame.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/allclasses-frame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/allclasses-noframe.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/allclasses-noframe.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/index-all.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/index-all.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/overview-tree.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/overview-tree.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/package-frame.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/package-frame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/package-summary.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/package-summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/cycle/package-summary.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/cycle/package-summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/demo/package-summary.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/demo/package-summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/package-summary.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/package-summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/demo/package-tree.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/demo/package-tree.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/package-tree.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/package-tree.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/package-tree.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/package-tree.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/demo/package-use.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/demo/package-use.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/package-use.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/package-use.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/cycle/package.html" afterPath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/cycle/package.html" />
+    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="Classes are now in packages, organised">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgraphx.jar" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3rd_year_project.iml" afterPath="$PROJECT_DIR$/3rd_year_project.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/ColleagueSecPanelTextF.java" afterPath="$PROJECT_DIR$/src/GUI/ColleagueSecPanelTextF.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Graph/NewGraphGenerator.java" afterPath="$PROJECT_DIR$/src/Graph/NewGraphGenerator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/TSPGui.java" afterPath="$PROJECT_DIR$/src/GUI/TSPGui.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="3rd_year_project.iws" />
@@ -158,7 +64,7 @@
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/GUI/TSPGui.java" line="700" class="TSPGui" package="">
+      <breakpoint url="file://$PROJECT_DIR$/src/GUI/TSPGui.java" line="703" class="GUI.TSPGui" package="GUI">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -173,7 +79,7 @@
         <option name="CONDITION" value="&#13;&#13;JAVA" />
         <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/Algorithm/NearestNeighbourAlgo.java" line="50" class="NearestNeighbourAlgo" package="">
+      <breakpoint url="file://$PROJECT_DIR$/src/Algorithm/NearestNeighbourAlgo.java" line="49" class="Algorithm.NearestNeighbourAlgo" package="Algorithm">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -202,36 +108,7 @@
       <file leaf-file-name="Algorithm.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Algorithm/Algorithm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="31" selection-start="448" selection-end="448" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="558">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="574" selection-end="574" vertical-scroll-proportion="0.7702703" vertical-offset="0" max-vertical-offset="558">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CityName.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Graph/CityName.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="58" selection-end="58" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9846">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ButtonHandler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GUI/ButtonHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="1" selection-start="514" selection-end="514" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="486">
+            <state line="11" column="28" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522">
               <folding />
             </state>
           </provider>
@@ -240,16 +117,7 @@
       <file leaf-file-name="InsertionAlgo.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Algorithm/InsertionAlgo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Observer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Graph/Observer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="44" selection-start="150" selection-end="150" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
+            <state line="11" column="0" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="450">
               <folding />
             </state>
           </provider>
@@ -258,7 +126,7 @@
       <file leaf-file-name="Node.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Graph/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="4" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="738">
+            <state line="8" column="4" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="738">
               <folding />
             </state>
           </provider>
@@ -267,7 +135,25 @@
       <file leaf-file-name="NodeDataStore.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Graph/NodeDataStore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="7" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="1026">
+            <state line="3" column="24" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="1026">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Mediator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GUI/Mediator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="3" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TSPGui.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/GUI/TSPGui.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="783" column="48" selection-start="39217" selection-end="39217" vertical-scroll-proportion="2.1410255" vertical-offset="13092" max-vertical-offset="15732">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -275,21 +161,39 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewGraphGenerator2.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/JgrahDemoNotMyProject/NewGraphGenerator2.java">
+      <file leaf-file-name="NewGraphGenerator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Graph/NewGraphGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="9" selection-start="654" selection-end="654" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="846">
+            <state line="85" column="5" selection-start="3029" selection-end="3029" vertical-scroll-proportion="0.0" vertical-offset="1148" max-vertical-offset="1656">
               <folding>
-                <element signature="e#31#72#0" expanded="false" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CompleteGraphDemo.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/JgrahDemoNotMyProject/Jgraph/CompleteGraphDemo.java">
+      <file leaf-file-name="ColleagueSecPanelTextF.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GUI/ColleagueSecPanelTextF.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="19" selection-start="1615" selection-end="1615" vertical-scroll-proportion="0.0" vertical-offset="894" max-vertical-offset="2304">
+            <state line="27" column="8" selection-start="578" selection-end="578" vertical-scroll-proportion="0.0" vertical-offset="486" max-vertical-offset="810">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Colleague.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GUI/Colleague.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="56" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="288">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewGraphGenerator2.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/JgrahDemoNotMyProject/NewGraphGenerator2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="9" selection-start="654" selection-end="654" vertical-scroll-proportion="0.0" vertical-offset="414" max-vertical-offset="936">
               <folding />
             </state>
           </provider>
@@ -325,7 +229,6 @@
         <option value="$PROJECT_DIR$/src/Mediator.java" />
         <option value="$PROJECT_DIR$/src/graphModel.java" />
         <option value="$PROJECT_DIR$/src/NewGraphGenerator2.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/NodeDataStore.java" />
         <option value="$PROJECT_DIR$/src/ColleagueButton.java" />
         <option value="$PROJECT_DIR$/src/Algorithm.java" />
@@ -337,23 +240,26 @@
         <option value="$PROJECT_DIR$/src/JgrahDemoNotMyProject/CompleteGraphDemo.java" />
         <option value="$PROJECT_DIR$/src/JgrahDemoNotMyProject/Jgraph/CompleteGraphDemo.java" />
         <option value="$PROJECT_DIR$/src/JgrahDemoNotMyProject/GraphGenerator.java" />
-        <option value="$PROJECT_DIR$/src/GUI/TSPGui.java" />
         <option value="$PROJECT_DIR$/src/GUI/ButtonHandler.java" />
         <option value="$PROJECT_DIR$/src/GUI/NewGraphGenerator.java" />
         <option value="$PROJECT_DIR$/src/GUI/Testing/GuiForTestingSmallparts.java" />
-        <option value="$PROJECT_DIR$/src/Algorithm/Algorithm.java" />
         <option value="$PROJECT_DIR$/src/Graph/Node.java" />
         <option value="$PROJECT_DIR$/src/Graph/Testing/GraphGenerator.java" />
-        <option value="$PROJECT_DIR$/src/Graph/NewGraphGenerator.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Algorithm/NearestNeighbourAlgo.java" />
+        <option value="$PROJECT_DIR$/src/GUI/ColleagueSecPanelTextF.java" />
+        <option value="$PROJECT_DIR$/src/Algorithm/Algorithm.java" />
+        <option value="$PROJECT_DIR$/src/Graph/allEdgeRemover.java" />
+        <option value="$PROJECT_DIR$/src/Algorithm/allEdgeRemover.java" />
+        <option value="$PROJECT_DIR$/src/Graph/NewGraphGenerator.java" />
+        <option value="$PROJECT_DIR$/src/GUI/TSPGui.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-4" />
     <option name="y" value="24" />
-    <option name="width" value="1374" />
-    <option name="height" value="723" />
+    <option name="width" value="1366" />
+    <option name="height" value="720" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -370,6 +276,11 @@
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
+  <component name="ProjectStructureProblems">
+    <ignored-problems>
+      <problem id="library-invalid-classes-path(library:project:jgraphx)" />
+    </ignored-problems>
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
@@ -383,6 +294,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -483,11 +395,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Graph" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Testing" />
+              <option name="myItemId" value="Algorithm" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -501,18 +409,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Algorithm" />
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -526,10 +429,10 @@
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Cir_project" />
-    <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="options.lastSelected" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="options.lastSelected" value="appearance" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -599,14 +502,24 @@
       <option name="PROGRAM_PARAMETERS" />
       <method />
     </configuration>
-    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails" singleton="true">
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
-      <setting name="vmparams" value="" />
-      <setting name="cmdLine" value="run-app" />
-      <setting name="depsClasspath" value="false" />
-      <setting name="passParentEnv" value="true" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <setting name="launchBrowser" value="false" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -615,9 +528,6 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -661,6 +571,21 @@
       <listeners />
       <method />
     </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -680,109 +605,6 @@
       </option>
       <envs />
       <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
-      <option name="BCName" value="" />
-      <option name="IOSSimulatorSdkPath" value="" />
-      <option name="adlOptions" value="" />
-      <option name="airProgramParameters" value="" />
-      <option name="appDescriptorForEmulator" value="Android" />
-      <option name="debugTransport" value="USB" />
-      <option name="debuggerSdkRaw" value="BC SDK" />
-      <option name="emulator" value="NexusOne" />
-      <option name="emulatorAdlOptions" value="" />
-      <option name="fastPackaging" value="true" />
-      <option name="fullScreenHeight" value="0" />
-      <option name="fullScreenWidth" value="0" />
-      <option name="launchUrl" value="false" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browserFamily" value="FIREFOX" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="/usr/bin/flashplayerdebugger" />
-        </LauncherParameters>
-      </option>
-      <option name="mobileRunTarget" value="Emulator" />
-      <option name="moduleName" value="" />
-      <option name="overriddenMainClass" value="" />
-      <option name="overriddenOutputFileName" value="" />
-      <option name="overrideMainClass" value="false" />
-      <option name="runTrusted" value="true" />
-      <option name="screenDpi" value="0" />
-      <option name="screenHeight" value="0" />
-      <option name="screenWidth" value="0" />
-      <option name="url" value="http://" />
-      <option name="usbDebugPort" value="7936" />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
-      <module name="" />
-      <option name="TESTING_TYPE" value="0" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" output_log_level="null" package_name="" scope="Class">
-      <option name="BCName" value="" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browserFamily" value="FIREFOX" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="/usr/bin/flashplayerdebugger" />
-        </LauncherParameters>
-      </option>
-      <option name="moduleName" value="" />
-      <option name="trusted" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="myFilePath" />
-      <option name="GLUE" />
-      <option name="myNameFilter" />
-      <option name="myGeneratedName" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -870,7 +692,10 @@
       <workItem from="1394583098512" duration="134000" />
       <workItem from="1394618913976" duration="1082000" />
       <workItem from="1395157287455" duration="127000" />
-      <workItem from="1395157446661" duration="2260000" />
+      <workItem from="1395157446661" duration="4417000" />
+      <workItem from="1395323756577" duration="673000" />
+      <workItem from="1395416474452" duration="779000" />
+      <workItem from="1395583546848" duration="286000" />
     </task>
     <task id="LOCAL-00001" summary="JGraphX may be useful than JGraph">
       <created>1392309152872</created>
@@ -920,14 +745,18 @@
       <created>1393467583540</created>
       <updated>1393467583540</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Classes are now in packages, organised">
+      <created>1395159996658</created>
+      <updated>1395159996658</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104014000" />
+    <option name="totallyTimeSpent" value="107909000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="24" width="1374" height="723" extended-state="6" />
+    <frame x="0" y="24" width="1366" height="720" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -935,27 +764,27 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32845894" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32784185" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4983127" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32676518" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295838" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3261944" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32376397" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22280967" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16639209" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="696" y="197" width="724" height="513" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.179676" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11164274" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="true" anchor="right" auto_hide="true" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="642" y="197" width="724" height="513" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32784185" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3974563" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -984,7 +813,8 @@
     <MESSAGE value="Nearest Algorithm is experimental." />
     <MESSAGE value="Nearest Algorithm is working. NA distance and time are displayed." />
     <MESSAGE value="NA distance and time are &quot;properly&quot; displayed.&#10;&#10;NA distance and time fields have been added to collegueSecPanelTextF." />
-    <option name="LAST_COMMIT_MESSAGE" value="NA distance and time are &quot;properly&quot; displayed.&#10;&#10;NA distance and time fields have been added to collegueSecPanelTextF." />
+    <MESSAGE value="Classes are now in packages, organised" />
+    <option name="LAST_COMMIT_MESSAGE" value="Classes are now in packages, organised" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1011,17 +841,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Graph/Testing/GraphGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="43" selection-start="1446" selection-end="1446" vertical-scroll-proportion="0.0" vertical-offset="720" max-vertical-offset="1470">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="48" column="43" selection-start="1446" selection-end="1446" vertical-scroll-proportion="0.0" vertical-offset="720" max-vertical-offset="1470" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Graph/NewGraphGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="31" selection-start="1496" selection-end="1496" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="720">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1045,31 +873,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/Testing/GuiForTestingSmallparts.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="19" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="1836">
-          <folding />
-        </state>
+        <state line="33" column="19" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="1836" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="3" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="468">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Graph/Testing/GraphGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="43" selection-start="1446" selection-end="1446" vertical-scroll-proportion="0.0" vertical-offset="864" max-vertical-offset="1764">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graph/Testing/GraphGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="43" selection-start="1446" selection-end="1446" vertical-scroll-proportion="0.0" vertical-offset="864" max-vertical-offset="1764" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Graph/NewGraphGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="18" selection-start="1191" selection-end="1191" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="900">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1090,20 +916,6 @@
     <entry file="jar:///usr/lib/java/jdk1.7.0_51/jre/lib/rt.jar!/java/awt/event/MouseListener.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/Colleague.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="62" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/Mediator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="43" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="jar:///usr/lib/java/jdk1.7.0_51/src.zip!/java/util/ArrayList.java">
@@ -1189,23 +1001,17 @@
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/jgrapht-0.9.0/lib/jgraphx-2.0.0.1.jar!/com/mxgraph/util/mxEventObject.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="28" selection-start="520" selection-end="520" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="540">
-          <folding />
-        </state>
+        <state line="15" column="28" selection-start="520" selection-end="520" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="540" />
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/jgrapht-0.9.0/lib/jgraphx-2.0.0.1.jar!/com/mxgraph/util/mxEventSource.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="16" selection-start="1161" selection-end="1161" vertical-scroll-proportion="0.0" vertical-offset="522" max-vertical-offset="756">
-          <folding />
-        </state>
+        <state line="29" column="16" selection-start="1161" selection-end="1161" vertical-scroll-proportion="0.0" vertical-offset="522" max-vertical-offset="756" />
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/jgrapht-0.9.0/lib/jgraphx-2.0.0.1.jar!/com/mxgraph/model/mxGraphModel.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="134" column="16" selection-start="6353" selection-end="6353" vertical-scroll-proportion="0.0" vertical-offset="2412" max-vertical-offset="7326">
-          <folding />
-        </state>
+        <state line="134" column="16" selection-start="6353" selection-end="6353" vertical-scroll-proportion="0.0" vertical-offset="2412" max-vertical-offset="7326" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/ColleagueTextField.java">
@@ -1215,32 +1021,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/ColleagueSecPanelTextF.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="25" selection-start="546" selection-end="546" vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="756">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/JgrahDemoNotMyProject/Jgraph/CompleteGraphDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="19" selection-start="1615" selection-end="1615" vertical-scroll-proportion="0.0" vertical-offset="894" max-vertical-offset="2304">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JgrahDemoNotMyProject/NewGraphGenerator2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="9" selection-start="654" selection-end="654" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="846">
-          <folding>
-            <element signature="e#31#72#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="52" column="19" selection-start="1844" selection-end="1844" vertical-scroll-proportion="0.0" vertical-offset="894" max-vertical-offset="2304" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/Testing/GuiForTestingSmallparts.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="19" selection-start="643" selection-end="643" vertical-scroll-proportion="0.33944955" vertical-offset="337" max-vertical-offset="1800">
+        <state line="32" column="19" selection-start="643" selection-end="643" vertical-scroll-proportion="0.33944955" vertical-offset="337" max-vertical-offset="1800" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graph/Observer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="44" selection-start="150" selection-end="150" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/ButtonHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="1" selection-start="494" selection-end="494" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="486">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graph/Testing/GraphGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="9" selection-start="1586" selection-end="1586" vertical-scroll-proportion="0.0" vertical-offset="287" max-vertical-offset="1764" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graph/CityName.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="58" selection-end="58" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9846">
           <folding />
         </state>
       </provider>
@@ -1254,33 +1066,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Graph/CityNameGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="125" selection-end="125" vertical-scroll-proportion="0.2580645" vertical-offset="0" max-vertical-offset="972">
+        <state line="8" column="13" selection-start="125" selection-end="125" vertical-scroll-proportion="0.19485791" vertical-offset="0" max-vertical-offset="936">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Graph/NodeDataStore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="7" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="1026">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Graph/Observer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="44" selection-start="150" selection-end="150" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/ButtonHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="1" selection-start="514" selection-end="514" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="486">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1291,25 +1080,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Graph/Testing/GraphGenerator.java">
+    <entry file="file://$PROJECT_DIR$/src/Graph/NodeDataStore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="9" selection-start="1586" selection-end="1586" vertical-scroll-proportion="0.0" vertical-offset="287" max-vertical-offset="1764">
+        <state line="3" column="24" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1026">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="33" selection-start="599" selection-end="607" vertical-scroll-proportion="0.5471698" vertical-offset="99" max-vertical-offset="576">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Graph/CityName.java">
+    <entry file="file://$PROJECT_DIR$/src/GUI/Mediator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="58" selection-end="58" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9846">
+        <state line="4" column="3" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JgrahDemoNotMyProject/NewGraphGenerator2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="9" selection-start="654" selection-end="654" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="846">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Colleague.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="56" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/ColleagueSecPanelTextF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="8" selection-start="578" selection-end="578" vertical-scroll-proportion="0.0" vertical-offset="142" max-vertical-offset="738">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/Algorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="28" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/NearestNeighbourAlgo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="9" selection-start="859" selection-end="859" vertical-scroll-proportion="0.0" vertical-offset="1456" max-vertical-offset="2034">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Graph/NewGraphGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="10" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1458">
+        <state line="85" column="5" selection-start="3029" selection-end="3029" vertical-scroll-proportion="0.0" vertical-offset="1148" max-vertical-offset="1656">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1318,35 +1151,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/TSPGui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="716" column="57" selection-start="36686" selection-end="36686" vertical-scroll-proportion="0.0" vertical-offset="12629" max-vertical-offset="15498">
+        <state line="783" column="48" selection-start="39217" selection-end="39217" vertical-scroll-proportion="2.1410255" vertical-offset="13092" max-vertical-offset="15732">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithm/Algorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="31" selection-start="448" selection-end="448" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="558">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithm/NearestNeighbourAlgo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="17" selection-start="435" selection-end="435" vertical-scroll-proportion="-1.967742" vertical-offset="1494" max-vertical-offset="2052">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="574" selection-end="574" vertical-scroll-proportion="0.7702703" vertical-offset="0" max-vertical-offset="558">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1407,7 +1215,18 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
@@ -1415,7 +1234,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>java</last-edited>
+          <last-edited>lib</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

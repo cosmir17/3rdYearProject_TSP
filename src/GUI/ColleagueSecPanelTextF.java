@@ -24,6 +24,9 @@ public class ColleagueSecPanelTextF extends JTextField implements Colleague, Tex
 
         setEnabled(enabled);
         setEditable(false);
+        if (!enabled)
+            setText("");
+
         // setBackground(enabled ? Color.white : Color.lightGray);
     }
 
