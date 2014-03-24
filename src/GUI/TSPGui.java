@@ -543,7 +543,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
                     button9.addActionListener(new ActionListener() {
                         @Override
                         public void actionPerformed(ActionEvent e) {
-                            graphG.allEdgeRemover();
+                         //  graphG.allEdgeRemover();
                         }
                     });
                     panel14.add(button9);
@@ -694,7 +694,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
 
     private void shortestButtonPushed() {
         if (shortestButton.pushed && shortestButton.getActionCommand().equals("Shortest Path")) {
-            //  graphG.allEdgeRemover();
+            graphG.allEdgeRemover();
 
             //  System.out.println("short source =  " + shortestButton.getSource());
             //System.out.println("short actionCommand =  " + shortestButton.getActionCommand());
@@ -707,9 +707,9 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
             //  insertGraphintoPanelMap(new Algorithm.InsertionAlgo(graphG).run());
             //insertionCheckBox.setColleagueEnabled(true);
 
-            //nearestAlgorithmRunner();
+            nearestAlgorithmRunner();
 
-            graphG.oneEdgeDrawer();
+          //  graphG.oneEdgeDrawer();
 
 
             // nnCheckBox.setColleagueEnabled(true);

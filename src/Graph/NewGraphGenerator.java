@@ -78,8 +78,12 @@ public class NewGraphGenerator {
         graph.getModel().beginUpdate();
         try {
             // graph.resetEdges(graphNodeArray);
-            Object[] object3 = graph.getEdges(graphNodeArray[9], graphNodeArray[10]);
-            graph.getModel().remove(object3[0]);
+            Object[] object3 = graph.getAllEdges(graphNodeArray);
+
+            for(Object edge :object3)
+            {
+                graph.getModel().remove(edge);
+            }
 
         } finally {
             graph.getModel().endUpdate();
