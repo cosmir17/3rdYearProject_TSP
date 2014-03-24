@@ -45,7 +45,7 @@ public class NearestNeighbourAlgo extends Algorithm {
     }
 
     private int edgeDrawerfromItoNextClosestNode(int i) {
-
+        //System.out.println(i);
         int nodeJ = getIndexofClosesetNodefromIwithDistance(i).getValue();
         edgeDrawerFromNodeItoJ(i, nodeJ);
         return nodeJ;

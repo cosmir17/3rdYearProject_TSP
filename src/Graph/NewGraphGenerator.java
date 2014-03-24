@@ -77,7 +77,21 @@ public class NewGraphGenerator {
     public void allEdgeRemover() {
         graph.getModel().beginUpdate();
         try {
-            graph.resetEdges(graphNodeArray);
+            // graph.resetEdges(graphNodeArray);
+            Object[] object3 = graph.getEdges(graphNodeArray[9], graphNodeArray[10]);
+            graph.getModel().remove(object3[0]);
+
+        } finally {
+            graph.getModel().endUpdate();
+        }
+
+    }
+
+    public void oneEdgeDrawer() {
+        graph.getModel().beginUpdate();
+        try {
+            graph.insertEdge(parent, null, "", graphNodeArray[9], graphNodeArray[10]);
+
 
         } finally {
             graph.getModel().endUpdate();

@@ -540,6 +540,12 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
 
                     //---- button9 ----
                     button9.setText("Load");
+                    button9.addActionListener(new ActionListener() {
+                        @Override
+                        public void actionPerformed(ActionEvent e) {
+                            graphG.allEdgeRemover();
+                        }
+                    });
                     panel14.add(button9);
                 }
 
@@ -687,8 +693,8 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
     }
 
     private void shortestButtonPushed() {
-        if (shortestButton.pushed) {
-            graphG.allEdgeRemover();
+        if (shortestButton.pushed && shortestButton.getActionCommand().equals("Shortest Path")) {
+            //  graphG.allEdgeRemover();
 
             //  System.out.println("short source =  " + shortestButton.getSource());
             //System.out.println("short actionCommand =  " + shortestButton.getActionCommand());
@@ -701,7 +707,11 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
             //  insertGraphintoPanelMap(new Algorithm.InsertionAlgo(graphG).run());
             //insertionCheckBox.setColleagueEnabled(true);
 
-            nearestAlgorithmRunner();
+            //nearestAlgorithmRunner();
+
+            graphG.oneEdgeDrawer();
+
+
             // nnCheckBox.setColleagueEnabled(true);
 
             //optAlgoCheckBox.setColleagueEnabled(true);

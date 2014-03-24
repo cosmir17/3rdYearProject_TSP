@@ -23,7 +23,7 @@ public class ColleagueCheckBox extends JCheckBox implements Colleague, ItemListe
     public void setColleagueEnabled(boolean enabled) {
 
         setEnabled(enabled);
-        setSelected(enabled);
+        // setSelected(enabled);
 
     }
 
