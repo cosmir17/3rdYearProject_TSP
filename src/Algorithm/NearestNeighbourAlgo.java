@@ -1,6 +1,6 @@
 package Algorithm;
 
-import Graph.NewGraphGenerator;
+import Graph.GraphGenerator;
 import com.mxgraph.model.mxCell;
 import com.mxgraph.swing.mxGraphComponent;
 
@@ -17,7 +17,7 @@ public class NearestNeighbourAlgo extends Algorithm {
 
     double totalDistance = 0;
 
-    public NearestNeighbourAlgo(NewGraphGenerator graphG) {
+    public NearestNeighbourAlgo(GraphGenerator graphG) {
         super(graphG);
         drawer();
     }

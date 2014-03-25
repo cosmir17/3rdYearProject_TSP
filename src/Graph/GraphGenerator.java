@@ -7,12 +7,12 @@ import com.mxgraph.view.mxGraph;
 
 import java.awt.*;
 
-public class NewGraphGenerator {
+public class GraphGenerator {
     public static mxGraph graph = new mxGraph();
     Object parent = graph.getDefaultParent();
     public Object[] graphNodeArray;
 
-    public NewGraphGenerator() {
+    public GraphGenerator() {
 
 
         // mxGraph.getCellStyle(graph);
@@ -80,8 +80,7 @@ public class NewGraphGenerator {
             // graph.resetEdges(graphNodeArray);
             Object[] object3 = graph.getAllEdges(graphNodeArray);
 
-            for(Object edge :object3)
-            {
+            for (Object edge : object3) {
                 graph.getModel().remove(edge);
             }
 

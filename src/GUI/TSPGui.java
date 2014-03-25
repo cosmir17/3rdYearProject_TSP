@@ -1,7 +1,7 @@
 package GUI;
 
 import Algorithm.NearestNeighbourAlgo;
-import Graph.NewGraphGenerator;
+import Graph.GraphGenerator;
 import com.mxgraph.swing.mxGraphComponent;
 
 import javax.swing.*;
@@ -23,12 +23,12 @@ import java.util.regex.Pattern;
 public class TSPGui extends JFrame implements ActionListener, Mediator {
 
     //  private Graph.Testing.GraphGenerator graph;
-    private NewGraphGenerator graphG;
+    private GraphGenerator graphG;
     public final static String INITIALISATION = "Initialisation";
     public final static String SHORTEST_PATH = "Shortest Path";
 
 
-    public TSPGui(NewGraphGenerator graphG) {
+    public TSPGui(GraphGenerator graphG) {
         //  graph = new Graph.Testing.GraphGenerator();
         this.graphG = graphG;
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -709,7 +709,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
 
             nearestAlgorithmRunner();
 
-          //  graphG.oneEdgeDrawer();
+            //graphG.oneEdgeDrawer();
 
 
             // nnCheckBox.setColleagueEnabled(true);

@@ -1,6 +1,6 @@
 package Algorithm;
 
-import Graph.NewGraphGenerator;
+import Graph.GraphGenerator;
 import com.mxgraph.swing.mxGraphComponent;
 
 /**
@@ -8,7 +8,7 @@ import com.mxgraph.swing.mxGraphComponent;
  */
 public class InsertionAlgo extends Algorithm {
 
-    InsertionAlgo(NewGraphGenerator graphG) {
+    InsertionAlgo(GraphGenerator graphG) {
         super(graphG);
     }
 

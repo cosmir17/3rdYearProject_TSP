@@ -1,5 +1,5 @@
 import GUI.TSPGui;
-import Graph.NewGraphGenerator;
+import Graph.GraphGenerator;
 
 /**
  * Created with IntelliJ IDEA.
@@ -16,9 +16,9 @@ public class Main {
         //GUI.TSPGui gui = new GUI.TSPGui();
 
         //GUI.TSPGui panel = new GUI.TSPGui();
-        // Graph.NewGraphGenerator newGraph = new Graph.NewGraphGenerator();
+        // Graph.GraphGenerator newGraph = new Graph.GraphGenerator();
 
-        NewGraphGenerator graphG = new NewGraphGenerator();
+        GraphGenerator graphG = new GraphGenerator();
         TSPGui panel = new TSPGui(graphG);
 
     }
