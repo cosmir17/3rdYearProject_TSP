@@ -8,12 +8,12 @@ import com.mxgraph.swing.mxGraphComponent;
  */
 public class InsertionAlgo extends Algorithm {
 
-    InsertionAlgo(GraphGenerator graphG) {
-        super(graphG);
+    InsertionAlgo(GraphGenerator graphObject) {
+        super(graphObject);
     }
 
     @Override
     public mxGraphComponent run() {
-        return graphG.componentGetter();
+        return graphObject.componentGetter();
     }
 }

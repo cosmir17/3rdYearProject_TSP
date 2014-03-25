@@ -26,8 +26,8 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
     private GraphGenerator graphG;
     private GraphGenerator graphGnearnAlgoGraph;
     private GraphGenerator graphInsertionAlgoGraph;
-    private final static String INITIALISATION = "Initialisation";
-    private final static String SHORTEST_PATH = "Shortest Path";
+    public final static String INITIALISATION = "Initialisation";
+    public final static String SHORTEST_PATH = "Shortest Path";
 
 
     public TSPGui(GraphGenerator graphG) {
@@ -739,8 +739,8 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
     }
 
     private void graphObectDuplicator() {
-        GraphGenerator graphGnearnAlgoGraph = graphG;
-        GraphGenerator graphInsertionAlgoGraph = graphG;
+        graphGnearnAlgoGraph = graphG;
+        graphInsertionAlgoGraph = graphG;
         //   GraphGenerator graphGnearnAlgoGraph = graphG;
         //   GraphGenerator graphGnearnAlgoGraph = graphG;
         //   GraphGenerator graphGnearnAlgoGraph = graphG;

@@ -17,8 +17,8 @@ public class NearestNeighbourAlgo extends Algorithm {
 
     double totalDistance = 0;
 
-    public NearestNeighbourAlgo(GraphGenerator graphG) {
-        super(graphG);
+    public NearestNeighbourAlgo(GraphGenerator graphObject) {
+        super(graphObject);
         drawer();
     }
 

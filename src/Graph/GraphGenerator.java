@@ -76,6 +76,8 @@ public class GraphGenerator {
     }
 
     public void allEdgeRemover() {
+
+
         graph.getModel().beginUpdate();
         try {
             // graph.resetEdges(graphNodeArray);
@@ -130,5 +132,6 @@ public class GraphGenerator {
 
         return Math.round(distance);
     }
+
 
 }
