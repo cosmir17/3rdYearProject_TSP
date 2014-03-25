@@ -103,12 +103,12 @@ public class GraphGenerator {
 
     }
 
-    public void edgeDrawerFromNodeItoJ(int i, int j) {
+    public double edgeDrawerFromNodeItoJ(int i, int j) {
         graph.getModel().beginUpdate();
 
         try {
             graph.insertEdge(parent, null, distanceFinder(i, j), graphNodeArray[i], graphNodeArray[j]);
-            totalDistance = totalDistance + distanceFinder(i, j);
+            return distanceFinder(i, j);
         } finally {
             graph.getModel().endUpdate();
         }

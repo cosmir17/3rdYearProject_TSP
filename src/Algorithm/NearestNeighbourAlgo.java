@@ -29,7 +29,7 @@ public class NearestNeighbourAlgo extends Algorithm {
     }
 
     private void edgeDrawerFromBeginningtoEnd(int lastNode) {
-        graphG.edgeDrawerFromNodeItoJ(lastNode, 0);
+        totalDistance += graphG.edgeDrawerFromNodeItoJ(lastNode, 0);
     }
 
     private int drawerIterator(int i) {
@@ -47,7 +47,7 @@ public class NearestNeighbourAlgo extends Algorithm {
     private int edgeDrawerfromItoNextClosestNode(int i) {
         //System.out.println(i);
         int nodeJ = getIndexofClosesetNodefromIwithDistance(i).getValue();
-        graphG.edgeDrawerFromNodeItoJ(i, nodeJ);
+        totalDistance += graphG.edgeDrawerFromNodeItoJ(i, nodeJ);
         return nodeJ;
     }
 
