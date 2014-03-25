@@ -13,6 +13,7 @@ public abstract class Algorithm {
     protected Object graphNodeArray[];
     protected Object parent;
     double totalDistance = 0;
+    String color = "";
 
     public Algorithm(GraphGenerator graphObject) {
         this.graphObject = graphObject;
@@ -21,6 +22,10 @@ public abstract class Algorithm {
         this.parent = graph.getDefaultParent();
 
         drawer();
+    }
+
+    protected void edgeColorSeletor(String color) {
+        this.color = color;
     }
 
     protected abstract void drawer();

@@ -158,10 +158,10 @@ public class GraphGenerator {
         return sortedDistanceTable;
     }
 
-    public int edgeDrawerfromItoNextClosestNode(int i) {
+    public int edgeDrawerfromItoNextClosestNode(int i, String color) {
         //System.out.println(i);
         int nodeJ = this.getIndexofClosesetNodefromIwithDistance(i).getValue();
-        edgeDrawerFromNodeItoJ(i, nodeJ, "green");
+        edgeDrawerFromNodeItoJ(i, nodeJ, color);
         return nodeJ;
     }
 

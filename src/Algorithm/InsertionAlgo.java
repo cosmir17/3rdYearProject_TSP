@@ -8,14 +8,16 @@ import com.mxgraph.swing.mxGraphComponent;
  */
 public class InsertionAlgo extends Algorithm {
 
+
     InsertionAlgo(GraphGenerator graphObject) {
         super(graphObject);
+        edgeColorSeletor("red");
     }
 
     @Override
     protected void drawer() {
-        graphObject.edgeDrawerfromItoNextClosestNode(0);
-        graphObject.getIndexofClosesetNodefromIwithDistance(0);
+        int nextNodeIndex = graphObject.edgeDrawerfromItoNextClosestNode(0, color);
+
     }
 
     @Override
