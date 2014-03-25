@@ -21,7 +21,11 @@ public abstract class Algorithm {
         this.parent = graph.getDefaultParent();
     }
 
-    abstract mxGraphComponent run();
+
+    public mxGraphComponent run() {
+        return graphObject.componentGetter();
+
+    }
 
     public double getTotalDistance() {
         return totalDistance;

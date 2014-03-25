@@ -2,7 +2,6 @@ package Algorithm;
 
 import Graph.GraphGenerator;
 import com.mxgraph.model.mxCell;
-import com.mxgraph.swing.mxGraphComponent;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -68,13 +67,6 @@ public class NearestNeighbourAlgo extends Algorithm {
         TreeMap<Double, Integer> sortedDistanceTable = new TreeMap<Double, Integer>();
         sortedDistanceTable.putAll(distanceTable);
         return sortedDistanceTable;
-    }
-
-
-    @Override
-    public mxGraphComponent run() {
-        return graphObject.componentGetter();
-
     }
 
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="Method modified for coloring edges (working nicely)">
+    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="1.getTotalDistance method moved to Algorithm abstract calss&#10;2.total distance variable moved to Algorithm class">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Algorithm/Algorithm.java" afterPath="$PROJECT_DIR$/src/Algorithm/Algorithm.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Algorithm/NearestNeighbourAlgo.java" afterPath="$PROJECT_DIR$/src/Algorithm/NearestNeighbourAlgo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -60,7 +60,7 @@
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/Algorithm/NearestNeighbourAlgo.java" line="26" class="Algorithm.NearestNeighbourAlgo" package="Algorithm">
+      <breakpoint url="file://$PROJECT_DIR$/src/Algorithm/NearestNeighbourAlgo.java" line="25" class="Algorithm.NearestNeighbourAlgo" package="Algorithm">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -95,10 +95,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Algorithm.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Algorithm.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Algorithm/Algorithm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="11" selection-start="664" selection-end="664" vertical-scroll-proportion="0.6567164" vertical-offset="0" max-vertical-offset="603">
+            <state line="22" column="0" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
               <folding />
             </state>
           </provider>
@@ -131,14 +131,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NearestNeighbourAlgo.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="NearestNeighbourAlgo.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Algorithm/NearestNeighbourAlgo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="0" selection-start="2199" selection-end="2199" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1566">
+            <state line="72" column="0" selection-start="2093" selection-end="2093" vertical-scroll-proportion="1.6119403" vertical-offset="324" max-vertical-offset="1458">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1622#1639#0" expanded="true" />
-                <element signature="e#1979#1996#0" expanded="true" />
+                <element signature="e#1621#1638#0" expanded="true" />
+                <element signature="e#1978#1995#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -734,7 +734,11 @@
       <created>1395771544533</created>
       <updated>1395771544533</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="1.getTotalDistance method moved to Algorithm abstract calss&#10;2.total distance variable moved to Algorithm class">
+      <created>1395771801868</created>
+      <updated>1395771801868</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -809,7 +813,8 @@
     <MESSAGE value="Removed minor errors. due to another double declaration.&#10;1.Removed double declarations.&#10;2.making methods for copying the main graph object for each algorithm.&#10;&#10;" />
     <MESSAGE value="edge Drawer From the LastNode to the First one" />
     <MESSAGE value="Method modified for coloring edges (working nicely)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Method modified for coloring edges (working nicely)" />
+    <MESSAGE value="1.getTotalDistance method moved to Algorithm abstract calss&#10;2.total distance variable moved to Algorithm class" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.getTotalDistance method moved to Algorithm abstract calss&#10;2.total distance variable moved to Algorithm class" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -840,8 +845,8 @@
         <state line="3" column="13" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="255">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1622#1639#0" expanded="true" />
-            <element signature="e#1979#1996#0" expanded="true" />
+            <element signature="e#1621#1638#0" expanded="true" />
+            <element signature="e#1978#1995#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -877,8 +882,8 @@
         <state line="3" column="13" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="306">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1622#1639#0" expanded="true" />
-            <element signature="e#1979#1996#0" expanded="true" />
+            <element signature="e#1621#1638#0" expanded="true" />
+            <element signature="e#1978#1995#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1128,21 +1133,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithm/NearestNeighbourAlgo.java">
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/Algorithm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="0" selection-start="2199" selection-end="2199" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1566">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1622#1639#0" expanded="true" />
-            <element signature="e#1979#1996#0" expanded="true" />
-          </folding>
+        <state line="22" column="0" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithm/Algorithm.java">
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/NearestNeighbourAlgo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="11" selection-start="664" selection-end="664" vertical-scroll-proportion="0.6567164" vertical-offset="0" max-vertical-offset="603">
-          <folding />
+        <state line="72" column="0" selection-start="2093" selection-end="2093" vertical-scroll-proportion="1.6119403" vertical-offset="324" max-vertical-offset="1458">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1621#1638#0" expanded="true" />
+            <element signature="e#1978#1995#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
