@@ -16,7 +16,6 @@ public abstract class Algorithm {
     public Algorithm(GraphGenerator graphG) {
         this.graphG = graphG;
         this.graph = graphG.graph;
-        this.nodeArray = graphG.graphNodeArray;
         this.parent = graph.getDefaultParent();
     }
 

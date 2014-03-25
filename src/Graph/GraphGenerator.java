@@ -2,6 +2,7 @@ package Graph; /**
  * Created by lloydp on 13/02/14.
  */
 
+import com.mxgraph.model.mxCell;
 import com.mxgraph.swing.mxGraphComponent;
 import com.mxgraph.view.mxGraph;
 
@@ -101,4 +102,33 @@ public class GraphGenerator {
         }
 
     }
+
+    public void edgeDrawerFromNodeItoJ(int i, int j) {
+        graph.getModel().beginUpdate();
+
+        try {
+            graph.insertEdge(parent, null, distanceFinder(i, j), graphNodeArray[i], graphNodeArray[j]);
+            totalDistance = totalDistance + distanceFinder(i, j);
+        } finally {
+            graph.getModel().endUpdate();
+        }
+
+
+    }
+
+    public double distanceFinder(int i, int j) {
+        mxCell ithNode = (mxCell) graphNodeArray[i];
+        mxCell jthNode = (mxCell) graphNodeArray[j];
+
+        // System.out.println(ithNode.getValue());
+        // System.out.println(jthNode.getValue());
+
+        int horizontalDistance = (int) (ithNode.getGeometry().getX() - jthNode.getGeometry().getX());
+        int verticalDistance = (int) (ithNode.getGeometry().getY() - jthNode.getGeometry().getY());
+
+        double distance = Math.sqrt((horizontalDistance * horizontalDistance) + (verticalDistance * verticalDistance));
+
+        return Math.round(distance);
+    }
+
 }

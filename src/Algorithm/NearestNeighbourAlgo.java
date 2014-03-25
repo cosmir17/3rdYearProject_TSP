@@ -29,7 +29,7 @@ public class NearestNeighbourAlgo extends Algorithm {
     }
 
     private void edgeDrawerFromBeginningtoEnd(int lastNode) {
-        edgeDrawerFromNodeItoJ(lastNode, 0);
+        graphG.edgeDrawerFromNodeItoJ(lastNode, 0);
     }
 
     private int drawerIterator(int i) {
@@ -47,7 +47,7 @@ public class NearestNeighbourAlgo extends Algorithm {
     private int edgeDrawerfromItoNextClosestNode(int i) {
         //System.out.println(i);
         int nodeJ = getIndexofClosesetNodefromIwithDistance(i).getValue();
-        edgeDrawerFromNodeItoJ(i, nodeJ);
+        graphG.edgeDrawerFromNodeItoJ(i, nodeJ);
         return nodeJ;
     }
 
@@ -62,7 +62,7 @@ public class NearestNeighbourAlgo extends Algorithm {
 
         for (int j = 0; j < nodeArray.length; j++) {
             mxCell jthNode = (mxCell) nodeArray[j];
-            if ((!(j == i)) && jthNode.getEdgeCount() < 1) distanceTable.put(distanceFinder(i, j), j);
+            if ((!(j == i)) && jthNode.getEdgeCount() < 1) distanceTable.put(graphG.distanceFinder(i, j), j);
         }
 
         TreeMap<Double, Integer> sortedDistanceTable = new TreeMap<Double, Integer>();
@@ -70,33 +70,6 @@ public class NearestNeighbourAlgo extends Algorithm {
         return sortedDistanceTable;
     }
 
-    private double distanceFinder(int i, int j) {
-        mxCell ithNode = (mxCell) nodeArray[i];
-        mxCell jthNode = (mxCell) nodeArray[j];
-
-        // System.out.println(ithNode.getValue());
-        // System.out.println(jthNode.getValue());
-
-        int horizontalDistance = (int) (ithNode.getGeometry().getX() - jthNode.getGeometry().getX());
-        int verticalDistance = (int) (ithNode.getGeometry().getY() - jthNode.getGeometry().getY());
-
-        double distance = Math.sqrt((horizontalDistance * horizontalDistance) + (verticalDistance * verticalDistance));
-
-        return Math.round(distance);
-    }
-
-    private void edgeDrawerFromNodeItoJ(int i, int j) {
-        graph.getModel().beginUpdate();
-
-        try {
-            graph.insertEdge(parent, null, distanceFinder(i, j), nodeArray[i], nodeArray[j]);
-            totalDistance = totalDistance + distanceFinder(i, j);
-        } finally {
-            graph.getModel().endUpdate();
-        }
-
-
-    }
 
     @Override
     public mxGraphComponent run() {
