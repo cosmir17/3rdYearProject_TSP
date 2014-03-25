@@ -13,6 +13,11 @@ public class InsertionAlgo extends Algorithm {
     }
 
     @Override
+    protected void drawer() {
+        // graphObject.
+    }
+
+    @Override
     public mxGraphComponent run() {
         return graphObject.componentGetter();
     }
