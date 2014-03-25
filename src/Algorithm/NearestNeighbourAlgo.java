@@ -24,12 +24,12 @@ public class NearestNeighbourAlgo extends Algorithm {
 
     private void drawer() {
 
-        int lastNode = drawerIterator(nodeArray.length - 2);
+        int lastNode = drawerIterator(graphNodeArray.length - 2);
         edgeDrawerFromBeginningtoEnd(lastNode);
     }
 
     private void edgeDrawerFromBeginningtoEnd(int lastNode) {
-        totalDistance += graphG.edgeDrawerFromNodeItoJ(lastNode, 0);
+        totalDistance += graphObject.edgeDrawerFromNodeItoJ(lastNode, 0);
     }
 
     private int drawerIterator(int i) {
@@ -47,7 +47,7 @@ public class NearestNeighbourAlgo extends Algorithm {
     private int edgeDrawerfromItoNextClosestNode(int i) {
         //System.out.println(i);
         int nodeJ = getIndexofClosesetNodefromIwithDistance(i).getValue();
-        totalDistance += graphG.edgeDrawerFromNodeItoJ(i, nodeJ);
+        totalDistance += graphObject.edgeDrawerFromNodeItoJ(i, nodeJ);
         return nodeJ;
     }
 
@@ -60,9 +60,9 @@ public class NearestNeighbourAlgo extends Algorithm {
         Map<Double, Integer> distanceTable = new HashMap<Double, Integer>();
         // <distance, node>
 
-        for (int j = 0; j < nodeArray.length; j++) {
-            mxCell jthNode = (mxCell) nodeArray[j];
-            if ((!(j == i)) && jthNode.getEdgeCount() < 1) distanceTable.put(graphG.distanceFinder(i, j), j);
+        for (int j = 0; j < graphNodeArray.length; j++) {
+            mxCell jthNode = (mxCell) graphNodeArray[j];
+            if ((!(j == i)) && jthNode.getEdgeCount() < 1) distanceTable.put(graphObject.distanceFinder(i, j), j);
         }
 
         TreeMap<Double, Integer> sortedDistanceTable = new TreeMap<Double, Integer>();
@@ -73,7 +73,7 @@ public class NearestNeighbourAlgo extends Algorithm {
 
     @Override
     public mxGraphComponent run() {
-        return graphG.componentGetter();
+        return graphObject.componentGetter();
 
     }
 

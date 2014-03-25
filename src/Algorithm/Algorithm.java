@@ -8,15 +8,15 @@ import com.mxgraph.view.mxGraph;
  * Created by lloydp on 09/02/14.
  */
 public abstract class Algorithm {
-    protected GraphGenerator graphG;
+    protected GraphGenerator graphObject;
     protected mxGraph graph;
-    protected Object nodeArray[];
+    protected Object graphNodeArray[];
     protected Object parent;
 
-    public Algorithm(GraphGenerator graphG) {
-        this.graphG = graphG;
-        this.graph = graphG.graph;
-        this.nodeArray = graphG.graphNodeArray;
+    public Algorithm(GraphGenerator graphObject) {
+        this.graphObject = graphObject;
+        this.graph = graphObject.graph;
+        this.graphNodeArray = graphObject.graphNodeArray;
         this.parent = graph.getDefaultParent();
     }
 

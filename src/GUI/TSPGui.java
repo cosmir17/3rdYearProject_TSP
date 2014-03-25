@@ -24,8 +24,10 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
 
     //  private Graph.Testing.GraphGenerator graph;
     private GraphGenerator graphG;
-    public final static String INITIALISATION = "Initialisation";
-    public final static String SHORTEST_PATH = "Shortest Path";
+    private GraphGenerator graphGnearnAlgoGraph;
+    private GraphGenerator graphInsertionAlgoGraph;
+    private final static String INITIALISATION = "Initialisation";
+    private final static String SHORTEST_PATH = "Shortest Path";
 
 
     public TSPGui(GraphGenerator graphG) {
@@ -694,7 +696,11 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
 
     private void shortestButtonPushed() {
         if (shortestButton.pushed && shortestButton.getActionCommand().equals("Shortest Path")) {
-            graphG.allEdgeRemover();
+
+            graphObectDuplicator();
+            graphEdgeRemover();
+
+            nearestAlgorithmRunner();
 
             //  System.out.println("short source =  " + shortestButton.getSource());
             //System.out.println("short actionCommand =  " + shortestButton.getActionCommand());
@@ -707,7 +713,6 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
             //  insertGraphintoPanelMap(new Algorithm.InsertionAlgo(graphG).run());
             //insertionCheckBox.setColleagueEnabled(true);
 
-            nearestAlgorithmRunner();
 
             //graphG.oneEdgeDrawer();
 
@@ -725,10 +730,25 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
 
     }
 
+    private void graphEdgeRemover() {
+        graphGnearnAlgoGraph.allEdgeRemover();
+        graphInsertionAlgoGraph.allEdgeRemover();
+        //   GraphGenerator graphGnearnAlgoGraph = graphG;
+        //   GraphGenerator graphGnearnAlgoGraph = graphG;
+        //   GraphGenerator graphGnearnAlgoGraph = graphG;
+    }
+
+    private void graphObectDuplicator() {
+        GraphGenerator graphGnearnAlgoGraph = graphG;
+        GraphGenerator graphInsertionAlgoGraph = graphG;
+        //   GraphGenerator graphGnearnAlgoGraph = graphG;
+        //   GraphGenerator graphGnearnAlgoGraph = graphG;
+        //   GraphGenerator graphGnearnAlgoGraph = graphG;
+    }
+
 
     private void nearestAlgorithmRunner() {
         long start = System.currentTimeMillis();
-        GraphGenerator graphGnearnAlgoGraph = graphG;
         NearestNeighbourAlgo nnAlgo = new NearestNeighbourAlgo(graphGnearnAlgoGraph);
         long end = System.currentTimeMillis();
         nnDistanceTextF.setText(String.valueOf(nnAlgo.getTotalDistance()));
