@@ -12,11 +12,12 @@ public class NearestNeighbourAlgo extends Algorithm {
 
     public NearestNeighbourAlgo(GraphGenerator graphObject) {
         super(graphObject);
-        drawer();
+
     }
 
-    private void drawer() {
 
+    @Override
+    protected void drawer() {
         int lastNode = drawerIterator(graphNodeArray.length - 2);
         edgeDrawerFromLastNodetotheFirstone(lastNode);
     }

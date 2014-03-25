@@ -19,7 +19,11 @@ public abstract class Algorithm {
         this.graph = graphObject.graph;
         this.graphNodeArray = graphObject.graphNodeArray;
         this.parent = graph.getDefaultParent();
+
+        drawer();
     }
+
+    protected abstract void drawer();
 
 
     public mxGraphComponent run() {
