@@ -7,6 +7,9 @@ import com.mxgraph.swing.mxGraphComponent;
 import com.mxgraph.view.mxGraph;
 
 import java.awt.*;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.TreeMap;
 
 public class GraphGenerator {
     public static mxGraph graph = new mxGraph();
@@ -134,6 +137,25 @@ public class GraphGenerator {
         double distance = Math.sqrt((horizontalDistance * horizontalDistance) + (verticalDistance * verticalDistance));
 
         return Math.round(distance);
+    }
+
+    public Map.Entry<Double, Integer> getIndexofClosesetNodefromIwithDistance(int i) {
+        Map.Entry<Double, Integer> thClosestElementfromI = distanceTableCreatorFromNodei(i).firstEntry();
+        return thClosestElementfromI;
+    }
+
+    public TreeMap<Double, Integer> distanceTableCreatorFromNodei(int i) {
+        Map<Double, Integer> distanceTable = new HashMap<Double, Integer>();
+        // <distance, node>
+
+        for (int j = 0; j < graphNodeArray.length; j++) {
+            mxCell jthNode = (mxCell) graphNodeArray[j];
+            if ((!(j == i)) && jthNode.getEdgeCount() < 1) distanceTable.put(this.distanceFinder(i, j), j);
+        }
+
+        TreeMap<Double, Integer> sortedDistanceTable = new TreeMap<Double, Integer>();
+        sortedDistanceTable.putAll(distanceTable);
+        return sortedDistanceTable;
     }
 
 
