@@ -158,5 +158,27 @@ public class GraphGenerator {
         return sortedDistanceTable;
     }
 
+    public int edgeDrawerfromItoNextClosestNode(int i) {
+        //System.out.println(i);
+        int nodeJ = this.getIndexofClosesetNodefromIwithDistance(i).getValue();
+        edgeDrawerFromNodeItoJ(i, nodeJ, "green");
+        return nodeJ;
+    }
+
+    public double findTotalDistance() {
+        double totalDistance = 0;
+        Object graphEdges[] = graph.getAllEdges(graphNodeArray);
+
+        for (int i = 0; i < graphEdges.length - 1; i++) {
+            mxCell element = (mxCell) graphEdges[i];
+            totalDistance += Double.parseDouble(element.getValue().toString());
+
+
+        }
+
+
+        return totalDistance;
+    }
+
 
 }

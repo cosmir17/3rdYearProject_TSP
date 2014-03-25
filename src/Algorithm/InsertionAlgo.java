@@ -14,7 +14,8 @@ public class InsertionAlgo extends Algorithm {
 
     @Override
     protected void drawer() {
-        // graphObject.
+        graphObject.edgeDrawerfromItoNextClosestNode(0);
+        graphObject.getIndexofClosesetNodefromIwithDistance(0);
     }
 
     @Override

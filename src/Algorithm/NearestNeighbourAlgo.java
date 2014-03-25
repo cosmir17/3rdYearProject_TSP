@@ -18,26 +18,23 @@ public class NearestNeighbourAlgo extends Algorithm {
     protected void drawer() {
         int lastNode = drawerIterator(graphNodeArray.length - 2);
         edgeDrawerFromLastNodetotheFirstone(lastNode);
+
+        totalDistance = graphObject.findTotalDistance();
     }
 
-    private int edgeDrawerfromItoNextClosestNode(int i) {
-        //System.out.println(i);
-        int nodeJ = graphObject.getIndexofClosesetNodefromIwithDistance(i).getValue();
-        totalDistance += graphObject.edgeDrawerFromNodeItoJ(i, nodeJ, "green");
-        return nodeJ;
-    }
 
     private int drawerIterator(int i) {
 
         if (i == 0) {
-            int next = edgeDrawerfromItoNextClosestNode(0);
+            int next = graphObject.edgeDrawerfromItoNextClosestNode(0);
             return next;
         }
-        return (edgeDrawerfromItoNextClosestNode(drawerIterator(i - 1)));
+        return (graphObject.edgeDrawerfromItoNextClosestNode(drawerIterator(i - 1)));
     }
 
     private void edgeDrawerFromLastNodetotheFirstone(int lastNode) {
-        totalDistance += graphObject.edgeDrawerFromNodeItoJ(lastNode, 0, "green");
+        graphObject.edgeDrawerFromNodeItoJ(lastNode, 0, "green");
     }
+
 
 }
