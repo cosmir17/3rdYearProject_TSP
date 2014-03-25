@@ -25,11 +25,18 @@ public class NearestNeighbourAlgo extends Algorithm {
     private void drawer() {
 
         int lastNode = drawerIterator(graphNodeArray.length - 2);
-        edgeDrawerFromBeginningtoEnd(lastNode);
+        edgeDrawerFromLastNodetotheFirstone(lastNode);
     }
 
-    private void edgeDrawerFromBeginningtoEnd(int lastNode) {
+    private void edgeDrawerFromLastNodetotheFirstone(int lastNode) {
         totalDistance += graphObject.edgeDrawerFromNodeItoJ(lastNode, 0);
+    }
+
+    private int edgeDrawerfromItoNextClosestNode(int i) {
+        //System.out.println(i);
+        int nodeJ = getIndexofClosesetNodefromIwithDistance(i).getValue();
+        totalDistance += graphObject.edgeDrawerFromNodeItoJ(i, nodeJ);
+        return nodeJ;
     }
 
     private int drawerIterator(int i) {
@@ -44,12 +51,6 @@ public class NearestNeighbourAlgo extends Algorithm {
 
     }
 
-    private int edgeDrawerfromItoNextClosestNode(int i) {
-        //System.out.println(i);
-        int nodeJ = getIndexofClosesetNodefromIwithDistance(i).getValue();
-        totalDistance += graphObject.edgeDrawerFromNodeItoJ(i, nodeJ);
-        return nodeJ;
-    }
 
     private Map.Entry<Double, Integer> getIndexofClosesetNodefromIwithDistance(int i) {
         Map.Entry<Double, Integer> thClosestElementfromI = distanceTableCreatorFromNodei(i).firstEntry();
