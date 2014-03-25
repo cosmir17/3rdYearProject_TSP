@@ -15,7 +15,6 @@ import java.util.TreeMap;
 
 public class NearestNeighbourAlgo extends Algorithm {
 
-    double totalDistance = 0;
 
     public NearestNeighbourAlgo(GraphGenerator graphObject) {
         super(graphObject);
@@ -78,7 +77,5 @@ public class NearestNeighbourAlgo extends Algorithm {
 
     }
 
-    public double getTotalDistance() {
-        return totalDistance;
-    }
+
 }

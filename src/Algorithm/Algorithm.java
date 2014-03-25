@@ -12,6 +12,7 @@ public abstract class Algorithm {
     protected mxGraph graph;
     protected Object graphNodeArray[];
     protected Object parent;
+    double totalDistance = 0;
 
     public Algorithm(GraphGenerator graphObject) {
         this.graphObject = graphObject;
@@ -22,4 +23,7 @@ public abstract class Algorithm {
 
     abstract mxGraphComponent run();
 
+    public double getTotalDistance() {
+        return totalDistance;
+    }
 }
