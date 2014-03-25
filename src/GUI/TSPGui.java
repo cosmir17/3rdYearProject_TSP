@@ -728,7 +728,8 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
 
     private void nearestAlgorithmRunner() {
         long start = System.currentTimeMillis();
-        NearestNeighbourAlgo nnAlgo = new NearestNeighbourAlgo(graphG);
+        GraphGenerator graphGnearnAlgoGraph = graphG;
+        NearestNeighbourAlgo nnAlgo = new NearestNeighbourAlgo(graphGnearnAlgoGraph);
         long end = System.currentTimeMillis();
         nnDistanceTextF.setText(String.valueOf(nnAlgo.getTotalDistance()));
         nnTimeTextF.setText(String.valueOf((end - start)));
