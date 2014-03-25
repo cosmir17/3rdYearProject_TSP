@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="'getindexofclosesetnodefrom I with returning distance' method moved to graphgenerator class">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Algorithm/Algorithm.java" afterPath="$PROJECT_DIR$/src/Algorithm/Algorithm.java" />
+    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="drawer becomes defined in Algorithm class">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Algorithm/NearestNeighbourAlgo.java" afterPath="$PROJECT_DIR$/src/Algorithm/NearestNeighbourAlgo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -82,7 +81,7 @@
       <file leaf-file-name="Algorithm.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Algorithm/Algorithm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="0" selection-start="681" selection-end="681" vertical-scroll-proportion="0.0" vertical-offset="99" max-vertical-offset="702">
+            <state line="26" column="0" selection-start="673" selection-end="673" vertical-scroll-proportion="0.0" vertical-offset="99" max-vertical-offset="702">
               <folding />
             </state>
           </provider>
@@ -121,7 +120,7 @@
       <file leaf-file-name="NearestNeighbourAlgo.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Algorithm/NearestNeighbourAlgo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="430" selection-end="430" vertical-scroll-proportion="0.6865672" vertical-offset="0" max-vertical-offset="1026">
+            <state line="31" column="21" selection-start="767" selection-end="767" vertical-scroll-proportion="0.92537314" vertical-offset="0" max-vertical-offset="864">
               <folding />
             </state>
           </provider>
@@ -729,7 +728,11 @@
       <created>1395775994634</created>
       <updated>1395775994635</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="drawer becomes defined in Algorithm class">
+      <created>1395776176344</created>
+      <updated>1395776176344</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -781,7 +784,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="1. Madiator pattern, GUI management (progress)&#10;2. Observer pattern, Jgraph (haven't started)" />
     <MESSAGE value="1. Madiator pattern, GUI management&#10;2. Observer pattern, Jgraph (let's start it)" />
     <MESSAGE value="Shortest Path button added and GUI newly modified" />
     <MESSAGE value="if Shortest Path button pressed and labels become enabled and JGraph newly modified" />
@@ -806,7 +808,8 @@
     <MESSAGE value="1.getTotalDistance method moved to Algorithm abstract calss&#10;2.total distance variable moved to Algorithm class" />
     <MESSAGE value="to Abstract class" />
     <MESSAGE value="'getindexofclosesetnodefrom I with returning distance' method moved to graphgenerator class" />
-    <option name="LAST_COMMIT_MESSAGE" value="'getindexofclosesetnodefrom I with returning distance' method moved to graphgenerator class" />
+    <MESSAGE value="drawer becomes defined in Algorithm class" />
+    <option name="LAST_COMMIT_MESSAGE" value="drawer becomes defined in Algorithm class" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1122,14 +1125,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Algorithm/Algorithm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="681" selection-end="681" vertical-scroll-proportion="0.0" vertical-offset="99" max-vertical-offset="702">
+        <state line="26" column="0" selection-start="673" selection-end="673" vertical-scroll-proportion="0.0" vertical-offset="99" max-vertical-offset="702">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Algorithm/NearestNeighbourAlgo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="430" selection-end="430" vertical-scroll-proportion="0.6865672" vertical-offset="0" max-vertical-offset="1026">
+        <state line="31" column="21" selection-start="767" selection-end="767" vertical-scroll-proportion="0.92537314" vertical-offset="0" max-vertical-offset="864">
           <folding />
         </state>
       </provider>
