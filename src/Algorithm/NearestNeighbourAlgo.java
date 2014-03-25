@@ -29,13 +29,13 @@ public class NearestNeighbourAlgo extends Algorithm {
     }
 
     private void edgeDrawerFromLastNodetotheFirstone(int lastNode) {
-        totalDistance += graphObject.edgeDrawerFromNodeItoJ(lastNode, 0);
+        totalDistance += graphObject.edgeDrawerFromNodeItoJ(lastNode, 0, "green");
     }
 
     private int edgeDrawerfromItoNextClosestNode(int i) {
         //System.out.println(i);
         int nodeJ = getIndexofClosesetNodefromIwithDistance(i).getValue();
-        totalDistance += graphObject.edgeDrawerFromNodeItoJ(i, nodeJ);
+        totalDistance += graphObject.edgeDrawerFromNodeItoJ(i, nodeJ, "green");
         return nodeJ;
     }
 

@@ -105,11 +105,14 @@ public class GraphGenerator {
 
     }
 
-    public double edgeDrawerFromNodeItoJ(int i, int j) {
+    public double edgeDrawerFromNodeItoJ(int i, int j, String color) {
         graph.getModel().beginUpdate();
 
         try {
-            graph.insertEdge(parent, null, distanceFinder(i, j), graphNodeArray[i], graphNodeArray[j]);
+            graph.insertEdge(parent, null, distanceFinder(i, j), graphNodeArray[i], graphNodeArray[j],
+                    "strokeColor=" + color + ";fontColor=" + color + "");
+
+            // System.out.println(color);
             return distanceFinder(i, j);
         } finally {
             graph.getModel().endUpdate();
