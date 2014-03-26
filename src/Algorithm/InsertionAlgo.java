@@ -16,9 +16,15 @@ public class InsertionAlgo extends Algorithm {
 
     @Override
     protected void drawer() {
-        int nextNodeIndex = graphObject.edgeDrawerfromItoNextClosestNode(0, color);
+        int nodeJ = graphObject.edgeDrawerfromItoNextClosestNode(0, color);
+        graphObject.findingTheMiddlePoint(0, nodeJ);
+
+
+        //int nodeKcandidatefromJ = graphObject.getIndexofClosesetNodefromIwithDistance(nodeJ).getValue();
+
 
     }
+
 
     @Override
     public mxGraphComponent run() {

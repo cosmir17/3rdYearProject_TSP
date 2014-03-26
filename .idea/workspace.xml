@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="Finding total distance method is working">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Algorithm/Algorithm.java" afterPath="$PROJECT_DIR$/src/Algorithm/Algorithm.java" />
+    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="now color is selectable in each algorithm class.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Graph/XYcoordinate.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Graph/GraphGenerator.java" afterPath="$PROJECT_DIR$/src/Graph/GraphGenerator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Algorithm/InsertionAlgo.java" afterPath="$PROJECT_DIR$/src/Algorithm/InsertionAlgo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Algorithm/NearestNeighbourAlgo.java" afterPath="$PROJECT_DIR$/src/Algorithm/NearestNeighbourAlgo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="3rd_year_project.iws" />
@@ -62,7 +61,7 @@
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/Graph/GraphGenerator.java" line="179" class="Graph.GraphGenerator" package="Graph">
+      <breakpoint url="file://$PROJECT_DIR$/src/Graph/GraphGenerator.java" line="211" class="Graph.GraphGenerator" package="Graph">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -77,7 +76,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/Graph/GraphGenerator.java" line="169" class="Graph.GraphGenerator" package="Graph">
+      <breakpoint url="file://$PROJECT_DIR$/src/Graph/GraphGenerator.java" line="201" class="Graph.GraphGenerator" package="Graph">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -106,7 +105,7 @@
       <file leaf-file-name="Observer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Graph/Observer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="44" selection-start="150" selection-end="150" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
+            <state line="8" column="44" selection-start="150" selection-end="150" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="288">
               <folding />
             </state>
           </provider>
@@ -115,7 +114,7 @@
       <file leaf-file-name="Algorithm.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Algorithm/Algorithm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="27" selection-start="740" selection-end="740" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="810">
+            <state line="27" column="27" selection-start="737" selection-end="737" vertical-scroll-proportion="0.0" vertical-offset="486" max-vertical-offset="864">
               <folding />
             </state>
           </provider>
@@ -124,19 +123,29 @@
       <file leaf-file-name="ButtonHandler.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GUI/ButtonHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="46" selection-start="317" selection-end="317" vertical-scroll-proportion="0.0" vertical-offset="93" max-vertical-offset="486">
+            <state line="14" column="46" selection-start="317" selection-end="317" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="504">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GraphGenerator.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="GraphGenerator.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Graph/GraphGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="163" column="46" selection-start="5738" selection-end="5738" vertical-scroll-proportion="0.0" vertical-offset="2349" max-vertical-offset="3276">
+            <state line="174" column="17" selection-start="5910" selection-end="5910" vertical-scroll-proportion="0.74626863" vertical-offset="2556" max-vertical-offset="3852">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XYcoordinate.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Graph/XYcoordinate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="26" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522">
               <folding>
-                <element signature="e#5043#5060#0" expanded="true" />
-                <element signature="e#5393#5410#0" expanded="true" />
+                <element signature="e#274#275#0" expanded="true" />
+                <element signature="e#302#303#0" expanded="true" />
+                <element signature="e#326#327#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -145,28 +154,34 @@
       <file leaf-file-name="Graphs.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/Graphs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="22" selection-start="1462" selection-end="1462" vertical-scroll-proportion="0.0" vertical-offset="1449" max-vertical-offset="7254">
-              <folding>
-                <element signature="e#0#14434#0" expanded="false" />
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NearestNeighbourAlgo.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Algorithm/NearestNeighbourAlgo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="282" selection-end="282" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="882">
+            <state line="54" column="22" selection-start="1462" selection-end="1462" vertical-scroll-proportion="0.0" vertical-offset="972" max-vertical-offset="8010">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InsertionAlgo.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="InsertionAlgo.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Algorithm/InsertionAlgo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="7" selection-start="433" selection-end="433" vertical-scroll-proportion="0.53731346" vertical-offset="0" max-vertical-offset="603">
+            <state line="19" column="8" selection-start="428" selection-end="428" vertical-scroll-proportion="0.0" vertical-offset="117" max-vertical-offset="720">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Node.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Graph/Node.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="4" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="738">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NodeDataStore.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Graph/NodeDataStore.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="13" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1008">
               <folding />
             </state>
           </provider>
@@ -176,15 +191,6 @@
         <entry file="file://$PROJECT_DIR$/src/GUI/ColleagueButton.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="12" column="34" selection-start="331" selection-end="331" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="828">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mxGraph.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/lib/jgrapht-0.9.0/lib/jgraphx-2.0.0.1.jar!/com/mxgraph/view/mxGraph.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="695" column="30" selection-start="34534" selection-end="34534" vertical-scroll-proportion="0.0" vertical-offset="12510" max-vertical-offset="14328">
               <folding />
             </state>
           </provider>
@@ -244,17 +250,17 @@
         <option value="$PROJECT_DIR$/3rd_year_project.iml" />
         <option value="$PROJECT_DIR$/src/Graph/NewGraphGenerator.java" />
         <option value="$PROJECT_DIR$/src/GUI/TSPGui.java" />
-        <option value="$PROJECT_DIR$/src/Graph/GraphGenerator.java" />
         <option value="$PROJECT_DIR$/src/Algorithm/Algorithm.java" />
         <option value="$PROJECT_DIR$/src/Algorithm/NearestNeighbourAlgo.java" />
+        <option value="$PROJECT_DIR$/src/Graph/xyCoordinate.java" />
         <option value="$PROJECT_DIR$/src/Algorithm/InsertionAlgo.java" />
+        <option value="$PROJECT_DIR$/src/Graph/GraphGenerator.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="width" value="1368" />
-    <option name="height" value="746" />
+    <option name="width" value="1366" />
+    <option name="height" value="742" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -377,8 +383,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -781,14 +787,18 @@
       <created>1395789510964</created>
       <updated>1395789510964</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="now color is selectable in each algorithm class.">
+      <created>1395790516467</created>
+      <updated>1395790516467</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="107909000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="0" width="1368" height="746" extended-state="6" />
+    <frame x="0" y="0" width="1366" height="742" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -801,7 +811,6 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3848684" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6301587" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3220859" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -817,6 +826,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32698414" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3220859" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3974563" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -833,7 +843,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="if Shortest Path button pressed and labels become enabled and JGraph newly modified" />
     <MESSAGE value="new Graph generator created and activated using mxGraph." />
     <MESSAGE value="Algorithms are to be implemented." />
     <MESSAGE value="(start and run)Buttons are not interfering each other now and graph becomes reset after clicking initailisation button." />
@@ -858,7 +867,8 @@
     <MESSAGE value="drawer becomes defined in Algorithm class" />
     <MESSAGE value="minor change" />
     <MESSAGE value="Finding total distance method is working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finding total distance method is working" />
+    <MESSAGE value="now color is selectable in each algorithm class." />
+    <option name="LAST_COMMIT_MESSAGE" value="now color is selectable in each algorithm class." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -874,11 +884,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Graph/CityNameGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="780" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Graph/Testing/GraphGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="48" column="43" selection-start="1446" selection-end="1446" vertical-scroll-proportion="0.0" vertical-offset="720" max-vertical-offset="1470" />
@@ -1014,11 +1019,6 @@
         <state line="23" column="9" selection-start="654" selection-end="654" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="846" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Graph/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="4" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="738" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/Mediator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="3" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306" />
@@ -1050,16 +1050,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Graph/NodeDataStore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="7" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1026" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/3rd_year_project.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/ColleagueCheckBox.java">
@@ -1071,16 +1064,12 @@
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/jgrapht-0.9.0/lib/jgraphx-2.0.0.1.jar!/com/mxgraph/model/mxCell.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="19" selection-start="2233" selection-end="2233" vertical-scroll-proportion="0.0" vertical-offset="1098" max-vertical-offset="2232">
-          <folding />
-        </state>
+        <state line="61" column="19" selection-start="2233" selection-end="2233" vertical-scroll-proportion="0.0" vertical-offset="1098" max-vertical-offset="2232" />
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/jgrapht-0.9.0/lib/jgraphx-2.0.0.1.jar!/com/mxgraph/model/mxGraphModel.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="19" selection-start="5901" selection-end="5901" vertical-scroll-proportion="0.0" vertical-offset="2232" max-vertical-offset="7326">
-          <folding />
-        </state>
+        <state line="124" column="19" selection-start="5901" selection-end="5901" vertical-scroll-proportion="0.0" vertical-offset="2232" max-vertical-offset="7326" />
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/jgrapht-0.9.0/lib/jgraphx-2.0.0.1.jar!/com/mxgraph/view/mxGraph.class">
@@ -1129,48 +1118,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Graph/Testing/GraphGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="9" selection-start="1447" selection-end="1447" vertical-scroll-proportion="-0.8" vertical-offset="1046" max-vertical-offset="1656">
-          <folding />
-        </state>
+        <state line="50" column="9" selection-start="1447" selection-end="1447" vertical-scroll-proportion="-0.8" vertical-offset="1046" max-vertical-offset="1656" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/Testing/GuiForTestingSmallparts.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="19" selection-start="635" selection-end="635" vertical-scroll-proportion="0.0" vertical-offset="402" max-vertical-offset="1782">
-          <folding />
-        </state>
+        <state line="32" column="19" selection-start="635" selection-end="635" vertical-scroll-proportion="0.0" vertical-offset="402" max-vertical-offset="1782" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/Graphs.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="54" column="22" selection-start="1462" selection-end="1462" vertical-scroll-proportion="0.0" vertical-offset="1449" max-vertical-offset="7254">
-          <folding>
-            <element signature="e#0#14434#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/AllTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="19" selection-start="1320" selection-end="1320" vertical-scroll-proportion="0.0" vertical-offset="909" max-vertical-offset="1512">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Graph/GraphGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="163" column="46" selection-start="5738" selection-end="5738" vertical-scroll-proportion="0.0" vertical-offset="2349" max-vertical-offset="3276">
-          <folding>
-            <element signature="e#5043#5060#0" expanded="true" />
-            <element signature="e#5393#5410#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="55" column="19" selection-start="1320" selection-end="1320" vertical-scroll-proportion="0.0" vertical-offset="909" max-vertical-offset="1512" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Algorithm/Algorithm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="27" selection-start="740" selection-end="740" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="810">
+        <state line="27" column="27" selection-start="737" selection-end="737" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="792">
           <folding />
         </state>
       </provider>
@@ -1182,9 +1152,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graph/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="4" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="738">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graph/NodeDataStore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="13" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1008">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graph/XYcoordinate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="26" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522">
+          <folding>
+            <element signature="e#274#275#0" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
+            <element signature="e#326#327#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Algorithm/InsertionAlgo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="7" selection-start="433" selection-end="433" vertical-scroll-proportion="0.53731346" vertical-offset="0" max-vertical-offset="603">
+        <state line="19" column="8" selection-start="428" selection-end="428" vertical-scroll-proportion="0.0" vertical-offset="117" max-vertical-offset="720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graph/GraphGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="174" column="17" selection-start="5910" selection-end="5910" vertical-scroll-proportion="0.74626863" vertical-offset="2556" max-vertical-offset="3852">
           <folding />
         </state>
       </provider>

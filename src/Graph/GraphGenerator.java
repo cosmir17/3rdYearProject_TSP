@@ -144,6 +144,39 @@ public class GraphGenerator {
         return thClosestElementfromI;
     }
 
+    public XYcoordinate findingTheMiddlePoint(int i, int j) {
+        mxCell ithNode = (mxCell) graphNodeArray[i];
+        mxCell jthNode = (mxCell) graphNodeArray[j];
+
+
+        int horiDisHalf = (int) ((ithNode.getGeometry().getX() - jthNode.getGeometry().getX()) / 2);
+        int vertDisHalf = (int) ((ithNode.getGeometry().getY() - jthNode.getGeometry().getY()) / 2);
+        double middlePx = 0;
+        double middlePy = 0;
+
+        if (ithNode.getGeometry().getX() > jthNode.getGeometry().getX()) {
+            middlePx = jthNode.getGeometry().getX() + horiDisHalf;
+        } else {
+            middlePx = ithNode.getGeometry().getX() + horiDisHalf;
+        }
+
+        if (ithNode.getGeometry().getY() > jthNode.getGeometry().getY()) {
+            middlePy = jthNode.getGeometry().getY() + vertDisHalf;
+        } else {
+            middlePy = ithNode.getGeometry().getY() + vertDisHalf;
+        }
+
+        XYcoordinate xyC = new XYcoordinate(middlePx, middlePy);
+
+        return xyC;
+    }
+
+    public int i
+
+    findingtheClosestNodeFromtheMiddlePointbetweentwoNodes() {
+
+    }
+
     public TreeMap<Double, Integer> distanceTableCreatorFromNodei(int i) {
         Map<Double, Integer> distanceTable = new HashMap<Double, Integer>();
         // <distance, node>
