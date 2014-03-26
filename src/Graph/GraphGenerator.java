@@ -171,10 +171,37 @@ public class GraphGenerator {
         return xyC;
     }
 
-    public int i
+    public int findingtheClosestNodeFromtheMiddlePointbetweentwoNodes(int i, int j) {
 
-    findingtheClosestNodeFromtheMiddlePointbetweentwoNodes() {
+        XYcoordinate middlePo = this.findingTheMiddlePoint(i, j);
 
+
+        mxCell jthNode = (mxCell) graphNodeArray[j];
+
+        // System.out.println(ithNode.getValue());
+        // System.out.println(jthNode.getValue());
+
+        int horizontalDistance = (int) (middlePo.getX() - jthNode.getGeometry().getX());
+        int verticalDistance = (int) (middlePo.getY() - jthNode.getGeometry().getY());
+
+        double distance = Math.sqrt((horizontalDistance * horizontalDistance) + (verticalDistance * verticalDistance));
+
+        Map<Double, Integer> distanceTable = new HashMap<Double, Integer>();
+        // <distance, node>
+
+        for (int p = 0; p < graphNodeArray.length; p++) {
+            mxCell j2thNode = (mxCell) graphNodeArray[p];
+            if (j2thNode.getEdgeCount() < 1) distanceTable.put(distance, j);
+
+
+        }
+
+        TreeMap<Double, Integer> sortedDistanceTable = new TreeMap<Double, Integer>();
+        sortedDistanceTable.putAll(distanceTable);
+
+        Map.Entry<Double, Integer> thClosestElementfromI = sortedDistanceTable.firstEntry();
+
+        return thClosestElementfromI.getValue();
     }
 
     public TreeMap<Double, Integer> distanceTableCreatorFromNodei(int i) {

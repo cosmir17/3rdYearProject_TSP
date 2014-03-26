@@ -17,6 +17,9 @@ public class InsertionAlgo extends Algorithm {
     @Override
     protected void drawer() {
         int nodeJ = graphObject.edgeDrawerfromItoNextClosestNode(0, color);
+        int nodeK = graphObject.findingtheClosestNodeFromtheMiddlePointbetweentwoNodes(0, nodeJ);
+
+
         graphObject.findingTheMiddlePoint(0, nodeJ);
 
 
