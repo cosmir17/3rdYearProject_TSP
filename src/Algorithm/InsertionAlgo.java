@@ -9,18 +9,19 @@ import com.mxgraph.swing.mxGraphComponent;
 public class InsertionAlgo extends Algorithm {
 
 
-    InsertionAlgo(GraphGenerator graphObject) {
+    public InsertionAlgo(GraphGenerator graphObject) {
         super(graphObject);
-        edgeColorSeletor("red");
+        edgeColorSeletor("blue");
     }
 
     @Override
     protected void drawer() {
         int nodeJ = graphObject.edgeDrawerfromItoNextClosestNode(0, color);
+
         int nodeK = graphObject.findingtheClosestNodeFromtheMiddlePointbetweentwoNodes(0, nodeJ);
-
-
-        graphObject.findingTheMiddlePoint(0, nodeJ);
+        System.out.println(nodeJ);
+        System.out.println(nodeK);
+        graphObject.edgeDrawerFromNodeItoJ(0, nodeK, color);
 
 
         //int nodeKcandidatefromJ = graphObject.getIndexofClosesetNodefromIwithDistance(nodeJ).getValue();

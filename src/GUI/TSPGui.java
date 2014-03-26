@@ -1,5 +1,6 @@
 package GUI;
 
+import Algorithm.InsertionAlgo;
 import Algorithm.NearestNeighbourAlgo;
 import Graph.GraphGenerator;
 import com.mxgraph.swing.mxGraphComponent;
@@ -701,6 +702,8 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
             graphEdgeRemover();
 
             nearestAlgorithmRunner();
+            insertionAlgoRunner();
+
 
             //  System.out.println("short source =  " + shortestButton.getSource());
             //System.out.println("short actionCommand =  " + shortestButton.getActionCommand());
@@ -728,6 +731,15 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
             shortestButton.pushed = false;
         }
 
+    }
+
+    private void insertionAlgoRunner() {
+        long start = System.currentTimeMillis();
+        InsertionAlgo insertAlgo = new InsertionAlgo(graphInsertionAlgoGraph);
+        long end = System.currentTimeMillis();
+        insertionDisTanceTextF.setText(String.valueOf(insertAlgo.getTotalDistance()));
+        insertionTimeTextF.setText(String.valueOf((end - start)));
+        insertGraphintoPanelMap(insertAlgo.run());
     }
 
     private void graphEdgeRemover() {

@@ -191,7 +191,7 @@ public class GraphGenerator {
 
         for (int p = 0; p < graphNodeArray.length; p++) {
             mxCell j2thNode = (mxCell) graphNodeArray[p];
-            if (j2thNode.getEdgeCount() < 1) distanceTable.put(distance, j);
+            if (i != p && j != p && j2thNode.getEdgeCount() < 1) distanceTable.put(distance, p);
 
 
         }
