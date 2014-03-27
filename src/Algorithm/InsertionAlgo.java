@@ -12,27 +12,27 @@ public class InsertionAlgo extends Algorithm {
 
     public InsertionAlgo(GraphGenerator graphObject) {
 
-        super(graphObject);
+        super(graphObject, edgeColors.valueOf("red"));
 
     }
 
     @Override
     protected void colorSelector() {
-        edgeColors color = edgeColors.valueOf(this.getClass().getName());
+        // edgeColors color = edgeColors.valueOf(this.getClass().getName());
     }
 
     @Override
     protected void drawer() {
-        int nodeJ = graphObject.edgeDrawerfromItoNextClosestNode(0, color);
+        int nodeJ = graphObject.edgeDrawerfromItoNextClosestNode(0);
         int nodeK = graphObject.findingtheClosestNodeFromtheMiddlePointbetweentwoNodes(0, nodeJ);
-        graphObject.edgeDrawerFromNodeItoJ(0, nodeK, color);
-        graphObject.edgeDrawerFromNodeItoJ(nodeJ, nodeK, color);
+        graphObject.edgeDrawerFromNodeItoJ(0, nodeK);
+        graphObject.edgeDrawerFromNodeItoJ(nodeJ, nodeK);
 
 
         int nodeL = graphObject.findingtheClosestNodeFromtheMiddlePointbetweentwoNodes(nodeJ, nodeK);
         graphObject.edgeRemoverfromItoJ(nodeJ, nodeK);
-        graphObject.edgeDrawerFromNodeItoJ(nodeJ, nodeL, color);
-        graphObject.edgeDrawerFromNodeItoJ(nodeK, nodeL, color);
+        graphObject.edgeDrawerFromNodeItoJ(nodeJ, nodeL);
+        graphObject.edgeDrawerFromNodeItoJ(nodeK, nodeL);
 
         //int nodeKcandidatefromJ = graphObject.getIndexofClosesetNodefromIwithDistance(nodeJ).getValue();
 

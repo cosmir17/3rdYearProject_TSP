@@ -15,6 +15,7 @@ public class GraphGenerator {
     public static mxGraph graph = new mxGraph();
     Object parent = graph.getDefaultParent();
     public Object[] graphNodeArray;
+    public edgeColors color;
 
     public GraphGenerator() {
 
@@ -124,7 +125,7 @@ public class GraphGenerator {
 
     }
 
-    public double edgeDrawerFromNodeItoJ(int i, int j, String color) {
+    public double edgeDrawerFromNodeItoJ(int i, int j) {
         graph.getModel().beginUpdate();
 
         try {
@@ -234,10 +235,10 @@ public class GraphGenerator {
         return sortedDistanceTable;
     }
 
-    public int edgeDrawerfromItoNextClosestNode(int i, String color) {
+    public int edgeDrawerfromItoNextClosestNode(int i) {
         //System.out.println(i);
         int nodeJ = this.getIndexofClosesetNodefromIwithDistance(i).getValue();
-        edgeDrawerFromNodeItoJ(i, nodeJ, color);
+        edgeDrawerFromNodeItoJ(i, nodeJ);
         return nodeJ;
     }
 

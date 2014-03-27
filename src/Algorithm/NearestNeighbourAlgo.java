@@ -1,6 +1,7 @@
 package Algorithm;
 
 import Graph.GraphGenerator;
+import Graph.edgeColors;
 
 /**
  * Created by lloydp on 09/02/14.
@@ -12,9 +13,12 @@ public class NearestNeighbourAlgo extends Algorithm {
 
     public NearestNeighbourAlgo(GraphGenerator graphObject) {
 
-        super(graphObject, green);
+        super(graphObject, edgeColors.valueOf("blue"));
+    }
 
-
+    @Override
+    protected void colorSelector() {
+        edgeColors color = edgeColors.valueOf(this.getClass().getName());
     }
 
 
@@ -30,14 +34,14 @@ public class NearestNeighbourAlgo extends Algorithm {
     private int drawerIterator(int i) {
 
         if (i == 0) {
-            int next = graphObject.edgeDrawerfromItoNextClosestNode(0, color);
+            int next = graphObject.edgeDrawerfromItoNextClosestNode(0);
             return next;
         }
-        return (graphObject.edgeDrawerfromItoNextClosestNode(drawerIterator(i - 1), color));
+        return (graphObject.edgeDrawerfromItoNextClosestNode(drawerIterator(i - 1)));
     }
 
     private void edgeDrawerFromLastNodetotheFirstone(int lastNode) {
-        graphObject.edgeDrawerFromNodeItoJ(lastNode, 0, color);
+        graphObject.edgeDrawerFromNodeItoJ(lastNode, 0);
     }
 
 

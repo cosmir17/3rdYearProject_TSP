@@ -1,6 +1,7 @@
 package Algorithm;
 
 import Graph.GraphGenerator;
+import Graph.edgeColors;
 import com.mxgraph.swing.mxGraphComponent;
 import com.mxgraph.view.mxGraph;
 
@@ -13,20 +14,18 @@ public abstract class Algorithm {
     protected Object graphNodeArray[];
     protected Object parent;
     double totalDistance = 0;
-    String color;
+    edgeColors color;
 
-    public Algorithm(GraphGenerator graphObject) {
+    public Algorithm(GraphGenerator graphObject, edgeColors color) {
         this.graphObject = graphObject;
         this.graph = graphObject.graph;
         this.graphNodeArray = graphObject.graphNodeArray;
         this.parent = graph.getDefaultParent();
-
-
+        this.color = graphObject.color;
         drawer();
     }
 
     protected abstract void colorSelector();
-
 
     protected abstract void drawer();
 
