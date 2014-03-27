@@ -701,7 +701,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
             graphObectDuplicator();
             graphEdgeRemover();
 
-            nearestAlgorithmRunner();
+            //  nearestAlgorithmRunner();
             insertionAlgoRunner();
 
 

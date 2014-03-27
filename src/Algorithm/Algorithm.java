@@ -15,18 +15,16 @@ public abstract class Algorithm {
     double totalDistance = 0;
     String color = "";
 
-    public Algorithm(GraphGenerator graphObject) {
+    public Algorithm(GraphGenerator graphObject, String color) {
         this.graphObject = graphObject;
         this.graph = graphObject.graph;
         this.graphNodeArray = graphObject.graphNodeArray;
         this.parent = graph.getDefaultParent();
+        this.color = color;
 
         drawer();
     }
 
-    protected void edgeColorSeletor(String color) {
-        this.color = color;
-    }
 
     protected abstract void drawer();
 

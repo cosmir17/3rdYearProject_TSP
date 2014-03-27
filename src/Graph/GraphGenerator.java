@@ -96,6 +96,22 @@ public class GraphGenerator {
 
     }
 
+    public void edgeRemoverfromItoJ(int i, int j) {
+        graph.getModel().beginUpdate();
+        try {
+            // graph.resetEdges(graphNodeArray);
+
+            Object[] object3 = graph.getEdgesBetween(graphNodeArray[i], graphNodeArray[j]);
+
+            for (Object edge : object3) {
+                graph.getModel().remove(edge);
+            }
+
+        } finally {
+            graph.getModel().endUpdate();
+        }
+    }
+
     public void oneEdgeDrawer() {
         graph.getModel().beginUpdate();
         try {
