@@ -11,7 +11,8 @@ public class NearestNeighbourAlgo extends Algorithm {
 
 
     public NearestNeighbourAlgo(GraphGenerator graphObject) {
-        super(graphObject, "green");
+
+        super(graphObject, green);
 
 
     }

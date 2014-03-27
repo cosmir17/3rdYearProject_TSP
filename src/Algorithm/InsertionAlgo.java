@@ -1,6 +1,7 @@
 package Algorithm;
 
 import Graph.GraphGenerator;
+import Graph.edgeColors;
 import com.mxgraph.swing.mxGraphComponent;
 
 /**
@@ -11,8 +12,13 @@ public class InsertionAlgo extends Algorithm {
 
     public InsertionAlgo(GraphGenerator graphObject) {
 
-        super(graphObject, "blue");
+        super(graphObject);
 
+    }
+
+    @Override
+    protected void colorSelector() {
+        edgeColors color = edgeColors.valueOf(this.getClass().getName());
     }
 
     @Override

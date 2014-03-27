@@ -13,17 +13,19 @@ public abstract class Algorithm {
     protected Object graphNodeArray[];
     protected Object parent;
     double totalDistance = 0;
-    String color = "";
+    String color;
 
-    public Algorithm(GraphGenerator graphObject, String color) {
+    public Algorithm(GraphGenerator graphObject) {
         this.graphObject = graphObject;
         this.graph = graphObject.graph;
         this.graphNodeArray = graphObject.graphNodeArray;
         this.parent = graph.getDefaultParent();
-        this.color = color;
+
 
         drawer();
     }
+
+    protected abstract void colorSelector();
 
 
     protected abstract void drawer();
