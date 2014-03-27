@@ -9,16 +9,23 @@ import com.mxgraph.swing.mxGraphComponent;
  */
 public class InsertionAlgo extends Algorithm {
 
-
     public InsertionAlgo(GraphGenerator graphObject) {
 
-        super(graphObject, edgeColors.valueOf("red"));
+        super(graphObject);
+
+        // edgeColors.valueOf("InsertionAlgo");
+        // this.getClass().getSimpleName();
+        // System.out.println(edgeColors.valueOf("InsertionAlgo")+"3");
+        // System.out.println(edgeColors.valueOf("InsertionAlgo").getCode());
+        //  System.out.println(this.getClass().getSimpleName());
+        // System.out.println(edgeColors.valueOf("red")+"4");
+        // System.out.println(edgeColors.valueOf("red").getCode());
 
     }
 
     @Override
     protected void colorSelector() {
-        // edgeColors color = edgeColors.valueOf(this.getClass().getName());
+        edgeColors color = edgeColors.valueOf(this.getClass().getName());
     }
 
     @Override

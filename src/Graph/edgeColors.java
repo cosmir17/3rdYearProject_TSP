@@ -6,9 +6,10 @@ package Graph;
 public enum edgeColors {
 
 
-    InsertionAlgo("red"),
+    InsertionAlgo("green"),
     NearestNeighbourAlgo("blue"),
-    Simluated("green");
+    Simluated("green"),
+    red("InsertionAlgo");
 
     private String color;
 

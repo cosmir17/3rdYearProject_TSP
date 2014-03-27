@@ -16,12 +16,14 @@ public abstract class Algorithm {
     double totalDistance = 0;
     edgeColors color;
 
-    public Algorithm(GraphGenerator graphObject, edgeColors color) {
+    public Algorithm(GraphGenerator graphObject) {
         this.graphObject = graphObject;
         this.graph = graphObject.graph;
         this.graphNodeArray = graphObject.graphNodeArray;
         this.parent = graph.getDefaultParent();
         this.color = graphObject.color;
+
+        colorSelector();
         drawer();
     }
 

@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="color variable gets passed as an enum (in progress)">
+    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="Color doesn't need to be specified each time loading methods from GraphGenerator class. (in progress, not working yet)">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Algorithm/Algorithm.java" afterPath="$PROJECT_DIR$/src/Algorithm/Algorithm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Graph/GraphGenerator.java" afterPath="$PROJECT_DIR$/src/Graph/GraphGenerator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Algorithm/InsertionAlgo.java" afterPath="$PROJECT_DIR$/src/Algorithm/InsertionAlgo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Algorithm/NearestNeighbourAlgo.java" afterPath="$PROJECT_DIR$/src/Algorithm/NearestNeighbourAlgo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Graph/edgeColors.java" afterPath="$PROJECT_DIR$/src/Graph/edgeColors.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="3rd_year_project.iws" />
@@ -106,7 +105,7 @@
       <file leaf-file-name="Algorithm.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Algorithm/Algorithm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="65" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="738">
+            <state line="26" column="0" selection-start="721" selection-end="721" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="774">
               <folding />
             </state>
           </provider>
@@ -117,17 +116,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="240" column="39" selection-start="8393" selection-end="8393" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4662">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NearestNeighbourAlgo.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Algorithm/NearestNeighbourAlgo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="5" selection-start="1060" selection-end="1060" vertical-scroll-proportion="1.3222036" vertical-offset="0" max-vertical-offset="954">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -150,10 +138,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InsertionAlgo.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="InsertionAlgo.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Algorithm/InsertionAlgo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="55" selection-start="1057" selection-end="1057" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
+            <state line="21" column="4" selection-start="660" selection-end="660" vertical-scroll-proportion="0.30769232" vertical-offset="270" max-vertical-offset="1080">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Enum.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar:///usr/lib/java/jdk1.7.0_51/src.zip!/java/lang/Enum.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="235" column="0" selection-start="8058" selection-end="8058" vertical-scroll-proportion="0.0" vertical-offset="3627" max-vertical-offset="4230">
               <folding />
             </state>
           </provider>
@@ -162,10 +161,10 @@
       <file leaf-file-name="edgeColors.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Graph/edgeColors.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="21" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522">
+            <state line="8" column="24" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="540">
               <folding>
-                <element signature="e#286#287#0" expanded="true" />
                 <element signature="e#314#315#0" expanded="true" />
+                <element signature="e#342#343#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -253,11 +252,11 @@
         <option value="$PROJECT_DIR$/src/Graph/NewGraphGenerator.java" />
         <option value="$PROJECT_DIR$/src/Graph/xyCoordinate.java" />
         <option value="$PROJECT_DIR$/src/GUI/TSPGui.java" />
-        <option value="$PROJECT_DIR$/src/Graph/edgeColors.java" />
-        <option value="$PROJECT_DIR$/src/Algorithm/Algorithm.java" />
         <option value="$PROJECT_DIR$/src/Graph/GraphGenerator.java" />
-        <option value="$PROJECT_DIR$/src/Algorithm/InsertionAlgo.java" />
         <option value="$PROJECT_DIR$/src/Algorithm/NearestNeighbourAlgo.java" />
+        <option value="$PROJECT_DIR$/src/Algorithm/InsertionAlgo.java" />
+        <option value="$PROJECT_DIR$/src/Algorithm/Algorithm.java" />
+        <option value="$PROJECT_DIR$/src/Graph/edgeColors.java" />
       </list>
     </option>
   </component>
@@ -814,7 +813,11 @@
       <created>1395947830144</created>
       <updated>1395947830144</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Color doesn't need to be specified each time loading methods from GraphGenerator class. (in progress, not working yet)">
+      <created>1395948750639</created>
+      <updated>1395948750639</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -841,7 +844,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21334311" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38271606" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38271606" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="true" anchor="right" auto_hide="true" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="642" y="197" width="724" height="513" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -866,8 +869,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="NA distance and time are &quot;properly&quot; displayed.&#10;&#10;NA distance and time fields have been added to collegueSecPanelTextF." />
-    <MESSAGE value="Classes are now in packages, organised" />
     <MESSAGE value="1. reset all graph edges when shortest button pressed two times. (still progress)&#10;&#10;2. insertion mediator&#10;&#10;3. nearest and insertion checkbox enabled (progress)" />
     <MESSAGE value="1. reset all graph edges when shortest button pressed two times. (still progress)&#10;&#10;3. nearest and insertion checkbox enabled (progress)" />
     <MESSAGE value="NewGraphGenerator =&gt; GraphGenerator" />
@@ -891,7 +892,9 @@
     <MESSAGE value="Second stage of insertion algorithm implementation (in progress)&#10;&#10;Color is working" />
     <MESSAGE value="color =&gt; enum" />
     <MESSAGE value="color variable gets passed as an enum (in progress)" />
-    <option name="LAST_COMMIT_MESSAGE" value="color variable gets passed as an enum (in progress)" />
+    <MESSAGE value="Color doesn't need to be specified each time loading methods from GraphGenerator class." />
+    <MESSAGE value="Color doesn't need to be specified each time loading methods from GraphGenerator class. (in progress, not working yet)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Color doesn't need to be specified each time loading methods from GraphGenerator class. (in progress, not working yet)" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -907,15 +910,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Algorithm/NearestNeighbourAlgo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="13" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="255">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/TSPGui.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="95" column="2" selection-start="2279" selection-end="2279" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="13086">
@@ -1170,30 +1164,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/TSPGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="710" column="44" selection-start="36622" selection-end="36622" vertical-scroll-proportion="0.0" vertical-offset="12186" max-vertical-offset="16146">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Graph/edgeColors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="21" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522">
-          <folding>
-            <element signature="e#286#287#0" expanded="true" />
-            <element signature="e#314#315#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithm/Algorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="65" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="738">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Graph/GraphGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="240" column="39" selection-start="8393" selection-end="8393" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4662">
@@ -1201,16 +1171,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithm/InsertionAlgo.java">
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/NearestNeighbourAlgo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="55" selection-start="1057" selection-end="1057" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
+        <state line="44" column="5" selection-start="1059" selection-end="1059" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="954">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/TSPGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="710" column="44" selection-start="36622" selection-end="36622" vertical-scroll-proportion="0.0" vertical-offset="12186" max-vertical-offset="16146">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithm/NearestNeighbourAlgo.java">
+    <entry file="jar:///usr/lib/java/jdk1.7.0_51/src.zip!/java/lang/Enum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="5" selection-start="1060" selection-end="1060" vertical-scroll-proportion="1.3222036" vertical-offset="0" max-vertical-offset="954">
+        <state line="235" column="0" selection-start="8058" selection-end="8058" vertical-scroll-proportion="0.0" vertical-offset="3627" max-vertical-offset="4230">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/Algorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="721" selection-end="721" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="774">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graph/edgeColors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="24" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="540">
+          <folding>
+            <element signature="e#314#315#0" expanded="true" />
+            <element signature="e#342#343#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/InsertionAlgo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="4" selection-start="660" selection-end="660" vertical-scroll-proportion="0.30769232" vertical-offset="270" max-vertical-offset="1080">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
