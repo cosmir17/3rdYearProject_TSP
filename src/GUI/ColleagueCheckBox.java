@@ -9,6 +9,7 @@ import java.awt.event.ItemListener;
  */
 public class ColleagueCheckBox extends JCheckBox implements Colleague, ItemListener {
     private Mediator mediator;
+    public boolean pushed;
 
     public ColleagueCheckBox(String text) {
         super(text);
@@ -23,12 +24,14 @@ public class ColleagueCheckBox extends JCheckBox implements Colleague, ItemListe
     public void setColleagueEnabled(boolean enabled) {
 
         setEnabled(enabled);
-      //setSelected(enabled);
+        setSelected(enabled);
 
     }
 
     @Override
     public void itemStateChanged(ItemEvent e) {
         mediator.colleagueChanged();
+        if (isSelected()) pushed = true;
+        if (!isSelected()) pushed = false;
     }
 }
