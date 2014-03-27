@@ -24,8 +24,11 @@ public abstract class Algorithm {
         this.color = graphObject.color;
 
         colorSelector();
+        graphObjectColorRedefiner();
         drawer();
     }
+
+    protected abstract void graphObjectColorRedefiner();
 
     protected abstract void colorSelector();
 

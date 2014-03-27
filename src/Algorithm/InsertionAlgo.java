@@ -20,12 +20,19 @@ public class InsertionAlgo extends Algorithm {
         //  System.out.println(this.getClass().getSimpleName());
         // System.out.println(edgeColors.valueOf("red")+"4");
         // System.out.println(edgeColors.valueOf("red").getCode());
+        // System.out.println( edgeColors.valueOf(this.getClass().getSimpleName()));
+        //System.out.println( edgeColors.valueOf(this.getClass().getSimpleName()).getCode());
+    }
 
+    @Override
+    protected void graphObjectColorRedefiner() {
+        graphObject.color = color;
     }
 
     @Override
     protected void colorSelector() {
-        edgeColors color = edgeColors.valueOf(this.getClass().getName());
+        color = edgeColors.valueOf(this.getClass().getSimpleName());
+        //  System.out.println(color.getCode());
     }
 
     @Override

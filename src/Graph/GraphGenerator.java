@@ -16,12 +16,10 @@ public class GraphGenerator {
     Object parent = graph.getDefaultParent();
     public Object[] graphNodeArray;
     public edgeColors color;
+    String colorString = "";
 
     public GraphGenerator() {
-
-
         // mxGraph.getCellStyle(graph);
-
     }
 
     public void createGraph(int numberOfCity) {
@@ -126,11 +124,15 @@ public class GraphGenerator {
     }
 
     public double edgeDrawerFromNodeItoJ(int i, int j) {
+
+        //  System.out.println(color);
+        colorString = color.getCode();
+
         graph.getModel().beginUpdate();
 
         try {
             graph.insertEdge(parent, null, distanceFinder(i, j), graphNodeArray[i], graphNodeArray[j],
-                    "strokeColor=" + color + ";fontColor=" + color + "");
+                    "strokeColor=" + colorString + ";fontColor=" + colorString + "");
 
             // System.out.println(color);
             return distanceFinder(i, j);

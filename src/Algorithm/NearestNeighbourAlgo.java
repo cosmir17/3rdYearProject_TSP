@@ -13,12 +13,17 @@ public class NearestNeighbourAlgo extends Algorithm {
 
     public NearestNeighbourAlgo(GraphGenerator graphObject) {
 
-        super(graphObject, edgeColors.valueOf("blue"));
+        super(graphObject);
+    }
+
+    @Override
+    protected void graphObjectColorRedefiner() {
+        graphObject.color = color;
     }
 
     @Override
     protected void colorSelector() {
-        edgeColors color = edgeColors.valueOf(this.getClass().getName());
+        color = edgeColors.valueOf(this.getClass().getSimpleName());
     }
 
 
