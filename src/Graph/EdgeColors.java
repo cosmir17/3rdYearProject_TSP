@@ -3,7 +3,7 @@ package Graph;
 /**
  * Created by lloydp on 27/03/14.
  */
-public enum edgeColors {
+public enum EdgeColors {
 
 
     InsertionAlgo("green"),
@@ -13,7 +13,7 @@ public enum edgeColors {
 
     private String color;
 
-    private edgeColors(String c) {
+    private EdgeColors(String c) {
         color = c;
     }
 

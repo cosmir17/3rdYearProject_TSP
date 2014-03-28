@@ -1,7 +1,8 @@
 package Algorithm;
 
+import Graph.EdgeColors;
+import Graph.EdgeLayers;
 import Graph.GraphGenerator;
-import Graph.edgeColors;
 
 /**
  * Created by lloydp on 09/02/14.
@@ -17,18 +18,16 @@ public class NearestNeighbourAlgo extends Algorithm {
     }
 
     @Override
-    protected void layerRedefiner() {
+    protected void layerSelectorAndRedefiner() {
+        layer = EdgeLayers.valueOf(this.getClass().getSimpleName());
         graphObject.layer = layer;
     }
 
     @Override
-    protected void graphObjectColorRedefiner() {
+    protected void colorSelectorAndRedefiner() {
+        color = EdgeColors.valueOf(this.getClass().getSimpleName());
         graphObject.color = color;
-    }
-
-    @Override
-    protected void colorSelector() {
-        color = edgeColors.valueOf(this.getClass().getSimpleName());
+        //  System.out.println(color.getCode());
     }
 
 

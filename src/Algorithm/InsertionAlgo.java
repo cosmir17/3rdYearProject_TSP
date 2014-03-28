@@ -1,7 +1,8 @@
 package Algorithm;
 
+import Graph.EdgeColors;
+import Graph.EdgeLayers;
 import Graph.GraphGenerator;
-import Graph.edgeColors;
 import com.mxgraph.swing.mxGraphComponent;
 
 /**
@@ -13,32 +14,32 @@ public class InsertionAlgo extends Algorithm {
 
         super(graphObject);
 
-        // edgeColors.valueOf("InsertionAlgo");
+        // EdgeColors.valueOf("InsertionAlgo");
         // this.getClass().getSimpleName();
-        // System.out.println(edgeColors.valueOf("InsertionAlgo")+"3");
-        // System.out.println(edgeColors.valueOf("InsertionAlgo").getCode());
+        // System.out.println(EdgeColors.valueOf("InsertionAlgo")+"3");
+        // System.out.println(EdgeColors.valueOf("InsertionAlgo").getCode());
         //  System.out.println(this.getClass().getSimpleName());
-        // System.out.println(edgeColors.valueOf("red")+"4");
-        // System.out.println(edgeColors.valueOf("red").getCode());
-        // System.out.println( edgeColors.valueOf(this.getClass().getSimpleName()));
-        //System.out.println( edgeColors.valueOf(this.getClass().getSimpleName()).getCode());
+        // System.out.println(EdgeColors.valueOf("red")+"4");
+        // System.out.println(EdgeColors.valueOf("red").getCode());
+        // System.out.println( EdgeColors.valueOf(this.getClass().getSimpleName()));
+        //System.out.println( EdgeColors.valueOf(this.getClass().getSimpleName()).getCode());
     }
 
     @Override
-    protected void layerRedefiner() {
+    protected void layerSelectorAndRedefiner() {
+        layer = EdgeLayers.valueOf(this.getClass().getSimpleName());
         graphObject.layer = layer;
     }
 
-    @Override
-    protected void graphObjectColorRedefiner() {
-        graphObject.color = color;
-    }
 
     @Override
-    protected void colorSelector() {
-        color = edgeColors.valueOf(this.getClass().getSimpleName());
+    protected void colorSelectorAndRedefiner() {
+        color = EdgeColors.valueOf(this.getClass().getSimpleName());
+        graphObject.color = color;
         //  System.out.println(color.getCode());
+
     }
+
 
     @Override
     protected void drawer() {

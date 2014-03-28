@@ -20,7 +20,7 @@ public class GraphGenerator extends Object implements Cloneable {
     public static mxGraph graph = new mxGraph();
     Object parent = graph.getDefaultParent();
     public Object[] graphNodeArray;
-    public edgeColors color;
+    public EdgeColors color;
     public EdgeLayers layer;
     String colorString = "";
 

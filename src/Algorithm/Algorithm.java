@@ -1,8 +1,8 @@
 package Algorithm;
 
+import Graph.EdgeColors;
 import Graph.EdgeLayers;
 import Graph.GraphGenerator;
-import Graph.edgeColors;
 import com.mxgraph.swing.mxGraphComponent;
 import com.mxgraph.view.mxGraph;
 
@@ -15,7 +15,7 @@ public abstract class Algorithm {
     protected Object graphNodeArray[];
     protected Object parent;
     double totalDistance = 0;
-    edgeColors color;
+    EdgeColors color;
     EdgeLayers layer;
 
     public Algorithm(GraphGenerator graphObject) {
@@ -26,16 +26,15 @@ public abstract class Algorithm {
         this.color = graphObject.color;
         this.layer = graphObject.layer;
 
-        colorSelector();
-        graphObjectColorRedefiner();
+        colorSelectorAndRedefiner();
+        layerSelectorAndRedefiner();
+
         drawer();
     }
 
-    protected abstract void layerRedefiner();
+    protected abstract void layerSelectorAndRedefiner();
 
-    protected abstract void graphObjectColorRedefiner();
-
-    protected abstract void colorSelector();
+    protected abstract void colorSelectorAndRedefiner();
 
     protected abstract void drawer();
 
