@@ -17,6 +17,11 @@ public class NearestNeighbourAlgo extends Algorithm {
     }
 
     @Override
+    protected void layerRedefiner() {
+        graphObject.layer = layer;
+    }
+
+    @Override
     protected void graphObjectColorRedefiner() {
         graphObject.color = color;
     }

@@ -1,5 +1,6 @@
 package Algorithm;
 
+import Graph.EdgeLayers;
 import Graph.GraphGenerator;
 import Graph.edgeColors;
 import com.mxgraph.swing.mxGraphComponent;
@@ -15,6 +16,7 @@ public abstract class Algorithm {
     protected Object parent;
     double totalDistance = 0;
     edgeColors color;
+    EdgeLayers layer;
 
     public Algorithm(GraphGenerator graphObject) {
         this.graphObject = graphObject;
@@ -22,11 +24,14 @@ public abstract class Algorithm {
         this.graphNodeArray = graphObject.graphNodeArray;
         this.parent = graph.getDefaultParent();
         this.color = graphObject.color;
+        this.layer = graphObject.layer;
 
         colorSelector();
         graphObjectColorRedefiner();
         drawer();
     }
+
+    protected abstract void layerRedefiner();
 
     protected abstract void graphObjectColorRedefiner();
 

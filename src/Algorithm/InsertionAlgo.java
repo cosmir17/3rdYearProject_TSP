@@ -25,6 +25,11 @@ public class InsertionAlgo extends Algorithm {
     }
 
     @Override
+    protected void layerRedefiner() {
+        graphObject.layer = layer;
+    }
+
+    @Override
     protected void graphObjectColorRedefiner() {
         graphObject.color = color;
     }
@@ -37,6 +42,8 @@ public class InsertionAlgo extends Algorithm {
 
     @Override
     protected void drawer() {
+
+
         int nodeJ = graphObject.edgeDrawerfromItoNextClosestNode(0);
         int nodeK = graphObject.findingtheClosestNodeFromtheMiddlePointbetweentwoNodes(0, nodeJ);
         graphObject.edgeDrawerFromNodeItoJ(0, nodeK);

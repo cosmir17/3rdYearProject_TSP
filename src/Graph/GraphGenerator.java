@@ -2,24 +2,54 @@ package Graph; /**
  * Created by lloydp on 13/02/14.
  */
 
+import com.mxgraph.layout.hierarchical.mxHierarchicalLayout;
+import com.mxgraph.layout.mxFastOrganicLayout;
 import com.mxgraph.model.mxCell;
+import com.mxgraph.model.mxGraphModel;
+import com.mxgraph.model.mxICell;
 import com.mxgraph.swing.mxGraphComponent;
 import com.mxgraph.view.mxGraph;
 
 import java.awt.*;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class GraphGenerator {
+public class GraphGenerator extends Object implements Cloneable {
     public static mxGraph graph = new mxGraph();
     Object parent = graph.getDefaultParent();
     public Object[] graphNodeArray;
     public edgeColors color;
+    public EdgeLayers layer;
     String colorString = "";
+
+    private mxCell root;
+    private mxICell NearestLayer;
+    private mxICell InsertionLayer;
+    private mxGraphModel model;
+
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
+
+    public void finalize() throws IOException {
+        try {
+            super.finalize();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+        }
+    }
 
     public GraphGenerator() {
         // mxGraph.getCellStyle(graph);
+/*
+        root = new mxCell();
+        layer0 = root.insert(new mxCell());
+        layer1 = root.insert(new mxCell());
+        graph.getModel() = new mxGraphModel(root);
+        graph = new mxGraph(model);
+  */
     }
 
     public void createGraph(int numberOfCity) {
@@ -55,9 +85,17 @@ public class GraphGenerator {
         }
     }
 
+    public void layoutCreator() {
+
+
+        mxHierarchicalLayout layout = new mxHierarchicalLayout(graph);
+        mxFastOrganicLayout organic = new mxFastOrganicLayout(graph);
+    }
+
     public mxGraphComponent componentGetter() {
         mxGraphComponent graphComponent = new mxGraphComponent(graph);
         graphComponent.setPreferredSize(new Dimension(910, 530));
+        //graphComponent.
         return graphComponent;
         /*
         getContentPane().add(graphComponent);
@@ -131,7 +169,7 @@ public class GraphGenerator {
         graph.getModel().beginUpdate();
 
         try {
-            graph.insertEdge(parent, null, distanceFinder(i, j), graphNodeArray[i], graphNodeArray[j],
+            graph.insertEdge(layer, null, distanceFinder(i, j), graphNodeArray[i], graphNodeArray[j],
                     "strokeColor=" + colorString + ";fontColor=" + colorString + "");
 
             // System.out.println(color);

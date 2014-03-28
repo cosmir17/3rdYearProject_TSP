@@ -708,11 +708,11 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
 
     private void shortestButtonPushed() {
         if (shortestButton.pushed && shortestButton.getActionCommand().equals("Shortest Path")) {
-
+            removeGraphfromPanel();
             graphObectDuplicator();
             graphEdgeRemover();
 
-            //nearestAlgorithmRunner();
+            nearestAlgorithmRunner();
             insertionAlgoRunner();
 
 
@@ -740,8 +740,15 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
             //tabuCheckBox.setColleagueEnabled(true);
             secondPanelElementsSwitch(true);
             shortestButton.pushed = false;
+
         }
 
+    }
+
+    private void removeGraphfromPanel() {
+        if (panelMap.getComponentCount() > 0) {
+            panelMap.removeAll();
+        }
     }
 
     private void insertionAlgoRunner() {
@@ -762,8 +769,16 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
     }
 
     private void graphObectDuplicator() {
-        graphGnearnAlgoGraph = graphG;
-        graphInsertionAlgoGraph = graphG;
+        try {
+            graphGnearnAlgoGraph = (GraphGenerator) graphG.clone();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
+        try {
+            graphInsertionAlgoGraph = (GraphGenerator) graphG.clone();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
         //   GraphGenerator graphGnearnAlgoGraph = graphG;
         //   GraphGenerator graphGnearnAlgoGraph = graphG;
         //   GraphGenerator graphGnearnAlgoGraph = graphG;
@@ -817,9 +832,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
     }
 
     private void insertGraphintoPanelMap(mxGraphComponent compo) {
-        if (panelMap.getComponentCount() > 0) {
-            panelMap.remove(0);
-        }
+
         panelMap.add(compo);
     }
 
