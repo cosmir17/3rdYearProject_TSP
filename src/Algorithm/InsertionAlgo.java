@@ -2,7 +2,10 @@ package Algorithm;
 
 import Graph.GraphGenerator;
 import Graph.edgeColors;
+import com.mxgraph.model.mxCell;
 import com.mxgraph.swing.mxGraphComponent;
+
+import java.util.TreeMap;
 
 /**
  * Created by lloydp on 09/02/14.
@@ -36,6 +39,24 @@ public class InsertionAlgo extends Algorithm {
 
 
         int nodeJ = graphObject.edgeDrawerfromItoNextClosestNode(0);
+        // O-----O
+        Object graphEdges[] = graph.getAllEdges(graphNodeArray);
+
+        for (int i = 0; i < graphEdges.length - 1; i++) {
+            mxCell element = (mxCell) graphEdges[i];
+            Double.parseDouble(element.getValue().toString());
+
+
+        }
+
+
+        TreeMap<Integer, Double> minimumNodeMap = graphObject.findMinimumValueOfIJKiteratingManyNodes(0, nodeJ);
+        graphObject.edgeDrawerfromijk(0, nodeJ, minimumNodeMap.firstEntry().getKey());
+        //triangle is made
+
+
+
+        /*
         int nodeK = graphObject.findingtheClosestNodeFromtheMiddlePointbetweentwoNodes(0, nodeJ);
         graphObject.edgeDrawerFromNodeItoJ(0, nodeK);
         graphObject.edgeDrawerFromNodeItoJ(nodeJ, nodeK);
@@ -47,7 +68,7 @@ public class InsertionAlgo extends Algorithm {
         graphObject.edgeDrawerFromNodeItoJ(nodeK, nodeL);
 
         //int nodeKcandidatefromJ = graphObject.getIndexofClosesetNodefromIwithDistance(nodeJ).getValue();
-
+*/
 
     }
 

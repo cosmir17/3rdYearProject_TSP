@@ -169,7 +169,7 @@ public class GraphGenerator extends Object implements Cloneable {
         graph.getModel().beginUpdate();
 
         try {
-            graph.insertEdge(layer, null, distanceFinder(i, j), graphNodeArray[i], graphNodeArray[j],
+            graph.insertEdge(parent, null, distanceFinder(i, j), graphNodeArray[i], graphNodeArray[j],
                     "strokeColor=" + colorString + ";fontColor=" + colorString + "");
 
             // System.out.println(color);
@@ -297,5 +297,41 @@ public class GraphGenerator extends Object implements Cloneable {
         return totalDistance;
     }
 
+    public double findValueforikPlusjkMinusij(int i, int j, int k) {
+        double ikDistance = distanceFinder(i, k);
+        double jkDistance = distanceFinder(j, k);
+        double ijDistance = distanceFinder(i, j);
 
+        return (jkDistance + ikDistance) - ijDistance;
+    }
+
+    public TreeMap<Integer, Double> findMinimumValueOfIJKiteratingManyNodes(int i, int j) {
+        double minimum = 90000;
+        double ijk;
+        int bestKnode = 40000;
+
+        for (int k = 0; k < graphNodeArray.length; k++) {
+            mxCell kNode = (mxCell) graphNodeArray[k];
+            if (kNode.getEdgeCount() < 1) {
+                ijk = findValueforikPlusjkMinusij(i, j, k);
+                if (ijk < minimum) {
+                    minimum = ijk;
+                    bestKnode = k;
+                }
+
+            }
+        }
+
+
+        TreeMap<Integer, Double> minimumNode = new TreeMap<Integer, Double>();
+        minimumNode.put(bestKnode, minimum);
+        return minimumNode;
+    }
+
+
+    public void edgeDrawerfromijk(int i, int j, int k) {
+        edgeDrawerFromNodeItoJ(i, k);
+        edgeDrawerFromNodeItoJ(j, k);
+
+    }
 }
