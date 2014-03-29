@@ -25,8 +25,9 @@ public class GraphGenerator extends Object implements Cloneable {
     String colorString = "";
 
     private mxCell root;
-    private mxICell NearestLayer;
-    private mxICell InsertionLayer;
+    private mxICell base;
+    private mxICell nearestLayer;
+    private mxICell insertionLayer;
     private mxGraphModel model;
 
     public Object clone() throws CloneNotSupportedException {
@@ -60,7 +61,7 @@ public class GraphGenerator extends Object implements Cloneable {
 
         try {
             for (int i = 0; i < nodeArray.size(); i++) {
-                graphNodeArray[i] = graph.insertVertex(parent, null,
+                graphNodeArray[i] = graph.insertVertex(base, null,
                         nodeArray.returnNodeArrayList().get(i).cityName,
                         nodeArray.returnNodeArrayList().get(i).returnX(),
                         nodeArray.returnNodeArrayList().get(i).returnY(),
@@ -90,6 +91,47 @@ public class GraphGenerator extends Object implements Cloneable {
 
         mxHierarchicalLayout layout = new mxHierarchicalLayout(graph);
         mxFastOrganicLayout organic = new mxFastOrganicLayout(graph);
+    }
+
+
+    public double edgeDrawerFromNodeItoJ(int i, int j) {
+
+        //  System.out.println(color);
+        colorString = color.getCode();
+
+        graph.getModel().beginUpdate();
+
+        try {
+            graph.insertEdge(nearestLayer, null, distanceFinder(i, j), graphNodeArray[i], graphNodeArray[j],
+                    "strokeColor=" + colorString + ";fontColor=" + colorString + "");
+
+            // System.out.println(color);
+            return distanceFinder(i, j);
+        } finally {
+            graph.getModel().endUpdate();
+        }
+
+
+    }
+
+    public double edgeDrawerFromNodeItoJlayer(int i, int j, mxICell layer) {
+
+        //  System.out.println(color);
+        colorString = color.getCode();
+
+        graph.getModel().beginUpdate();
+
+        try {
+            graph.insertEdge(layer, null, distanceFinder(i, j), graphNodeArray[i], graphNodeArray[j],
+                    "strokeColor=" + colorString + ";fontColor=" + colorString + "");
+
+            // System.out.println(color);
+            return distanceFinder(i, j);
+        } finally {
+            graph.getModel().endUpdate();
+        }
+
+
     }
 
     public mxGraphComponent componentGetter() {
@@ -161,25 +203,6 @@ public class GraphGenerator extends Object implements Cloneable {
 
     }
 
-    public double edgeDrawerFromNodeItoJ(int i, int j) {
-
-        //  System.out.println(color);
-        colorString = color.getCode();
-
-        graph.getModel().beginUpdate();
-
-        try {
-            graph.insertEdge(layer, null, distanceFinder(i, j), graphNodeArray[i], graphNodeArray[j],
-                    "strokeColor=" + colorString + ";fontColor=" + colorString + "");
-
-            // System.out.println(color);
-            return distanceFinder(i, j);
-        } finally {
-            graph.getModel().endUpdate();
-        }
-
-
-    }
 
     public double distanceFinder(int i, int j) {
         mxCell ithNode = (mxCell) graphNodeArray[i];
