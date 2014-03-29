@@ -26,16 +26,13 @@ public abstract class Algorithm {
         this.color = graphObject.color;
         this.layer = graphObject.layer;
 
-        colorSelector();
-        graphObjectColorRedefiner();
+        graphObjectColorSelectorAndRedefiner();
         drawer();
     }
 
-    protected abstract void layerRedefiner();
 
-    protected abstract void graphObjectColorRedefiner();
+    protected abstract void graphObjectColorSelectorAndRedefiner();
 
-    protected abstract void colorSelector();
 
     protected abstract void drawer();
 

@@ -25,20 +25,11 @@ public class InsertionAlgo extends Algorithm {
     }
 
     @Override
-    protected void layerRedefiner() {
-        graphObject.layer = layer;
-    }
-
-    @Override
-    protected void graphObjectColorRedefiner() {
+    protected void graphObjectColorSelectorAndRedefiner() {
+        color = edgeColors.valueOf(this.getClass().getSimpleName());
         graphObject.color = color;
     }
 
-    @Override
-    protected void colorSelector() {
-        color = edgeColors.valueOf(this.getClass().getSimpleName());
-        //  System.out.println(color.getCode());
-    }
 
     @Override
     protected void drawer() {

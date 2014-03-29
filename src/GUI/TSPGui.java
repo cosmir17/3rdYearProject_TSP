@@ -712,7 +712,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
             graphObectDuplicator();
             graphEdgeRemover();
 
-            nearestAlgorithmRunner();
+            // nearestAlgorithmRunner();
             insertionAlgoRunner();
 
 
@@ -747,7 +747,8 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
 
     private void removeGraphfromPanel() {
         if (panelMap.getComponentCount() > 0) {
-            panelMap.removeAll();
+            for (int i = 0; i < panelMap.getComponentCount(); i++)
+                panelMap.remove(i);
         }
     }
 
