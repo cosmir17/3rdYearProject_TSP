@@ -286,15 +286,16 @@ public class GraphGenerator extends Object implements Cloneable {
         double totalDistance = 0;
         Object graphEdges[] = graph.getAllEdges(graphNodeArray);
 
+        HashMap<Integer, mxCell> oneEdgeOneNodeNotTwoNodes = new HashMap<Integer, mxCell>();
+
         for (int i = 0; i < graphEdges.length; i++) {
             mxCell element = (mxCell) graphEdges[i];
-            System.out.println(element.getId());
-            totalDistance += Double.parseDouble(element.getValue().toString());
-
-
+            oneEdgeOneNodeNotTwoNodes.put(Integer.parseInt(element.getId()), element);
         }
 
-
+        for (Integer i : oneEdgeOneNodeNotTwoNodes.keySet()) {
+            totalDistance += Double.parseDouble(oneEdgeOneNodeNotTwoNodes.get(i).getValue().toString());
+        }
         return totalDistance;
     }
 

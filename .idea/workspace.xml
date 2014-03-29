@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="It start from one edge. Insertion algorithm (in progress)&#10;&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Algorithm/Algorithm.java" afterPath="$PROJECT_DIR$/src/Algorithm/Algorithm.java" />
+    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="Double execution problem is solved.&#10;It start from one edge. Insertion algorithm (in progress)&#10;&#10;&#10;&#10;&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Graph/GraphGenerator.java" afterPath="$PROJECT_DIR$/src/Graph/GraphGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Algorithm/NearestNeighbourAlgo.java" afterPath="$PROJECT_DIR$/src/Algorithm/NearestNeighbourAlgo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/TSPGui.java" afterPath="$PROJECT_DIR$/src/GUI/TSPGui.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="3rd_year_project.iws" />
@@ -61,83 +58,7 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/Graph/GraphGenerator.java" line="286" class="Graph.GraphGenerator" package="Graph">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/Graph/GraphGenerator.java" line="289" class="Graph.GraphGenerator" package="Graph">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/Graph/GraphGenerator.java" line="291" class="Graph.GraphGenerator" package="Graph">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/GUI/TSPGui.java" line="841" class="GUI.TSPGui" package="GUI">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/GUI/TSPGui.java" line="848" class="GUI.TSPGui" package="GUI">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <method_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
@@ -157,14 +78,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GraphGenerator.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="GraphGenerator.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Graph/GraphGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="286" column="0" selection-start="9730" selection-end="9730" vertical-scroll-proportion="-3.074074" vertical-offset="5065" max-vertical-offset="6174">
+            <state line="297" column="29" selection-start="10258" selection-end="10258" vertical-scroll-proportion="0.8359133" vertical-offset="5076" max-vertical-offset="6174">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#10969#10986#0" expanded="true" />
+                <element signature="e#9814#9831#0" expanded="true" />
+                <element signature="e#11151#11168#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArrayList.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar:///usr/lib/java/jdk1.7.0_51/src.zip!/java/util/ArrayList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="642" column="0" selection-start="23439" selection-end="23439" vertical-scroll-proportion="0.0" vertical-offset="11030" max-vertical-offset="20790">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -187,10 +118,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TSPGui.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TSPGui.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GUI/TSPGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="828" column="49" selection-start="41128" selection-end="41128" vertical-scroll-proportion="-0.3152985" vertical-offset="14785" max-vertical-offset="16614">
+            <state line="690" column="0" selection-start="35992" selection-end="35992" vertical-scroll-proportion="-3.074074" vertical-offset="12049" max-vertical-offset="16614">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ColleagueCheckBox.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GUI/ColleagueCheckBox.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="0" selection-start="568" selection-end="568" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="702">
               <folding />
             </state>
           </provider>
@@ -200,24 +140,6 @@
         <entry file="file://$PROJECT_DIR$/src/GUI/ColleagueButton.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="36" column="0" selection-start="767" selection-end="767" vertical-scroll-proportion="0.0" vertical-offset="431" max-vertical-offset="720">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NodeDataStore.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Graph/NodeDataStore.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="13" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="1026">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edgeColors.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Graph/edgeColors.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="89" selection-end="344" vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="540">
               <folding />
             </state>
           </provider>
@@ -301,8 +223,8 @@
         <option value="$PROJECT_DIR$/src/Algorithm/InsertionAlgo.java" />
         <option value="$PROJECT_DIR$/src/Algorithm/Algorithm.java" />
         <option value="$PROJECT_DIR$/src/Algorithm/NearestNeighbourAlgo.java" />
-        <option value="$PROJECT_DIR$/src/Graph/GraphGenerator.java" />
         <option value="$PROJECT_DIR$/src/GUI/TSPGui.java" />
+        <option value="$PROJECT_DIR$/src/Graph/GraphGenerator.java" />
       </list>
     </option>
   </component>
@@ -894,7 +816,11 @@
       <created>1396110614504</created>
       <updated>1396110614504</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Double execution problem is solved.&#10;It start from one edge. Insertion algorithm (in progress)&#10;&#10;&#10;&#10;&#10;">
+      <created>1396114764662</created>
+      <updated>1396114764662</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -921,7 +847,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21656536" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.384" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.384" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="true" anchor="right" auto_hide="true" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="642" y="197" width="724" height="513" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -946,7 +872,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="1.Removed double declarations.&#10;2.making methods for copying the main graph object for each algorithm.&#10;&#10;" />
     <MESSAGE value="Removed minor errors. due to another double declaration.&#10;1.Removed double declarations.&#10;2.making methods for copying the main graph object for each algorithm.&#10;&#10;" />
     <MESSAGE value="edge Drawer From the LastNode to the First one" />
     <MESSAGE value="Method modified for coloring edges (working nicely)" />
@@ -971,7 +896,8 @@
     <MESSAGE value="working on layers for drawing edges." />
     <MESSAGE value="Insertion algorithm (in progress)" />
     <MESSAGE value="It start from one edge. Insertion algorithm (in progress)&#10;&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="It start from one edge. Insertion algorithm (in progress)&#10;&#10;" />
+    <MESSAGE value="Double execution problem is solved.&#10;It start from one edge. Insertion algorithm (in progress)&#10;&#10;&#10;&#10;&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Double execution problem is solved.&#10;It start from one edge. Insertion algorithm (in progress)&#10;&#10;&#10;&#10;&#10;" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1019,11 +945,6 @@
     <entry file="jar:///usr/lib/java/jdk1.7.0_51/jre/lib/rt.jar!/java/awt/event/MouseListener.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390" />
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/java/jdk1.7.0_51/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="258" column="0" selection-start="9378" selection-end="9378" vertical-scroll-proportion="0.0" vertical-offset="4096" max-vertical-offset="20790" />
       </provider>
     </entry>
     <entry file="jar:///usr/lib/java/jdk1.7.0_51/src.zip!/java/lang/Object.java">
@@ -1184,13 +1105,6 @@
         <state line="235" column="0" selection-start="8058" selection-end="8058" vertical-scroll-proportion="0.0" vertical-offset="3627" max-vertical-offset="4230" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/ColleagueCheckBox.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="42" selection-start="788" selection-end="788" vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="702">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Graph/CityName.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="0" selection-start="58" selection-end="58" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="9846">
@@ -1249,13 +1163,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/ColleagueButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="767" selection-end="767" vertical-scroll-proportion="0.0" vertical-offset="431" max-vertical-offset="720">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Algorithm/Algorithm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="0" selection-start="873" selection-end="873" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="936">
@@ -1270,20 +1177,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Graph/GraphGenerator.java">
+    <entry file="jar:///usr/lib/java/jdk1.7.0_51/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="286" column="0" selection-start="9730" selection-end="9730" vertical-scroll-proportion="-3.074074" vertical-offset="5065" max-vertical-offset="6174">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#10969#10986#0" expanded="true" />
-          </folding>
+        <state line="642" column="0" selection-start="23439" selection-end="23439" vertical-scroll-proportion="0.0" vertical-offset="11030" max-vertical-offset="20790">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/ColleagueCheckBox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="568" selection-end="568" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="702">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/TSPGui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="828" column="49" selection-start="41128" selection-end="41128" vertical-scroll-proportion="-0.3152985" vertical-offset="14785" max-vertical-offset="16614">
+        <state line="690" column="0" selection-start="35992" selection-end="35992" vertical-scroll-proportion="-3.074074" vertical-offset="12049" max-vertical-offset="16614">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/ColleagueButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="0" selection-start="767" selection-end="767" vertical-scroll-proportion="0.0" vertical-offset="431" max-vertical-offset="720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graph/GraphGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="297" column="29" selection-start="10258" selection-end="10258" vertical-scroll-proportion="0.8359133" vertical-offset="5076" max-vertical-offset="6174">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#9814#9831#0" expanded="true" />
+            <element signature="e#11151#11168#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
