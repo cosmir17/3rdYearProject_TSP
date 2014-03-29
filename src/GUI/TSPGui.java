@@ -738,8 +738,9 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
             //advancedHeuLabel.setColleagueEnabled(true);
             //simultedACheckBox.setColleagueEnabled(true);
             //tabuCheckBox.setColleagueEnabled(true);
-            secondPanelElementsSwitch(true);
             shortestButton.pushed = false;
+            secondPanelElementsSwitch(true);
+
 
         }
 
@@ -824,9 +825,9 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
                 panelMap.add(graph.returnJGraph());
                 shortestButton.setColleagueEnabled(true);
                 */
-
-                secondPanelElementsSwitch(false);
                 initButton.pushed = false;
+                secondPanelElementsSwitch(false);
+
 
             }
         }

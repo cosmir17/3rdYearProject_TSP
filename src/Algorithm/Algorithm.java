@@ -28,6 +28,11 @@ public abstract class Algorithm {
 
         graphObjectColorSelectorAndRedefiner();
         drawer();
+        getTotalDis();
+    }
+
+    private void getTotalDis() {
+        totalDistance = graphObject.findTotalDistance();
     }
 
 

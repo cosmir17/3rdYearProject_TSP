@@ -28,7 +28,7 @@ public class NearestNeighbourAlgo extends Algorithm {
         int lastNode = drawerIterator(graphNodeArray.length - 2);
         edgeDrawerFromLastNodetotheFirstone(lastNode);
 
-        totalDistance = graphObject.findTotalDistance();
+
     }
 
 

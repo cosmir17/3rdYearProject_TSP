@@ -286,8 +286,9 @@ public class GraphGenerator extends Object implements Cloneable {
         double totalDistance = 0;
         Object graphEdges[] = graph.getAllEdges(graphNodeArray);
 
-        for (int i = 0; i < graphEdges.length - 1; i++) {
+        for (int i = 0; i < graphEdges.length; i++) {
             mxCell element = (mxCell) graphEdges[i];
+            System.out.println(element.getId());
             totalDistance += Double.parseDouble(element.getValue().toString());
 
 
