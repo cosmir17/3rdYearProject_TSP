@@ -2,7 +2,6 @@ package Algorithm;
 
 import Graph.GraphGenerator;
 import Graph.edgeColors;
-import com.mxgraph.swing.mxGraphComponent;
 
 import java.util.HashMap;
 import java.util.TreeMap;
@@ -43,9 +42,8 @@ public class InsertionAlgo extends Algorithm {
         TreeMap<Integer, Double> minimumNodeMap = graphObject.findMinimumValueOfIJKiteratingManyNodes(0, nodeJ);
         graphObject.edgeDrawerfromijkwithoutRemovingEdgeFromIJ(0, nodeJ, minimumNodeMap.firstEntry().getKey());
 
-        boolean isThereNodewithoutAnedge = true;
 
-        while (isThereNodewithoutAnedge) {
+        while (graphObject.isNodeWithoutanEdge()) {
             HashMap<Integer, Integer> sourceAndTarget = graphObject.sourceAndTargetNodeListWithEdges();
 
             TreeMap<Integer, Double> minimumNodeMap2 = new TreeMap<Integer, Double>();
@@ -60,7 +58,6 @@ public class InsertionAlgo extends Algorithm {
                 }
             }
 
-            isThereNodewithoutAnedge = graphObject.isNodeWithoutanEdge();
 
         }
 
@@ -99,9 +96,4 @@ public class InsertionAlgo extends Algorithm {
 
     }
 
-
-    @Override
-    public mxGraphComponent run() {
-        return graphObject.componentGetter();
-    }
 }

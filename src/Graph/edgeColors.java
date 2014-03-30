@@ -8,8 +8,8 @@ public enum edgeColors {
 
     InsertionAlgo("green"),
     NearestNeighbourAlgo("blue"),
-    Simluated("green"),
-    red("InsertionAlgo");
+    TwoOptAlgo("red"),
+    Simluated("green");
 
     private String color;
 
