@@ -49,13 +49,14 @@ public class InsertionAlgo extends Algorithm {
             HashMap<Integer, Integer> sourceAndTarget = graphObject.sourceAndTargetNodeListWithEdges();
 
             TreeMap<Integer, Double> minimumNodeMap2 = new TreeMap<Integer, Double>();
+
             for (int i : sourceAndTarget.keySet()) {
-                int firstNode = i;
-                int secondNode = sourceAndTarget.get(i);
+                int sourceNode = i;
+                int targetNode = sourceAndTarget.get(i);
 
                 if (graphObject.isNodeWithoutanEdge()) {
-                    minimumNodeMap2 = graphObject.findMinimumValueOfIJKiteratingManyNodes(firstNode, secondNode);
-                    graphObject.edgeDrawerfromijk(firstNode, secondNode, minimumNodeMap2.firstEntry().getKey());
+                    minimumNodeMap2 = graphObject.findMinimumValueOfIJKiteratingManyNodes(sourceNode, targetNode);
+                    graphObject.edgeDrawerfromijk(sourceNode, targetNode, minimumNodeMap2.firstEntry().getKey());
                 }
             }
 
