@@ -40,18 +40,23 @@ public class InsertionAlgo extends Algorithm {
 
         int nodeJ = graphObject.edgeDrawerfromItoNextClosestNode(0);
         // O-----O
+        TreeMap<Integer, Double> minimumNodeMap = graphObject.findMinimumValueOfIJKiteratingManyNodes(0, nodeJ);
+        graphObject.edgeDrawerfromijkwithoutRemovingEdgeFromIJ(0, nodeJ, minimumNodeMap.firstEntry().getKey());
 
         boolean isThereNodewithoutAnedge = true;
+
         while (isThereNodewithoutAnedge) {
             HashMap<Integer, Integer> sourceAndTarget = graphObject.sourceAndTargetNodeListWithEdges();
 
-            TreeMap<Integer, Double> minimumNodeMap = new TreeMap<Integer, Double>();
+            TreeMap<Integer, Double> minimumNodeMap2 = new TreeMap<Integer, Double>();
             for (int i : sourceAndTarget.keySet()) {
                 int firstNode = i;
                 int secondNode = sourceAndTarget.get(i);
 
-                minimumNodeMap = graphObject.findMinimumValueOfIJKiteratingManyNodes(firstNode, secondNode);
-                graphObject.edgeDrawerfromijk(firstNode, secondNode, minimumNodeMap.firstEntry().getKey());
+                if (graphObject.isNodeWithoutanEdge()) {
+                    minimumNodeMap2 = graphObject.findMinimumValueOfIJKiteratingManyNodes(firstNode, secondNode);
+                    graphObject.edgeDrawerfromijk(firstNode, secondNode, minimumNodeMap2.firstEntry().getKey());
+                }
             }
 
             isThereNodewithoutAnedge = graphObject.isNodeWithoutanEdge();

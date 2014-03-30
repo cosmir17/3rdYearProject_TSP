@@ -763,11 +763,15 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
     }
 
     private void graphEdgeRemover() {
-        graphGnearnAlgoGraph.allEdgeRemover();
-        graphInsertionAlgoGraph.allEdgeRemover();
-        //   GraphGenerator graphGnearnAlgoGraph = graphG;
-        //   GraphGenerator graphGnearnAlgoGraph = graphG;
-        //   GraphGenerator graphGnearnAlgoGraph = graphG;
+        try {
+            graphGnearnAlgoGraph.allEdgeRemover();
+            graphInsertionAlgoGraph.allEdgeRemover();
+            //   GraphGenerator graphGnearnAlgoGraph = graphG;
+            //   GraphGenerator graphGnearnAlgoGraph = graphG;
+            //   GraphGenerator graphGnearnAlgoGraph = graphG;
+        } catch (NullPointerException e) {
+
+        }
     }
 
     private void graphObectDuplicator() {
@@ -807,6 +811,8 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
                 //  System.out.println("init source  =   "+initButton.e.getSource());
                 // System.out.println("init something  =   " + initButton.getActionCommand());
 
+                removeGraphfromPanel();
+                graphEdgeRemover();
 
                 graphG.createGraph(numberofcityGetter());
                 insertGraphintoPanelMap(graphG.componentGetter());

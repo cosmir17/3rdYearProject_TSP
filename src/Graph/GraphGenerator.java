@@ -144,6 +144,8 @@ public class GraphGenerator extends Object implements Cloneable {
                 graph.getModel().remove(edge);
             }
 
+        } catch (NullPointerException e) {
+
         } finally {
             graph.getModel().endUpdate();
         }
@@ -362,9 +364,12 @@ public class GraphGenerator extends Object implements Cloneable {
     }
 
     public TreeMap<Integer, Double> findMinimumValueOfIJKiteratingManyNodes(int i, int j) {
+
+
         double minimum = 90000;
         double ijk;
         int bestKnode = graphNodeArray.length + 1;
+
 
         for (int k = 0; k < graphNodeArray.length; k++) {
             mxCell kNode = (mxCell) graphNodeArray[k];
@@ -388,6 +393,15 @@ public class GraphGenerator extends Object implements Cloneable {
     public void edgeDrawerfromijk(int i, int j, int k) {
         edgeDrawerFromNodeItoJ(i, k);
         edgeDrawerFromNodeItoJ(j, k);
+        edgeRemoverfromItoJ(i, j);
 
     }
+
+    public void edgeDrawerfromijkwithoutRemovingEdgeFromIJ(int i, int j, int k) {
+        edgeDrawerFromNodeItoJ(i, k);
+        edgeDrawerFromNodeItoJ(j, k);
+
+
+    }
+
 }
