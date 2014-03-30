@@ -23,6 +23,7 @@ public class GraphGenerator extends Object implements Cloneable {
     public edgeColors color;
     public EdgeLayers layer;
     String colorString = "";
+    public HashMap<String, Integer> graphNodeArrayToIDtable;
 
     private mxCell root;
     private mxICell NearestLayer;
@@ -68,6 +69,17 @@ public class GraphGenerator extends Object implements Cloneable {
                         15, "ROUNDED");
 
             }
+
+
+            graphNodeArrayToIDtable = new HashMap<String, Integer>();
+            for (int i = 0; i < graphNodeArray.length; i++) {
+                mxCell node = (mxCell) graphNodeArray[i];
+                graphNodeArrayToIDtable.put(node.getId(), i);
+
+            }
+            //graphNodeArrayToIDtable converts id => graphNodeArray index.
+
+
 /*
             Object v1 = graph.insertVertex(parent, null, "Hello", 20, 20, 30, 15);
             Object v2 = graph.insertVertex(parent, null, "World!", 240, 150, 30, 15);
@@ -319,23 +331,10 @@ public class GraphGenerator extends Object implements Cloneable {
     }
 
 
-    public HashMap<String, Integer> graphNodeArrayToIdtable() {
-        HashMap<String, Integer> graphNodeArrayToIDtable = new HashMap<String, Integer>();
 
-        for (int i = 0; i < graphNodeArray.length; i++) {
-            mxCell node = (mxCell) graphNodeArray[i];
-            graphNodeArrayToIDtable.put(node.getId(), i);
-
-        }
-        //graphNodeArrayToIDtable converts id => graphNodeArray index.
-
-        return graphNodeArrayToIDtable;
-    }
 
     public HashMap<Integer, Integer> sourceAndTargetNodeListWithEdges() {
         Object graphEdges[] = graph.getAllEdges(graphNodeArray);
-
-        HashMap<String, Integer> graphNodeArrayToIDtable = graphNodeArrayToIdtable();
 
         HashMap<String, String> edgesfromNodetoNode = new HashMap<String, String>();
 
