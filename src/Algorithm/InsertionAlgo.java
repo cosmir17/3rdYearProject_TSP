@@ -2,9 +2,9 @@ package Algorithm;
 
 import Graph.GraphGenerator;
 import Graph.edgeColors;
-import com.mxgraph.model.mxCell;
 import com.mxgraph.swing.mxGraphComponent;
 
+import java.util.HashMap;
 import java.util.TreeMap;
 
 /**
@@ -40,18 +40,39 @@ public class InsertionAlgo extends Algorithm {
 
         int nodeJ = graphObject.edgeDrawerfromItoNextClosestNode(0);
         // O-----O
-        Object graphEdges[] = graph.getAllEdges(graphNodeArray);
 
-        for (int i = 0; i < graphEdges.length - 1; i++) {
-            mxCell element = (mxCell) graphEdges[i];
-            Double.parseDouble(element.getValue().toString());
+        boolean isThereNodewithoutAnedge = true;
+        while (isThereNodewithoutAnedge) {
+            HashMap<Integer, Integer> sourceAndTarget = graphObject.sourceAndTargetNodeListWithEdges();
 
+            TreeMap<Integer, Double> minimumNodeMap = new TreeMap<Integer, Double>();
+            for (int i : sourceAndTarget.keySet()) {
+                int firstNode = i;
+                int secondNode = sourceAndTarget.get(i);
+
+                minimumNodeMap = graphObject.findMinimumValueOfIJKiteratingManyNodes(firstNode, secondNode);
+                graphObject.edgeDrawerfromijk(firstNode, secondNode, minimumNodeMap.firstEntry().getKey());
+            }
+
+            isThereNodewithoutAnedge = graphObject.isNodeWithoutanEdge();
 
         }
 
+/*
 
-        TreeMap<Integer, Double> minimumNodeMap = graphObject.findMinimumValueOfIJKiteratingManyNodes(0, nodeJ);
-        graphObject.edgeDrawerfromijk(0, nodeJ, minimumNodeMap.firstEntry().getKey());
+        HashMap<Integer, mxCell> oneEdgeOneNodeNotTwoNodes = new HashMap<Integer, mxCell>();
+
+        for (int i = 0; i < graphEdges.length; i++) {
+            mxCell element = (mxCell) graphEdges[i];
+            oneEdgeOneNodeNotTwoNodes.put(Integer.parseInt(element.getId()), element);
+        }
+
+        for (Integer i : oneEdgeOneNodeNotTwoNodes.keySet()) {
+            totalDistance += Double.parseDouble(oneEdgeOneNodeNotTwoNodes.get(i).getValue().toString());
+        }
+*/
+
+
         //triangle is made
 
 

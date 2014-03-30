@@ -299,6 +299,60 @@ public class GraphGenerator extends Object implements Cloneable {
         return totalDistance;
     }
 
+
+    public boolean isNodeWithoutanEdge() {
+
+        Object graphEdges[] = graph.getAllEdges(graphNodeArray);
+
+        HashMap<String, String> edgelist = new HashMap<String, String>();
+
+
+        for (int i = 0; i < graphEdges.length; i++) {
+            mxCell element = (mxCell) graphEdges[i];
+            edgelist.put(element.getSource().getId(), "0");
+            edgelist.put(element.getTarget().getId(), "0");
+        }
+
+        return edgelist.size() < graphNodeArray.length;
+    }
+
+
+    public HashMap<String, Integer> graphNodeArrayToIdtable() {
+        HashMap<String, Integer> graphNodeArrayToIDtable = new HashMap<String, Integer>();
+
+        for (int i = 0; i < graphNodeArray.length; i++) {
+            mxCell node = (mxCell) graphNodeArray[i];
+            graphNodeArrayToIDtable.put(node.getId(), i);
+
+        }
+        //graphNodeArrayToIDtable converts id => graphNodeArray index.
+
+        return graphNodeArrayToIDtable;
+    }
+
+    public HashMap<Integer, Integer> sourceAndTargetNodeListWithEdges() {
+        Object graphEdges[] = graph.getAllEdges(graphNodeArray);
+
+        HashMap<String, Integer> graphNodeArrayToIDtable = graphNodeArrayToIdtable();
+
+        HashMap<String, String> edgesfromNodetoNode = new HashMap<String, String>();
+        for (int i = 0; i < graphEdges.length; i++) {
+            mxCell element = (mxCell) graphEdges[i];
+            edgesfromNodetoNode.put(element.getSource().getId(), element.getTarget().getId());
+        }
+
+        HashMap<Integer, Integer> nodeWithEdge = new HashMap<Integer, Integer>();
+        for (String i : edgesfromNodetoNode.keySet()) {
+            int firstNode = graphNodeArrayToIDtable.get(i);
+            int secondNode = graphNodeArrayToIDtable.get(edgesfromNodetoNode.get(i));
+
+            nodeWithEdge.put(firstNode, secondNode);
+
+        }
+
+        return nodeWithEdge;
+    }
+
     public double findValueforikPlusjkMinusij(int i, int j, int k) {
         double ikDistance = distanceFinder(i, k);
         double jkDistance = distanceFinder(j, k);
@@ -310,7 +364,7 @@ public class GraphGenerator extends Object implements Cloneable {
     public TreeMap<Integer, Double> findMinimumValueOfIJKiteratingManyNodes(int i, int j) {
         double minimum = 90000;
         double ijk;
-        int bestKnode = 40000;
+        int bestKnode = graphNodeArray.length + 1;
 
         for (int k = 0; k < graphNodeArray.length; k++) {
             mxCell kNode = (mxCell) graphNodeArray[k];
