@@ -702,45 +702,46 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
     private void checkBoxCheckedAndUnchecked() {
         if (insertionCheckBox.pushed) {
             removeGraphfromPanel();
-            graphObectDuplicator();
+            // graphObectDuplicator();
             graphEdgeRemover();
             insertionAlgoRunner();
             // graph object appears or disappears by doing this
 
-            nnCheckBox.setColleagueEnabled(false);
-            optAlgoCheckBox.setColleagueEnabled(false);
+            nnCheckBox.setSelected(false);
+            optAlgoCheckBox.setSelected(false);
         }
 
 
         if (nnCheckBox.pushed) {
             removeGraphfromPanel();
-            graphObectDuplicator();
+            // graphObectDuplicator();
             graphEdgeRemover();
             nearestAlgorithmRunner();
             // graph object appears or disappears by doing this
 
-            insertionCheckBox.setColleagueEnabled(false);
-            optAlgoCheckBox.setColleagueEnabled(false);
+            insertionCheckBox.setSelected(false);
+            optAlgoCheckBox.setSelected(false);
         }
 
         if (optAlgoCheckBox.pushed) {
             removeGraphfromPanel();
-            graphObectDuplicator();
+            // graphObectDuplicator();
             graphEdgeRemover();
             twoOptAlgorithmRunner();
 
-            nnCheckBox.setColleagueEnabled(false);
-            insertionCheckBox.setColleagueEnabled(false);
+            nnCheckBox.setSelected(false);
+            insertionCheckBox.setSelected(false);
         }
 
+        pack();
 
     }
 
     private void shortestButtonPushed() {
         if (shortestButton.pushed && shortestButton.getActionCommand().equals("Shortest Path")) {
-            removeGraphfromPanel();
+            // removeGraphfromPanel();
             graphObectDuplicator();
-            graphEdgeRemover();
+            // graphEdgeRemover();
 
             //nearestAlgorithmRunner();
             //insertionAlgoRunner();
