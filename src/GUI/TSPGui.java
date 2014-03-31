@@ -701,11 +701,27 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
 
     private void checkBoxCheckedAndUnchecked() {
         if (insertionCheckBox.pushed) {
+            removeGraphfromPanel();
+            graphObectDuplicator();
+            graphEdgeRemover();
+            nearestAlgorithmRunner();
             // graph object appears or disappears by doing this
         }
 
+
         if (nnCheckBox.pushed) {
+            removeGraphfromPanel();
+            graphObectDuplicator();
+            graphEdgeRemover();
+            nearestAlgorithmRunner();
             // graph object appears or disappears by doing this
+        }
+
+        if (optAlgoCheckBox.pushed) {
+            removeGraphfromPanel();
+            graphObectDuplicator();
+            graphEdgeRemover();
+            twoOptAlgorithmRunner();
         }
 
     }
@@ -718,7 +734,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
 
             //nearestAlgorithmRunner();
             //insertionAlgoRunner();
-            twoOptAlgorithmRunner();
+            //twoOptAlgorithmRunner();
 
 
             //  System.out.println("short source =  " + shortestButton.getSource());
