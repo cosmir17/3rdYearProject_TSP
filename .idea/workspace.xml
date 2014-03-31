@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="twoOpt, reverse method is implemented">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Graph/GraphGenerator.java" afterPath="$PROJECT_DIR$/src/Graph/GraphGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Algorithm/TwoOptAlgo.java" afterPath="$PROJECT_DIR$/src/Algorithm/TwoOptAlgo.java" />
+    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="twoOpt, working nicely. while(3000&gt;nochange) is not efficient">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/TSPGui.java" afterPath="$PROJECT_DIR$/src/GUI/TSPGui.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="3rd_year_project.iws" />
@@ -203,11 +202,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TSPGui.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="TSPGui.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/GUI/TSPGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="12046" max-vertical-offset="17082">
-              <caret line="694" column="0" selection-start-line="694" selection-start-column="0" selection-end-line="694" selection-end-column="0" />
+            <state vertical-scroll-proportion="-2.9811046" vertical-offset="14399" max-vertical-offset="17100">
+              <caret line="703" column="63" selection-start-line="703" selection-start-column="63" selection-end-line="703" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -223,10 +222,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TwoOptAlgo.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TwoOptAlgo.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Algorithm/TwoOptAlgo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.64895105" vertical-offset="238" max-vertical-offset="2196">
+            <state vertical-scroll-proportion="0.0" vertical-offset="670" max-vertical-offset="2196">
               <caret line="39" column="67" selection-start-line="39" selection-start-column="67" selection-end-line="39" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -327,9 +326,9 @@
         <option value="$PROJECT_DIR$/src/Algorithm/NearestNeighbourAlgo.java" />
         <option value="$PROJECT_DIR$/src/Graph/edgeColors.java" />
         <option value="$PROJECT_DIR$/src/Algorithm/InsertionAlgo.java" />
-        <option value="$PROJECT_DIR$/src/GUI/TSPGui.java" />
         <option value="$PROJECT_DIR$/src/Algorithm/TwoOptAlgo.java" />
         <option value="$PROJECT_DIR$/src/Graph/GraphGenerator.java" />
+        <option value="$PROJECT_DIR$/src/GUI/TSPGui.java" />
       </list>
     </option>
   </component>
@@ -957,7 +956,11 @@
       <created>1396293384445</created>
       <updated>1396293384445</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="twoOpt, working nicely. while(3000&gt;nochange) is not efficient">
+      <created>1396294638749</created>
+      <updated>1396294638749</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1012,7 +1015,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="nodeK could be found?" />
     <MESSAGE value="Second stage of insertion algorithm implementation (in progress)&#10;&#10;&#10;" />
     <MESSAGE value="Second stage of insertion algorithm implementation (in progress)&#10;&#10;Color is working" />
     <MESSAGE value="color =&gt; enum" />
@@ -1037,7 +1039,8 @@
     <MESSAGE value="twoOpt, edgeswithsourceandtargetnode hashmap becomes irrevent as edges got modified." />
     <MESSAGE value="twoOpt, a cycle becomes made but there is not only one direction in the circle" />
     <MESSAGE value="twoOpt, reverse method is implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="twoOpt, reverse method is implemented" />
+    <MESSAGE value="twoOpt, working nicely. while(3000&gt;nochange) is not efficient" />
+    <option name="LAST_COMMIT_MESSAGE" value="twoOpt, working nicely. while(3000&gt;nochange) is not efficient" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1407,14 +1410,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/TSPGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="12046" max-vertical-offset="17082">
-          <caret line="694" column="0" selection-start-line="694" selection-start-column="0" selection-end-line="694" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/ColleagueButton.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
@@ -1443,13 +1438,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Algorithm/TwoOptAlgo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64895105" vertical-offset="238" max-vertical-offset="2196">
+        <state vertical-scroll-proportion="0.0" vertical-offset="670" max-vertical-offset="2196">
           <caret line="39" column="67" selection-start-line="39" selection-start-column="67" selection-end-line="39" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#240#241#0" expanded="true" />
             <element signature="e#274#275#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/TSPGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.9811046" vertical-offset="14399" max-vertical-offset="17100">
+          <caret line="703" column="63" selection-start-line="703" selection-start-column="63" selection-end-line="703" selection-end-column="63" />
+          <folding />
         </state>
       </provider>
     </entry>

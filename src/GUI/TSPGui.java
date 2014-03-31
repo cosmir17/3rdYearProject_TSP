@@ -87,8 +87,8 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
         nnDistanceTextF = new ColleagueSecPanelTextF();
         panel10 = new JPanel();
         optAlgoCheckBox = new ColleagueCheckBox("2 opt & 3 opt");
-        optTimeText = new JTextField();
-        optDistanceTextF = new JTextField();
+        optTimeText = new ColleagueSecPanelTextF();
+        optDistanceTextF = new ColleagueSecPanelTextF();
         panel11 = new JPanel();
         advancedHeuLabel = new ColleagueLabel("Advanced Heuristics");
         panel12 = new JPanel();
@@ -398,9 +398,10 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
                         optAlgoCheckBox.addItemListener(optAlgoCheckBox);
                         //---- optTimeText ----
                         optTimeText.setEnabled(false);
-
+                        optTimeText.setMediator(this);
                         //---- optDistanceTextF ----
                         optDistanceTextF.setEnabled(false);
+                        optDistanceTextF.setMediator(this);
 
                         GroupLayout panel10Layout = new GroupLayout(panel10);
                         panel10.setLayout(panel10Layout);
@@ -660,8 +661,8 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
     private ColleagueSecPanelTextF nnDistanceTextF;
     private JPanel panel10;
     private ColleagueCheckBox optAlgoCheckBox;
-    private JTextField optTimeText;
-    private JTextField optDistanceTextF;
+    private ColleagueSecPanelTextF optTimeText;
+    private ColleagueSecPanelTextF optDistanceTextF;
     private JPanel panel11;
     private ColleagueLabel advancedHeuLabel;
     private JPanel panel12;
@@ -816,8 +817,8 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
         long start = System.currentTimeMillis();
         TwoOptAlgo twoOptAlgo = new TwoOptAlgo(graphTwoOptAlgoGraph);
         long end = System.currentTimeMillis();
-        nnDistanceTextF.setText(String.valueOf(twoOptAlgo.getTotalDistance()));
-        nnTimeTextF.setText(String.valueOf((end - start)));
+        optDistanceTextF.setText(String.valueOf(twoOptAlgo.getTotalDistance()));
+        optTimeText.setText(String.valueOf((end - start)));
         insertGraphintoPanelMap(twoOptAlgo.run());
     }
 
