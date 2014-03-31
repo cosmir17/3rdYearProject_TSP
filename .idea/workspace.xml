@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="twoOpt, working nicely. while(3000&gt;nochange) is not efficient">
+    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="checkboxes could be switches?">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/TSPGui.java" afterPath="$PROJECT_DIR$/src/GUI/TSPGui.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -205,8 +205,8 @@
       <file leaf-file-name="TSPGui.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/GUI/TSPGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.9811046" vertical-offset="14399" max-vertical-offset="17100">
-              <caret line="703" column="63" selection-start-line="703" selection-start-column="63" selection-end-line="703" selection-end-column="63" />
+            <state vertical-scroll-proportion="0.4244186" vertical-offset="12164" max-vertical-offset="17496">
+              <caret line="709" column="0" selection-start-line="709" selection-start-column="0" selection-end-line="709" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -960,7 +960,15 @@
       <created>1396294638749</created>
       <updated>1396294638749</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="twoOpt, showing results on gui">
+      <created>1396295320261</created>
+      <updated>1396295320261</updated>
+    </task>
+    <task id="LOCAL-00057" summary="checkboxes could be switches?">
+      <created>1396295519689</created>
+      <updated>1396295519689</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1015,8 +1023,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Second stage of insertion algorithm implementation (in progress)&#10;&#10;&#10;" />
-    <MESSAGE value="Second stage of insertion algorithm implementation (in progress)&#10;&#10;Color is working" />
     <MESSAGE value="color =&gt; enum" />
     <MESSAGE value="color variable gets passed as an enum (in progress)" />
     <MESSAGE value="Color doesn't need to be specified each time loading methods from GraphGenerator class." />
@@ -1040,7 +1046,9 @@
     <MESSAGE value="twoOpt, a cycle becomes made but there is not only one direction in the circle" />
     <MESSAGE value="twoOpt, reverse method is implemented" />
     <MESSAGE value="twoOpt, working nicely. while(3000&gt;nochange) is not efficient" />
-    <option name="LAST_COMMIT_MESSAGE" value="twoOpt, working nicely. while(3000&gt;nochange) is not efficient" />
+    <MESSAGE value="twoOpt, showing results on gui" />
+    <MESSAGE value="checkboxes could be switches?" />
+    <option name="LAST_COMMIT_MESSAGE" value="checkboxes could be switches?" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1450,8 +1458,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/TSPGui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.9811046" vertical-offset="14399" max-vertical-offset="17100">
-          <caret line="703" column="63" selection-start-line="703" selection-start-column="63" selection-end-line="703" selection-end-column="63" />
+        <state vertical-scroll-proportion="0.4244186" vertical-offset="12164" max-vertical-offset="17496">
+          <caret line="709" column="0" selection-start-line="709" selection-start-column="0" selection-end-line="709" selection-end-column="0" />
           <folding />
         </state>
       </provider>

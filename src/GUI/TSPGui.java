@@ -704,7 +704,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
             removeGraphfromPanel();
             graphObectDuplicator();
             graphEdgeRemover();
-            nearestAlgorithmRunner();
+            insertionAlgoRunner();
             // graph object appears or disappears by doing this
         }
 
@@ -723,6 +723,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
             graphEdgeRemover();
             twoOptAlgorithmRunner();
         }
+
 
     }
 
@@ -895,6 +896,10 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
         insertionCheckBox.setColleagueEnabled(bswitch);
         insertionDisTanceTextF.setColleagueEnabled(bswitch);
         insertionTimeTextF.setColleagueEnabled(bswitch);
+
+        optAlgoCheckBox.setColleagueEnabled(bswitch);
+        optDistanceTextF.setColleagueEnabled(bswitch);
+        optTimeText.setColleagueEnabled(bswitch);
 
 
         //  insertionDisTanceTextF.setColl
