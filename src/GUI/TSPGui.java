@@ -814,7 +814,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
 
     private void twoOptAlgorithmRunner() {
         long start = System.currentTimeMillis();
-        TwoOptAlgo twoOptAlgo = new TwoOptAlgo(graphGnearnAlgoGraph);
+        TwoOptAlgo twoOptAlgo = new TwoOptAlgo(graphTwoOptAlgoGraph);
         long end = System.currentTimeMillis();
         nnDistanceTextF.setText(String.valueOf(twoOptAlgo.getTotalDistance()));
         nnTimeTextF.setText(String.valueOf((end - start)));
