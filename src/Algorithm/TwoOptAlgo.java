@@ -3,6 +3,8 @@ package Algorithm;
 import Graph.GraphGenerator;
 import Graph.edgeColors;
 
+import java.util.HashMap;
+
 /**
  * Created by lloydp on 30/03/14.
  */
@@ -23,8 +25,46 @@ public class TwoOptAlgo extends Algorithm {
     protected void drawer() {
 
         randomCycleDrawer();
+        repeatSwapping();
+    }
+
+    private void repeatSwapping() {
+        HashMap<Integer, Integer> edgesWithSourceAndTargetNodes = graphObject.sourceAndTargetNodeListWithEdges();
+
+        for (int ii : edgesWithSourceAndTargetNodes.keySet()) {
+            boolean swapHappened = false;
+            int isourceNode = ii;
+            int jtargetNode = edgesWithSourceAndTargetNodes.get(ii);
+
+            graphObject.edgeRemoverfromItoJ(isourceNode, jtargetNode);
+
+            for (int jj : edgesWithSourceAndTargetNodes.keySet()) {
+                if (jj != ii && !swapHappened) {
+                    int ksourceNode = jj;
+                    int ltargetNode = edgesWithSourceAndTargetNodes.get(jj);
+
+                    graphObject.edgeRemoverfromItoJ(ksourceNode, ltargetNode);
+
+                    double initialDistance = graphObject.distanceFinder(isourceNode, jtargetNode) + graphObject.distanceFinder(ksourceNode, ltargetNode);
+                    double swapDistance = graphObject.distanceFinder(isourceNode, ksourceNode) + graphObject.distanceFinder(jtargetNode, ltargetNode);
+
+                    if (initialDistance > swapDistance) {
+                        graphObject.edgeDrawerFromNodeItoJ(isourceNode, ksourceNode);
+                        graphObject.edgeDrawerFromNodeItoJ(jtargetNode, ltargetNode);
+                        swapHappened = true;
+                    } else {
+                        graphObject.edgeDrawerFromNodeItoJ(ksourceNode, ltargetNode);
+                        swapHappened = false;
+                    }
+                }
+            }
+
+            if (!swapHappened) {
+                graphObject.edgeDrawerFromNodeItoJ(isourceNode, jtargetNode);
+            }
 
 
+        }
     }
 
     private void randomCycleDrawer() {
