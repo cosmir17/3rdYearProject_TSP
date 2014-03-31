@@ -61,6 +61,8 @@ public class InsertionAlgo extends Algorithm {
 
         }
 
+        graphObject.repeatSwapping();
+
 /*
 
         HashMap<Integer, mxCell> oneEdgeOneNodeNotTwoNodes = new HashMap<Integer, mxCell>();
