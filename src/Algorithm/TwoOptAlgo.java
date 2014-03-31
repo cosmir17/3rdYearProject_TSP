@@ -29,23 +29,14 @@ public class TwoOptAlgo extends Algorithm {
     }
 
     private void repeatSwapping() {
-        HashMap<Integer, Integer> edgesWithSourceAndTargetNodes = graphObject.sourceAndTargetNodeListWithEdges();
+        int nochange = 2000;
+
+        while (3000 > nochange) {
+
         boolean swapHappened = false;
-
+            HashMap<Integer, Integer> edgesWithSourceAndTargetNodes = graphObject.sourceAndTargetNodeListWithEdges();
         for (int ii : edgesWithSourceAndTargetNodes.keySet()) {
-
-
-            if (swapHappened) {
-
-                try {
-                    edgesWithSourceAndTargetNodes = graphObject.sourceAndTargetNodeListWithEdges();
-                } catch (NullPointerException e) {
-                }
-
-            }
-
-
-            swapHappened = false;
+            if (!swapHappened) {
             int isourceNode = ii;
             int jtargetNode = edgesWithSourceAndTargetNodes.get(ii);
 
@@ -69,9 +60,11 @@ public class TwoOptAlgo extends Algorithm {
                         graphObject.edgeDrawerFromNodeItoJ(isourceNode, ksourceNode);
                         graphObject.edgeDrawerFromNodeItoJ(jtargetNode, ltargetNode);
                         swapHappened = true;
+                        nochange -= 1;
                     } else {
                         graphObject.edgeDrawerFromNodeItoJ(ksourceNode, ltargetNode);
                         //swapHappened = false;
+                        nochange += 1;
                     }
                 }
             }
@@ -81,6 +74,9 @@ public class TwoOptAlgo extends Algorithm {
             }
 
 
+        }
+
+        }
         }
     }
 
