@@ -733,7 +733,6 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
             insertionCheckBox.setSelected(false);
         }
 
-        pack();
 
     }
 
@@ -741,6 +740,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
         if (shortestButton.pushed && shortestButton.getActionCommand().equals("Shortest Path")) {
             // removeGraphfromPanel();
             graphObectDuplicator();
+
             // graphEdgeRemover();
 
             //nearestAlgorithmRunner();
@@ -881,7 +881,9 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
                 shortestButton.setColleagueEnabled(true);
                 */
                 initButton.pushed = false;
-                secondPanelElementsSwitch(false);
+                graphObectDuplicator();
+                secondPanelElementsSwitch(true);
+                //secondPanelElementsSwitch(false);
 
 
             }
