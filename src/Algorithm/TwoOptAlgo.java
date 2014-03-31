@@ -30,8 +30,9 @@ public class TwoOptAlgo extends Algorithm {
 
     private void repeatSwapping() {
         int nochange = 2000;
+        boolean noImprovementcantbemade = false;
 
-        while (3000 > nochange) {
+        while (!noImprovementcantbemade) { //how do I know if there is no improvement can't be made?
 
             boolean swapHappened = false;
             HashMap<Integer, Integer> edgesWithSourceAndTargetNodes = graphObject.sourceAndTargetNodeListWithEdges();
@@ -71,24 +72,28 @@ public class TwoOptAlgo extends Algorithm {
                                 graphObject.reverseDirectionfromJtoK(edgesWithSourceAndTargetNodes2, jtargetNode, ksourceNode);
 
                                 swapHappened = true;
-                                nochange -= 1;
+
 
                             } else {
                                 graphObject.edgeDrawerFromNodeItoJ(ksourceNode, ltargetNode);
                                 //swapHappened = false;
-                                nochange += 1;
+
                             }
                         }
                     }
 
                     if (!swapHappened) {
                         graphObject.edgeDrawerFromNodeItoJ(isourceNode, jtargetNode);
+
                     }
 
 
                 }
 
             }
+            if (!swapHappened) {
+                noImprovementcantbemade = true;
+            } //this is not true because it's not running again with fresh edges.
         }
     }
 
