@@ -22,6 +22,30 @@ public class TwoOptAlgo extends Algorithm {
     @Override
     protected void drawer() {
 
+        randomCycleDrawer();
+
 
     }
+
+    private void randomCycleDrawer() {
+
+        int lastNode = drawerIterator(graphNodeArray.length - 1);
+        graphObject.edgeDrawerFromNodeItoJ(lastNode, 0);
+
+
+    }
+
+
+    private int drawerIterator(int i) {
+
+        if (i == 0) {
+            int next = 0;
+            return next;
+        }
+        graphObject.edgeDrawerFromNodeItoJ(drawerIterator(i - 1), i);
+        return i--;
+    }
+
+
 }
+

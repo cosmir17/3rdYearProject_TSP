@@ -2,6 +2,7 @@ package GUI;
 
 import Algorithm.InsertionAlgo;
 import Algorithm.NearestNeighbourAlgo;
+import Algorithm.TwoOptAlgo;
 import Graph.GraphGenerator;
 import com.mxgraph.swing.mxGraphComponent;
 
@@ -27,6 +28,8 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
     private GraphGenerator graphG;
     private GraphGenerator graphGnearnAlgoGraph;
     private GraphGenerator graphInsertionAlgoGraph;
+    private GraphGenerator graphTwoOptAlgoGraph;
+
     public final static String INITIALISATION = "Initialisation";
     public final static String SHORTEST_PATH = "Shortest Path";
 
@@ -713,7 +716,8 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
             graphEdgeRemover();
 
             //nearestAlgorithmRunner();
-            insertionAlgoRunner();
+            //insertionAlgoRunner();
+            twoOptAlgorithmRunner();
 
 
             //  System.out.println("short source =  " + shortestButton.getSource());
@@ -753,19 +757,13 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
         }
     }
 
-    private void insertionAlgoRunner() {
-        long start = System.currentTimeMillis();
-        InsertionAlgo insertAlgo = new InsertionAlgo(graphInsertionAlgoGraph);
-        long end = System.currentTimeMillis();
-        insertionDisTanceTextF.setText(String.valueOf(insertAlgo.getTotalDistance()));
-        insertionTimeTextF.setText(String.valueOf((end - start)));
-        insertGraphintoPanelMap(insertAlgo.run());
-    }
 
     private void graphEdgeRemover() {
         try {
             graphGnearnAlgoGraph.allEdgeRemover();
             graphInsertionAlgoGraph.allEdgeRemover();
+            graphTwoOptAlgoGraph.allEdgeRemover();
+
             //   GraphGenerator graphGnearnAlgoGraph = graphG;
             //   GraphGenerator graphGnearnAlgoGraph = graphG;
             //   GraphGenerator graphGnearnAlgoGraph = graphG;
@@ -785,11 +783,25 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
         } catch (CloneNotSupportedException e) {
             e.printStackTrace();
         }
+
+        try {
+            graphTwoOptAlgoGraph = (GraphGenerator) graphG.clone();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
         //   GraphGenerator graphGnearnAlgoGraph = graphG;
         //   GraphGenerator graphGnearnAlgoGraph = graphG;
         //   GraphGenerator graphGnearnAlgoGraph = graphG;
     }
 
+    private void insertionAlgoRunner() {
+        long start = System.currentTimeMillis();
+        InsertionAlgo insertAlgo = new InsertionAlgo(graphInsertionAlgoGraph);
+        long end = System.currentTimeMillis();
+        insertionDisTanceTextF.setText(String.valueOf(insertAlgo.getTotalDistance()));
+        insertionTimeTextF.setText(String.valueOf((end - start)));
+        insertGraphintoPanelMap(insertAlgo.run());
+    }
 
     private void nearestAlgorithmRunner() {
         long start = System.currentTimeMillis();
@@ -798,6 +810,15 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
         nnDistanceTextF.setText(String.valueOf(nnAlgo.getTotalDistance()));
         nnTimeTextF.setText(String.valueOf((end - start)));
         insertGraphintoPanelMap(nnAlgo.run());
+    }
+
+    private void twoOptAlgorithmRunner() {
+        long start = System.currentTimeMillis();
+        TwoOptAlgo twoOptAlgo = new TwoOptAlgo(graphGnearnAlgoGraph);
+        long end = System.currentTimeMillis();
+        nnDistanceTextF.setText(String.valueOf(twoOptAlgo.getTotalDistance()));
+        nnTimeTextF.setText(String.valueOf((end - start)));
+        insertGraphintoPanelMap(twoOptAlgo.run());
     }
 
     private void startButtonPushed() {
