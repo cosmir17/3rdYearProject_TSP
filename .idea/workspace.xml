@@ -192,21 +192,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NearestNeighbourAlgo.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Algorithm/NearestNeighbourAlgo.java">
+      <file leaf-file-name="TSPGui.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/GUI/TSPGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
-              <caret line="48" column="1" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.86918604" vertical-offset="12272" max-vertical-offset="17640">
+              <caret line="732" column="57" selection-start-line="732" selection-start-column="57" selection-end-line="732" selection-end-column="57" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TSPGui.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/GUI/TSPGui.java">
+      <file leaf-file-name="ColleagueCheckBox.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GUI/ColleagueCheckBox.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4244186" vertical-offset="12164" max-vertical-offset="17496">
-              <caret line="709" column="0" selection-start-line="709" selection-start-column="0" selection-end-line="709" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="666">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -968,7 +968,11 @@
       <created>1396295519689</created>
       <updated>1396295519689</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="checkboxes could be switches?">
+      <created>1396295718404</created>
+      <updated>1396295718404</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1315,14 +1319,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/ColleagueCheckBox.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="774">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/java/jdk1.7.0_51/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="6257" max-vertical-offset="9558">
@@ -1456,10 +1452,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/ColleagueCheckBox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="774">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/TSPGui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4244186" vertical-offset="12164" max-vertical-offset="17496">
-          <caret line="709" column="0" selection-start-line="709" selection-start-column="0" selection-end-line="709" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.86918604" vertical-offset="12272" max-vertical-offset="17640">
+          <caret line="732" column="57" selection-start-line="732" selection-start-column="57" selection-end-line="732" selection-end-column="57" />
           <folding />
         </state>
       </provider>
