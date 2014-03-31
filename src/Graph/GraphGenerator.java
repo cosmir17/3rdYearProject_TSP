@@ -12,6 +12,7 @@ import com.mxgraph.view.mxGraph;
 
 import java.awt.*;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
@@ -331,8 +332,6 @@ public class GraphGenerator extends Object implements Cloneable {
     }
 
 
-
-
     public HashMap<Integer, Integer> sourceAndTargetNodeListWithEdges() {
         Object graphEdges[] = graph.getAllEdges(graphNodeArray);
 
@@ -354,6 +353,32 @@ public class GraphGenerator extends Object implements Cloneable {
 
         return nodeWithEdge;
     }
+
+    public void reverseDirectionfromKtoJ(HashMap<Integer, Integer> edgelists, int k, int j) {
+
+
+        int kk = k;
+        ArrayList<Integer> nextNodelistfromEdge = new ArrayList<Integer>();
+        nextNodelistfromEdge.add(kk);
+
+        while (j != kk) {
+
+            kk = edgelists.get(kk);
+            nextNodelistfromEdge.add(kk);
+        }
+
+        nextNodelistfromEdge.add(j);
+
+
+        for (int ii = 0; ii < nextNodelistfromEdge.size() - 1; ii++) {
+            int source = nextNodelistfromEdge.get(ii);
+            int target = nextNodelistfromEdge.get(ii + 1);
+            edgeRemoverfromItoJ(source, target);
+            edgeDrawerFromNodeItoJ(target, source);
+        }
+
+    }
+
 
     public double findValueforikPlusjkMinusij(int i, int j, int k) {
         double ikDistance = distanceFinder(i, k);

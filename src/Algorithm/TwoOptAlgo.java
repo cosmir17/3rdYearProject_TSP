@@ -33,50 +33,58 @@ public class TwoOptAlgo extends Algorithm {
 
         while (3000 > nochange) {
 
-        boolean swapHappened = false;
+            boolean swapHappened = false;
             HashMap<Integer, Integer> edgesWithSourceAndTargetNodes = graphObject.sourceAndTargetNodeListWithEdges();
-        for (int ii : edgesWithSourceAndTargetNodes.keySet()) {
-            if (!swapHappened) {
-            int isourceNode = ii;
-            int jtargetNode = edgesWithSourceAndTargetNodes.get(ii);
 
-            graphObject.edgeRemoverfromItoJ(isourceNode, jtargetNode);
 
-            for (int jj : edgesWithSourceAndTargetNodes.keySet()) {
-                if (jj != ii
-                        && jtargetNode != jj
-                        && edgesWithSourceAndTargetNodes.get(jj) != jtargetNode
-                        && edgesWithSourceAndTargetNodes.get(jj) != ii
-                        && !swapHappened) {
-                    int ksourceNode = jj;
-                    int ltargetNode = edgesWithSourceAndTargetNodes.get(jj);
+            for (int ii : edgesWithSourceAndTargetNodes.keySet()) {
+                if (!swapHappened) {
+                    int isourceNode = ii;
+                    int jtargetNode = edgesWithSourceAndTargetNodes.get(ii);
 
-                    graphObject.edgeRemoverfromItoJ(ksourceNode, ltargetNode);
+                    graphObject.edgeRemoverfromItoJ(isourceNode, jtargetNode);
 
-                    double initialDistance = graphObject.distanceFinder(isourceNode, jtargetNode) + graphObject.distanceFinder(ksourceNode, ltargetNode);
-                    double swapDistance = graphObject.distanceFinder(isourceNode, ksourceNode) + graphObject.distanceFinder(jtargetNode, ltargetNode);
 
-                    if (initialDistance > swapDistance) {
-                        graphObject.edgeDrawerFromNodeItoJ(isourceNode, ksourceNode);
-                        graphObject.edgeDrawerFromNodeItoJ(jtargetNode, ltargetNode);
-                        swapHappened = true;
-                        nochange -= 1;
-                    } else {
-                        graphObject.edgeDrawerFromNodeItoJ(ksourceNode, ltargetNode);
-                        //swapHappened = false;
-                        nochange += 1;
+                    for (int jj : edgesWithSourceAndTargetNodes.keySet()) {
+                        if (jj != ii
+                                && jtargetNode != jj
+                                && edgesWithSourceAndTargetNodes.get(jj) != jtargetNode
+                                && edgesWithSourceAndTargetNodes.get(jj) != ii
+                                && !swapHappened)
+
+
+                        {
+                            int ksourceNode = jj;
+                            int ltargetNode = edgesWithSourceAndTargetNodes.get(jj);
+
+                            graphObject.edgeRemoverfromItoJ(ksourceNode, ltargetNode);
+
+                            double initialDistance = graphObject.distanceFinder(isourceNode, jtargetNode) + graphObject.distanceFinder(ksourceNode, ltargetNode);
+                            double swapDistance = graphObject.distanceFinder(isourceNode, ksourceNode) + graphObject.distanceFinder(jtargetNode, ltargetNode);
+
+                            if (initialDistance > swapDistance) {
+                                graphObject.edgeDrawerFromNodeItoJ(isourceNode, ksourceNode);
+                                graphObject.edgeDrawerFromNodeItoJ(jtargetNode, ltargetNode);
+
+                                // graphObject.reverseDirectionfromKtoJ(edgesWithSourceAndTargetNodes, ksourceNode,ltargetNode);
+                                swapHappened = true;
+                                nochange -= 1;
+                            } else {
+                                graphObject.edgeDrawerFromNodeItoJ(ksourceNode, ltargetNode);
+                                //swapHappened = false;
+                                nochange += 1;
+                            }
+                        }
                     }
+
+                    if (!swapHappened) {
+                        graphObject.edgeDrawerFromNodeItoJ(isourceNode, jtargetNode);
+                    }
+
+
                 }
+
             }
-
-            if (!swapHappened) {
-                graphObject.edgeDrawerFromNodeItoJ(isourceNode, jtargetNode);
-            }
-
-
-        }
-
-        }
         }
     }
 
