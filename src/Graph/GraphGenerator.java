@@ -354,20 +354,20 @@ public class GraphGenerator extends Object implements Cloneable {
         return nodeWithEdge;
     }
 
-    public void reverseDirectionfromKtoJ(HashMap<Integer, Integer> edgelists, int k, int j) {
+    public void reverseDirectionfromJtoK(HashMap<Integer, Integer> edgelists, int j, int k) {
 
 
-        int kk = k;
+        int jj = j;
         ArrayList<Integer> nextNodelistfromEdge = new ArrayList<Integer>();
-        nextNodelistfromEdge.add(kk);
+        nextNodelistfromEdge.add(jj);
 
-        while (j != kk) {
+        while (k != jj) {
 
-            kk = edgelists.get(kk);
-            nextNodelistfromEdge.add(kk);
+            jj = edgelists.get(jj);
+            nextNodelistfromEdge.add(jj);
         }
 
-        nextNodelistfromEdge.add(j);
+        // nextNodelistfromEdge.add(k);
 
 
         for (int ii = 0; ii < nextNodelistfromEdge.size() - 1; ii++) {

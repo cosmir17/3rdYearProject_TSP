@@ -66,9 +66,13 @@ public class TwoOptAlgo extends Algorithm {
                                 graphObject.edgeDrawerFromNodeItoJ(isourceNode, ksourceNode);
                                 graphObject.edgeDrawerFromNodeItoJ(jtargetNode, ltargetNode);
 
-                                // graphObject.reverseDirectionfromKtoJ(edgesWithSourceAndTargetNodes, ksourceNode,ltargetNode);
+
+                                HashMap<Integer, Integer> edgesWithSourceAndTargetNodes2 = graphObject.sourceAndTargetNodeListWithEdges();
+                                graphObject.reverseDirectionfromJtoK(edgesWithSourceAndTargetNodes2, jtargetNode, ksourceNode);
+
                                 swapHappened = true;
                                 nochange -= 1;
+
                             } else {
                                 graphObject.edgeDrawerFromNodeItoJ(ksourceNode, ltargetNode);
                                 //swapHappened = false;

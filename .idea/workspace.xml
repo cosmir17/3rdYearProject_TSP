@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="twoOpt, a cycle becomes made but there is not only one direction in the circle">
+    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="twoOpt, reverse method is implemented">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Graph/GraphGenerator.java" afterPath="$PROJECT_DIR$/src/Graph/GraphGenerator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Algorithm/TwoOptAlgo.java" afterPath="$PROJECT_DIR$/src/Algorithm/TwoOptAlgo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -174,10 +174,10 @@
       <file leaf-file-name="GraphGenerator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Graph/GraphGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="6076" max-vertical-offset="7632">
-              <caret line="361" column="45" selection-start-line="361" selection-start-column="45" selection-end-line="361" selection-end-column="45" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="6407" max-vertical-offset="7596">
+              <caret line="379" column="0" selection-start-line="379" selection-start-column="0" selection-end-line="379" selection-end-column="0" />
               <folding>
-                <element signature="e#12285#12294#0" expanded="true" />
+                <element signature="e#12284#12293#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -226,8 +226,8 @@
       <file leaf-file-name="TwoOptAlgo.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Algorithm/TwoOptAlgo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2013986" vertical-offset="828" max-vertical-offset="2124">
-              <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.64895105" vertical-offset="238" max-vertical-offset="2196">
+              <caret line="39" column="67" selection-start-line="39" selection-start-column="67" selection-end-line="39" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#240#241#0" expanded="true" />
@@ -328,8 +328,8 @@
         <option value="$PROJECT_DIR$/src/Graph/edgeColors.java" />
         <option value="$PROJECT_DIR$/src/Algorithm/InsertionAlgo.java" />
         <option value="$PROJECT_DIR$/src/GUI/TSPGui.java" />
-        <option value="$PROJECT_DIR$/src/Graph/GraphGenerator.java" />
         <option value="$PROJECT_DIR$/src/Algorithm/TwoOptAlgo.java" />
+        <option value="$PROJECT_DIR$/src/Graph/GraphGenerator.java" />
       </list>
     </option>
   </component>
@@ -953,7 +953,11 @@
       <created>1396284324080</created>
       <updated>1396284324080</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="twoOpt, reverse method is implemented">
+      <created>1396293384445</created>
+      <updated>1396293384445</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1008,7 +1012,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="finding the middle point method" />
     <MESSAGE value="nodeK could be found?" />
     <MESSAGE value="Second stage of insertion algorithm implementation (in progress)&#10;&#10;&#10;" />
     <MESSAGE value="Second stage of insertion algorithm implementation (in progress)&#10;&#10;Color is working" />
@@ -1033,7 +1036,8 @@
     <MESSAGE value="twoOpt, repeating Swapping in progress" />
     <MESSAGE value="twoOpt, edgeswithsourceandtargetnode hashmap becomes irrevent as edges got modified." />
     <MESSAGE value="twoOpt, a cycle becomes made but there is not only one direction in the circle" />
-    <option name="LAST_COMMIT_MESSAGE" value="twoOpt, a cycle becomes made but there is not only one direction in the circle" />
+    <MESSAGE value="twoOpt, reverse method is implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="twoOpt, reverse method is implemented" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1041,34 +1045,22 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Algorithm/TwoOptAlgo.java</url>
-          <line>69</line>
+          <url>file://$PROJECT_DIR$/src/Graph/GraphGenerator.java</url>
+          <line>365</line>
           <properties />
-          <option name="timeStamp" value="17" />
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Algorithm/TwoOptAlgo.java</url>
-          <line>79</line>
+          <url>file://$PROJECT_DIR$/src/Graph/GraphGenerator.java</url>
+          <line>366</line>
           <properties />
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Algorithm/TwoOptAlgo.java</url>
-          <line>42</line>
-          <properties />
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Algorithm/TwoOptAlgo.java</url>
-          <line>41</line>
-          <properties />
-          <option name="timeStamp" value="20" />
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="28" />
+      <option name="time" value="30" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1441,18 +1433,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Graph/GraphGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="6076" max-vertical-offset="7632">
-          <caret line="361" column="45" selection-start-line="361" selection-start-column="45" selection-end-line="361" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="6407" max-vertical-offset="7596">
+          <caret line="379" column="0" selection-start-line="379" selection-start-column="0" selection-end-line="379" selection-end-column="0" />
           <folding>
-            <element signature="e#12285#12294#0" expanded="true" />
+            <element signature="e#12284#12293#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Algorithm/TwoOptAlgo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2013986" vertical-offset="828" max-vertical-offset="2124">
-          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.64895105" vertical-offset="238" max-vertical-offset="2196">
+          <caret line="39" column="67" selection-start-line="39" selection-start-column="67" selection-end-line="39" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#240#241#0" expanded="true" />
