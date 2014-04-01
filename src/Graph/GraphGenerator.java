@@ -498,7 +498,7 @@ public class GraphGenerator extends Object implements Cloneable {
         }
     }
 
-    public void SA(double INITIAL_T, double SCHEDULE) {
+    public void sA(double INITIAL_T, double SCHEDULE) {
         double T = INITIAL_T;
         boolean noImprovementcantbemade = false;
 
@@ -514,7 +514,7 @@ public class GraphGenerator extends Object implements Cloneable {
                     int isourceNode = ii;
                     int jtargetNode = edgesWithSourceAndTargetNodes.get(ii);
 
-                    if (T == 0.01) {
+                    if (T < 0.01) {
                         noImprovementcantbemade = true;
                         break;
                     }

@@ -95,8 +95,8 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
         advancedHeuLabel = new ColleagueLabel("Advanced Heuristics");
         panel12 = new JPanel();
         simultedACheckBox = new ColleagueCheckBox("Simulated Annealing");
-        sAtimeTextF = new ColleagueSecPanelTextF();
-        sAdistanceTextF = new ColleagueSecPanelTextF();
+        sADisTextF = new ColleagueSecPanelTextF();
+        sATimeTextF = new ColleagueSecPanelTextF();
         panel13 = new JPanel();
         tabuCheckBox = new ColleagueCheckBox("Tabu Search");
         textField13 = new JTextField();
@@ -467,12 +467,12 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
                         simultedACheckBox.setMediator(this);
                         simultedACheckBox.addItemListener(simultedACheckBox);
 
-                        //---- sAtimeTextF ----
-                        sAtimeTextF.setEnabled(false);
-                        sAtimeTextF.setMediator(this);
-                        //---- sAdistanceTextF ----
-                        sAdistanceTextF.setEnabled(false);
-                        sAdistanceTextF.setMediator(this);
+                        //---- sADisTextF ----
+                        sADisTextF.setEnabled(false);
+                        sADisTextF.setMediator(this);
+                        //---- sATimeTextF ----
+                        sATimeTextF.setEnabled(false);
+                        sATimeTextF.setMediator(this);
                         GroupLayout panel12Layout = new GroupLayout(panel12);
                         panel12.setLayout(panel12Layout);
                         panel12Layout.setHorizontalGroup(
@@ -481,9 +481,9 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
                                                 .addContainerGap()
                                                 .addComponent(simultedACheckBox, GroupLayout.PREFERRED_SIZE, 180, GroupLayout.PREFERRED_SIZE)
                                                 .addGap(0, 0, 0)
-                                                .addComponent(sAdistanceTextF, GroupLayout.PREFERRED_SIZE, 67, GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(sATimeTextF, GroupLayout.PREFERRED_SIZE, 67, GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(sAtimeTextF, GroupLayout.DEFAULT_SIZE, 60, 67))
+                                                .addComponent(sADisTextF, GroupLayout.DEFAULT_SIZE, 60, 67))
                         );
                         panel12Layout.setVerticalGroup(
                                 panel12Layout.createParallelGroup()
@@ -491,8 +491,8 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
                                                 .addGap(0, 10, Short.MAX_VALUE)
                                                 .addGroup(panel12Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                                                         .addComponent(simultedACheckBox)
-                                                        .addComponent(sAdistanceTextF, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-                                                        .addComponent(sAtimeTextF, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
+                                                        .addComponent(sATimeTextF, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(sADisTextF, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
                         );
                     }
                     resultPanel.add(panel12);
@@ -669,8 +669,8 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
     private ColleagueLabel advancedHeuLabel;
     private JPanel panel12;
     private ColleagueCheckBox simultedACheckBox;
-    private ColleagueSecPanelTextF sAtimeTextF;
-    private ColleagueSecPanelTextF sAdistanceTextF;
+    private ColleagueSecPanelTextF sADisTextF;
+    private ColleagueSecPanelTextF sATimeTextF;
     private JPanel panel13;
     private ColleagueCheckBox tabuCheckBox;
     private JTextField textField13;
@@ -711,6 +711,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
 
             nnCheckBox.setSelected(false);
             optAlgoCheckBox.setSelected(false);
+            simultedACheckBox.setSelected(false);
         }
 
 
@@ -723,6 +724,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
 
             insertionCheckBox.setSelected(false);
             optAlgoCheckBox.setSelected(false);
+            simultedACheckBox.setSelected(false);
         }
 
         if (optAlgoCheckBox.pushed) {
@@ -733,6 +735,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
 
             nnCheckBox.setSelected(false);
             insertionCheckBox.setSelected(false);
+            simultedACheckBox.setSelected(false);
         }
 
         if (simultedACheckBox.pushed) {
@@ -743,6 +746,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
 
             nnCheckBox.setSelected(false);
             insertionCheckBox.setSelected(false);
+            optAlgoCheckBox.setSelected(false);
         }
 
 
@@ -853,8 +857,8 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
         long start = System.currentTimeMillis();
         SimulatedAnnealingAlgo sAAlgo = new SimulatedAnnealingAlgo(graphSAalgoGraph);
         long end = System.currentTimeMillis();
-        sAdistanceTextF.setText(String.valueOf(sAAlgo.getTotalDistance()));
-        sAtimeTextF.setText(String.valueOf((end - start)));
+        sADisTextF.setText(String.valueOf(sAAlgo.getTotalDistance()));
+        sATimeTextF.setText(String.valueOf((end - start)));
         insertGraphintoPanelMap(sAAlgo.run());
     }
 
@@ -941,8 +945,8 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
         optTimeText.setColleagueEnabled(bswitch);
 
         simultedACheckBox.setColleagueEnabled(bswitch);
-        sAtimeTextF.setColleagueEnabled(bswitch);
-        sAdistanceTextF.setColleagueEnabled(bswitch);
+        sADisTextF.setColleagueEnabled(bswitch);
+        sATimeTextF.setColleagueEnabled(bswitch);
 
 
         //  insertionDisTanceTextF.setColl

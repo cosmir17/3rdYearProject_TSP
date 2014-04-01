@@ -6,12 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="Simulated Annealing implementation started">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="Simulated Annealing working?">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Graph/GraphGenerator.java" afterPath="$PROJECT_DIR$/src/Graph/GraphGenerator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Algorithm/SimulatedAnnealingAlgo.java" afterPath="$PROJECT_DIR$/src/Algorithm/SimulatedAnnealingAlgo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/TSPGui.java" afterPath="$PROJECT_DIR$/src/GUI/TSPGui.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Graph/edgeColors.java" afterPath="$PROJECT_DIR$/src/Graph/edgeColors.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="3rd_year_project.iws" />
@@ -169,15 +168,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TSPGui.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="TSPGui.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/GUI/TSPGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="12.888889" vertical-offset="17340" max-vertical-offset="18558">
-              <caret line="944" column="53" selection-start-line="944" selection-start-column="53" selection-end-line="944" selection-end-column="53" />
+            <state vertical-scroll-proportion="0.6825397" vertical-offset="13077" max-vertical-offset="18630">
+              <caret line="748" column="47" selection-start-line="748" selection-start-column="47" selection-end-line="748" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#30357#30584#0" expanded="true" />
-                <element signature="e#30561#30562#0" expanded="true" />
+                <element signature="e#30329#30556#0" expanded="true" />
+                <element signature="e#30533#30534#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -203,11 +202,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GraphGenerator.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="GraphGenerator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Graph/GraphGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.202822" vertical-offset="8633" max-vertical-offset="10818">
-              <caret line="564" column="55" selection-start-line="564" selection-start-column="55" selection-end-line="564" selection-end-column="55" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="8759" max-vertical-offset="10728">
+              <caret line="516" column="27" selection-start-line="516" selection-start-column="27" selection-end-line="516" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -268,8 +267,8 @@
       <file leaf-file-name="SimulatedAnnealingAlgo.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Algorithm/SimulatedAnnealingAlgo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="684">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="104" max-vertical-offset="684">
+              <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -335,10 +334,10 @@
         <option value="$PROJECT_DIR$/src/Algorithm/InsertionAlgo.java" />
         <option value="$PROJECT_DIR$/src/Algorithm/NearestNeighbourAlgo.java" />
         <option value="$PROJECT_DIR$/src/Algorithm/TwoOptAlgo.java" />
+        <option value="$PROJECT_DIR$/src/Graph/edgeColors.java" />
         <option value="$PROJECT_DIR$/src/Algorithm/SimulatedAnnealingAlgo.java" />
         <option value="$PROJECT_DIR$/src/Graph/GraphGenerator.java" />
         <option value="$PROJECT_DIR$/src/GUI/TSPGui.java" />
-        <option value="$PROJECT_DIR$/src/Graph/edgeColors.java" />
       </list>
     </option>
   </component>
@@ -1006,7 +1005,11 @@
       <created>1396310889215</created>
       <updated>1396310889215</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="Simulated Annealing working?">
+      <created>1396388594852</created>
+      <updated>1396388594852</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1061,7 +1064,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="color still working on" />
     <MESSAGE value="Coloring function is working (with enumaration color class)." />
     <MESSAGE value="checkbox (algorithm switch) is in progress." />
     <MESSAGE value="working on layers for drawing edges." />
@@ -1086,7 +1088,8 @@
     <MESSAGE value="two opt working fine (without iterating forever)" />
     <MESSAGE value="just for fun,&#10;two opt for every algorithm,&#10;generally random turns out better than nearest neighbour method" />
     <MESSAGE value="Simulated Annealing implementation started" />
-    <option name="LAST_COMMIT_MESSAGE" value="Simulated Annealing implementation started" />
+    <MESSAGE value="Simulated Annealing working?" />
+    <option name="LAST_COMMIT_MESSAGE" value="Simulated Annealing working?" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1452,18 +1455,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/TSPGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="12.888889" vertical-offset="17340" max-vertical-offset="18558">
-          <caret line="944" column="53" selection-start-line="944" selection-start-column="53" selection-end-line="944" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#30357#30584#0" expanded="true" />
-            <element signature="e#30561#30562#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/java/jdk1.7.0_51/src.zip!/java/lang/Enum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3366" max-vertical-offset="3924">
@@ -1480,14 +1471,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithm/SimulatedAnnealingAlgo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="684">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Graph/edgeColors.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
@@ -1496,11 +1479,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/SimulatedAnnealingAlgo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="104" max-vertical-offset="684">
+          <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Graph/GraphGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.202822" vertical-offset="8633" max-vertical-offset="10818">
-          <caret line="564" column="55" selection-start-line="564" selection-start-column="55" selection-end-line="564" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="8759" max-vertical-offset="10728">
+          <caret line="516" column="27" selection-start-line="516" selection-start-column="27" selection-end-line="516" selection-end-column="27" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/TSPGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6825397" vertical-offset="13077" max-vertical-offset="18630">
+          <caret line="748" column="47" selection-start-line="748" selection-start-column="47" selection-end-line="748" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#30329#30556#0" expanded="true" />
+            <element signature="e#30533#30534#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
