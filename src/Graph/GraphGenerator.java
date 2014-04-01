@@ -501,22 +501,26 @@ public class GraphGenerator extends Object implements Cloneable {
     public void sA(double INITIAL_T, double SCHEDULE) {
         double T = INITIAL_T;
         boolean noImprovementcantbemade = false;
+        int howManyIteration = 0;
 
         while (!noImprovementcantbemade) {
             boolean swapHappened = false;
             HashMap<Integer, Integer> edgesWithSourceAndTargetNodes = sourceAndTargetNodeListWithEdges();
 
             T = SCHEDULE * T;
-
+            System.out.println("Temperature T is : " + T);
+            howManyIteration++;
 
             for (int ii : edgesWithSourceAndTargetNodes.keySet()) {
                 if (!swapHappened) {
                     int isourceNode = ii;
                     int jtargetNode = edgesWithSourceAndTargetNodes.get(ii);
 
-                    if (T < 0.01) {
+                    if (T < 0.2) {
                         noImprovementcantbemade = true;
+                        System.out.println("The SA iteration is : " + howManyIteration);
                         break;
+
                     }
 
                     edgeRemoverfromItoJ(isourceNode, jtargetNode);
@@ -539,7 +543,7 @@ public class GraphGenerator extends Object implements Cloneable {
                             double initialDistance = distanceFinder(isourceNode, jtargetNode) + distanceFinder(ksourceNode, ltargetNode);
                             double swapDistance = distanceFinder(isourceNode, ksourceNode) + distanceFinder(jtargetNode, ltargetNode);
 
-                            double E = swapDistance - initialDistance;
+                            double E = initialDistance - swapDistance;
 
                             if (E > 0) {
                                 edgeDrawerFromNodeItoJ(isourceNode, ksourceNode);
@@ -552,7 +556,12 @@ public class GraphGenerator extends Object implements Cloneable {
                                 swapHappened = true;
                             } else {
                                 double prob = Math.exp(E / T);
-                                if (Math.random() <= prob) {
+                                double prob2 = Math.random();
+
+
+                                if (prob2 <= prob) {
+
+                                    System.out.println("MathRandom : " + prob2 + "   exp Prob : " + prob);
                                     edgeDrawerFromNodeItoJ(isourceNode, ksourceNode);
                                     edgeDrawerFromNodeItoJ(jtargetNode, ltargetNode);
 
