@@ -297,7 +297,7 @@ public class KShortestPathCostTest
     }
 
     /**
-     * Currently disabled since it takes more than a few seconds to run.
+     * Currently disabled since it takes more than a few seconds to getComputedGraph.
      * Also need to actually check the output instead of printing.
      *
      * @see <a

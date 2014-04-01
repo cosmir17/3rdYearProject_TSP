@@ -552,7 +552,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
                     button9.addActionListener(new ActionListener() {
                         @Override
                         public void actionPerformed(ActionEvent e) {
-                         //  graphG.allEdgeRemover();
+                            //  graphG.allEdgeRemover();
                         }
                     });
                     panel14.add(button9);
@@ -772,7 +772,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
             //distanceLabel.setColleagueEnabled(true);
 
 
-            //  insertGraphintoPanelMap(new Algorithm.InsertionAlgo(graphG).run());
+            //  insertGraphintoPanelMap(new Algorithm.InsertionAlgo(graphG).getComputedGraph());
             //insertionCheckBox.setColleagueEnabled(true);
 
 
@@ -847,37 +847,71 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
     private void insertionAlgoRunner() {
         long start = System.currentTimeMillis();
         InsertionAlgo insertAlgo = new InsertionAlgo(graphInsertionAlgoGraph);
-        long end = System.currentTimeMillis();
-        insertionDisTanceTextF.setText(String.valueOf(insertAlgo.getTotalDistance()));
-        insertionTimeTextF.setText(String.valueOf((end - start)));
-        insertGraphintoPanelMap(insertAlgo.run());
+        insertAlgo.start();
+        insertGraphintoPanelMap(insertAlgo.getComputedGraph());
+        try {
+            insertAlgo.join();
+            long end = System.currentTimeMillis();
+            insertionDisTanceTextF.setText(String.valueOf(insertAlgo.getTotalDistance()));
+            insertionTimeTextF.setText(String.valueOf((end - start)));
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+
     }
 
     private void sAAlgoRunner() {
         long start = System.currentTimeMillis();
         SimulatedAnnealingAlgo sAAlgo = new SimulatedAnnealingAlgo(graphSAalgoGraph);
-        long end = System.currentTimeMillis();
-        sADisTextF.setText(String.valueOf(sAAlgo.getTotalDistance()));
-        sATimeTextF.setText(String.valueOf((end - start)));
-        insertGraphintoPanelMap(sAAlgo.run());
+        sAAlgo.start();
+        insertGraphintoPanelMap(sAAlgo.getComputedGraph());
+        try {
+            sAAlgo.join();
+            long end = System.currentTimeMillis();
+            sADisTextF.setText(String.valueOf(sAAlgo.getTotalDistance()));
+            sATimeTextF.setText(String.valueOf((end - start)));
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+
     }
 
     private void nearestAlgorithmRunner() {
         long start = System.currentTimeMillis();
         NearestNeighbourAlgo nnAlgo = new NearestNeighbourAlgo(graphGnearnAlgoGraph);
-        long end = System.currentTimeMillis();
-        nnDistanceTextF.setText(String.valueOf(nnAlgo.getTotalDistance()));
-        nnTimeTextF.setText(String.valueOf((end - start)));
-        insertGraphintoPanelMap(nnAlgo.run());
+        nnAlgo.start();
+        insertGraphintoPanelMap(nnAlgo.getComputedGraph());
+        try {
+            nnAlgo.join();
+            long end = System.currentTimeMillis();
+            nnDistanceTextF.setText(String.valueOf(nnAlgo.getTotalDistance()));
+            nnTimeTextF.setText(String.valueOf((end - start)));
+
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
     }
 
     private void twoOptAlgorithmRunner() {
         long start = System.currentTimeMillis();
         TwoOptAlgo twoOptAlgo = new TwoOptAlgo(graphTwoOptAlgoGraph);
-        long end = System.currentTimeMillis();
-        optDistanceTextF.setText(String.valueOf(twoOptAlgo.getTotalDistance()));
-        optTimeText.setText(String.valueOf((end - start)));
-        insertGraphintoPanelMap(twoOptAlgo.run());
+        twoOptAlgo.start();
+        insertGraphintoPanelMap(twoOptAlgo.getComputedGraph());
+        try {
+            twoOptAlgo.join();
+            long end = System.currentTimeMillis();
+            optDistanceTextF.setText(String.valueOf(twoOptAlgo.getTotalDistance()));
+            optTimeText.setText(String.valueOf((end - start)));
+
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+
+
     }
 
     private void startButtonPushed() {

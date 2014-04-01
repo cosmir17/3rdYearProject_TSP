@@ -288,7 +288,7 @@ public class DirectedAcyclicGraphTest
     }
 
     // Performance tests have underscores in the names so that they
-    // they are only run explicitly (not automatically as part of
+    // they are only getComputedGraph explicitly (not automatically as part of
     // default JUnit runs).
 
     /**

@@ -52,11 +52,11 @@ import java.util.Iterator;
  * A simple JgrahDemoNotMyProject to test memory and CPU consumption on a graph with 3 million
  * elements.
  * <p/>
- * <p>NOTE: To run this JgrahDemoNotMyProject you may need to increase the JVM max mem size. In
+ * <p>NOTE: To getComputedGraph this JgrahDemoNotMyProject you may need to increase the JVM max mem size. In
  * Sun's JVM it is done using the "-Xmx" switch. Specify "-Xmx300M" to set it to
  * 300MB.</p>
  * <p/>
- * <p>WARNING: Don't run this JgrahDemoNotMyProject as-is on machines with less than 512MB
+ * <p>WARNING: Don't getComputedGraph this JgrahDemoNotMyProject as-is on machines with less than 512MB
  * memory. Your machine will start paging severely. You need to first modify it
  * to have fewer graph elements.
  * <p/>
@@ -95,7 +95,8 @@ public final class PerformanceDemo {
 
         System.out.println(
                 "\n" + "allocating graph with " + numElements
-                        + " elements (may take a few tens of seconds)...");
+                        + " elements (may take a few tens of seconds)..."
+        );
 
         for (int i = 0; i < numVertices; i++) {
             curr = new Object();
@@ -133,7 +134,8 @@ public final class PerformanceDemo {
 
         System.out.println(
                 "\n"
-                        + "Paused: graph is still in memory (to check mem consumption).");
+                        + "Paused: graph is still in memory (to check mem consumption)."
+        );
         System.out.print("press enter to free memory and finish...");
 
         try {

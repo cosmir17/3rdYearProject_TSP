@@ -9,7 +9,7 @@ import com.mxgraph.view.mxGraph;
 /**
  * Created by lloydp on 09/02/14.
  */
-public abstract class Algorithm {
+public abstract class Algorithm extends Thread {
     protected GraphGenerator graphObject;
     protected mxGraph graph;
     protected Object graphNodeArray[];
@@ -27,9 +27,14 @@ public abstract class Algorithm {
         this.layer = graphObject.layer;
 
         graphObjectColorSelectorAndRedefiner();
+
+    }
+
+    public void run() {
         drawer();
         getTotalDis();
     }
+
 
     private void getTotalDis() {
         totalDistance = graphObject.findTotalDistance();
@@ -42,7 +47,7 @@ public abstract class Algorithm {
     protected abstract void drawer();
 
 
-    public mxGraphComponent run() {
+    public mxGraphComponent getComputedGraph() {
         return graphObject.componentGetter();
 
     }

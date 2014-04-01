@@ -432,12 +432,14 @@ public class GraphGenerator extends Object implements Cloneable {
     public void repeatSwapping() {
 
         boolean noImprovementcantbemade = false;
+        double howManyIteration = 0;
 
         while (!noImprovementcantbemade) { //how do I know if there is no improvement can't be made?
 
             boolean swapHappened = false;
             HashMap<Integer, Integer> edgesWithSourceAndTargetNodes = sourceAndTargetNodeListWithEdges();
 
+            howManyIteration++;
 
             for (int ii : edgesWithSourceAndTargetNodes.keySet()) {
                 if (!swapHappened) {
@@ -494,11 +496,12 @@ public class GraphGenerator extends Object implements Cloneable {
             }
             if (!swapHappened) {
                 noImprovementcantbemade = true;
+                System.out.println(howManyIteration);
             } //this is not true because it's not running again with fresh edges.
         }
     }
 
-    public void sA(double INITIAL_T, double SCHEDULE) {
+    public void sA(double INITIAL_T, double SCHEDULE, double halt) {
         double T = INITIAL_T;
         boolean noImprovementcantbemade = false;
         int howManyIteration = 0;
@@ -508,15 +511,17 @@ public class GraphGenerator extends Object implements Cloneable {
             HashMap<Integer, Integer> edgesWithSourceAndTargetNodes = sourceAndTargetNodeListWithEdges();
 
             T = SCHEDULE * T;
-            System.out.println("Temperature T is : " + T);
+
             howManyIteration++;
+            System.out.println("Temperature T is : " + T);
 
             for (int ii : edgesWithSourceAndTargetNodes.keySet()) {
                 if (!swapHappened) {
                     int isourceNode = ii;
                     int jtargetNode = edgesWithSourceAndTargetNodes.get(ii);
 
-                    if (T < 0.2) {
+
+                    if (T < halt) {
                         noImprovementcantbemade = true;
                         System.out.println("The SA iteration is : " + howManyIteration);
                         break;
@@ -561,7 +566,7 @@ public class GraphGenerator extends Object implements Cloneable {
 
                                 if (prob2 <= prob) {
 
-                                    System.out.println("MathRandom : " + prob2 + "   exp Prob : " + prob);
+                                    //  System.out.println("MathRandom : " + prob2 + "   exp Prob : " + prob);
                                     edgeDrawerFromNodeItoJ(isourceNode, ksourceNode);
                                     edgeDrawerFromNodeItoJ(jtargetNode, ltargetNode);
 
