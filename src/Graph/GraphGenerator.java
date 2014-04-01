@@ -498,6 +498,92 @@ public class GraphGenerator extends Object implements Cloneable {
         }
     }
 
+    public void SA(double INITIAL_T, double SCHEDULE) {
+        double T = INITIAL_T;
+        boolean noImprovementcantbemade = false;
+
+        while (noImprovementcantbemade) {
+            boolean swapHappened = false;
+            HashMap<Integer, Integer> edgesWithSourceAndTargetNodes = sourceAndTargetNodeListWithEdges();
+
+            T = SCHEDULE * T;
+
+
+            for (int ii : edgesWithSourceAndTargetNodes.keySet()) {
+                if (!swapHappened) {
+                    int isourceNode = ii;
+                    int jtargetNode = edgesWithSourceAndTargetNodes.get(ii);
+
+                    if (T == 0.01) {
+                        noImprovementcantbemade = true;
+                        break;
+                    }
+
+                    edgeRemoverfromItoJ(isourceNode, jtargetNode);
+
+
+                    for (int jj : edgesWithSourceAndTargetNodes.keySet()) {
+                        if (jj != ii
+                                && jtargetNode != jj
+                                && edgesWithSourceAndTargetNodes.get(jj) != jtargetNode
+                                && edgesWithSourceAndTargetNodes.get(jj) != ii
+                                && !swapHappened)
+
+
+                        {
+                            int ksourceNode = jj;
+                            int ltargetNode = edgesWithSourceAndTargetNodes.get(jj);
+
+                            edgeRemoverfromItoJ(ksourceNode, ltargetNode);
+
+                            double initialDistance = distanceFinder(isourceNode, jtargetNode) + distanceFinder(ksourceNode, ltargetNode);
+                            double swapDistance = distanceFinder(isourceNode, ksourceNode) + distanceFinder(jtargetNode, ltargetNode);
+
+                            double E = swapDistance - initialDistance;
+
+                            if (E > 0) {
+                                edgeDrawerFromNodeItoJ(isourceNode, ksourceNode);
+                                edgeDrawerFromNodeItoJ(jtargetNode, ltargetNode);
+
+
+                                HashMap<Integer, Integer> edgesWithSourceAndTargetNodes2 = sourceAndTargetNodeListWithEdges();
+                                reverseDirectionfromJtoK(edgesWithSourceAndTargetNodes2, jtargetNode, ksourceNode);
+
+                                swapHappened = true;
+                            } else {
+                                double prob = Math.exp(E / T);
+                                if (Math.random() <= prob) {
+                                    edgeDrawerFromNodeItoJ(isourceNode, ksourceNode);
+                                    edgeDrawerFromNodeItoJ(jtargetNode, ltargetNode);
+
+
+                                    HashMap<Integer, Integer> edgesWithSourceAndTargetNodes2 = sourceAndTargetNodeListWithEdges();
+                                    reverseDirectionfromJtoK(edgesWithSourceAndTargetNodes2, jtargetNode, ksourceNode);
+
+                                    swapHappened = true;
+                                } else {
+                                    edgeDrawerFromNodeItoJ(ksourceNode, ltargetNode);
+                                    //swapHappened = false;
+
+                                }
+                            }
+
+
+                        }
+                    }
+
+                    if (!swapHappened) {
+                        edgeDrawerFromNodeItoJ(isourceNode, jtargetNode);
+
+                    }
+
+
+                }
+
+            }
+        }
+    }
+
     public void randomCycleDrawer() {
 
         int lastNode = randomDrawerIterator(graphNodeArray.length - 1);

@@ -2,6 +2,7 @@ package GUI;
 
 import Algorithm.InsertionAlgo;
 import Algorithm.NearestNeighbourAlgo;
+import Algorithm.SimulatedAnnealingAlgo;
 import Algorithm.TwoOptAlgo;
 import Graph.GraphGenerator;
 import com.mxgraph.swing.mxGraphComponent;
@@ -29,6 +30,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
     private GraphGenerator graphGnearnAlgoGraph;
     private GraphGenerator graphInsertionAlgoGraph;
     private GraphGenerator graphTwoOptAlgoGraph;
+    private GraphGenerator graphSAalgoGraph;
 
     public final static String INITIALISATION = "Initialisation";
     public final static String SHORTEST_PATH = "Shortest Path";
@@ -93,8 +95,8 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
         advancedHeuLabel = new ColleagueLabel("Advanced Heuristics");
         panel12 = new JPanel();
         simultedACheckBox = new ColleagueCheckBox("Simulated Annealing");
-        textField12 = new JTextField();
-        textField16 = new JTextField();
+        sAtimeTextF = new ColleagueSecPanelTextF();
+        sAdistanceTextF = new ColleagueSecPanelTextF();
         panel13 = new JPanel();
         tabuCheckBox = new ColleagueCheckBox("Tabu Search");
         textField13 = new JTextField();
@@ -465,12 +467,12 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
                         simultedACheckBox.setMediator(this);
                         simultedACheckBox.addItemListener(simultedACheckBox);
 
-                        //---- textField12 ----
-                        textField12.setEnabled(false);
-
-                        //---- textField16 ----
-                        textField16.setEnabled(false);
-
+                        //---- sAtimeTextF ----
+                        sAtimeTextF.setEnabled(false);
+                        sAtimeTextF.setMediator(this);
+                        //---- sAdistanceTextF ----
+                        sAdistanceTextF.setEnabled(false);
+                        sAdistanceTextF.setMediator(this);
                         GroupLayout panel12Layout = new GroupLayout(panel12);
                         panel12.setLayout(panel12Layout);
                         panel12Layout.setHorizontalGroup(
@@ -479,9 +481,9 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
                                                 .addContainerGap()
                                                 .addComponent(simultedACheckBox, GroupLayout.PREFERRED_SIZE, 180, GroupLayout.PREFERRED_SIZE)
                                                 .addGap(0, 0, 0)
-                                                .addComponent(textField16, GroupLayout.PREFERRED_SIZE, 67, GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(sAdistanceTextF, GroupLayout.PREFERRED_SIZE, 67, GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(textField12, GroupLayout.DEFAULT_SIZE, 60, 67))
+                                                .addComponent(sAtimeTextF, GroupLayout.DEFAULT_SIZE, 60, 67))
                         );
                         panel12Layout.setVerticalGroup(
                                 panel12Layout.createParallelGroup()
@@ -489,8 +491,8 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
                                                 .addGap(0, 10, Short.MAX_VALUE)
                                                 .addGroup(panel12Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                                                         .addComponent(simultedACheckBox)
-                                                        .addComponent(textField16, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-                                                        .addComponent(textField12, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
+                                                        .addComponent(sAdistanceTextF, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(sAtimeTextF, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
                         );
                     }
                     resultPanel.add(panel12);
@@ -667,8 +669,8 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
     private ColleagueLabel advancedHeuLabel;
     private JPanel panel12;
     private ColleagueCheckBox simultedACheckBox;
-    private JTextField textField12;
-    private JTextField textField16;
+    private ColleagueSecPanelTextF sAtimeTextF;
+    private ColleagueSecPanelTextF sAdistanceTextF;
     private JPanel panel13;
     private ColleagueCheckBox tabuCheckBox;
     private JTextField textField13;
@@ -733,6 +735,16 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
             insertionCheckBox.setSelected(false);
         }
 
+        if (simultedACheckBox.pushed) {
+            removeGraphfromPanel();
+            // graphObectDuplicator();
+            graphEdgeRemover();
+            sAAlgoRunner();
+
+            nnCheckBox.setSelected(false);
+            insertionCheckBox.setSelected(false);
+        }
+
 
     }
 
@@ -791,6 +803,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
             graphGnearnAlgoGraph.allEdgeRemover();
             graphInsertionAlgoGraph.allEdgeRemover();
             graphTwoOptAlgoGraph.allEdgeRemover();
+            graphSAalgoGraph.allEdgeRemover();
 
             //   GraphGenerator graphGnearnAlgoGraph = graphG;
             //   GraphGenerator graphGnearnAlgoGraph = graphG;
@@ -817,6 +830,11 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
         } catch (CloneNotSupportedException e) {
             e.printStackTrace();
         }
+        try {
+            graphSAalgoGraph = (GraphGenerator) graphG.clone();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
         //   GraphGenerator graphGnearnAlgoGraph = graphG;
         //   GraphGenerator graphGnearnAlgoGraph = graphG;
         //   GraphGenerator graphGnearnAlgoGraph = graphG;
@@ -829,6 +847,15 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
         insertionDisTanceTextF.setText(String.valueOf(insertAlgo.getTotalDistance()));
         insertionTimeTextF.setText(String.valueOf((end - start)));
         insertGraphintoPanelMap(insertAlgo.run());
+    }
+
+    private void sAAlgoRunner() {
+        long start = System.currentTimeMillis();
+        SimulatedAnnealingAlgo sAAlgo = new SimulatedAnnealingAlgo(graphSAalgoGraph);
+        long end = System.currentTimeMillis();
+        sAdistanceTextF.setText(String.valueOf(sAAlgo.getTotalDistance()));
+        sAtimeTextF.setText(String.valueOf((end - start)));
+        insertGraphintoPanelMap(sAAlgo.run());
     }
 
     private void nearestAlgorithmRunner() {
@@ -912,6 +939,10 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
         optAlgoCheckBox.setColleagueEnabled(bswitch);
         optDistanceTextF.setColleagueEnabled(bswitch);
         optTimeText.setColleagueEnabled(bswitch);
+
+        simultedACheckBox.setColleagueEnabled(bswitch);
+        sAtimeTextF.setColleagueEnabled(bswitch);
+        sAdistanceTextF.setColleagueEnabled(bswitch);
 
 
         //  insertionDisTanceTextF.setColl
