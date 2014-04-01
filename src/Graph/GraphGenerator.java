@@ -502,7 +502,7 @@ public class GraphGenerator extends Object implements Cloneable {
         double T = INITIAL_T;
         boolean noImprovementcantbemade = false;
 
-        while (noImprovementcantbemade) {
+        while (!noImprovementcantbemade) {
             boolean swapHappened = false;
             HashMap<Integer, Integer> edgesWithSourceAndTargetNodes = sourceAndTargetNodeListWithEdges();
 

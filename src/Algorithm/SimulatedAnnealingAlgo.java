@@ -7,8 +7,8 @@ import Graph.edgeColors;
  * Created by lloydp on 01/04/14.
  */
 public class SimulatedAnnealingAlgo extends Algorithm {
-    private static final double INITIAL_T = 200000000;
-    private static final double SCHEDULE = 0.99999999;
+    private static final double INITIAL_T = 20000;
+    private static final double SCHEDULE = 0.999;
 
 
     public SimulatedAnnealingAlgo(GraphGenerator graphObject) {
