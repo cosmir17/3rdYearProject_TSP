@@ -9,7 +9,7 @@ public enum edgeColors {
     InsertionAlgo("green"),
     NearestNeighbourAlgo("blue"),
     TwoOptAlgo("red"),
-    Simluated("green");
+    SimluatedAnnealingAlgo("green");
 
     private String color;
 

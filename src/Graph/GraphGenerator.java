@@ -498,4 +498,23 @@ public class GraphGenerator extends Object implements Cloneable {
         }
     }
 
+    public void randomCycleDrawer() {
+
+        int lastNode = randomDrawerIterator(graphNodeArray.length - 1);
+        edgeDrawerFromNodeItoJ(lastNode, 0);
+
+
+    }
+
+
+    public int randomDrawerIterator(int i) {
+
+        if (i == 0) {
+            int next = 0;
+            return next;
+        }
+        edgeDrawerFromNodeItoJ(randomDrawerIterator(i - 1), i);
+        return i--;
+    }
+
 }

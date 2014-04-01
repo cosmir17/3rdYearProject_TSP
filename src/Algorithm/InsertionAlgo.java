@@ -61,7 +61,7 @@ public class InsertionAlgo extends Algorithm {
 
         }
 
-        graphObject.repeatSwapping();
+        //  graphObject.repeatSwapping();
 
 /*
 

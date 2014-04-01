@@ -27,7 +27,7 @@ public class NearestNeighbourAlgo extends Algorithm {
     protected void drawer() {
         int lastNode = drawerIterator(graphNodeArray.length - 2);
         edgeDrawerFromLastNodetotheFirstone(lastNode);
-        graphObject.repeatSwapping();
+        //graphObject.repeatSwapping();
 
     }
 
