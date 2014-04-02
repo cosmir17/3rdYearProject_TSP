@@ -147,7 +147,10 @@ public class GraphGenerator extends Object implements Cloneable {
     }
 
     public void edgeRemoverfromItoJ(int i, int j) {
-        graph.getModel().beginUpdate();
+        try {
+            graph.getModel().beginUpdate();
+        } catch (IndexOutOfBoundsException e) {
+        }
         try {
             // graph.resetEdges(graphNodeArray);
 
@@ -159,8 +162,12 @@ public class GraphGenerator extends Object implements Cloneable {
 
         } catch (NullPointerException e) {
 
+        } catch (IndexOutOfBoundsException e) {
         } finally {
-            graph.getModel().endUpdate();
+            try {
+                graph.getModel().endUpdate();
+            } catch (IndexOutOfBoundsException e) {
+            }
         }
     }
 
@@ -181,7 +188,10 @@ public class GraphGenerator extends Object implements Cloneable {
         //  System.out.println(color);
         colorString = color.getCode();
 
-        graph.getModel().beginUpdate();
+        try {
+            graph.getModel().beginUpdate();
+        } catch (IndexOutOfBoundsException e) {
+        }
 
         try {
             graph.insertEdge(parent, null, distanceFinder(i, j), graphNodeArray[i], graphNodeArray[j],
@@ -189,10 +199,16 @@ public class GraphGenerator extends Object implements Cloneable {
 
             // System.out.println(color);
             return distanceFinder(i, j);
+        } catch (NullPointerException e) {
+        } catch (IndexOutOfBoundsException e) {
         } finally {
-            graph.getModel().endUpdate();
-        }
 
+            try {
+                graph.getModel().endUpdate();
+            } catch (IndexOutOfBoundsException e) {
+            }
+        }
+        return distanceFinder(i, j);
 
     }
 
@@ -359,6 +375,7 @@ public class GraphGenerator extends Object implements Cloneable {
 
         int jj = j;
         ArrayList<Integer> nextNodelistfromEdge = new ArrayList<Integer>();
+
         nextNodelistfromEdge.add(jj);
 
         while (k != jj) {
@@ -369,6 +386,7 @@ public class GraphGenerator extends Object implements Cloneable {
 
         // nextNodelistfromEdge.add(k);
 
+        //System.out.println(nextNodelistfromEdge.size());
 
         for (int ii = 0; ii < nextNodelistfromEdge.size() - 1; ii++) {
             int source = nextNodelistfromEdge.get(ii);
@@ -466,7 +484,7 @@ public class GraphGenerator extends Object implements Cloneable {
                             double initialDistance = distanceFinder(isourceNode, jtargetNode) + distanceFinder(ksourceNode, ltargetNode);
                             double swapDistance = distanceFinder(isourceNode, ksourceNode) + distanceFinder(jtargetNode, ltargetNode);
 
-                            if (initialDistance > swapDistance) {
+                            if (initialDistance > swapDistance && initialDistance != swapDistance) {
                                 edgeDrawerFromNodeItoJ(isourceNode, ksourceNode);
                                 edgeDrawerFromNodeItoJ(jtargetNode, ltargetNode);
 
@@ -496,7 +514,7 @@ public class GraphGenerator extends Object implements Cloneable {
             }
             if (!swapHappened) {
                 noImprovementcantbemade = true;
-                System.out.println(howManyIteration);
+                System.out.println("Two opt, Iterations : " + howManyIteration);
             } //this is not true because it's not running again with fresh edges.
         }
     }
