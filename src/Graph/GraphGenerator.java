@@ -343,7 +343,13 @@ public class GraphGenerator extends Object implements Cloneable {
         for (Integer i : oneEdgeOneNodeNotTwoNodes.keySet()) {
             totalDistance += Double.parseDouble(oneEdgeOneNodeNotTwoNodes.get(i).getValue().toString());
         }
-        return totalDistance;
+
+        DecimalFormat twoDecimalFormat = new DecimalFormat("#.##");
+        double tDecimal = Double.valueOf(twoDecimalFormat.format(totalDistance));
+
+
+        return tDecimal;
+
     }
 
 
