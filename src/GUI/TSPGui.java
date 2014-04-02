@@ -853,7 +853,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
         try {
             insertAlgo.join();
             long end = System.currentTimeMillis();
-            insertionDisTanceTextF.setText(String.valueOf(insertAlgo.getTotalDistance()));
+            insertionDisTanceTextF.setText(String.valueOf(insertAlgo.getTotalDis()));
             insertionTimeTextF.setText(String.valueOf((end - start)));
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -868,11 +868,13 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
         sAAlgo.start();
         insertGraphintoPanelMap(sAAlgo.getComputedGraph());
 
+
         try {
             sAAlgo.join();
             long end = System.currentTimeMillis();
-            sADisTextF.setText(String.valueOf(sAAlgo.getTotalDistance()));
+            sADisTextF.setText(String.valueOf(sAAlgo.getTotalDis()));
             sATimeTextF.setText(String.valueOf((end - start)));
+
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -885,17 +887,17 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
         NearestNeighbourAlgo nnAlgo = new NearestNeighbourAlgo(graphGnearnAlgoGraph);
         nnAlgo.start();
         insertGraphintoPanelMap(nnAlgo.getComputedGraph());
-/*
+
         try {
             nnAlgo.join();
             long end = System.currentTimeMillis();
-            nnDistanceTextF.setText(String.valueOf(nnAlgo.getTotalDistance()));
+            nnDistanceTextF.setText(String.valueOf(nnAlgo.getTotalDis()));
             nnTimeTextF.setText(String.valueOf((end - start)));
 
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-*/
+
     }
 
     private void twoOptAlgorithmRunner() {
@@ -903,18 +905,17 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
         TwoOptAlgo twoOptAlgo = new TwoOptAlgo(graphTwoOptAlgoGraph);
         twoOptAlgo.start();
         insertGraphintoPanelMap(twoOptAlgo.getComputedGraph());
-/*
+
         try {
             twoOptAlgo.join();
             long end = System.currentTimeMillis();
-            optDistanceTextF.setText(String.valueOf(twoOptAlgo.getTotalDistance()));
+            optDistanceTextF.setText(String.valueOf(twoOptAlgo.getTotalDis()));
             optTimeText.setText(String.valueOf((end - start)));
 
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
-*/
 
     }
 

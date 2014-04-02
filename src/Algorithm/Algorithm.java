@@ -32,12 +32,13 @@ public abstract class Algorithm extends Thread {
 
     public void run() {
         drawer();
-        getTotalDis();
+        // getTotalDis();
     }
 
 
-    private void getTotalDis() {
+    public double getTotalDis() {
         totalDistance = graphObject.findTotalDistance();
+        return totalDistance;
     }
 
 

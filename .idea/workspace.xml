@@ -6,882 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="unknown indexoutof error">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jgraphx.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/java.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/CONTRIBUTORS.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/HISTORY.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/allclasses-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/allclasses-noframe.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/constant-values.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/deprecated-list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/help-doc.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/index-all.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/DirectedGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/EdgeFactory.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/Graph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/GraphHelper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/GraphMapping.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/GraphPath.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/Graphs.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/ListenableGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/UndirectedGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/VertexFactory.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/WeightedGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/BellmanFordShortestPath.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/BiconnectivityInspector.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/BlockCutpointGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/BronKerboschCliqueFinder.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/ChromaticNumber.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/ConnectivityInspector.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/CycleDetector.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/DijkstraShortestPath.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/DirectedNeighborIndex.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/EdmondsBlossomShrinking.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/EdmondsKarpMaximumFlow.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/EulerianCircuit.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/FloydWarshallShortestPaths.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/HamiltonianCycle.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/HopcroftKarpBipartiteMatching.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/KShortestPaths.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/KruskalMinimumSpanningTree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/KuhnMunkresMinimalWeightBipartitePerfectMatching.KuhnMunkresMatrixImplementation.MatchExtender.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/KuhnMunkresMinimalWeightBipartitePerfectMatching.KuhnMunkresMatrixImplementation.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/KuhnMunkresMinimalWeightBipartitePerfectMatching.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/MinSourceSinkCut.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/NeighborIndex.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/PrimMinimumSpanningTree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/StoerWagnerMinimumCut.VertexAndWeight.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/StoerWagnerMinimumCut.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/StrongConnectivityInspector.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/TarjanLowestCommonAncestor.LcaRequestResponse.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/TarjanLowestCommonAncestor.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/TransitiveClosure.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/VertexCovers.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/class-use/BellmanFordShortestPath.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/class-use/BiconnectivityInspector.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/class-use/BlockCutpointGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/class-use/BronKerboschCliqueFinder.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/class-use/ChromaticNumber.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/class-use/ConnectivityInspector.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/class-use/CycleDetector.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/class-use/DijkstraShortestPath.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/class-use/DirectedNeighborIndex.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/class-use/EdmondsBlossomShrinking.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/class-use/EdmondsKarpMaximumFlow.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/class-use/EulerianCircuit.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/class-use/FloydWarshallShortestPaths.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/class-use/HamiltonianCycle.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/class-use/HopcroftKarpBipartiteMatching.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/class-use/KShortestPaths.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/class-use/KruskalMinimumSpanningTree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/class-use/KuhnMunkresMinimalWeightBipartitePerfectMatching.KuhnMunkresMatrixImplementation.MatchExtender.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/class-use/KuhnMunkresMinimalWeightBipartitePerfectMatching.KuhnMunkresMatrixImplementation.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/class-use/KuhnMunkresMinimalWeightBipartitePerfectMatching.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/class-use/MinSourceSinkCut.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/class-use/NeighborIndex.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/class-use/PrimMinimumSpanningTree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/class-use/StoerWagnerMinimumCut.VertexAndWeight.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/class-use/StoerWagnerMinimumCut.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/class-use/StrongConnectivityInspector.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/class-use/TarjanLowestCommonAncestor.LcaRequestResponse.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/class-use/TarjanLowestCommonAncestor.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/class-use/TransitiveClosure.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/class-use/VertexCovers.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/cycle/DirectedSimpleCycles.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/cycle/JohnsonSimpleCycles.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/cycle/PatonCycleBase.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/cycle/SzwarcfiterLauerSimpleCycles.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/cycle/TarjanSimpleCycles.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/cycle/TiernanSimpleCycles.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/cycle/UndirectedCycleBase.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/cycle/class-use/DirectedSimpleCycles.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/cycle/class-use/JohnsonSimpleCycles.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/cycle/class-use/PatonCycleBase.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/cycle/class-use/SzwarcfiterLauerSimpleCycles.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/cycle/class-use/TarjanSimpleCycles.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/cycle/class-use/TiernanSimpleCycles.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/cycle/class-use/UndirectedCycleBase.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/cycle/package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/cycle/package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/cycle/package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/cycle/package-use.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/interfaces/MatchingAlgorithm.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/interfaces/MinimumSpanningTree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/interfaces/WeightedMatchingAlgorithm.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/interfaces/class-use/MatchingAlgorithm.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/interfaces/class-use/MinimumSpanningTree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/interfaces/class-use/WeightedMatchingAlgorithm.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/interfaces/package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/interfaces/package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/interfaces/package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/interfaces/package-use.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/package-use.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/util/UnionFind.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/util/VertexDegreeComparator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/util/class-use/UnionFind.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/util/class-use/VertexDegreeComparator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/util/package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/util/package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/util/package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/alg/util/package-use.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/class-use/DirectedGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/class-use/EdgeFactory.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/class-use/Graph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/class-use/GraphHelper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/class-use/GraphMapping.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/class-use/GraphPath.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/class-use/Graphs.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/class-use/ListenableGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/class-use/UndirectedGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/class-use/VertexFactory.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/class-use/WeightedGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/demo/CompleteGraphDemo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/demo/HelloJGraphT.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/demo/JGraphAdapterDemo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/demo/JGraphXAdapterDemo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/demo/PerformanceDemo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/demo/class-use/CompleteGraphDemo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/demo/class-use/HelloJGraphT.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/demo/class-use/JGraphAdapterDemo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/demo/class-use/JGraphXAdapterDemo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/demo/class-use/PerformanceDemo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/demo/package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/demo/package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/demo/package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/demo/package-use.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/event/ConnectedComponentTraversalEvent.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/event/EdgeTraversalEvent.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/event/GraphChangeEvent.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/event/GraphEdgeChangeEvent.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/event/GraphListener.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/event/GraphVertexChangeEvent.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/event/TraversalListener.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/event/TraversalListenerAdapter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/event/VertexSetListener.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/event/VertexTraversalEvent.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/event/class-use/ConnectedComponentTraversalEvent.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/event/class-use/EdgeTraversalEvent.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/event/class-use/GraphChangeEvent.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/event/class-use/GraphEdgeChangeEvent.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/event/class-use/GraphListener.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/event/class-use/GraphVertexChangeEvent.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/event/class-use/TraversalListener.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/event/class-use/TraversalListenerAdapter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/event/class-use/VertexSetListener.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/event/class-use/VertexTraversalEvent.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/event/package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/event/package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/event/package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/event/package-use.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/GraphReader.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/GraphSquare.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/GraphTests.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/PartiteRandomGraphGenerator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/RandomGraphHelper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/UniformRandomGraphGenerator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/alg/ApproximationAlgorithm.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/alg/ExactAlgorithm.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/alg/IntArrayGraphAlgorithm.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/alg/class-use/ApproximationAlgorithm.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/alg/class-use/ExactAlgorithm.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/alg/class-use/IntArrayGraphAlgorithm.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/alg/color/BrownBacktrackColoring.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/alg/color/GreedyColoring.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/alg/color/class-use/BrownBacktrackColoring.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/alg/color/class-use/GreedyColoring.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/alg/color/package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/alg/color/package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/alg/color/package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/alg/color/package-use.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/alg/package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/alg/package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/alg/package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/alg/package-use.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/class-use/GraphReader.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/class-use/GraphSquare.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/class-use/GraphTests.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/class-use/PartiteRandomGraphGenerator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/class-use/RandomGraphHelper.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/class-use/UniformRandomGraphGenerator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/dag/DirectedAcyclicGraph.CycleFoundException.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/dag/DirectedAcyclicGraph.Region.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/dag/DirectedAcyclicGraph.TopoOrderMapping.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/dag/DirectedAcyclicGraph.TopoOrderMappingFactory.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/dag/DirectedAcyclicGraph.TopoVertexMap.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/dag/DirectedAcyclicGraph.Visited.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/dag/DirectedAcyclicGraph.VisitedArrayImpl.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/dag/DirectedAcyclicGraph.VisitedArrayListImpl.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/dag/DirectedAcyclicGraph.VisitedBitSetImpl.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/dag/DirectedAcyclicGraph.VisitedFactory.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/dag/DirectedAcyclicGraph.VisitedHashSetImpl.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/dag/DirectedAcyclicGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/dag/class-use/DirectedAcyclicGraph.CycleFoundException.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/dag/class-use/DirectedAcyclicGraph.Region.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/dag/class-use/DirectedAcyclicGraph.TopoOrderMapping.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/dag/class-use/DirectedAcyclicGraph.TopoOrderMappingFactory.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/dag/class-use/DirectedAcyclicGraph.TopoVertexMap.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/dag/class-use/DirectedAcyclicGraph.Visited.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/dag/class-use/DirectedAcyclicGraph.VisitedArrayImpl.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/dag/class-use/DirectedAcyclicGraph.VisitedArrayListImpl.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/dag/class-use/DirectedAcyclicGraph.VisitedBitSetImpl.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/dag/class-use/DirectedAcyclicGraph.VisitedFactory.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/dag/class-use/DirectedAcyclicGraph.VisitedHashSetImpl.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/dag/class-use/DirectedAcyclicGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/dag/package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/dag/package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/dag/package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/dag/package-use.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/equivalence/EquivalenceComparator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/equivalence/EquivalenceComparatorChain.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/equivalence/EquivalenceComparatorChainBase.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/equivalence/EquivalenceSet.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/equivalence/EquivalenceSetCreator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/equivalence/UniformEquivalenceComparator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/equivalence/class-use/EquivalenceComparator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/equivalence/class-use/EquivalenceComparatorChain.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/equivalence/class-use/EquivalenceComparatorChainBase.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/equivalence/class-use/EquivalenceSet.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/equivalence/class-use/EquivalenceSetCreator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/equivalence/class-use/UniformEquivalenceComparator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/equivalence/package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/equivalence/package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/equivalence/package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/equivalence/package-use.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/isomorphism/AdaptiveIsomorphismInspectorFactory.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/isomorphism/GraphIsomorphismInspector.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/isomorphism/GraphOrdering.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/isomorphism/IsomorphismRelation.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/isomorphism/VertexDegreeEquivalenceComparator.InOutDegrees.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/isomorphism/VertexDegreeEquivalenceComparator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/isomorphism/class-use/AdaptiveIsomorphismInspectorFactory.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/isomorphism/class-use/GraphIsomorphismInspector.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/isomorphism/class-use/GraphOrdering.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/isomorphism/class-use/IsomorphismRelation.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/isomorphism/class-use/VertexDegreeEquivalenceComparator.InOutDegrees.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/isomorphism/class-use/VertexDegreeEquivalenceComparator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/isomorphism/package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/isomorphism/package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/isomorphism/package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/isomorphism/package-use.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/package-use.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/permutation/ArrayPermutationsIter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/permutation/CollectionPermutationIter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/permutation/CompoundPermutationIter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/permutation/IntegerPermutationIter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/permutation/PermutationFactory.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/permutation/class-use/ArrayPermutationsIter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/permutation/class-use/CollectionPermutationIter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/permutation/class-use/CompoundPermutationIter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/permutation/class-use/IntegerPermutationIter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/permutation/class-use/PermutationFactory.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/permutation/package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/permutation/package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/permutation/package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/experimental/permutation/package-use.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/ext/ComponentAttributeProvider.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/ext/DOTExporter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/ext/EdgeNameProvider.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/ext/GmlExporter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/ext/GraphMLExporter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/ext/IntegerEdgeNameProvider.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/ext/IntegerNameProvider.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/ext/JGraphModelAdapter.CellFactory.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/ext/JGraphModelAdapter.DefaultCellFactory.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/ext/JGraphModelAdapter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/ext/JGraphXAdapter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/ext/MatrixExporter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/ext/StringEdgeNameProvider.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/ext/StringNameProvider.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/ext/VertexNameProvider.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/ext/VisioExporter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/ext/class-use/ComponentAttributeProvider.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/ext/class-use/DOTExporter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/ext/class-use/EdgeNameProvider.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/ext/class-use/GmlExporter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/ext/class-use/GraphMLExporter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/ext/class-use/IntegerEdgeNameProvider.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/ext/class-use/IntegerNameProvider.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/ext/class-use/JGraphModelAdapter.CellFactory.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/ext/class-use/JGraphModelAdapter.DefaultCellFactory.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/ext/class-use/JGraphModelAdapter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/ext/class-use/JGraphXAdapter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/ext/class-use/MatrixExporter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/ext/class-use/StringEdgeNameProvider.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/ext/class-use/StringNameProvider.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/ext/class-use/VertexNameProvider.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/ext/class-use/VisioExporter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/ext/package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/ext/package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/ext/package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/ext/package-use.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/CompleteBipartiteGraphGenerator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/CompleteGraphGenerator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/EmptyGraphGenerator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/GraphGenerator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/GridGraphGenerator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/HyperCubeGraphGenerator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/LinearGraphGenerator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/RandomGraphGenerator.DefaultEdgeTopologyFactory.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/RandomGraphGenerator.EdgeTopologyFactory.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/RandomGraphGenerator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/RingGraphGenerator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/ScaleFreeGraphGenerator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/SimpleWeightedBipartiteGraphMatrixGenerator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/SimpleWeightedGraphMatrixGenerator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/StarGraphGenerator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/WeightedGraphGenerator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/WeightedGraphGeneratorAdapter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/WheelGraphGenerator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/class-use/CompleteBipartiteGraphGenerator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/class-use/CompleteGraphGenerator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/class-use/EmptyGraphGenerator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/class-use/GraphGenerator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/class-use/GridGraphGenerator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/class-use/HyperCubeGraphGenerator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/class-use/LinearGraphGenerator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/class-use/RandomGraphGenerator.DefaultEdgeTopologyFactory.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/class-use/RandomGraphGenerator.EdgeTopologyFactory.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/class-use/RandomGraphGenerator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/class-use/RingGraphGenerator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/class-use/ScaleFreeGraphGenerator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/class-use/SimpleWeightedBipartiteGraphMatrixGenerator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/class-use/SimpleWeightedGraphMatrixGenerator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/class-use/StarGraphGenerator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/class-use/WeightedGraphGenerator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/class-use/WeightedGraphGeneratorAdapter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/class-use/WheelGraphGenerator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/generate/package-use.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/AbstractBaseGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/AbstractGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/AsUndirectedGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/AsUnweightedDirectedGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/AsUnweightedGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/AsWeightedGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/ClassBasedEdgeFactory.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/ClassBasedVertexFactory.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/DefaultDirectedGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/DefaultDirectedWeightedGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/DefaultEdge.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/DefaultGraphMapping.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/DefaultListenableGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/DefaultWeightedEdge.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/DirectedGraphUnion.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/DirectedMaskSubgraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/DirectedMultigraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/DirectedPseudograph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/DirectedSubgraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/DirectedWeightedMultigraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/DirectedWeightedPseudograph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/DirectedWeightedSubgraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/EdgeReversedGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/EdgeSetFactory.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/GraphDelegator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/GraphPathImpl.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/GraphUnion.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/ListenableDirectedGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/ListenableDirectedWeightedGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/ListenableUndirectedGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/ListenableUndirectedWeightedGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/MaskFunctor.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/MaskSubgraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/Multigraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/ParanoidGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/Pseudograph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/SimpleDirectedGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/SimpleDirectedWeightedGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/SimpleGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/SimpleWeightedGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/Subgraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/UndirectedGraphUnion.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/UndirectedMaskSubgraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/UndirectedSubgraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/UndirectedWeightedSubgraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/UnmodifiableDirectedGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/UnmodifiableGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/UnmodifiableUndirectedGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/WeightedMultigraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/WeightedPseudograph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/AbstractBaseGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/AbstractGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/AsUndirectedGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/AsUnweightedDirectedGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/AsUnweightedGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/AsWeightedGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/ClassBasedEdgeFactory.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/ClassBasedVertexFactory.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/DefaultDirectedGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/DefaultDirectedWeightedGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/DefaultEdge.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/DefaultGraphMapping.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/DefaultListenableGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/DefaultWeightedEdge.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/DirectedGraphUnion.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/DirectedMaskSubgraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/DirectedMultigraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/DirectedPseudograph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/DirectedSubgraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/DirectedWeightedMultigraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/DirectedWeightedPseudograph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/DirectedWeightedSubgraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/EdgeReversedGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/EdgeSetFactory.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/GraphDelegator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/GraphPathImpl.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/GraphUnion.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/ListenableDirectedGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/ListenableDirectedWeightedGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/ListenableUndirectedGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/ListenableUndirectedWeightedGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/MaskFunctor.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/MaskSubgraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/Multigraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/ParanoidGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/Pseudograph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/SimpleDirectedGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/SimpleDirectedWeightedGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/SimpleGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/SimpleWeightedGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/Subgraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/UndirectedGraphUnion.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/UndirectedMaskSubgraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/UndirectedSubgraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/UndirectedWeightedSubgraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/UnmodifiableDirectedGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/UnmodifiableGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/UnmodifiableUndirectedGraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/WeightedMultigraph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/class-use/WeightedPseudograph.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/graph/package-use.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/package-use.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/traverse/AbstractGraphIterator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/traverse/BreadthFirstIterator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/traverse/ClosestFirstIterator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/traverse/CrossComponentIterator.VisitColor.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/traverse/CrossComponentIterator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/traverse/DepthFirstIterator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/traverse/GraphIterator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/traverse/TopologicalOrderIterator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/traverse/class-use/AbstractGraphIterator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/traverse/class-use/BreadthFirstIterator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/traverse/class-use/ClosestFirstIterator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/traverse/class-use/CrossComponentIterator.VisitColor.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/traverse/class-use/CrossComponentIterator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/traverse/class-use/DepthFirstIterator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/traverse/class-use/GraphIterator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/traverse/class-use/TopologicalOrderIterator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/traverse/package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/traverse/package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/traverse/package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/traverse/package-use.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/util/ArrayUnenforcedSet.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/util/FibonacciHeap.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/util/FibonacciHeapNode.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/util/MathUtil.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/util/ModifiableInteger.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/util/PrefetchIterator.NextElementFunctor.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/util/PrefetchIterator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/util/TypeUtil.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/util/VertexPair.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/util/WeightCombiner.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/util/class-use/ArrayUnenforcedSet.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/util/class-use/FibonacciHeap.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/util/class-use/FibonacciHeapNode.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/util/class-use/MathUtil.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/util/class-use/ModifiableInteger.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/util/class-use/PrefetchIterator.NextElementFunctor.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/util/class-use/PrefetchIterator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/util/class-use/TypeUtil.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/util/class-use/VertexPair.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/util/class-use/WeightCombiner.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/util/package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/util/package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/util/package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/org/jgrapht/util/package-use.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/overview-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/overview-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/overview-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/package-list" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/resources/inherit.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/serialized-form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/javadoc/stylesheet.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/lib/jgraph-5.13.0.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/lib/jgrapht-core-0.9.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/lib/jgrapht-demo-0.9.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/lib/jgrapht-ext-0.9.0-uber.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/lib/jgrapht-ext-0.9.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/lib/jgraphx-2.0.0.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/license-EPL.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/license-LGPL.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/CONTRIBUTORS.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/HISTORY.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/etc/eclipse-formatter-settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/etc/graph-links.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/etc/release-process.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/etc/triemax-jalopy-settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/DirectedGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/EdgeFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/Graph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/GraphHelper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/GraphMapping.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/GraphPath.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/Graphs.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/ListenableGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/UndirectedGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/VertexFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/WeightedGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/AbstractPathElement.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/AbstractPathElementList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/BellmanFordIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/BellmanFordPathElement.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/BellmanFordShortestPath.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/BiconnectivityInspector.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/BlockCutpointGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/BronKerboschCliqueFinder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/ChromaticNumber.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/ConnectivityInspector.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/CycleDetector.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/DijkstraShortestPath.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/DirectedNeighborIndex.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/EdmondsBlossomShrinking.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/EdmondsKarpMaximumFlow.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/EulerianCircuit.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/FloydWarshallShortestPaths.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/HamiltonianCycle.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/HopcroftKarpBipartiteMatching.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/KShortestPaths.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/KShortestPathsIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/KruskalMinimumSpanningTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/KuhnMunkresMinimalWeightBipartitePerfectMatching.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/MinSourceSinkCut.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/NeighborIndex.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/PrimMinimumSpanningTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/RankingPathElement.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/RankingPathElementList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/StoerWagnerMinimumCut.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/StrongConnectivityInspector.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/TarjanLowestCommonAncestor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/TransitiveClosure.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/VertexCovers.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/cycle/DirectedSimpleCycles.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/cycle/JohnsonSimpleCycles.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/cycle/PatonCycleBase.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/cycle/SzwarcfiterLauerSimpleCycles.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/cycle/TarjanSimpleCycles.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/cycle/TiernanSimpleCycles.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/cycle/UndirectedCycleBase.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/cycle/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/interfaces/MatchingAlgorithm.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/interfaces/MinimumSpanningTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/interfaces/WeightedMatchingAlgorithm.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/util/UnionFind.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/util/VertexDegreeComparator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/alg/util/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/event/ConnectedComponentTraversalEvent.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/event/EdgeTraversalEvent.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/event/GraphChangeEvent.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/event/GraphEdgeChangeEvent.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/event/GraphListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/event/GraphVertexChangeEvent.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/event/TraversalListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/event/TraversalListenerAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/event/VertexSetListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/event/VertexTraversalEvent.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/event/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/experimental/GraphReader.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/experimental/GraphSquare.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/experimental/GraphTests.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/experimental/PartiteRandomGraphGenerator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/experimental/RandomGraphHelper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/experimental/UniformRandomGraphGenerator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/experimental/alg/ApproximationAlgorithm.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/experimental/alg/ExactAlgorithm.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/experimental/alg/IntArrayGraphAlgorithm.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/experimental/alg/color/BrownBacktrackColoring.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/experimental/alg/color/GreedyColoring.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/experimental/dag/DirectedAcyclicGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/experimental/equivalence/EquivalenceComparator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/experimental/equivalence/EquivalenceComparatorChain.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/experimental/equivalence/EquivalenceComparatorChainBase.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/experimental/equivalence/EquivalenceSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/experimental/equivalence/EquivalenceSetCreator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/experimental/equivalence/UniformEquivalenceComparator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/experimental/equivalence/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/experimental/isomorphism/AbstractExhaustiveIsomorphismInspector.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/experimental/isomorphism/AdaptiveIsomorphismInspectorFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/experimental/isomorphism/EquivalenceIsomorphismInspector.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/experimental/isomorphism/GraphIsomorphismInspector.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/experimental/isomorphism/GraphOrdering.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/experimental/isomorphism/IsomorphismRelation.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/experimental/isomorphism/PermutationIsomorphismInspector.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/experimental/isomorphism/VertexDegreeEquivalenceComparator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/experimental/isomorphism/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/experimental/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/experimental/permutation/ArrayPermutationsIter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/experimental/permutation/CollectionPermutationIter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/experimental/permutation/CompoundPermutationIter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/experimental/permutation/IntegerPermutationIter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/experimental/permutation/PermutationFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/experimental/permutation/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/generate/CompleteBipartiteGraphGenerator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/generate/CompleteGraphGenerator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/generate/EmptyGraphGenerator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/generate/GraphGenerator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/generate/GridGraphGenerator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/generate/HyperCubeGraphGenerator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/generate/LinearGraphGenerator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/generate/RandomGraphGenerator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/generate/RingGraphGenerator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/generate/ScaleFreeGraphGenerator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/generate/SimpleWeightedBipartiteGraphMatrixGenerator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/generate/SimpleWeightedGraphMatrixGenerator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/generate/StarGraphGenerator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/generate/WeightedGraphGenerator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/generate/WeightedGraphGeneratorAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/generate/WheelGraphGenerator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/generate/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/AbstractBaseGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/AbstractGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/AsUndirectedGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/AsUnweightedDirectedGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/AsUnweightedGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/AsWeightedGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/ClassBasedEdgeFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/ClassBasedVertexFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/DefaultDirectedGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/DefaultDirectedWeightedGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/DefaultEdge.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/DefaultGraphMapping.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/DefaultListenableGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/DefaultWeightedEdge.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/DirectedGraphUnion.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/DirectedMaskSubgraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/DirectedMultigraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/DirectedPseudograph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/DirectedSubgraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/DirectedWeightedMultigraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/DirectedWeightedPseudograph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/DirectedWeightedSubgraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/EdgeReversedGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/EdgeSetFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/GraphDelegator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/GraphPathImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/GraphUnion.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/IntrusiveEdge.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/ListenableDirectedGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/ListenableDirectedWeightedGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/ListenableUndirectedGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/ListenableUndirectedWeightedGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/MaskEdgeSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/MaskFunctor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/MaskSubgraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/MaskVertexSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/Multigraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/ParanoidGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/Pseudograph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/SimpleDirectedGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/SimpleDirectedWeightedGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/SimpleGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/SimpleWeightedGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/Subgraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/UndirectedGraphUnion.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/UndirectedMaskSubgraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/UndirectedSubgraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/UndirectedWeightedSubgraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/UnmodifiableDirectedGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/UnmodifiableGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/UnmodifiableUndirectedGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/WeightedMultigraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/WeightedPseudograph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/graph/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/traverse/AbstractGraphIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/traverse/BreadthFirstIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/traverse/ClosestFirstIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/traverse/CrossComponentIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/traverse/DepthFirstIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/traverse/GraphIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/traverse/TopologicalOrderIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/traverse/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/util/ArrayUnenforcedSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/util/FibonacciHeap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/util/FibonacciHeapNode.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/util/MathUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/util/ModifiableInteger.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/util/PrefetchIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/util/TypeUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/util/VertexPair.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/util/WeightCombiner.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/org/jgrapht/util/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/java/overview.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/main3.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/main/resources/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/AllTests.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/EnhancedTestCase.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/AllAlgTests.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/BellmanFordShortestPathTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/BiconnectedGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/BiconnectivityInspectorTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/BlockCutpointGraphTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/BronKerboschCliqueFinderTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/ChromaticNumberTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/ConnectivityInspectorTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/CycleDetectorTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/DijkstraShortestPathTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/EdmondsBlossomShrinkingTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/EdmondsKarpMaximumFlowTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/EulerianCircuitTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/FloydWarshallShortestPathsTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/HamiltonianCycleTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/HopcroftKarpBipartiteMatchingTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/KSPDiscardsValidPathsTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/KSPExample.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/KSPExampleGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/KSPExampleTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/KShortestPathCompleteGraph4.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/KShortestPathCompleteGraph5.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/KShortestPathCompleteGraph6.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/KShortestPathCostTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/KShortestPathKValuesTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/KuhnMunkresMinimalWeightBipartitePerfectMatchingTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/MinSourceSinkCutTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/MinimumSpanningTreeTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/NeighborIndexTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/NotBiconnectedGraph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/Picture1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/Picture1Graph.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/ShortestPathTestCase.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/StoerWagnerMinimumCutTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/TarjanLowestCommonAncestorTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/TransitiveClosureTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/VertexCoversTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/cycle/DirectedSimpleCyclesTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/cycle/UndirectedCycleBaseTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/util/AllAlgUtilTests.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/alg/util/UnionFindTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/experimental/GraphReaderTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/experimental/alg/ColoringTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/experimental/dag/DirectedAcyclicGraphTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/experimental/equivalence/EquivalenceGroupCreatorTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/experimental/isomorphism/EdgeTopologyCompare.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/experimental/isomorphism/IntegerVertexFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/experimental/isomorphism/IsomorphismInspectorTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/experimental/isomorphism/comparators/DirectedEdgeWeightOddEvenComparator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/experimental/isomorphism/comparators/Mod3GroupComparator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/experimental/isomorphism/comparators/OddEvenGroupComparator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/experimental/permutation/CompoundPermutationIterTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/generate/AllGenerateTests.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/generate/GraphGeneratorTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/generate/RandomGraphGeneratorTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/graph/AllGraphTests.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/graph/AsUndirectedGraphTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/graph/AsUnweightedGraphTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/graph/AsWeightedGraphTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/graph/CloneTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/graph/DefaultDirectedGraphTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/graph/EqualsAndHashCodeTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/graph/GenericGraphsTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/graph/ListenableGraphTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/graph/SerializationTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/graph/SimpleDirectedGraphTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/graph/SubgraphTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/traverse/AbstractGraphIteratorTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/traverse/AllTraverseTests.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/traverse/BreadthFirstIteratorTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/traverse/ClosestFirstIteratorTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/traverse/DepthFirstIteratorTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/traverse/IgnoreDirectionTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/traverse/TopologicalOrderIteratorTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/util/AllUtilTests.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/util/FibonacciHeapTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/util/PrefetchIteratorTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/java/org/jgrapht/util/StopWatch.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/resources/edges.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-core/src/test/test.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-demo/pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-demo/src/main/java/org/jgrapht/demo/CompleteGraphDemo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-demo/src/main/java/org/jgrapht/demo/HelloJGraphT.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-demo/src/main/java/org/jgrapht/demo/JGraphAdapterDemo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-demo/src/main/java/org/jgrapht/demo/JGraphXAdapterDemo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-demo/src/main/java/org/jgrapht/demo/PerformanceDemo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-demo/src/main/java/org/jgrapht/demo/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-demo/src/main/main2.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-dist/pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-dist/src/assembly/assembly.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-ext/pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-ext/src/main/java/org/jgrapht/ext/ComponentAttributeProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-ext/src/main/java/org/jgrapht/ext/DOTExporter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-ext/src/main/java/org/jgrapht/ext/EdgeNameProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-ext/src/main/java/org/jgrapht/ext/GmlExporter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-ext/src/main/java/org/jgrapht/ext/GraphMLExporter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-ext/src/main/java/org/jgrapht/ext/IntegerEdgeNameProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-ext/src/main/java/org/jgrapht/ext/IntegerNameProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-ext/src/main/java/org/jgrapht/ext/JGraphModelAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-ext/src/main/java/org/jgrapht/ext/JGraphXAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-ext/src/main/java/org/jgrapht/ext/MatrixExporter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-ext/src/main/java/org/jgrapht/ext/StringEdgeNameProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-ext/src/main/java/org/jgrapht/ext/StringNameProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-ext/src/main/java/org/jgrapht/ext/VertexNameProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-ext/src/main/java/org/jgrapht/ext/VisioExporter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-ext/src/main/java/org/jgrapht/ext/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-ext/src/main/main1.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-ext/src/test/java/org/jgrapht/ext/DOTExporterTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-ext/src/test/java/org/jgrapht/ext/GmlExporterTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-ext/src/test/java/org/jgrapht/ext/GraphMLExporterTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-ext/src/test/java/org/jgrapht/ext/JGraphXAdapterTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-ext/src/test/java/org/jgrapht/ext/MatrixExporterTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-ext/src/test/test1.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-touchgraph/3rdparty/com/touchgraph/TGGraphLayout/UNKNOWN/TGGraphLayout-UNKNOWN.jar.md5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-touchgraph/3rdparty/com/touchgraph/TGGraphLayout/UNKNOWN/TGGraphLayout-UNKNOWN.jar.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-touchgraph/3rdparty/com/touchgraph/TGGraphLayout/UNKNOWN/TGGraphLayout-UNKNOWN.pom" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-touchgraph/3rdparty/com/touchgraph/TGGraphLayout/UNKNOWN/TGGraphLayout-UNKNOWN.pom.md5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-touchgraph/3rdparty/com/touchgraph/TGGraphLayout/UNKNOWN/TGGraphLayout-UNKNOWN.pom.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-touchgraph/3rdparty/com/touchgraph/TGGraphLayout/maven-metadata.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-touchgraph/3rdparty/com/touchgraph/TGGraphLayout/maven-metadata.xml.md5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-touchgraph/3rdparty/com/touchgraph/TGGraphLayout/maven-metadata.xml.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-touchgraph/TG-APACHE-LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-touchgraph/pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-touchgraph/src/main/java/org/jgrapht/experimental/touchgraph/SimpleTouchgraphApplet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-touchgraph/src/main/java/org/jgrapht/experimental/touchgraph/TouchgraphConverter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-touchgraph/src/main/java/org/jgrapht/experimental/touchgraph/TouchgraphPanel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-touchgraph/src/main/java/org/jgrapht/experimental/touchgraph/package.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/jgrapht-touchgraph/src/main/main.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/license-EPL.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/license-LGPL.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jgrapht-0.9.0/source/pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/GUI/Testing/GuiForTestingSmallparts.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Graph/Testing/GraphGenerator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/JgrahDemoNotMyProject/Jgraph/CompleteGraphDemo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/JgrahDemoNotMyProject/Jgraph/HelloJGraphT.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/JgrahDemoNotMyProject/Jgraph/JGraphAdapterDemo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/JgrahDemoNotMyProject/Jgraph/PerformanceDemo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/JgrahDemoNotMyProject/Jgraph/design_panel.jfd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/JgrahDemoNotMyProject/NewGraphGenerator2.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3rd_year_project.iml" afterPath="$PROJECT_DIR$/3rd_year_project.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Graph/GraphGenerator.java" afterPath="$PROJECT_DIR$/src/Graph/GraphGenerator.java" />
+    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="deleted dummy classes and thrid party libraries. added jgraphx rather than jgrapht. still unknwon error,">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Algorithm/Algorithm.java" afterPath="$PROJECT_DIR$/src/Algorithm/Algorithm.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Algorithm/SimulatedAnnealingAlgo.java" afterPath="$PROJECT_DIR$/src/Algorithm/SimulatedAnnealingAlgo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/TSPGui.java" afterPath="$PROJECT_DIR$/src/GUI/TSPGui.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="3rd_year_project.iws" />
@@ -1039,11 +168,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TSPGui.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="TSPGui.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/GUI/TSPGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="16164" max-vertical-offset="19314">
-              <caret line="898" column="1" selection-start-line="898" selection-start-column="1" selection-end-line="898" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="16236" max-vertical-offset="19134">
+              <caret line="915" column="5" selection-start-line="915" selection-start-column="5" selection-end-line="915" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -1059,15 +188,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GraphGenerator.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="GraphGenerator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Graph/GraphGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33333334" vertical-offset="3582" max-vertical-offset="11808">
-              <caret line="208" column="0" selection-start-line="208" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#13107#13116#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="9792" max-vertical-offset="11862">
+              <caret line="544" column="41" selection-start-line="544" selection-start-column="41" selection-end-line="544" selection-end-column="41" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -1095,8 +221,8 @@
       <file leaf-file-name="SimulatedAnnealingAlgo.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Algorithm/SimulatedAnnealingAlgo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="738">
-              <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="738">
+              <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -1105,8 +231,8 @@
       <file leaf-file-name="Algorithm.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Algorithm/Algorithm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="1134">
-              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="702" max-vertical-offset="1134">
+              <caret line="39" column="78" selection-start-line="39" selection-start-column="78" selection-end-line="39" selection-end-column="78" />
               <folding />
             </state>
           </provider>
@@ -1180,12 +306,12 @@
         <option value="$PROJECT_DIR$/src/Algorithm/InsertionAlgo.java" />
         <option value="$PROJECT_DIR$/src/Algorithm/NearestNeighbourAlgo.java" />
         <option value="$PROJECT_DIR$/src/Graph/edgeColors.java" />
-        <option value="$PROJECT_DIR$/src/Algorithm/SimulatedAnnealingAlgo.java" />
-        <option value="$PROJECT_DIR$/src/Algorithm/Algorithm.java" />
         <option value="$PROJECT_DIR$/src/Algorithm/TwoOptAlgo.java" />
-        <option value="$PROJECT_DIR$/src/GUI/TSPGui.java" />
-        <option value="$PROJECT_DIR$/src/Graph/GraphGenerator.java" />
         <option value="$PROJECT_DIR$/src/Graph/Testing/GraphGenerator.java" />
+        <option value="$PROJECT_DIR$/src/Graph/GraphGenerator.java" />
+        <option value="$PROJECT_DIR$/src/Algorithm/Algorithm.java" />
+        <option value="$PROJECT_DIR$/src/GUI/TSPGui.java" />
+        <option value="$PROJECT_DIR$/src/Algorithm/SimulatedAnnealingAlgo.java" />
       </list>
     </option>
   </component>
@@ -1227,18 +353,26 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Default">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="3rd_year_project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jgraphx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jgraphx.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="3rd_year_project" />
@@ -1330,6 +464,16 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope">
+        <subPane subId="Default">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1343,7 +487,7 @@
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/jgraphx/lib/jgraphx.jar!/" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="options.lastSelected" value="preferences.pluginManager" />
@@ -1447,19 +591,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -1486,6 +617,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1881,14 +1025,18 @@
       <created>1396399645441</created>
       <updated>1396399645441</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="deleted dummy classes and thrid party libraries. added jgraphx rather than jgrapht. still unknwon error,">
+      <created>1396403322373</created>
+      <updated>1396403322373</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="107909000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="0" width="1368" height="746" extended-state="6" />
+    <frame x="-1" y="0" width="1368" height="746" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1901,22 +1049,22 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40095088" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17371601" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6301587" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31160572" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17371601" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30047694" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2760736" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="642" y="197" width="724" height="513" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32591414" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31078905" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3974563" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1936,7 +1084,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="TotalDistance() is now working fine.&#10;getAllEdges() and edges repeat (as one edge is connected between two nodes)&#10;" />
     <MESSAGE value="insertion is partially working but it's not proper" />
     <MESSAGE value="Wrong insertion algorithm &amp; just one graph panel within the main window" />
     <MESSAGE value="Path becomes a cycle for insertion algorithm" />
@@ -1961,7 +1108,8 @@
     <MESSAGE value="SA is working (indeed) but too slow :) The previous one doesn't work properly." />
     <MESSAGE value="Working in Threads. fantastic. showing result in real time" />
     <MESSAGE value="unknown indexoutof error" />
-    <option name="LAST_COMMIT_MESSAGE" value="unknown indexoutof error" />
+    <MESSAGE value="deleted dummy classes and thrid party libraries. added jgraphx rather than jgrapht. still unknwon error," />
+    <option name="LAST_COMMIT_MESSAGE" value="deleted dummy classes and thrid party libraries. added jgraphx rather than jgrapht. still unknwon error," />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1986,6 +1134,150 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/Algorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="702" max-vertical-offset="1134">
+          <caret line="39" column="78" selection-start-line="39" selection-start-column="78" selection-end-line="39" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/java/jdk1.7.0_51/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="7380" max-vertical-offset="21204">
+          <caret line="410" column="0" selection-start-line="410" selection-start-column="0" selection-end-line="410" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/TSPGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="19026">
+          <caret line="871" column="11" selection-start-line="871" selection-start-column="11" selection-end-line="871" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/NearestNeighbourAlgo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="522" max-vertical-offset="972">
+          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graph/GraphGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5958" max-vertical-offset="11862">
+          <caret line="331" column="27" selection-start-line="331" selection-start-column="22" selection-end-line="331" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graph/edgeColors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="540">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/TwoOptAlgo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="738">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/SimulatedAnnealingAlgo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="738">
+          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/Algorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="1134">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/java/jdk1.7.0_51/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="7380" max-vertical-offset="21204">
+          <caret line="410" column="0" selection-start-line="410" selection-start-column="0" selection-end-line="410" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/TSPGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="19314">
+          <caret line="898" column="1" selection-start-line="898" selection-start-column="1" selection-end-line="898" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/NearestNeighbourAlgo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="522" max-vertical-offset="972">
+          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graph/GraphGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3258" max-vertical-offset="11826">
+          <caret line="208" column="0" selection-start-line="208" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graph/edgeColors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="540">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/TwoOptAlgo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="738">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/SimulatedAnnealingAlgo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="738">
+          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/Algorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="1134">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/java/jdk1.7.0_51/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="7380" max-vertical-offset="21204">
+          <caret line="410" column="0" selection-start-line="410" selection-start-column="0" selection-end-line="410" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar:///usr/lib/java/jdk1.7.0_51/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="11107" max-vertical-offset="55368">
@@ -2074,7 +1366,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="486">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2089,7 +1380,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
           <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2097,7 +1387,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="486">
           <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2105,9 +1394,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
           <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
-          <folding>
-            <element signature="e#715#716#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2115,7 +1401,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
           <caret line="9" column="66" selection-start-line="9" selection-start-column="66" selection-end-line="9" selection-end-column="66" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2123,7 +1408,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2131,7 +1415,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="550" max-vertical-offset="1854">
           <caret line="63" column="10" selection-start-line="63" selection-start-column="10" selection-end-line="63" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2139,7 +1422,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
           <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2161,7 +1443,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
           <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2169,47 +1450,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3366" max-vertical-offset="3924">
           <caret line="235" column="0" selection-start-line="235" selection-start-column="0" selection-end-line="235" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithm/NearestNeighbourAlgo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="314" max-vertical-offset="918">
-          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithm/SimulatedAnnealingAlgo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
-          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/java/jdk1.7.0_51/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="6669" max-vertical-offset="20034">
-          <caret line="410" column="0" selection-start-line="410" selection-start-column="0" selection-end-line="410" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithm/Algorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="410" max-vertical-offset="990">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/TSPGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="15750" max-vertical-offset="18990">
-          <caret line="898" column="1" selection-start-line="898" selection-start-column="1" selection-end-line="898" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2229,14 +1469,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///usr/lib/java/jdk1.7.0_51/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="6669" max-vertical-offset="20034">
+          <caret line="410" column="0" selection-start-line="410" selection-start-column="0" selection-end-line="410" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/Algorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="1026">
+          <caret line="39" column="78" selection-start-line="39" selection-start-column="78" selection-end-line="39" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Graph/GraphGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="3582" max-vertical-offset="11808">
-          <caret line="208" column="0" selection-start-line="208" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#13107#13116#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="9198" max-vertical-offset="11574">
+          <caret line="544" column="41" selection-start-line="544" selection-start-column="41" selection-end-line="544" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/SimulatedAnnealingAlgo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="214" max-vertical-offset="684">
+          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/NearestNeighbourAlgo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="314" max-vertical-offset="918">
+          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/TSPGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="16236" max-vertical-offset="19134">
+          <caret line="915" column="5" selection-start-line="915" selection-start-column="5" selection-end-line="915" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
