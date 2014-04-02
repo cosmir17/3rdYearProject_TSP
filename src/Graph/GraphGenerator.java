@@ -12,6 +12,7 @@ import com.mxgraph.view.mxGraph;
 
 import java.awt.*;
 import java.io.IOException;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -186,9 +187,10 @@ public class GraphGenerator extends Object implements Cloneable {
     public double edgeDrawerFromNodeItoJ(int i, int j) {
 
         //  System.out.println(color);
-        colorString = color.getCode();
+
 
         try {
+            colorString = color.getCode();
             graph.getModel().beginUpdate();
         } catch (IndexOutOfBoundsException e) {
         }
@@ -213,18 +215,32 @@ public class GraphGenerator extends Object implements Cloneable {
     }
 
     public double distanceFinder(int i, int j) {
-        mxCell ithNode = (mxCell) graphNodeArray[i];
-        mxCell jthNode = (mxCell) graphNodeArray[j];
+        try {
+
+
+            mxICell ithNode = (mxICell) graphNodeArray[i];
+            mxICell jthNode = (mxICell) graphNodeArray[j];
+
+
 
         // System.out.println(ithNode.getValue());
         // System.out.println(jthNode.getValue());
 
-        int horizontalDistance = (int) (ithNode.getGeometry().getX() - jthNode.getGeometry().getX());
-        int verticalDistance = (int) (ithNode.getGeometry().getY() - jthNode.getGeometry().getY());
+            double horizontalDistance = (ithNode.getGeometry().getX() - jthNode.getGeometry().getX());
+            double verticalDistance = (ithNode.getGeometry().getY() - jthNode.getGeometry().getY());
 
         double distance = Math.sqrt((horizontalDistance * horizontalDistance) + (verticalDistance * verticalDistance));
+            // System.out.println(Math.round(distance));
 
-        return Math.round(distance);
+
+            DecimalFormat twoDecimalFormat = new DecimalFormat("#.##");
+            double tDecimal = Double.valueOf(twoDecimalFormat.format(distance));
+
+
+            return tDecimal;
+        } catch (IndexOutOfBoundsException e) {
+        }
+        return 0;
     }
 
     public Map.Entry<Double, Integer> getIndexofClosesetNodefromIwithDistance(int i) {
