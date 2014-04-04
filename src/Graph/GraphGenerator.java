@@ -13,10 +13,7 @@ import com.mxgraph.view.mxGraph;
 import java.awt.*;
 import java.io.IOException;
 import java.text.DecimalFormat;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 
 public class GraphGenerator extends Object implements Cloneable {
     public static mxGraph graph = new mxGraph();
@@ -31,6 +28,9 @@ public class GraphGenerator extends Object implements Cloneable {
     private mxICell NearestLayer;
     private mxICell InsertionLayer;
     private mxGraphModel model;
+
+
+    Object[] graphNodeArray2;
 
     public Object clone() throws CloneNotSupportedException {
         return super.clone();
@@ -213,6 +213,52 @@ public class GraphGenerator extends Object implements Cloneable {
         return distanceFinder(i, j);
 
     }
+
+    public void shuffle() //this shuffling is copied from wikipedia
+    {
+
+        graphNodeArray2 = graphNodeArray;
+        Random rng = new Random();   // i.e., java.util.Random.
+        int n = graphNodeArray2.length;        // The number of items left to shuffle (loop invariant).
+        while (n > 1) {
+            int k = rng.nextInt(n);  // 0 <= k < n.
+            n--;                     // n is now the last pertinent index;
+            Object temp = graphNodeArray2[n];     // swap array[n] with array[k] (does nothing if k == n).
+            graphNodeArray2[n] = graphNodeArray2[k];
+            graphNodeArray2[k] = temp;
+        }
+    }
+
+    public double RandomEdgeDrawerFromNodeItoJ(int i, int j) {
+
+        //  System.out.println(color);
+
+
+        try {
+            colorString = color.getCode();
+            graph.getModel().beginUpdate();
+        } catch (IndexOutOfBoundsException e) {
+        }
+
+        try {
+            graph.insertEdge(parent, null, distanceFinder(i, j), graphNodeArray2[i], graphNodeArray2[j],
+                    "strokeColor=" + colorString + ";fontColor=" + colorString + "");
+
+            // System.out.println(color);
+            return distanceFinder(i, j);
+        } catch (NullPointerException e) {
+        } catch (IndexOutOfBoundsException e) {
+        } finally {
+
+            try {
+                graph.getModel().endUpdate();
+            } catch (IndexOutOfBoundsException e) {
+            }
+        }
+        return distanceFinder(i, j);
+
+    }
+
 
     public double distanceFinder(int i, int j) {
         try {
@@ -640,6 +686,7 @@ public class GraphGenerator extends Object implements Cloneable {
 
     public void randomCycleDrawer() {
 
+        shuffle();
         int lastNode = randomDrawerIterator(graphNodeArray.length - 1);
         edgeDrawerFromNodeItoJ(lastNode, 0);
 
@@ -656,5 +703,6 @@ public class GraphGenerator extends Object implements Cloneable {
         edgeDrawerFromNodeItoJ(randomDrawerIterator(i - 1), i);
         return i--;
     }
+
 
 }
