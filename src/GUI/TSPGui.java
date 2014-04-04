@@ -31,6 +31,10 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
     private GraphGenerator graphInsertionAlgoGraph;
     private GraphGenerator graphTwoOptAlgoGraph;
     private GraphGenerator graphSAalgoGraph;
+    TwoOptAlgo twoOptAlgo;
+    InsertionAlgo insertAlgo;
+    SimulatedAnnealingAlgo sAAlgo;
+    NearestNeighbourAlgo nnAlgo;
 
     public final static String INITIALISATION = "Initialisation";
     public final static String SHORTEST_PATH = "Shortest Path";
@@ -747,6 +751,8 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
             nnCheckBox.setSelected(false);
             insertionCheckBox.setSelected(false);
             optAlgoCheckBox.setSelected(false);
+
+
         }
 
 
@@ -846,7 +852,8 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
 
     private void insertionAlgoRunner() {
         long start = System.currentTimeMillis();
-        InsertionAlgo insertAlgo = new InsertionAlgo(graphInsertionAlgoGraph);
+
+        insertAlgo = new InsertionAlgo(graphInsertionAlgoGraph);
         insertAlgo.start();
         insertGraphintoPanelMap(insertAlgo.getComputedGraph());
 
@@ -864,7 +871,9 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
 
     private void sAAlgoRunner() {
         long start = System.currentTimeMillis();
-        SimulatedAnnealingAlgo sAAlgo = new SimulatedAnnealingAlgo(graphSAalgoGraph);
+
+
+        sAAlgo = new SimulatedAnnealingAlgo(graphSAalgoGraph);
         sAAlgo.start();
         insertGraphintoPanelMap(sAAlgo.getComputedGraph());
 
@@ -884,7 +893,9 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
 
     private void nearestAlgorithmRunner() {
         long start = System.currentTimeMillis();
-        NearestNeighbourAlgo nnAlgo = new NearestNeighbourAlgo(graphGnearnAlgoGraph);
+
+
+        nnAlgo = new NearestNeighbourAlgo(graphGnearnAlgoGraph);
         nnAlgo.start();
         insertGraphintoPanelMap(nnAlgo.getComputedGraph());
 
@@ -902,7 +913,8 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
 
     private void twoOptAlgorithmRunner() {
         long start = System.currentTimeMillis();
-        TwoOptAlgo twoOptAlgo = new TwoOptAlgo(graphTwoOptAlgoGraph);
+
+        twoOptAlgo = new TwoOptAlgo(graphTwoOptAlgoGraph);
         twoOptAlgo.start();
         insertGraphintoPanelMap(twoOptAlgo.getComputedGraph());
 
