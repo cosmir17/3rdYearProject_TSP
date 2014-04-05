@@ -23,7 +23,7 @@ public class TwoOptAlgo extends Algorithm {
     protected void drawer() {
 
         graphObject.randomCycleDrawer2();
-        // graphObject.repeatSwapping();
+        graphObject.repeatSwapping();
     }
 
 

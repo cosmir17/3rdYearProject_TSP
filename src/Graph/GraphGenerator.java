@@ -744,5 +744,12 @@ public class GraphGenerator extends Object implements Cloneable {
 
     }
 
+    public String pathListPrinter() {
+        HashMap<Integer, Integer> edgeListwithST = sourceAndTargetNodeListWithEdges();
+
+        return edgeListwithST.toString();
+
+    }
+
 
 }

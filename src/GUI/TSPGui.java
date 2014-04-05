@@ -1,9 +1,6 @@
 package GUI;
 
-import Algorithm.InsertionAlgo;
-import Algorithm.NearestNeighbourAlgo;
-import Algorithm.SimulatedAnnealingAlgo;
-import Algorithm.TwoOptAlgo;
+import Algorithm.*;
 import Graph.GraphGenerator;
 import com.mxgraph.swing.mxGraphComponent;
 
@@ -31,10 +28,12 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
     private GraphGenerator graphInsertionAlgoGraph;
     private GraphGenerator graphTwoOptAlgoGraph;
     private GraphGenerator graphSAalgoGraph;
+    private GraphGenerator graphGeneticAlgoGraph;
     TwoOptAlgo twoOptAlgo;
     InsertionAlgo insertAlgo;
     SimulatedAnnealingAlgo sAAlgo;
     NearestNeighbourAlgo nnAlgo;
+    GeneticAlgo geneticAlgo;
 
     public final static String INITIALISATION = "Initialisation";
     public final static String SHORTEST_PATH = "Shortest Path";
@@ -102,9 +101,9 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
         sADisTextF = new ColleagueSecPanelTextF();
         sATimeTextF = new ColleagueSecPanelTextF();
         panel13 = new JPanel();
-        tabuCheckBox = new ColleagueCheckBox("Tabu Search");
-        textField13 = new JTextField();
-        textField17 = new JTextField();
+        geneCheckBox = new ColleagueCheckBox("Genetic Algorithm");
+        geneDistanceF = new ColleagueSecPanelTextF();
+        geneTimeF = new ColleagueSecPanelTextF();
         panel14 = new JPanel();
         button10 = new JButton();
         button9 = new JButton();
@@ -505,16 +504,17 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
                     {
                         panel13.setBorder(null);
 
-                        //---- tabuCheckBox ----
-                        //tabuCheckBox.setText("Tabu Search");
-                        tabuCheckBox.setEnabled(false);
-                        tabuCheckBox.setMediator(this);
-                        tabuCheckBox.addItemListener(tabuCheckBox);
-                        //---- textField13 ----
-                        textField13.setEnabled(false);
-
-                        //---- textField17 ----
-                        textField17.setEnabled(false);
+                        //---- geneCheckBox ----
+                        //geneCheckBox.setText("Tabu Search");
+                        geneCheckBox.setEnabled(false);
+                        geneCheckBox.setMediator(this);
+                        geneCheckBox.addItemListener(geneCheckBox);
+                        //---- geneDistanceF ----
+                        geneDistanceF.setEnabled(false);
+                        geneDistanceF.setMediator(this);
+                        //---- geneTimeF ----
+                        geneTimeF.setEnabled(false);
+                        geneTimeF.setMediator(this);
 
                         GroupLayout panel13Layout = new GroupLayout(panel13);
                         panel13.setLayout(panel13Layout);
@@ -522,20 +522,20 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
                                 panel13Layout.createParallelGroup()
                                         .addGroup(panel13Layout.createSequentialGroup()
                                                 .addContainerGap()
-                                                .addComponent(tabuCheckBox, GroupLayout.PREFERRED_SIZE, 119, GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(geneCheckBox, GroupLayout.PREFERRED_SIZE, 119, GroupLayout.PREFERRED_SIZE)
                                                 .addGap(60, 60, 60)
-                                                .addComponent(textField13, GroupLayout.PREFERRED_SIZE, 67, GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(geneDistanceF, GroupLayout.PREFERRED_SIZE, 67, GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(textField17, GroupLayout.DEFAULT_SIZE, 65, 67))
+                                                .addComponent(geneTimeF, GroupLayout.DEFAULT_SIZE, 65, 67))
                         );
                         panel13Layout.setVerticalGroup(
                                 panel13Layout.createParallelGroup()
                                         .addGroup(GroupLayout.Alignment.TRAILING, panel13Layout.createSequentialGroup()
                                                 .addGap(0, 10, Short.MAX_VALUE)
                                                 .addGroup(panel13Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
-                                                        .addComponent(tabuCheckBox)
-                                                        .addComponent(textField13, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-                                                        .addComponent(textField17, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
+                                                        .addComponent(geneCheckBox)
+                                                        .addComponent(geneDistanceF, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(geneTimeF, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
                         );
                     }
                     resultPanel.add(panel13);
@@ -676,9 +676,9 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
     private ColleagueSecPanelTextF sADisTextF;
     private ColleagueSecPanelTextF sATimeTextF;
     private JPanel panel13;
-    private ColleagueCheckBox tabuCheckBox;
-    private JTextField textField13;
-    private JTextField textField17;
+    private ColleagueCheckBox geneCheckBox;
+    private ColleagueSecPanelTextF geneDistanceF;
+    private ColleagueSecPanelTextF geneTimeF;
     private JPanel panel14;
     private JButton button10;
     private JButton button9;
@@ -713,6 +713,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
             insertionAlgoRunner();
             // graph object appears or disappears by doing this
 
+            geneCheckBox.setSelected(false);
             nnCheckBox.setSelected(false);
             optAlgoCheckBox.setSelected(false);
             simultedACheckBox.setSelected(false);
@@ -726,6 +727,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
             nearestAlgorithmRunner();
             // graph object appears or disappears by doing this
 
+            geneCheckBox.setSelected(false);
             insertionCheckBox.setSelected(false);
             optAlgoCheckBox.setSelected(false);
             simultedACheckBox.setSelected(false);
@@ -737,6 +739,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
             graphEdgeRemover();
             twoOptAlgorithmRunner();
 
+            geneCheckBox.setSelected(false);
             nnCheckBox.setSelected(false);
             insertionCheckBox.setSelected(false);
             simultedACheckBox.setSelected(false);
@@ -748,6 +751,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
             graphEdgeRemover();
             sAAlgoRunner();
 
+            geneCheckBox.setSelected(false);
             nnCheckBox.setSelected(false);
             insertionCheckBox.setSelected(false);
             optAlgoCheckBox.setSelected(false);
@@ -755,6 +759,19 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
 
         }
 
+        if (geneCheckBox.pushed) {
+            removeGraphfromPanel();
+            // graphObectDuplicator();
+            graphEdgeRemover();
+            geneticAlgoRunner();
+
+            simultedACheckBox.setSelected(false);
+            nnCheckBox.setSelected(false);
+            insertionCheckBox.setSelected(false);
+            optAlgoCheckBox.setSelected(false);
+
+
+        }
 
     }
 
@@ -791,7 +808,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
 
             //advancedHeuLabel.setColleagueEnabled(true);
             //simultedACheckBox.setColleagueEnabled(true);
-            //tabuCheckBox.setColleagueEnabled(true);
+            //geneCheckBox.setColleagueEnabled(true);
             shortestButton.pushed = false;
             secondPanelElementsSwitch(true);
 
@@ -814,6 +831,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
             graphInsertionAlgoGraph.allEdgeRemover();
             graphTwoOptAlgoGraph.allEdgeRemover();
             graphSAalgoGraph.allEdgeRemover();
+            graphGeneticAlgoGraph.allEdgeRemover();
 
             //   GraphGenerator graphGnearnAlgoGraph = graphG;
             //   GraphGenerator graphGnearnAlgoGraph = graphG;
@@ -845,10 +863,36 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
         } catch (CloneNotSupportedException e) {
             e.printStackTrace();
         }
+
+        try {
+            graphGeneticAlgoGraph = (GraphGenerator) graphG.clone();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
         //   GraphGenerator graphGnearnAlgoGraph = graphG;
         //   GraphGenerator graphGnearnAlgoGraph = graphG;
         //   GraphGenerator graphGnearnAlgoGraph = graphG;
     }
+
+    private void geneticAlgoRunner() {
+        long start = System.currentTimeMillis();
+
+        geneticAlgo = new GeneticAlgo(graphGeneticAlgoGraph);
+        geneticAlgo.start();
+        // insertGraphintoPanelMap(geneticAlgo.getComputedGraph());
+
+        try {
+            geneticAlgo.join();
+            long end = System.currentTimeMillis();
+            geneDistanceF.setText(String.valueOf(insertAlgo.getTotalDis()));
+            geneTimeF.setText(String.valueOf((end - start)));
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+
+    }
+
 
     private void insertionAlgoRunner() {
         long start = System.currentTimeMillis();
@@ -1000,13 +1044,17 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
         sATimeTextF.setColleagueEnabled(bswitch);
 
 
+        geneCheckBox.setColleagueEnabled(bswitch);
+        geneDistanceF.setColleagueEnabled(bswitch);
+        geneTimeF.setColleagueEnabled(bswitch);
+
         //  insertionDisTanceTextF.setColl
 
         //optAlgoCheckBox.setColleagueEnabled(true);
 
         //advancedHeuLabel.setColleagueEnabled(true);
         //simultedACheckBox.setColleagueEnabled(true);
-        //tabuCheckBox.setColleagueEnabled(true);
+        //geneCheckBox.setColleagueEnabled(true);
 
 
     }

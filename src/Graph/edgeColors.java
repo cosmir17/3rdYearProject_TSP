@@ -9,8 +9,8 @@ public enum edgeColors {
     InsertionAlgo("green"),
     NearestNeighbourAlgo("blue"),
     TwoOptAlgo("red"),
-    SimulatedAnnealingAlgo("black");
-
+    SimulatedAnnealingAlgo("black"),
+    GeneticAlgo("purple");
     private String color;
 
     private edgeColors(String c) {

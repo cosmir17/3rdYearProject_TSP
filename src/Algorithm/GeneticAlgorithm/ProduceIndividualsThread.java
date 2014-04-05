@@ -9,13 +9,13 @@ import com.mxgraph.view.mxGraph;
  * Created by lloydp on 04/04/14.
  */
 public class ProduceIndividualsThread extends Thread {
-    protected GraphGenerator graphObject;
-    protected mxGraph graph;
-    protected Object graphNodeArray[];
-    protected Object parent;
-    double totalDistance = 0;
-    edgeColors color;
-    EdgeLayers layer;
+    public GraphGenerator graphObject;
+    public mxGraph graph;
+    public Object graphNodeArray[];
+    public Object parent;
+    public double totalDistance = 0;
+    public edgeColors color;
+    public EdgeLayers layer;
 
     public ProduceIndividualsThread(GraphGenerator graphObject) {
         this.graphObject = graphObject;
@@ -28,7 +28,7 @@ public class ProduceIndividualsThread extends Thread {
     }
 
     public void run() {
-
+        graphObject.randomCycleDrawer2();
 
     }
 
