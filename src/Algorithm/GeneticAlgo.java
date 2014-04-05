@@ -15,7 +15,10 @@ public class GeneticAlgo extends Algorithm implements Runnable {
 
 
     public GeneticAlgo(GraphGenerator graphObject) {
+
         super(graphObject);
+
+
     }
 
     @Override
@@ -26,6 +29,8 @@ public class GeneticAlgo extends Algorithm implements Runnable {
 
     @Override
     protected void drawer() {
+
+
         produceAhundredIndividuals();
 
     }
@@ -37,8 +42,9 @@ public class GeneticAlgo extends Algorithm implements Runnable {
         ConcurrentHashMap<Double, HashMap<Integer, Integer>> distanceList = new ConcurrentHashMap<Double, HashMap<Integer, Integer>>();
 
         for (int i = 0; i < 100; i++) {
-            threadArray[i] = new ProduceIndividualsThread(graphObject);
-            threadArray[i].start();
+            try {
+                threadArray[i] = new ProduceIndividualsThread(graphObject);
+                threadArray[i].start();
 
             try {
                 threadArray[i].join();
@@ -51,6 +57,8 @@ public class GeneticAlgo extends Algorithm implements Runnable {
 
         TreeMap<Double, HashMap<Integer, Integer>> sortedDistanceList = new TreeMap<Double, HashMap<Integer, Integer>>();
         sortedDistanceList.putAll(distanceList);
+
+            System.out.println(sortedDistanceList);
 
 
 

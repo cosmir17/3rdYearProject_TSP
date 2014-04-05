@@ -879,17 +879,18 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
 
         geneticAlgo = new GeneticAlgo(graphGeneticAlgoGraph);
         geneticAlgo.start();
-        // insertGraphintoPanelMap(geneticAlgo.getComputedGraph());
+        insertGraphintoPanelMap(geneticAlgo.getComputedGraph());
 
+        /*
         try {
             geneticAlgo.join();
             long end = System.currentTimeMillis();
-            geneDistanceF.setText(String.valueOf(insertAlgo.getTotalDis()));
+            geneDistanceF.setText(String.valueOf(geneticAlgo.getTotalDis()));
             geneTimeF.setText(String.valueOf((end - start)));
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
+*/
 
     }
 

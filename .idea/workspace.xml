@@ -6,9 +6,14 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="GA, first generation">
+    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="SA, wrong random edge drawer method was selected">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java" afterPath="$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Graph/GraphGenerator.java" afterPath="$PROJECT_DIR$/src/Graph/GraphGenerator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Algorithm/GeneticAlgorithm/ProduceIndividualsThread.java" afterPath="$PROJECT_DIR$/src/Algorithm/GeneticAlgorithm/ProduceIndividualsThread.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Algorithm/SimulatedAnnealingAlgo.java" afterPath="$PROJECT_DIR$/src/Algorithm/SimulatedAnnealingAlgo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/TSPGui.java" afterPath="$PROJECT_DIR$/src/GUI/TSPGui.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Algorithm/TwoOptAlgo.java" afterPath="$PROJECT_DIR$/src/Algorithm/TwoOptAlgo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="3rd_year_project.iws" />
@@ -169,13 +174,9 @@
       <file leaf-file-name="TSPGui.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GUI/TSPGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.9259257" vertical-offset="1757" max-vertical-offset="20412">
-              <caret line="105" column="48" selection-start-line="105" selection-start-column="48" selection-end-line="105" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#30551#30781#0" expanded="true" />
-                <element signature="e#30758#30759#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="17341" max-vertical-offset="20160">
+              <caret line="993" column="0" selection-start-line="993" selection-start-column="0" selection-end-line="993" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -183,7 +184,7 @@
       <file leaf-file-name="edgeColors.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Graph/edgeColors.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
+            <state vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="540">
               <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
               <folding />
             </state>
@@ -193,31 +194,23 @@
       <file leaf-file-name="GraphGenerator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Graph/GraphGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="11389" max-vertical-offset="13428">
-              <caret line="653" column="0" selection-start-line="653" selection-start-column="0" selection-end-line="653" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="-15.333333" vertical-offset="13590" max-vertical-offset="14148">
+              <caret line="792" column="24" selection-start-line="792" selection-start-column="24" selection-end-line="792" selection-end-column="24" />
+              <folding>
+                <element signature="e#11622#11657#0" expanded="true" />
+                <element signature="e#11791#11808#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HashMap.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar:///usr/lib/java/jdk1.7.0_51/src.zip!/java/util/HashMap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="17262" max-vertical-offset="21564">
-              <caret line="959" column="0" selection-start-line="959" selection-start-column="0" selection-end-line="959" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GeneticAlgo.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="GeneticAlgo.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="1062">
-              <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.46031746" vertical-offset="477" max-vertical-offset="1260">
+              <caret line="47" column="39" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
               <folding>
-                <element signature="e#937#972#0" expanded="true" />
-                <element signature="e#1521#1556#0" expanded="true" />
+                <element signature="e#943#978#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -226,9 +219,12 @@
       <file leaf-file-name="ProduceIndividualsThread.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Algorithm/GeneticAlgorithm/ProduceIndividualsThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="84" max-vertical-offset="720">
-              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding>
+                <element signature="e#495#496#0" expanded="true" />
+                <element signature="e#541#542#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -236,18 +232,28 @@
       <file leaf-file-name="TwoOptAlgo.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Algorithm/TwoOptAlgo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="81" max-vertical-offset="684">
-              <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="50" max-vertical-offset="684">
+              <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="83" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SimulatedAnnealingAlgo.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SimulatedAnnealingAlgo.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Algorithm/SimulatedAnnealingAlgo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5588235" vertical-offset="222" max-vertical-offset="684">
-              <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="50" max-vertical-offset="684">
+              <caret line="27" column="83" selection-start-line="27" selection-start-column="83" selection-end-line="27" selection-end-column="83" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NearestNeighbourAlgo.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Algorithm/NearestNeighbourAlgo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="314" max-vertical-offset="918">
+              <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -256,7 +262,7 @@
       <file leaf-file-name="Algorithm.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Algorithm/Algorithm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="462" max-vertical-offset="1044">
+            <state vertical-scroll-proportion="0.0" vertical-offset="392" max-vertical-offset="1044">
               <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding />
             </state>
@@ -266,7 +272,7 @@
       <file leaf-file-name="InsertionAlgo.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Algorithm/InsertionAlgo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="1854">
+            <state vertical-scroll-proportion="0.0" vertical-offset="648" max-vertical-offset="1854">
               <caret line="61" column="9" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
               <folding />
             </state>
@@ -330,13 +336,13 @@
         <option value="$PROJECT_DIR$/src/Graph/Testing/GraphGenerator.java" />
         <option value="$PROJECT_DIR$/src/Algorithm/GeneticAlgorithm/GeneticAlgo.java" />
         <option value="$PROJECT_DIR$/src/Algorithm/Algorithm.java" />
-        <option value="$PROJECT_DIR$/src/Algorithm/TwoOptAlgo.java" />
-        <option value="$PROJECT_DIR$/src/Graph/GraphGenerator.java" />
-        <option value="$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java" />
-        <option value="$PROJECT_DIR$/src/Algorithm/GeneticAlgorithm/ProduceIndividualsThread.java" />
         <option value="$PROJECT_DIR$/src/Graph/edgeColors.java" />
         <option value="$PROJECT_DIR$/src/GUI/TSPGui.java" />
+        <option value="$PROJECT_DIR$/src/Algorithm/TwoOptAlgo.java" />
         <option value="$PROJECT_DIR$/src/Algorithm/SimulatedAnnealingAlgo.java" />
+        <option value="$PROJECT_DIR$/src/Graph/GraphGenerator.java" />
+        <option value="$PROJECT_DIR$/src/Algorithm/GeneticAlgorithm/ProduceIndividualsThread.java" />
+        <option value="$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java" />
       </list>
     </option>
   </component>
@@ -634,6 +640,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -660,19 +679,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1096,7 +1102,11 @@
       <created>1396663277957</created>
       <updated>1396663277957</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="SA, wrong random edge drawer method was selected">
+      <created>1396663434862</created>
+      <updated>1396663434862</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1111,7 +1121,6 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32845894" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32488114" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41971382" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27344993" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -1123,8 +1132,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17371601" sideWeight="0.49840257" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27344993" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13670695" sideWeight="0.49840257" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27344993" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="642" y="197" width="724" height="513" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1132,6 +1141,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32488114" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3974563" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1151,7 +1161,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="twoOpt, repeating Swapping in progress" />
     <MESSAGE value="twoOpt, edgeswithsourceandtargetnode hashmap becomes irrevent as edges got modified." />
     <MESSAGE value="twoOpt, a cycle becomes made but there is not only one direction in the circle" />
     <MESSAGE value="twoOpt, reverse method is implemented" />
@@ -1176,7 +1185,8 @@
     <MESSAGE value="randomCycleDrawer becomes really random" />
     <MESSAGE value="randomCycleDrawer becomes really random (now indeed)&#10;it's working properly." />
     <MESSAGE value="GA, first generation" />
-    <option name="LAST_COMMIT_MESSAGE" value="GA, first generation" />
+    <MESSAGE value="SA, wrong random edge drawer method was selected" />
+    <option name="LAST_COMMIT_MESSAGE" value="SA, wrong random edge drawer method was selected" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1185,57 +1195,27 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/GUI/TSPGui.java</url>
-          <line>948</line>
+          <line>949</line>
           <properties />
           <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/GUI/TSPGui.java</url>
-          <line>967</line>
+          <line>968</line>
           <properties />
           <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Graph/GraphGenerator.java</url>
-          <line>706</line>
+          <line>83</line>
           <properties />
-          <option name="timeStamp" value="60" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Graph/GraphGenerator.java</url>
-          <line>704</line>
-          <properties />
-          <option name="timeStamp" value="61" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Graph/GraphGenerator.java</url>
-          <line>702</line>
-          <properties />
-          <option name="timeStamp" value="62" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Graph/GraphGenerator.java</url>
-          <line>716</line>
-          <properties />
-          <option name="timeStamp" value="65" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Graph/GraphGenerator.java</url>
-          <line>732</line>
-          <properties />
-          <option name="timeStamp" value="67" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Graph/GraphGenerator.java</url>
-          <line>731</line>
-          <properties />
-          <option name="timeStamp" value="68" />
+          <option name="timeStamp" value="70" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="70" />
+      <option name="time" value="71" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1255,7 +1235,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="5958" max-vertical-offset="11862">
           <caret line="331" column="27" selection-start-line="331" selection-start-column="22" selection-end-line="331" selection-end-column="27" />
-          <folding />
+          <folding>
+            <element signature="e#11622#11657#0" expanded="true" />
+            <element signature="e#11791#11808#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1302,11 +1285,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="19314">
           <caret line="898" column="1" selection-start-line="898" selection-start-column="1" selection-end-line="898" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#30551#30781#0" expanded="true" />
-            <element signature="e#30758#30759#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1322,7 +1301,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3258" max-vertical-offset="11826">
           <caret line="208" column="0" selection-start-line="208" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#11622#11657#0" expanded="true" />
+            <element signature="e#11791#11808#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1535,14 +1517,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithm/NearestNeighbourAlgo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="314" max-vertical-offset="918">
-          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/ColleagueCheckBox.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="684">
@@ -1559,14 +1533,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithm/GeneticAlgorithm/ProduceIndividualsThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="84" max-vertical-offset="756">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Graph/edgeColors.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
@@ -1575,10 +1541,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithm/Algorithm.java">
+    <entry file="file://$PROJECT_DIR$/src/GUI/TSPGui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="466" max-vertical-offset="1044">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="17341" max-vertical-offset="20160">
+          <caret line="993" column="0" selection-start-line="993" selection-start-column="0" selection-end-line="993" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/NearestNeighbourAlgo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="314" max-vertical-offset="918">
+          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -1591,50 +1565,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithm/TwoOptAlgo.java">
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/Algorithm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="81" max-vertical-offset="684">
-          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="466" max-vertical-offset="1044">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java">
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/TwoOptAlgo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="1062">
-          <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
-          <folding>
-            <element signature="e#937#972#0" expanded="true" />
-            <element signature="e#1521#1556#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/TSPGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.9259257" vertical-offset="1757" max-vertical-offset="20412">
-          <caret line="105" column="48" selection-start-line="105" selection-start-column="48" selection-end-line="105" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#30551#30781#0" expanded="true" />
-            <element signature="e#30758#30759#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Graph/GraphGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="11389" max-vertical-offset="13428">
-          <caret line="653" column="0" selection-start-line="653" selection-start-column="0" selection-end-line="653" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="50" max-vertical-offset="684">
+          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="83" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Algorithm/SimulatedAnnealingAlgo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5588235" vertical-offset="222" max-vertical-offset="684">
-          <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="50" max-vertical-offset="684">
+          <caret line="27" column="83" selection-start-line="27" selection-start-column="83" selection-end-line="27" selection-end-column="83" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graph/GraphGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.333333" vertical-offset="13590" max-vertical-offset="14148">
+          <caret line="792" column="24" selection-start-line="792" selection-start-column="24" selection-end-line="792" selection-end-column="24" />
+          <folding>
+            <element signature="e#11622#11657#0" expanded="true" />
+            <element signature="e#11791#11808#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/GeneticAlgorithm/ProduceIndividualsThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="e#495#496#0" expanded="true" />
+            <element signature="e#541#542#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46031746" vertical-offset="477" max-vertical-offset="1260">
+          <caret line="47" column="39" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
+          <folding>
+            <element signature="e#943#978#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

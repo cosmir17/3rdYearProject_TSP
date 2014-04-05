@@ -1,34 +1,27 @@
 package Algorithm.GeneticAlgorithm;
 
-import Graph.EdgeLayers;
 import Graph.GraphGenerator;
-import Graph.edgeColors;
-import com.mxgraph.view.mxGraph;
+
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Created by lloydp on 04/04/14.
  */
 public class ProduceIndividualsThread extends Thread {
     public GraphGenerator graphObject;
-    public mxGraph graph;
-    public Object graphNodeArray[];
-    public Object parent;
+    public ConcurrentHashMap<Integer, Integer> edgelist;
     public double totalDistance = 0;
-    public edgeColors color;
-    public EdgeLayers layer;
+
 
     public ProduceIndividualsThread(GraphGenerator graphObject) {
         this.graphObject = graphObject;
-        this.graph = graphObject.graph;
-        this.graphNodeArray = graphObject.graphNodeArray;
-        this.parent = graph.getDefaultParent();
-        this.color = graphObject.color;
-        this.layer = graphObject.layer;
-
     }
 
     public void run() {
-        graphObject.randomCycleDrawer2();
+
+        edgelist = graphObject.randomCycleEdgeListGenerator();
+        totalDistance = graphObject.gettingTotalDistanceFromTableAbstract(edgelist);
+
 
     }
 

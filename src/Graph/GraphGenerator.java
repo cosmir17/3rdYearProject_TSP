@@ -24,6 +24,7 @@ public class GraphGenerator extends Object implements Cloneable {
     public EdgeLayers layer;
     String colorString = "";
     public HashMap<String, Integer> graphNodeArrayToIDtable;
+    public HashMap<Integer, HashMap<Integer, Double>> theWholedisTable;
 
     private mxCell root;
     private mxICell NearestLayer;
@@ -78,6 +79,9 @@ public class GraphGenerator extends Object implements Cloneable {
                 graphNodeArrayToIDtable.put(node.getId(), i);
 
             }
+
+
+            theWholedisTable = theWholeDistanceTableCreator();
             //graphNodeArrayToIDtable converts id => graphNodeArray index.
 
 
@@ -331,7 +335,28 @@ public class GraphGenerator extends Object implements Cloneable {
 
         TreeMap<Double, Integer> sortedDistanceTable = new TreeMap<Double, Integer>();
         sortedDistanceTable.putAll(distanceTable);
+
         return sortedDistanceTable;
+    }
+
+    public HashMap<Integer, HashMap<Integer, Double>> theWholeDistanceTableCreator() {
+
+        // <distance, node>
+        HashMap<Integer, HashMap<Integer, Double>> theWholeDistanceTable = new HashMap<Integer, HashMap<Integer, Double>>();
+
+        for (int i = 0; i < graphNodeArray.length; i++) {
+            HashMap<Integer, Double> distanceTableForOneNode = new HashMap<Integer, Double>();
+            for (int j = 0; j < graphNodeArray.length; j++) {
+                mxCell jthNode = (mxCell) graphNodeArray[j];
+                if ((!(j == i)) && jthNode.getEdgeCount() < 1)
+                    distanceTableForOneNode.put(j, this.distanceFinder(i, j));
+            }
+            theWholeDistanceTable.put(i, distanceTableForOneNode);
+
+        }
+
+        return theWholeDistanceTable;
+
     }
 
     public int edgeDrawerfromItoNextClosestNode(int i) {
@@ -678,7 +703,7 @@ public class GraphGenerator extends Object implements Cloneable {
         return i--;
     }
 
-    public void randomCycleDrawer2() {
+    public ConcurrentHashMap<Integer, Integer> randomCycleEdgeListGenerator() {
         ConcurrentHashMap<Integer, Integer> edgelist = new ConcurrentHashMap<Integer, Integer>();
 
         boolean firstLoop = true;
@@ -737,19 +762,34 @@ public class GraphGenerator extends Object implements Cloneable {
             // System.out.println("loop : " + edgelist);
 
         }
+
+        return edgelist;
+
+    }
+
+    public void randomCycleDrawer2(ConcurrentHashMap<Integer, Integer> edgelist) {
+
+
         for (int draw : edgelist.keySet()) {
             edgeDrawerFromNodeItoJ(draw, edgelist.get(draw));
         }
 
-
     }
 
-    public String pathListPrinter() {
-        HashMap<Integer, Integer> edgeListwithST = sourceAndTargetNodeListWithEdges();
+    public double gettingDistanceFromDistanceTableAbstract(int i, int j) {
 
-        return edgeListwithST.toString();
+        HashMap<Integer, Double> distanceTableForOneNode = theWholedisTable.get(i);
+        double distance = distanceTableForOneNode.get(j);
 
+        return distance;
     }
 
+    public double gettingTotalDistanceFromTableAbstract(ConcurrentHashMap<Integer, Integer> edgelistPara) {
+        double distance = 0;
+        for (int nodes : edgelistPara.keySet()) {
+            distance += gettingDistanceFromDistanceTableAbstract(nodes, edgelistPara.get(nodes));
 
+        }
+        return distance;
+    }
 }
