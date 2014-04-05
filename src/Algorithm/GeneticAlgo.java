@@ -1,9 +1,11 @@
 package Algorithm;
 
+import Algorithm.GeneticAlgorithm.PathDrawerIfSubgraphExist;
 import Algorithm.GeneticAlgorithm.ProduceIndividualsThread;
 import Graph.GraphGenerator;
 import Graph.edgeColors;
 
+import java.util.ArrayList;
 import java.util.Random;
 import java.util.TreeMap;
 import java.util.Vector;
@@ -72,23 +74,43 @@ public class GeneticAlgo extends Algorithm implements Runnable {
 
         }
 
-        mixedIndi = removingRepeatPartsANDrandomisingArrangement(mixedIndi);
+        removingRepeatPartsANDrandomisingArrangement(mixedIndi);
+
+        alwaysPairofArrows(mixedIndi);
 
         pathConnectorIfitssaperated(mixedIndi);
+
 
         return mixedIndi;
 
     }
 
-    public static void pathConnectorIfitssaperated(ConcurrentHashMap<Integer, Integer> edgelist) {
+    private static void alwaysPairofArrows(ConcurrentHashMap<Integer, Integer> edgelist) {
+        int difference = 0;
 
-        for (int oneByone : edgelist.keySet()) {
-            edgelist.get(oneByone);
+        for (int oneByOne : edgelist.keySet()) {
+
+            difference += oneByOne - edgelist.get(oneByOne);
         }
 
+        if (difference != 0) {
+            System.out.println("it's a problem");
+        }
     }
 
-    public ConcurrentHashMap<Integer, Integer> removingRepeatPartsANDrandomisingArrangement(ConcurrentHashMap<Integer, Integer> edgeliNotaPath) {
+    public static void pathConnectorIfitssaperated(ConcurrentHashMap<Integer, Integer> edgelist) {
+
+        PathDrawerIfSubgraphExist pathChecker = new PathDrawerIfSubgraphExist(edgelist, edgelist.size() - 1);
+        ArrayList<Integer> pathList = pathChecker.getPathList();
+        if (pathChecker.isItaCompletePath()) {
+            System.out.println("it is a complete path");
+        } else {
+            System.out.println("it is not a complete path");
+        }
+    }
+
+
+    public static void removingRepeatPartsANDrandomisingArrangement(ConcurrentHashMap<Integer, Integer> edgeliNotaPath) {
 
         boolean[] isValueExist = new boolean[edgeliNotaPath.size()];
 
@@ -121,7 +143,6 @@ public class GeneticAlgo extends Algorithm implements Runnable {
         edgeListModifierToMakePath(edgeliNotaPath, nonExistiveValueList);
 
 
-        return edgeliNotaPath;
     }
 
     public static void edgeListModifierToMakePath(ConcurrentHashMap<Integer, Integer> edgeliNotaPath, Vector<Integer> nonExistiveValueList) {
