@@ -14,6 +14,7 @@ import java.awt.*;
 import java.io.IOException;
 import java.text.DecimalFormat;
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class GraphGenerator extends Object implements Cloneable {
     public static mxGraph graph = new mxGraph();
@@ -29,8 +30,6 @@ public class GraphGenerator extends Object implements Cloneable {
     private mxICell InsertionLayer;
     private mxGraphModel model;
 
-
-    Object[] graphNodeArray2;
 
     public Object clone() throws CloneNotSupportedException {
         return super.clone();
@@ -214,49 +213,17 @@ public class GraphGenerator extends Object implements Cloneable {
 
     }
 
-    public void shuffle() //this shuffling is copied from wikipedia
+    public static void shuffle(int[] array) //copied from wikipedia
     {
-
-        graphNodeArray2 = graphNodeArray;
         Random rng = new Random();   // i.e., java.util.Random.
-        int n = graphNodeArray2.length;        // The number of items left to shuffle (loop invariant).
+        int n = array.length;        // The number of items left to shuffle (loop invariant).
         while (n > 1) {
             int k = rng.nextInt(n);  // 0 <= k < n.
             n--;                     // n is now the last pertinent index;
-            Object temp = graphNodeArray2[n];     // swap array[n] with array[k] (does nothing if k == n).
-            graphNodeArray2[n] = graphNodeArray2[k];
-            graphNodeArray2[k] = temp;
+            int temp = array[n];     // swap array[n] with array[k] (does nothing if k == n).
+            array[n] = array[k];
+            array[k] = temp;
         }
-    }
-
-    public double RandomEdgeDrawerFromNodeItoJ(int i, int j) {
-
-        //  System.out.println(color);
-
-
-        try {
-            colorString = color.getCode();
-            graph.getModel().beginUpdate();
-        } catch (IndexOutOfBoundsException e) {
-        }
-
-        try {
-            graph.insertEdge(parent, null, distanceFinder(i, j), graphNodeArray2[i], graphNodeArray2[j],
-                    "strokeColor=" + colorString + ";fontColor=" + colorString + "");
-
-            // System.out.println(color);
-            return distanceFinder(i, j);
-        } catch (NullPointerException e) {
-        } catch (IndexOutOfBoundsException e) {
-        } finally {
-
-            try {
-                graph.getModel().endUpdate();
-            } catch (IndexOutOfBoundsException e) {
-            }
-        }
-        return distanceFinder(i, j);
-
     }
 
 
@@ -268,14 +235,13 @@ public class GraphGenerator extends Object implements Cloneable {
             mxICell jthNode = (mxICell) graphNodeArray[j];
 
 
-
-        // System.out.println(ithNode.getValue());
-        // System.out.println(jthNode.getValue());
+            // System.out.println(ithNode.getValue());
+            // System.out.println(jthNode.getValue());
 
             double horizontalDistance = (ithNode.getGeometry().getX() - jthNode.getGeometry().getX());
             double verticalDistance = (ithNode.getGeometry().getY() - jthNode.getGeometry().getY());
 
-        double distance = Math.sqrt((horizontalDistance * horizontalDistance) + (verticalDistance * verticalDistance));
+            double distance = Math.sqrt((horizontalDistance * horizontalDistance) + (verticalDistance * verticalDistance));
             // System.out.println(Math.round(distance));
 
 
@@ -686,7 +652,15 @@ public class GraphGenerator extends Object implements Cloneable {
 
     public void randomCycleDrawer() {
 
-        shuffle();
+        int[] nodeArray = new int[graphNodeArray.length];
+        for (int i = 0; i < graphNodeArray.length; i++) {
+            mxCell nodeI = (mxCell) graphNodeArray[i];
+            int targetNodeID = Integer.parseInt(nodeI.getTarget().getId().toString());
+            nodeArray[i] = graphNodeArrayToIDtable.get(targetNodeID);
+
+        }
+        shuffle(nodeArray);
+
         int lastNode = randomDrawerIterator(graphNodeArray.length - 1);
         edgeDrawerFromNodeItoJ(lastNode, 0);
 
@@ -702,6 +676,72 @@ public class GraphGenerator extends Object implements Cloneable {
         }
         edgeDrawerFromNodeItoJ(randomDrawerIterator(i - 1), i);
         return i--;
+    }
+
+    public void randomCycleDrawer2() {
+        ConcurrentHashMap<Integer, Integer> edgelist = new ConcurrentHashMap<Integer, Integer>();
+
+        boolean firstLoop = true;
+        Random source = new Random();
+        int sourceNode = source.nextInt((graphNodeArray.length) - 0);
+
+        while (firstLoop) {
+
+            Random target = new Random();
+
+            int targetNode = target.nextInt((graphNodeArray.length) - 0);
+
+            if (sourceNode != targetNode) {
+                edgelist.put(sourceNode, targetNode);
+                firstLoop = false;
+            }
+
+        }
+        boolean secondLoop = true;
+        while (secondLoop) {
+
+            for (int nodeSearching : edgelist.keySet()) {
+
+                int target = edgelist.get(nodeSearching);
+
+                if (!edgelist.containsKey(target))
+                //if a target node doesn't exist in the source node list, =>#
+                // 2 is not in the key !!! the last coloum doesn't exist
+                {
+
+
+                    for (int targetNode = 0; targetNode < graphNodeArray.length; targetNode++) {
+
+
+                        if (target != targetNode && !edgelist.containsValue(targetNode) && targetNode != sourceNode) {
+                            edgelist.put(target, targetNode);
+                            //put (2 , 1)
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+            if (edgelist.size() == graphNodeArray.length - 1) {
+                for (int nodeSearching2 : edgelist.keySet()) {
+                    int target4 = edgelist.get(nodeSearching2);
+                    if (!edgelist.containsKey(target4)) {
+                        edgelist.put(target4, sourceNode);
+                        secondLoop = false;
+                    }
+                }
+            }
+            // System.out.println("loop : " + edgelist);
+
+        }
+        for (int draw : edgelist.keySet()) {
+            edgeDrawerFromNodeItoJ(draw, edgelist.get(draw));
+        }
+
+
     }
 
 

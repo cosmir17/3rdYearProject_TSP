@@ -22,8 +22,8 @@ public class TwoOptAlgo extends Algorithm {
     @Override
     protected void drawer() {
 
-        graphObject.randomCycleDrawer();
-        graphObject.repeatSwapping();
+        graphObject.randomCycleDrawer2();
+        // graphObject.repeatSwapping();
     }
 
 
