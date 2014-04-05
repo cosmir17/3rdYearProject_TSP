@@ -217,19 +217,6 @@ public class GraphGenerator extends Object implements Cloneable {
 
     }
 
-    public static void shuffle(int[] array) //copied from wikipedia
-    {
-        Random rng = new Random();   // i.e., java.util.Random.
-        int n = array.length;        // The number of items left to shuffle (loop invariant).
-        while (n > 1) {
-            int k = rng.nextInt(n);  // 0 <= k < n.
-            n--;                     // n is now the last pertinent index;
-            int temp = array[n];     // swap array[n] with array[k] (does nothing if k == n).
-            array[n] = array[k];
-            array[k] = temp;
-        }
-    }
-
 
     public double distanceFinder(int i, int j) {
         try {
@@ -675,33 +662,7 @@ public class GraphGenerator extends Object implements Cloneable {
         }
     }
 
-    public void randomCycleDrawer() {
 
-        int[] nodeArray = new int[graphNodeArray.length];
-        for (int i = 0; i < graphNodeArray.length; i++) {
-            mxCell nodeI = (mxCell) graphNodeArray[i];
-            int targetNodeID = Integer.parseInt(nodeI.getTarget().getId().toString());
-            nodeArray[i] = graphNodeArrayToIDtable.get(targetNodeID);
-
-        }
-        shuffle(nodeArray);
-
-        int lastNode = randomDrawerIterator(graphNodeArray.length - 1);
-        edgeDrawerFromNodeItoJ(lastNode, 0);
-
-
-    }
-
-
-    public int randomDrawerIterator(int i) {
-
-        if (i == 0) {
-            int next = 0;
-            return next;
-        }
-        edgeDrawerFromNodeItoJ(randomDrawerIterator(i - 1), i);
-        return i--;
-    }
 
     public ConcurrentHashMap<Integer, Integer> randomCycleEdgeListGenerator() {
         ConcurrentHashMap<Integer, Integer> edgelist = new ConcurrentHashMap<Integer, Integer>();
