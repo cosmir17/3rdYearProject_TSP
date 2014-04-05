@@ -728,7 +728,7 @@ public class GraphGenerator extends Object implements Cloneable {
 
     }
 
-    public void randomCycleDrawer2(ConcurrentHashMap<Integer, Integer> edgelist) {
+    public void drawFromEdgeList(ConcurrentHashMap<Integer, Integer> edgelist) {
 
 
         for (int draw : edgelist.keySet()) {

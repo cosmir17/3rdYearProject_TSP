@@ -4,6 +4,7 @@ import Algorithm.GeneticAlgorithm.ProduceIndividualsThread;
 import Graph.GraphGenerator;
 import Graph.edgeColors;
 
+import java.util.Random;
 import java.util.TreeMap;
 import java.util.Vector;
 import java.util.concurrent.ConcurrentHashMap;
@@ -35,6 +36,7 @@ public class GeneticAlgo extends Algorithm implements Runnable {
         Vector<ConcurrentHashMap<Integer, Integer>> selectedFourIndis = selectFourIndividuals(firstGeneration);
 
         ConcurrentHashMap<Integer, Integer> off = crossOver(selectedFourIndis.get(0), selectedFourIndis.get(1));
+        graphObject.drawFromEdgeList(off);
 
     }
 
@@ -72,7 +74,17 @@ public class GeneticAlgo extends Algorithm implements Runnable {
 
         mixedIndi = removingRepeatPartsANDrandomisingArrangement(mixedIndi);
 
+        pathConnectorIfitssaperated(mixedIndi);
+
         return mixedIndi;
+
+    }
+
+    public static void pathConnectorIfitssaperated(ConcurrentHashMap<Integer, Integer> edgelist) {
+
+        for (int oneByone : edgelist.keySet()) {
+            edgelist.get(oneByone);
+        }
 
     }
 
@@ -102,13 +114,78 @@ public class GeneticAlgo extends Algorithm implements Runnable {
             }
         }
 
-
         //shuffling nonExistiveValueList means randoming path.
+        vectorShuffler(nonExistiveValueList);
+
+
+        edgeListModifierToMakePath(edgeliNotaPath, nonExistiveValueList);
 
 
         return edgeliNotaPath;
     }
 
+    public static void edgeListModifierToMakePath(ConcurrentHashMap<Integer, Integer> edgeliNotaPath, Vector<Integer> nonExistiveValueList) {
+        for (int oneByOne : edgeliNotaPath.keySet()) {
+            if (edgeliNotaPath.get(oneByOne) == -1) { // if a key is found with a value with -1
+                if (oneByOne != nonExistiveValueList.get(0)) {
+                    try {
+                        edgeliNotaPath.put(oneByOne, nonExistiveValueList.get(0));
+
+                        nonExistiveValueList.remove(0);
+                    } catch (NullPointerException e) {
+                    }
+                } else {
+
+
+                    boolean notTheSameValue = true;
+                    while (notTheSameValue) {
+                        Random randomN = new Random();
+                        int rNumber = randomN.nextInt(edgeliNotaPath.size());
+
+
+                        if (oneByOne != rNumber) {
+                            int temp = edgeliNotaPath.get(rNumber);
+                            //int temp2 = edgeliNotaPath.get(oneByOne);
+
+                            edgeliNotaPath.put(rNumber, oneByOne);
+                            edgeliNotaPath.put(oneByOne, temp);
+                            notTheSameValue = false;
+                        }
+
+
+                    }
+                }
+            }
+        }
+    }
+
+    public static void vectorShuffler(Vector<Integer> valueList) {
+
+        if (valueList.size() != 1 && valueList.size() != 0) {
+            int swap = 0;
+            boolean isSwapEnough = true;
+
+            while (isSwapEnough) {
+                Random randomN = new Random();
+                int rNumber = randomN.nextInt(valueList.size());
+
+                Random randomN2 = new Random();
+                int rNumber2 = randomN2.nextInt(valueList.size());
+
+
+                int temp = valueList.get(rNumber);
+                int temp2 = valueList.get(rNumber2);
+
+                valueList.set(rNumber, temp2);
+                valueList.set(rNumber2, temp);
+                swap++;
+                if (swap >= (int) (valueList.size() / 2)) {
+                    isSwapEnough = false;
+                }
+            }
+        }
+
+    }
 
     public Vector<ConcurrentHashMap<Integer, Integer>> selectFourIndividuals(TreeMap<Double, ConcurrentHashMap<Integer, Integer>> firstGeneration) {
 

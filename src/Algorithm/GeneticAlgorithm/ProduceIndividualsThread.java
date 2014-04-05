@@ -20,6 +20,9 @@ public class ProduceIndividualsThread extends Thread {
     public void run() {
 
         edgelist = graphObject.randomCycleEdgeListGenerator();
+
+        // graphObject.drawFromEdgeList(edgelist);
+
         totalDistance = graphObject.gettingTotalDistanceFromTableAbstract(edgelist);
 
 

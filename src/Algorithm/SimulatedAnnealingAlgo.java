@@ -25,7 +25,7 @@ public class SimulatedAnnealingAlgo extends Algorithm {
     @Override
     protected void drawer() {
 
-        graphObject.randomCycleDrawer2(graphObject.randomCycleEdgeListGenerator());
+        graphObject.drawFromEdgeList(graphObject.randomCycleEdgeListGenerator());
         graphObject.sA(INITIAL_T, SCHEDULE, HALT);
 
 
