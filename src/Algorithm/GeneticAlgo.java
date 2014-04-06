@@ -5,7 +5,6 @@ import Algorithm.GeneticAlgorithm.ProduceIndividualsThread;
 import Graph.GraphGenerator;
 import Graph.edgeColors;
 
-import java.util.ArrayList;
 import java.util.Random;
 import java.util.TreeMap;
 import java.util.Vector;
@@ -101,11 +100,14 @@ public class GeneticAlgo extends Algorithm implements Runnable {
     public static void pathConnectorIfitssaperated(ConcurrentHashMap<Integer, Integer> edgelist) {
 
         PathDrawerIfSubgraphExist pathChecker = new PathDrawerIfSubgraphExist(edgelist, edgelist.size() - 1);
-        ArrayList<Integer> pathList = pathChecker.getPathList();
-        if (pathChecker.isItaCompletePath()) {
-            System.out.println("it is a complete path");
-        } else {
-            System.out.println("it is not a complete path");
+
+        if (!pathChecker.isItaCompletePath()) {
+            edgelist = pathChecker.pathDrawer();
+        }
+
+        PathDrawerIfSubgraphExist pathChecker2 = new PathDrawerIfSubgraphExist(edgelist, edgelist.size() - 1);
+        if (!pathChecker2.isItaCompletePath()) {
+            System.out.println("it's not working properly?");
         }
     }
 
