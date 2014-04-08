@@ -110,6 +110,8 @@ public class GeneticAlgo extends Algorithm implements Runnable {
 
         System.out.println("There are " + pathChecker.getHowmanyCycles() + " cycles");
 
+        edgelist = pathChecker.getEdgelist();
+
 
     }
 
