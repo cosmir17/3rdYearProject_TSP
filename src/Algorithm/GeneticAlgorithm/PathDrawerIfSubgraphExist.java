@@ -1,44 +1,91 @@
 package Algorithm.GeneticAlgorithm;
 
 import java.util.ArrayList;
-import java.util.concurrent.ConcurrentHashMap;
+import java.util.Random;
+import java.util.TreeMap;
 
 /**
  * Created by lloydp on 05/04/14.
  */
 public class PathDrawerIfSubgraphExist {
 
-    private ConcurrentHashMap<Integer, Integer> edgelist;
+    private TreeMap<Integer, Integer> edgelist;
     int number;
     int number2;
     private ArrayList<Integer> pathList;
     private ArrayList<Integer> otherPathList;
     private boolean[] numberArray;
+    private ArrayList<Integer> nodelistChecked;
+    private int howmanyCycles = 0;
 
-    public PathDrawerIfSubgraphExist(ConcurrentHashMap<Integer, Integer> edgelist, int number) {
+
+    public PathDrawerIfSubgraphExist(TreeMap<Integer, Integer> edgelist) {
         this.edgelist = edgelist;
-        this.number = number;
+        this.number = edgelist.size() - 1;
         pathList = new ArrayList<Integer>();
         otherPathList = new ArrayList<Integer>();
         numberArray = new boolean[edgelist.size()];
+        nodelistChecked = new ArrayList<Integer>();
 
+        edgelistDuplicator();
         runner();
     }
 
+    private void edgelistDuplicator() {
+        for (int i = 0; i < edgelist.size(); i++) {
+            nodelistChecked.add(i, -1);
+        }
+
+    }
+
+    public int getHowmanyCycles() {
+        return howmanyCycles;
+    }
 
 
     public void runner() {
+        findHowmanyCyclesAndNodeListProducer();
+        routeConnector();
+    }
+
+    private void routeConnector() {
+
+        boolean ifAllarenotSame = false;
+        while (!ifAllarenotSame) {
+
+
+            for (int i = 0; i < nodelistChecked.size(); i++) {
+                if (nodelistChecked.get(0) != i) {
+                    ifAllarenotSame = true;
+                }
+            }
+
+        }
+
+    }
+
+    private void findHowmanyCyclesAndNodeListProducer() {
         try {
-            pathChecker(edgelist.size() - 1);
-            if (!isItaCompletePath()) {
-                otherPathFinder(findaNodeDoesnotBelongtoThePath());
+            while (nodelistChecked.contains(false)) {
+                Random randomN = new Random();
+                int rNumber = randomN.nextInt(edgelist.size() - 1);
+
+                if (nodelistChecked.get(rNumber) == -1) {
+                    pathChecker(rNumber);
+                }
             }
         } catch (NullPointerException e) {
         } catch (StackOverflowError e) {
             System.out.println("stackOverFlow");
         }
-
     }
+
+
+    /*
+      if (!isItaCompletePath()) {
+                    otherPathFinder(findaNodeDoesnotBelongtoThePath());
+                }
+     */
 
     public ArrayList<Integer> getPathList() {
         return pathList;
@@ -57,11 +104,14 @@ public class PathDrawerIfSubgraphExist {
         if (number == a && pathList.size() > 0) {
             // System.out.println(howManyRecusion);
             // System.out.println(a);
+            nodelistChecked.set(a, howmanyCycles);
+            howmanyCycles++;
             return a;
+
 
         }
 
-
+        nodelistChecked.set(a, howmanyCycles);
         int b = edgelist.get(a);
         pathList.add(a);
         return pathChecker(b);
@@ -103,7 +153,7 @@ public class PathDrawerIfSubgraphExist {
         return otherPathFinder(d);
     }
 
-    public ConcurrentHashMap<Integer, Integer> pathDrawer() {
+    public TreeMap<Integer, Integer> pathDrawer() {
 
 
         int originalPathNodei = pathList.get(0);

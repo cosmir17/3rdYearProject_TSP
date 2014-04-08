@@ -737,6 +737,15 @@ public class GraphGenerator extends Object implements Cloneable {
 
     }
 
+    public void drawFromEdgeListTreeMap(TreeMap<Integer, Integer> edgelist) {
+
+
+        for (int draw : edgelist.keySet()) {
+            edgeDrawerFromNodeItoJ(draw, edgelist.get(draw));
+        }
+
+    }
+
     public double gettingDistanceFromDistanceTableAbstract(int i, int j) {
 
         HashMap<Integer, Double> distanceTableForOneNode = theWholedisTable.get(i);
