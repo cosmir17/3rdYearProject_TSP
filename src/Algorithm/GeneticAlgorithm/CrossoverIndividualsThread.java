@@ -5,6 +5,7 @@ import Graph.GraphGenerator;
 import java.util.Random;
 import java.util.TreeMap;
 import java.util.Vector;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Created by lloydp on 04/04/14.
@@ -12,7 +13,7 @@ import java.util.Vector;
 public class CrossoverIndividualsThread extends Thread {
     TreeMap<Integer, Integer> firstIndi;
     TreeMap<Integer, Integer> secondIndi;
-    public TreeMap<Integer, Integer> edgelist;
+    public ConcurrentHashMap<Integer, Integer> edgelist;
     public double totalDistance = 0;
     public GraphGenerator graphObject;
 
@@ -25,7 +26,9 @@ public class CrossoverIndividualsThread extends Thread {
 
     public void run() {
 
-        edgelist = crossOver(firstIndi, secondIndi);
+        edgelist =
+
+                TreeMap < Integer, Integer > edgelistTree = crossOver(firstIndi, secondIndi);
 
         // graphObject.drawFromEdgeList(edgelist);
 

@@ -32,21 +32,21 @@ public class GeneticAlgo extends Algorithm implements Runnable {
     protected void drawer() {
 
 
-        TreeMap<Double, TreeMap<Integer, Integer>> firstGeneration = produceAhundredIndividuals();
+        TreeMap<Double, ConcurrentHashMap<Integer, Integer>> firstGeneration = produceAhundredIndividuals();
         Vector<TreeMap<Integer, Integer>> selectedFourIndis = selectFourIndividuals(firstGeneration);
 
-        TreeMap<Double, TreeMap<Integer, Integer>> crossoveredGeneration = CrossoverIndividualsThreadRunner(selectedFourIndis);
+        TreeMap<Double, ConcurrentHashMap<Integer, Integer>> crossoveredGeneration = CrossoverIndividualsThreadRunner(selectedFourIndis);
         Vector<TreeMap<Integer, Integer>> selectedFourIndis2 = selectFourIndividuals(crossoveredGeneration);
 
         // graphObject.drawFromEdgeListTreeMap(off);
 
     }
 
-    private TreeMap<Double, TreeMap<Integer, Integer>> CrossoverIndividualsThreadRunner(Vector<TreeMap<Integer, Integer>> selectedFourIndis) {
+    private TreeMap<Double, ConcurrentHashMap<Integer, Integer>> CrossoverIndividualsThreadRunner(Vector<TreeMap<Integer, Integer>> selectedFourIndis) {
 
 
         Vector<CrossoverIndividualsThread> threadVector = new Vector<CrossoverIndividualsThread>();
-        ConcurrentHashMap<Double, TreeMap<Integer, Integer>> distanceList = new ConcurrentHashMap<Double, TreeMap<Integer, Integer>>();
+        TreeMap<Double, ConcurrentHashMap<Integer, Integer>> distanceList = new TreeMap<Double, ConcurrentHashMap<Integer, Integer>>();
         int arrayNumber = 0;
         for (int i = 0; i < selectedFourIndis.size(); i++) {
             for (int j = 0; j < selectedFourIndis.size(); j++) {
@@ -72,7 +72,7 @@ public class GeneticAlgo extends Algorithm implements Runnable {
                 }
         }
 
-        TreeMap<Double, TreeMap<Integer, Integer>> sortedDistanceList = new TreeMap<Double, TreeMap<Integer, Integer>>();
+        TreeMap<Double, ConcurrentHashMap<Integer, Integer>> sortedDistanceList = new TreeMap<Double, ConcurrentHashMap<Integer, Integer>>();
         sortedDistanceList.putAll(distanceList);
 
         for (int i = 0; i < selectedFourIndis.size(); i++) {
@@ -89,10 +89,10 @@ public class GeneticAlgo extends Algorithm implements Runnable {
     }
 
 
-    public Vector<TreeMap<Integer, Integer>> selectFourIndividuals(TreeMap<Double, TreeMap<Integer, Integer>> firstGeneration) {
+    public Vector<TreeMap<Integer, Integer>> selectFourIndividuals(TreeMap<Double, ConcurrentHashMap<Integer, Integer>> firstGeneration) {
 
         int fourTimes = 0;
-        Vector<TreeMap<Integer, Integer>> selectedIndividuals = new Vector<TreeMap<Integer, Integer>>();
+        Vector<ConcurrentHashMap<Integer, Integer>> selectedIndividuals = new Vector<ConcurrentHashMap<Integer, Integer>>();
         for (double path : firstGeneration.keySet()) {
             selectedIndividuals.add(firstGeneration.get(path));
 
@@ -100,14 +100,19 @@ public class GeneticAlgo extends Algorithm implements Runnable {
             if (fourTimes > 3) break;
         }
 
+        Vector<TreeMap<Integer, Integer>> selectedIndividualTree = new Vector<TreeMap<Integer, Integer>>();
+        for (int i = 0; i < selectedIndividuals.size(); i++) {
+            selectedIndividualTree.add(hashmapSort(selectedIndividuals.get(i)));
 
-        return selectedIndividuals;
+        }
+
+        return selectedIndividualTree;
     }
 
-    public TreeMap<Double, TreeMap<Integer, Integer>> produceAhundredIndividuals() {
+    public TreeMap<Double, ConcurrentHashMap<Integer, Integer>> produceAhundredIndividuals() {
 
         ProduceIndividualsThread threadArray[] = new ProduceIndividualsThread[100];
-        TreeMap<Double, TreeMap<Integer, Integer>> distanceList = new TreeMap<Double, TreeMap<Integer, Integer>>();
+        TreeMap<Double, ConcurrentHashMap<Integer, Integer>> distanceList = new TreeMap<Double, ConcurrentHashMap<Integer, Integer>>();
 
         for (int i = 0; i < 100; i++) {
 
@@ -125,7 +130,7 @@ public class GeneticAlgo extends Algorithm implements Runnable {
         }
 
 
-        TreeMap<Double, TreeMap<Integer, Integer>> sortedDistanceList = new TreeMap<Double, TreeMap<Integer, Integer>>();
+        TreeMap<Double, ConcurrentHashMap<Integer, Integer>> sortedDistanceList = new TreeMap<Double, ConcurrentHashMap<Integer, Integer>>();
         sortedDistanceList.putAll(distanceList);
 
 

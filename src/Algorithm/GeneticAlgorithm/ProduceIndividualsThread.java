@@ -2,14 +2,14 @@ package Algorithm.GeneticAlgorithm;
 
 import Graph.GraphGenerator;
 
-import java.util.TreeMap;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Created by lloydp on 04/04/14.
  */
 public class ProduceIndividualsThread extends Thread {
     public GraphGenerator graphObject;
-    public TreeMap<Integer, Integer> edgelist;
+    public ConcurrentHashMap<Integer, Integer> edgelist;
     public double totalDistance = 0;
 
 
@@ -19,7 +19,7 @@ public class ProduceIndividualsThread extends Thread {
 
     public void run() {
 
-        edgelist = graphObject.randomCycleEdgeListGenerator2();
+        edgelist = graphObject.randomCycleEdgeListGenerator();
 
         // graphObject.drawFromEdgeList(edgelist);
 
