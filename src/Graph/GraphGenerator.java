@@ -666,6 +666,70 @@ public class GraphGenerator extends Object implements Cloneable {
 
     public ConcurrentHashMap<Integer, Integer> randomCycleEdgeListGenerator() {
         ConcurrentHashMap<Integer, Integer> edgelist = new ConcurrentHashMap<Integer, Integer>();
+        boolean firstLoop = true;
+        Random source = new Random();
+        int sourceNode = source.nextInt((graphNodeArray.length) - 0);
+
+        while (firstLoop) {
+
+            Random target = new Random();
+
+            int targetNode = target.nextInt((graphNodeArray.length) - 0);
+
+            if (sourceNode != targetNode) {
+                edgelist.put(sourceNode, targetNode);
+                firstLoop = false;
+            }
+
+        }
+        boolean secondLoop = true;
+        while (secondLoop) {
+
+            for (int nodeSearching : edgelist.keySet()) {
+
+                int target = edgelist.get(nodeSearching);
+
+                if (!edgelist.containsKey(target))
+                //if a target node doesn't exist in the source node list, =>#
+                // 2 is not in the key !!! the last coloum doesn't exist
+                {
+
+
+                    for (int targetNode = 0; targetNode < graphNodeArray.length; targetNode++) {
+
+
+                        if (target != targetNode && !edgelist.containsValue(targetNode) && targetNode != sourceNode) {
+                            edgelist.put(target, targetNode);
+                            //put (2 , 1)
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+            if (edgelist.size() == graphNodeArray.length - 1) {
+                for (int nodeSearching2 : edgelist.keySet()) {
+                    int target4 = edgelist.get(nodeSearching2);
+                    if (!edgelist.containsKey(target4)) {
+                        edgelist.put(target4, sourceNode);
+                        secondLoop = false;
+                    }
+                }
+            }
+            // System.out.println("loop : " + edgelist);
+
+        }
+
+        return edgelist;
+
+    }
+
+
+    public TreeMap<Integer, Integer> randomCycleEdgeListGenerator2() {
+        TreeMap<Integer, Integer> edgelist = new TreeMap<Integer, Integer>();
 
         boolean firstLoop = true;
         Random source = new Random();
@@ -755,6 +819,15 @@ public class GraphGenerator extends Object implements Cloneable {
     }
 
     public double gettingTotalDistanceFromTableAbstract(ConcurrentHashMap<Integer, Integer> edgelistPara) {
+        double distance = 0;
+        for (int nodes : edgelistPara.keySet()) {
+            distance += gettingDistanceFromDistanceTableAbstract(nodes, edgelistPara.get(nodes));
+
+        }
+        return distance;
+    }
+
+    public double gettingTotalDistanceFromTableAbstract(TreeMap<Integer, Integer> edgelistPara) {
         double distance = 0;
         for (int nodes : edgelistPara.keySet()) {
             distance += gettingDistanceFromDistanceTableAbstract(nodes, edgelistPara.get(nodes));

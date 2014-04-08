@@ -1,11 +1,10 @@
 package Algorithm;
 
-import Algorithm.GeneticAlgorithm.PathDrawerIfSubgraphExist;
+import Algorithm.GeneticAlgorithm.CrossoverIndividualsThread;
 import Algorithm.GeneticAlgorithm.ProduceIndividualsThread;
 import Graph.GraphGenerator;
 import Graph.edgeColors;
 
-import java.util.Random;
 import java.util.TreeMap;
 import java.util.Vector;
 import java.util.concurrent.ConcurrentHashMap;
@@ -33,215 +32,82 @@ public class GeneticAlgo extends Algorithm implements Runnable {
     protected void drawer() {
 
 
-        TreeMap<Double, ConcurrentHashMap<Integer, Integer>> firstGeneration = produceAhundredIndividuals();
+        TreeMap<Double, TreeMap<Integer, Integer>> firstGeneration = produceAhundredIndividuals();
         Vector<TreeMap<Integer, Integer>> selectedFourIndis = selectFourIndividuals(firstGeneration);
 
-        TreeMap<Integer, Integer> firstIndi = selectedFourIndis.get(0);
-        TreeMap<Integer, Integer> secondIndi = selectedFourIndis.get(1);
+        TreeMap<Double, TreeMap<Integer, Integer>> crossoveredGeneration = CrossoverIndividualsThreadRunner(selectedFourIndis);
+        Vector<TreeMap<Integer, Integer>> selectedFourIndis2 = selectFourIndividuals(crossoveredGeneration);
 
-        TreeMap<Integer, Integer> off = crossOver(firstIndi, secondIndi);
-        graphObject.drawFromEdgeListTreeMap(off);
-
-    }
-
-    public TreeMap<Integer, Integer> crossOver(TreeMap<Integer, Integer> firstIndi, TreeMap<Integer, Integer> secondIndi) {
-
-        int halfSize = 0;
-
-
-        if (firstIndi.size() % 2 == 0) {
-            halfSize = firstIndi.size() / 2;
-        } else {
-            halfSize = (firstIndi.size() - 1) / 2;
-        }
-
-
-        TreeMap<Integer, Integer> mixedIndi = new TreeMap<Integer, Integer>();
-
-        int loop = 0;
-        for (int oneByOne : firstIndi.keySet()) {
-            mixedIndi.put(oneByOne, firstIndi.get(oneByOne));
-
-            loop++;
-            if (loop == halfSize) {
-                break;
-            }
-        }
-
-        int secondLooop = 0;
-        for (int oneByOne : secondIndi.keySet()) {
-            if (secondLooop > halfSize - 1) {
-                mixedIndi.put(oneByOne, secondIndi.get(oneByOne));
-            }
-
-            secondLooop++;
-
-        }
-
-        //TreeMap<Integer, Integer> check = mixedIndi;
-
-        mixedIndi = removingRepeatPartsANDrandomisingArrangement(mixedIndi);
-
-        alwaysPairofArrows(mixedIndi);
-
-        pathConnectorIfitssaperated(mixedIndi);
-
-
-        return mixedIndi;
+        // graphObject.drawFromEdgeListTreeMap(off);
 
     }
 
-    private static void alwaysPairofArrows(TreeMap<Integer, Integer> edgelist) {
-        int difference = 0;
-
-        for (int oneByOne : edgelist.keySet()) {
-
-            difference += oneByOne - edgelist.get(oneByOne);
-        }
-
-        if (difference != 0) {
-            System.out.println("it's a problem");
-        }
-    }
-
-    public static void pathConnectorIfitssaperated(TreeMap<Integer, Integer> edgelist) {
-
-        PathDrawerIfSubgraphExist pathChecker = new PathDrawerIfSubgraphExist(edgelist);
-
-        System.out.println("There are " + pathChecker.getHowmanyCycles() + " cycles");
-
-        edgelist = pathChecker.getEdgelist();
+    private TreeMap<Double, TreeMap<Integer, Integer>> CrossoverIndividualsThreadRunner(Vector<TreeMap<Integer, Integer>> selectedFourIndis) {
 
 
-    }
+        Vector<CrossoverIndividualsThread> threadVector = new Vector<CrossoverIndividualsThread>();
+        ConcurrentHashMap<Double, TreeMap<Integer, Integer>> distanceList = new ConcurrentHashMap<Double, TreeMap<Integer, Integer>>();
+        int arrayNumber = 0;
+        for (int i = 0; i < selectedFourIndis.size(); i++) {
+            for (int j = 0; j < selectedFourIndis.size(); j++) {
+                if (i != j) {
+                    TreeMap<Integer, Integer> first = selectedFourIndis.get(i);
+                    TreeMap<Integer, Integer> second = selectedFourIndis.get(j);
+                    for (int k = 0; k < 24; k++) {
 
+                        threadVector.add(new CrossoverIndividualsThread(first, second, graphObject));
+                        threadVector.get(arrayNumber).start();
 
-    public TreeMap<Integer, Integer> removingRepeatPartsANDrandomisingArrangement(TreeMap<Integer, Integer> edgeliNotaPath) {
-
-        boolean[] isValueExist = new boolean[edgeliNotaPath.size()];
-
-        for (int oneByOne : edgeliNotaPath.keySet()) {
-            int value = edgeliNotaPath.get(oneByOne);
-
-
-            if (!isValueExist[value] == true) {
-                isValueExist[value] = true;
-            } else {
-                edgeliNotaPath.put(oneByOne, -1);
-            }
-        }
-
-
-        //if there are indices with false values they are not used.
-
-        Vector<Integer> nonExistiveValueList = new Vector<Integer>();
-        for (int i = 0; i < isValueExist.length; i++) {
-            if (isValueExist[i] == false) // i is the value should be inserted
-            {
-                nonExistiveValueList.add(i);
-            }
-        }
-
-        //shuffling nonExistiveValueList means randoming path.
-        //vectorShuffler(nonExistiveValueList);
-
-
-        edgeliNotaPath = edgeListModifierToMakePath(edgeliNotaPath, nonExistiveValueList);
-
-        return edgeliNotaPath;
-
-
-    }
-
-    public TreeMap<Integer, Integer> edgeListModifierToMakePath(TreeMap<Integer, Integer> edgeliNotaPath, Vector<Integer> nonExistiveValueList) {
-
-        while (nonExistiveValueList.size() != 0) {
-            for (int oneByOne : edgeliNotaPath.keySet()) {
-                if (edgeliNotaPath.get(oneByOne) == -1) { // if a key is found with a value with -1
-
-                    for (int i = 0; i < nonExistiveValueList.size(); i++) {
-                        if (oneByOne != nonExistiveValueList.get(i)) { //not to make a self loop
 
                             try {
-                                edgeliNotaPath.put(oneByOne, nonExistiveValueList.get(i));
-                                nonExistiveValueList.remove(i); //if there is a value doesn't exist in the edge list then add.
-
-                            } catch (NullPointerException e) {
+                                threadVector.get(arrayNumber).join();
+                                distanceList.put(threadVector.get(arrayNumber).totalDistance, threadVector.get(arrayNumber).edgelist);
+                            } catch (InterruptedException e) {
+                                e.printStackTrace();
                             }
-                        } else {//one node loop case.
-                            int nodeJ = graphObject.getIndexofClosesetNodefromIwithDistance(oneByOne).getValue();
-                            int temp2 = edgeliNotaPath.get(nodeJ); //number chosen to be swapped
 
-                            edgeliNotaPath.put(nodeJ, oneByOne);
-                            edgeliNotaPath.put(oneByOne, temp2);
-                            nonExistiveValueList.remove(i);
+                        arrayNumber++;
                         }
-
                     }
-
-
                 }
-
-
-            }
-
         }
 
-        return edgeliNotaPath;
+        TreeMap<Double, TreeMap<Integer, Integer>> sortedDistanceList = new TreeMap<Double, TreeMap<Integer, Integer>>();
+        sortedDistanceList.putAll(distanceList);
+
+        for (int i = 0; i < selectedFourIndis.size(); i++) {
+            TreeMap<Integer, Integer> edgelistOne = selectedFourIndis.get(i);
+            double dis = graphObject.gettingTotalDistanceFromTableAbstract(edgelistOne);
+
+            sortedDistanceList.put(dis, edgelistOne);
+        }
+
+
+        return sortedDistanceList;
+
 
     }
 
-    public static void vectorShuffler(Vector<Integer> valueList) {
 
-        if (valueList.size() != 1 && valueList.size() != 0) {
-            int swap = 0;
-            boolean isSwapEnough = true;
-
-            while (isSwapEnough) {
-                Random randomN = new Random();
-                int rNumber = randomN.nextInt(valueList.size());
-
-                Random randomN2 = new Random();
-                int rNumber2 = randomN2.nextInt(valueList.size());
-
-
-                int temp = valueList.get(rNumber);
-                int temp2 = valueList.get(rNumber2);
-
-                valueList.set(rNumber, temp2);
-                valueList.set(rNumber2, temp);
-                swap++;
-                if (swap >= (int) (valueList.size() / 2)) {
-                    isSwapEnough = false;
-                }
-            }
-        }
-
-    }
-
-    public Vector<TreeMap<Integer, Integer>> selectFourIndividuals(TreeMap<Double, ConcurrentHashMap<Integer, Integer>> firstGeneration) {
+    public Vector<TreeMap<Integer, Integer>> selectFourIndividuals(TreeMap<Double, TreeMap<Integer, Integer>> firstGeneration) {
 
         int fourTimes = 0;
-        Vector<ConcurrentHashMap<Integer, Integer>> selectedIndividualsHash = new Vector<ConcurrentHashMap<Integer, Integer>>();
+        Vector<TreeMap<Integer, Integer>> selectedIndividuals = new Vector<TreeMap<Integer, Integer>>();
         for (double path : firstGeneration.keySet()) {
-            selectedIndividualsHash.add(firstGeneration.get(path));
+            selectedIndividuals.add(firstGeneration.get(path));
 
             fourTimes++;
             if (fourTimes > 3) break;
         }
 
-        Vector<TreeMap<Integer, Integer>> selectedIndividuals = new Vector<TreeMap<Integer, Integer>>();
-        for (int i = 0; i < selectedIndividualsHash.size(); i++) {
-            selectedIndividuals.add(hashmapSort(selectedIndividualsHash.get(i)));
 
-        }
         return selectedIndividuals;
     }
 
-    public TreeMap<Double, ConcurrentHashMap<Integer, Integer>> produceAhundredIndividuals() {
+    public TreeMap<Double, TreeMap<Integer, Integer>> produceAhundredIndividuals() {
 
         ProduceIndividualsThread threadArray[] = new ProduceIndividualsThread[100];
-        ConcurrentHashMap<Double, ConcurrentHashMap<Integer, Integer>> distanceList = new ConcurrentHashMap<Double, ConcurrentHashMap<Integer, Integer>>();
+        TreeMap<Double, TreeMap<Integer, Integer>> distanceList = new TreeMap<Double, TreeMap<Integer, Integer>>();
 
         for (int i = 0; i < 100; i++) {
 
@@ -259,7 +125,7 @@ public class GeneticAlgo extends Algorithm implements Runnable {
         }
 
 
-        TreeMap<Double, ConcurrentHashMap<Integer, Integer>> sortedDistanceList = new TreeMap<Double, ConcurrentHashMap<Integer, Integer>>();
+        TreeMap<Double, TreeMap<Integer, Integer>> sortedDistanceList = new TreeMap<Double, TreeMap<Integer, Integer>>();
         sortedDistanceList.putAll(distanceList);
 
 
