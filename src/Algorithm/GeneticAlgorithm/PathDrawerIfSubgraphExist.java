@@ -3,16 +3,11 @@ package Algorithm.GeneticAlgorithm;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.TreeMap;
-import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Created by lloydp on 05/04/14.
  */
 public class PathDrawerIfSubgraphExist {
-
-    public TreeMap<Integer, Integer> getEdgelist() {
-        return edgelist;
-    }
 
     private TreeMap<Integer, Integer> edgelist;
     int number;
@@ -21,7 +16,7 @@ public class PathDrawerIfSubgraphExist {
     private ArrayList<Integer> otherPathList;
     private boolean[] numberArray;
     private ArrayList<Integer> nodelistChecked;
-    private int howmanyCycles;
+    private int howmanyCycles = 0;
 
 
     public PathDrawerIfSubgraphExist(TreeMap<Integer, Integer> edgelist) {
@@ -31,12 +26,10 @@ public class PathDrawerIfSubgraphExist {
         otherPathList = new ArrayList<Integer>();
         numberArray = new boolean[edgelist.size()];
         nodelistChecked = new ArrayList<Integer>();
-        howmanyCycles = 0;
 
         edgelistDuplicator();
         runner();
     }
-
 
     private void edgelistDuplicator() {
         for (int i = 0; i < edgelist.size(); i++) {
@@ -52,53 +45,19 @@ public class PathDrawerIfSubgraphExist {
 
     public void runner() {
         findHowmanyCyclesAndNodeListProducer();
-        if (howmanyCycles > 1) {
-            routeConnector();
-        }
+        routeConnector();
     }
 
     private void routeConnector() {
 
-        boolean ifAllarenotSame = true;
-        ConcurrentHashMap<Integer, Integer> tableA = new ConcurrentHashMap<Integer, Integer>();
-
-        for (int i = 0; i < nodelistChecked.size(); i++) {
+        boolean ifAllarenotSame = false;
+        while (!ifAllarenotSame) {
 
 
-            tableA.put(nodelistChecked.get(i), i);
-        }
-
-        while (ifAllarenotSame) {
-
-            for (int i = 0; i < howmanyCycles - 1; i++) {
-                int firstNodeI = tableA.get(i);
-                int firstNodeJ = edgelist.get(firstNodeI);
-
-                int secondNodeI = tableA.get(i + 1);
-                int secondNodeJ = edgelist.get(secondNodeI);
-
-
-                edgelist.put(firstNodeI, secondNodeJ);
-                edgelist.put(secondNodeI, firstNodeJ);
-
-                for (int j = 0; j < nodelistChecked.size(); j++) {
-                    if (nodelistChecked.get(j) == i + 1) {
-                        nodelistChecked.set(j, i);
-                    }
-                }
-            }
-
-
-            int intheSameCycle = 0;
             for (int i = 0; i < nodelistChecked.size(); i++) {
-
-                if (nodelistChecked.get(0) == nodelistChecked.get(i)) {
-                    intheSameCycle++;
+                if (nodelistChecked.get(0) != i) {
+                    ifAllarenotSame = true;
                 }
-                if (intheSameCycle == nodelistChecked.size()) {
-                    ifAllarenotSame = false;
-                }
-
             }
 
         }
@@ -107,7 +66,7 @@ public class PathDrawerIfSubgraphExist {
 
     private void findHowmanyCyclesAndNodeListProducer() {
         try {
-            while (nodelistChecked.contains(-1)) {
+            while (nodelistChecked.contains(false)) {
                 Random randomN = new Random();
                 int rNumber = randomN.nextInt(edgelist.size() - 1);
 
@@ -142,7 +101,7 @@ public class PathDrawerIfSubgraphExist {
 
     public int pathChecker(int a) {
 
-        if (nodelistChecked.get(a) > -1) {
+        if (number == a && pathList.size() > 0) {
             // System.out.println(howManyRecusion);
             // System.out.println(a);
             nodelistChecked.set(a, howmanyCycles);
@@ -154,6 +113,7 @@ public class PathDrawerIfSubgraphExist {
 
         nodelistChecked.set(a, howmanyCycles);
         int b = edgelist.get(a);
+        pathList.add(a);
         return pathChecker(b);
     }
 

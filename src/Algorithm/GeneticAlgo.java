@@ -58,6 +58,77 @@ public class GeneticAlgo extends Algorithm implements Runnable {
                         threadVector.add(new CrossoverIndividualsThread(first, second, graphObject));
                         threadVector.get(arrayNumber).start();
 
+<<<<<<< HEAD
+=======
+    private static void alwaysPairofArrows(TreeMap<Integer, Integer> edgelist) {
+        int difference = 0;
+
+        for (int oneByOne : edgelist.keySet()) {
+
+            difference += oneByOne - edgelist.get(oneByOne);
+        }
+
+        if (difference != 0) {
+            System.out.println("it's a problem");
+        }
+    }
+
+    public static void pathConnectorIfitssaperated(TreeMap<Integer, Integer> edgelist) {
+
+        PathDrawerIfSubgraphExist pathChecker = new PathDrawerIfSubgraphExist(edgelist);
+
+        System.out.println("There are " + pathChecker.getHowmanyCycles() + " cycles");
+
+
+    }
+
+
+    public TreeMap<Integer, Integer> removingRepeatPartsANDrandomisingArrangement(TreeMap<Integer, Integer> edgeliNotaPath) {
+
+        boolean[] isValueExist = new boolean[edgeliNotaPath.size()];
+
+        for (int oneByOne : edgeliNotaPath.keySet()) {
+            int value = edgeliNotaPath.get(oneByOne);
+
+
+            if (!isValueExist[value] == true) {
+                isValueExist[value] = true;
+            } else {
+                edgeliNotaPath.put(oneByOne, -1);
+            }
+        }
+
+
+        //if there are indices with false values they are not used.
+
+        Vector<Integer> nonExistiveValueList = new Vector<Integer>();
+        for (int i = 0; i < isValueExist.length; i++) {
+            if (isValueExist[i] == false) // i is the value should be inserted
+            {
+                nonExistiveValueList.add(i);
+            }
+        }
+
+        //shuffling nonExistiveValueList means randoming path.
+        //vectorShuffler(nonExistiveValueList);
+
+
+        edgeliNotaPath = edgeListModifierToMakePath(edgeliNotaPath, nonExistiveValueList);
+
+        return edgeliNotaPath;
+
+
+    }
+
+    public TreeMap<Integer, Integer> edgeListModifierToMakePath(TreeMap<Integer, Integer> edgeliNotaPath, Vector<Integer> nonExistiveValueList) {
+
+        while (nonExistiveValueList.size() != 0) {
+            for (int oneByOne : edgeliNotaPath.keySet()) {
+                if (edgeliNotaPath.get(oneByOne) == -1) { // if a key is found with a value with -1
+
+                    for (int i = 0; i < nonExistiveValueList.size(); i++) {
+                        if (oneByOne != nonExistiveValueList.get(i)) { //not to make a self loop
+>>>>>>> parent of 38a6461... path connector seems working fine?
 
                             try {
                                 threadVector.get(arrayNumber).join();
