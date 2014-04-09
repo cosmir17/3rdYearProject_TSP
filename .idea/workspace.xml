@@ -6,7 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="withCHrist, superthis">
+    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="superthis">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="3rd_year_project.iws" />
@@ -1131,7 +1131,11 @@
       <created>1397069330207</created>
       <updated>1397069330207</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="superthis">
+      <created>1397073123694</created>
+      <updated>1397073123694</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1186,7 +1190,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Simulated Annealing working?" />
     <MESSAGE value="Simulated Annealing, enum name for color, time and distance slots were exchanged. SA is not working properly" />
     <MESSAGE value="SA working but too slow :) !noImprovementcantbemade didn't have !." />
     <MESSAGE value="SA working but too slow :)" />
@@ -1211,7 +1214,8 @@
     <MESSAGE value="ConcurrencyHashmap = &gt; TreeMap&#10;logic modified nicely&#10;multiple path counting is now working" />
     <MESSAGE value="saADT seems working fine and modifing twopt" />
     <MESSAGE value="withCHrist, superthis" />
-    <option name="LAST_COMMIT_MESSAGE" value="withCHrist, superthis" />
+    <MESSAGE value="superthis" />
+    <option name="LAST_COMMIT_MESSAGE" value="superthis" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
