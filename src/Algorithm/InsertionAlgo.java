@@ -1,7 +1,6 @@
 package Algorithm;
 
 import Graph.GraphGenerator;
-import Graph.edgeColors;
 
 import java.util.HashMap;
 import java.util.TreeMap;
@@ -24,12 +23,6 @@ public class InsertionAlgo extends Algorithm {
         // System.out.println(edgeColors.valueOf("red").getCode());
         // System.out.println( edgeColors.valueOf(this.getClass().getSimpleName()));
         //System.out.println( edgeColors.valueOf(this.getClass().getSimpleName()).getCode());
-    }
-
-    @Override
-    protected void graphObjectColorSelectorAndRedefiner() {
-        color = edgeColors.valueOf(this.getClass().getSimpleName());
-        graphObject.color = color;
     }
 
 

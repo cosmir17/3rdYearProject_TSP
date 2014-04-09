@@ -2,8 +2,8 @@ package Algorithm;
 
 import Algorithm.GeneticAlgorithm.PathDrawerIfSubgraphExist;
 import Algorithm.GeneticAlgorithm.ProduceIndividualsThread;
+import Graph.Color;
 import Graph.GraphGenerator;
-import Graph.edgeColors;
 
 import java.util.Random;
 import java.util.TreeMap;
@@ -19,15 +19,10 @@ public class GeneticAlgo extends Algorithm implements Runnable {
     public GeneticAlgo(GraphGenerator graphObject) {
 
         super(graphObject);
-
-
-    }
-
-    @Override
-    protected void graphObjectColorSelectorAndRedefiner() {
-        color = edgeColors.valueOf(this.getClass().getSimpleName());
+        super.color = Color.GREEN;
         graphObject.color = color;
     }
+
 
     @Override
     protected void drawer() {

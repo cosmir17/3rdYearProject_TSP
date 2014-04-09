@@ -17,12 +17,12 @@ import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class GraphGenerator extends Object implements Cloneable {
-    public static mxGraph graph = new mxGraph();
+    public mxGraph graph = new mxGraph();
     Object parent = graph.getDefaultParent();
     public Object[] graphNodeArray;
-    public edgeColors color;
+    public Color color;
     public EdgeLayers layer;
-    String colorString = "";
+    //String colorString = "";
     public HashMap<String, Integer> graphNodeArrayToIDtable;
     public HashMap<Integer, HashMap<Integer, Double>> theWholedisTable;
 
@@ -33,7 +33,7 @@ public class GraphGenerator extends Object implements Cloneable {
 
 
     public Object clone() throws CloneNotSupportedException {
-        return super.clone();
+        return super.clone(); //this doesn't work because I didn't copy every fields.
     }
 
     public void finalize() throws IOException {
@@ -193,14 +193,14 @@ public class GraphGenerator extends Object implements Cloneable {
 
 
         try {
-            colorString = color.getCode();
+
             graph.getModel().beginUpdate();
         } catch (IndexOutOfBoundsException e) {
         }
 
         try {
             graph.insertEdge(parent, null, distanceFinder(i, j), graphNodeArray[i], graphNodeArray[j],
-                    "strokeColor=" + colorString + ";fontColor=" + colorString + "");
+                    "strokeColor=" + this.color.name() + ";fontColor=" + this.color.name() + "");
 
             // System.out.println(color);
             return distanceFinder(i, j);
@@ -740,7 +740,7 @@ public class GraphGenerator extends Object implements Cloneable {
 
                             double E = initialDistance - swapDistance;
                             // E -1
-                            if (E > 0 || !on) { // if on is false, SA option is tuned off, it always runs and can't reach to else statement.
+                            if (E > 0) { // if on is false, SA option is tuned off, it always runs and can't reach to else statement.
 
                                 int edgeGetJtargetInitial = edgesWithSourceAndTargetNodes.get(jtargetInitialValue);
                                 edgesWithSourceAndTargetNodes.put(isourceNode, ksourceNode);

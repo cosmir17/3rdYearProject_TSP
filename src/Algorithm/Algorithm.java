@@ -1,5 +1,6 @@
 package Algorithm;
 
+import Graph.Color;
 import Graph.EdgeLayers;
 import Graph.GraphGenerator;
 import Graph.edgeColors;
@@ -15,7 +16,7 @@ public abstract class Algorithm extends Thread {
     protected Object graphNodeArray[];
     protected Object parent;
     double totalDistance = 0;
-    edgeColors color;
+    Color color;
     EdgeLayers layer;
 
     public Algorithm(GraphGenerator graphObject) {
@@ -36,13 +37,16 @@ public abstract class Algorithm extends Thread {
     }
 
 
+    protected void graphObjectColorSelectorAndRedefiner() {
+        color = edgeColors.valueOf(this.getClass().);
+        graphObject.color = color;
+    }
+
+
     public double getTotalDis() {
         totalDistance = graphObject.findTotalDistance();
         return totalDistance;
     }
-
-
-    protected abstract void graphObjectColorSelectorAndRedefiner();
 
 
     protected abstract void drawer();
