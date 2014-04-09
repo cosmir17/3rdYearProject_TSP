@@ -416,6 +416,29 @@ public class GraphGenerator extends Object implements Cloneable {
         return nodeWithEdge;
     }
 
+    public ConcurrentHashMap<Integer, Integer> sourceAndTargetNodeListWithEdgesadt() {
+        Object graphEdges[] = graph.getAllEdges(graphNodeArray);
+
+        HashMap<String, String> edgesfromNodetoNode = new HashMap<String, String>();
+
+        for (int i = 0; i < graphEdges.length; i++) {
+            mxCell element = (mxCell) graphEdges[i];
+            edgesfromNodetoNode.put(element.getSource().getId(), element.getTarget().getId());
+        }
+
+        ConcurrentHashMap<Integer, Integer> nodeWithEdge = new ConcurrentHashMap<Integer, Integer>();
+        for (String i : edgesfromNodetoNode.keySet()) {
+            int sourceNode = graphNodeArrayToIDtable.get(i);
+            int targetNode = graphNodeArrayToIDtable.get(edgesfromNodetoNode.get(i));
+
+            nodeWithEdge.put(sourceNode, targetNode);
+
+        }
+
+        return nodeWithEdge;
+    }
+
+
     public void reverseDirectionfromJtoK(HashMap<Integer, Integer> edgelists, int j, int k) {
 
 
@@ -662,6 +685,160 @@ public class GraphGenerator extends Object implements Cloneable {
         }
     }
 
+
+    public void sAadt(double INITIAL_T, double SCHEDULE, double halt, boolean on) {
+        double T = INITIAL_T;
+        boolean noImprovementcantbemade = false;
+        int howManyIteration = 0;
+
+
+        while (!noImprovementcantbemade) {
+            boolean swapHappened = false;
+            ConcurrentHashMap<Integer, Integer> edgesWithSourceAndTargetNodes = sourceAndTargetNodeListWithEdgesadt();
+            ConcurrentHashMap<Integer, Integer> edgesWithSourceAndTargetNodes2 = new ConcurrentHashMap<Integer, Integer>(edgesWithSourceAndTargetNodes);
+
+            T = SCHEDULE * T;
+
+            howManyIteration++;
+            System.out.println("Temperature T is : " + T);
+
+            for (int ii : edgesWithSourceAndTargetNodes.keySet()) {
+                if (!swapHappened) {
+                    int isourceNode = ii;
+                    int jtargetNode = edgesWithSourceAndTargetNodes.get(ii);
+
+
+                    if (T < halt) {
+                        noImprovementcantbemade = true;
+                        System.out.println("The SA iteration is : " + howManyIteration);
+                        break;
+
+                    }
+
+                    // edgeRemoverfromItoJ(isourceNode, jtargetNode);
+                    int jtargetInitialValue = edgesWithSourceAndTargetNodes.get(isourceNode);
+                    edgesWithSourceAndTargetNodes.put(isourceNode, -1);
+
+                    for (int jj : edgesWithSourceAndTargetNodes.keySet()) {
+                        if (jj != ii
+                                && jtargetNode != jj
+                                && edgesWithSourceAndTargetNodes.get(jj) != jtargetNode
+                                && edgesWithSourceAndTargetNodes.get(jj) != ii
+                                && !swapHappened)
+
+
+                        {
+                            int ksourceNode = jj;
+                            int ltargetNode = edgesWithSourceAndTargetNodes.get(jj);
+
+                            //edgeRemoverfromItoJ(ksourceNode, ltargetNode);#
+                            int ltargetInitialValue = edgesWithSourceAndTargetNodes.get(ksourceNode);
+                            edgesWithSourceAndTargetNodes.put(ksourceNode, -1);
+
+                            double initialDistance = distanceFinder(isourceNode, jtargetNode) + distanceFinder(ksourceNode, ltargetNode);
+                            double swapDistance = distanceFinder(isourceNode, ksourceNode) + distanceFinder(jtargetNode, ltargetNode);
+
+                            double E = initialDistance - swapDistance;
+                            // E -1
+                            if (E > 0 || !on) { // if on is false, SA option is tuned off, it always runs and can't reach to else statement.
+
+                                int edgeGetJtargetInitial = edgesWithSourceAndTargetNodes.get(jtargetInitialValue);
+                                edgesWithSourceAndTargetNodes.put(isourceNode, ksourceNode);
+                                edgesWithSourceAndTargetNodes.put(jtargetNode, ltargetNode);
+
+                                // edgeDrawerFromNodeItoJ(isourceNode, ksourceNode);
+                                // edgeDrawerFromNodeItoJ(jtargetNode, ltargetNode);
+
+
+                                // HashMap<Integer, Integer> edgesWithSourceAndTargetNodes2 = sourceAndTargetNodeListWithEdges();
+                                // reverseDirectionfromJtoK(edgesWithSourceAndTargetNodes2, jtargetNode, ksourceNode);
+
+                                swapHappened = true;
+                            } else {
+                                double prob = Math.exp(E / T);
+                                double prob2 = Math.random();
+
+
+                                if (prob2 <= prob) {
+
+                                    //  System.out.println("MathRandom : " + prob2 + "   exp Prob : " + prob);
+                                    // edgeDrawerFromNodeItoJ(isourceNode, ksourceNode);
+                                    //edgeDrawerFromNodeItoJ(jtargetNode, ltargetNode);
+
+                                    int edgeGetJtargetInitial = edgesWithSourceAndTargetNodes.get(jtargetInitialValue);
+                                    edgesWithSourceAndTargetNodes.put(isourceNode, ksourceNode);
+                                    edgesWithSourceAndTargetNodes.put(jtargetNode, ltargetNode);
+
+                                    System.out.println("sa works");
+
+                                    //  HashMap<Integer, Integer> edgesWithSourceAndTargetNodes2 = sourceAndTargetNodeListWithEdges();
+                                    // reverseDirectionfromJtoK(edgesWithSourceAndTargetNodes2, jtargetNode, ksourceNode);
+
+                                    swapHappened = true;
+                                } else {
+
+
+                                    edgesWithSourceAndTargetNodes.put(ksourceNode, ltargetNode);
+                                    // edgeDrawerFromNodeItoJ(ksourceNode, ltargetNode);
+                                    //swapHappened = false;
+
+                                }
+                            }
+
+
+                            //the direction of edges from ksource to jtarget needs to be reversed
+                            //what is key that can produce ksource value?
+                            if (swapHappened) {
+                                reverseEdgeDirectionAdt(edgesWithSourceAndTargetNodes, edgesWithSourceAndTargetNodes2, ksourceNode, jtargetNode, isourceNode);
+                            }
+
+                        }
+                    }
+
+                    if (!swapHappened) {
+                        //edgeDrawerFromNodeItoJ(isourceNode, jtargetNode);
+                        edgesWithSourceAndTargetNodes.put(isourceNode, jtargetNode);
+
+                    }
+
+
+                }
+
+            }
+
+
+            allEdgeRemover();
+            drawFromEdgeList(edgesWithSourceAndTargetNodes);
+        }
+    }
+
+    public void twoOpt() {
+        sAadt(0, 0, 0, false);
+    }
+
+    private static void reverseEdgeDirectionAdt(ConcurrentHashMap<Integer, Integer> modifiedEdgelist, ConcurrentHashMap<Integer, Integer> initialEdgeList, int k, int j, int i) {
+
+        for (int keythatProducesksourceValue : modifiedEdgelist.keySet()) {
+
+
+            if (k == initialEdgeList.get(keythatProducesksourceValue) && i != keythatProducesksourceValue && k != keythatProducesksourceValue && modifiedEdgelist.containsValue(-1)) {
+                modifiedEdgelist.put(k, keythatProducesksourceValue);
+                if (keythatProducesksourceValue != j)
+
+                {
+
+                    modifiedEdgelist.put(keythatProducesksourceValue, -1);
+                    k = keythatProducesksourceValue;
+                    reverseEdgeDirectionAdt(modifiedEdgelist, initialEdgeList, k, j, i);
+
+                } else {
+                    break;
+                }
+
+            }
+        }
+
+    }
 
 
     public ConcurrentHashMap<Integer, Integer> randomCycleEdgeListGenerator() {

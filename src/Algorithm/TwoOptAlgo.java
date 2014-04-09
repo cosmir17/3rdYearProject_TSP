@@ -23,7 +23,8 @@ public class TwoOptAlgo extends Algorithm {
     protected void drawer() {
 
         graphObject.drawFromEdgeList(graphObject.randomCycleEdgeListGenerator());
-        graphObject.repeatSwapping();
+        // graphObject.repeatSwapping();
+        graphObject.twoOpt();
     }
 
 
