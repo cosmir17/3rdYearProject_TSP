@@ -6,9 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="saADT seems working fine and modifing twopt">
+    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="2opt working fine, becomes really fast">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Graph/GraphGenerator.java" afterPath="$PROJECT_DIR$/src/Graph/GraphGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Algorithm/TwoOptAlgo.java" afterPath="$PROJECT_DIR$/src/Algorithm/TwoOptAlgo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Algorithm/SimulatedAnnealingAlgo.java" afterPath="$PROJECT_DIR$/src/Algorithm/SimulatedAnnealingAlgo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="3rd_year_project.iws" />
@@ -169,12 +169,12 @@
       <file leaf-file-name="GraphGenerator.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Graph/GraphGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6393805" vertical-offset="12059" max-vertical-offset="18792">
-              <caret line="701" column="12" selection-start-line="701" selection-start-column="12" selection-end-line="701" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.15353122" vertical-offset="3396" max-vertical-offset="18756">
+              <caret line="212" column="0" selection-start-line="212" selection-start-column="0" selection-end-line="212" selection-end-column="0" />
               <folding>
-                <element signature="e#32127#32128#0" expanded="true" />
-                <element signature="e#32164#32165#0" expanded="true" />
-                <element signature="e#35415#35433#0" expanded="true" />
+                <element signature="e#32671#32672#0" expanded="true" />
+                <element signature="e#32708#32709#0" expanded="true" />
+                <element signature="e#35948#35966#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -253,8 +253,8 @@
       <file leaf-file-name="SimulatedAnnealingAlgo.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Algorithm/SimulatedAnnealingAlgo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="684">
-              <caret line="29" column="57" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="684">
+              <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -331,9 +331,9 @@
         <option value="$PROJECT_DIR$/src/Algorithm/GeneticAlgorithm/ProduceIndividualsThread.java" />
         <option value="$PROJECT_DIR$/src/Algorithm/GeneticAlgorithm/PathDrawerIfSubgraphExist.java" />
         <option value="$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java" />
-        <option value="$PROJECT_DIR$/src/Algorithm/SimulatedAnnealingAlgo.java" />
         <option value="$PROJECT_DIR$/src/Algorithm/TwoOptAlgo.java" />
         <option value="$PROJECT_DIR$/src/Graph/GraphGenerator.java" />
+        <option value="$PROJECT_DIR$/src/Algorithm/SimulatedAnnealingAlgo.java" />
       </list>
     </option>
   </component>
@@ -1126,7 +1126,11 @@
       <created>1397065728942</created>
       <updated>1397065728942</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="2opt working fine, becomes really fast">
+      <created>1397095479544</created>
+      <updated>1397095479544</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1153,7 +1157,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1996805" sideWeight="0.49840257" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.50529355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50529355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="642" y="197" width="724" height="513" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1181,7 +1185,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Simulated Annealing implementation started" />
     <MESSAGE value="Simulated Annealing working?" />
     <MESSAGE value="Simulated Annealing, enum name for color, time and distance slots were exchanged. SA is not working properly" />
     <MESSAGE value="SA working but too slow :) !noImprovementcantbemade didn't have !." />
@@ -1206,7 +1209,8 @@
     <MESSAGE value="Modified manythings,&#10;multiple path counting is now working" />
     <MESSAGE value="ConcurrencyHashmap = &gt; TreeMap&#10;logic modified nicely&#10;multiple path counting is now working" />
     <MESSAGE value="saADT seems working fine and modifing twopt" />
-    <option name="LAST_COMMIT_MESSAGE" value="saADT seems working fine and modifing twopt" />
+    <MESSAGE value="2opt working fine, becomes really fast" />
+    <option name="LAST_COMMIT_MESSAGE" value="2opt working fine, becomes really fast" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1215,13 +1219,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Graph/GraphGenerator.java</url>
-          <line>891</line>
+          <line>893</line>
           <properties />
           <option name="timeStamp" value="202" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Graph/GraphGenerator.java</url>
-          <line>868</line>
+          <line>871</line>
           <properties />
           <option name="timeStamp" value="204" />
         </line-breakpoint>
@@ -1290,9 +1294,9 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="3258" max-vertical-offset="11826">
           <caret line="208" column="0" selection-start-line="208" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
           <folding>
-            <element signature="e#32127#32128#0" expanded="true" />
-            <element signature="e#32164#32165#0" expanded="true" />
-            <element signature="e#35415#35433#0" expanded="true" />
+            <element signature="e#32671#32672#0" expanded="true" />
+            <element signature="e#32708#32709#0" expanded="true" />
+            <element signature="e#35948#35966#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1611,20 +1615,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Algorithm/SimulatedAnnealingAlgo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
-          <caret line="29" column="57" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="684">
+          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Graph/GraphGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6393805" vertical-offset="12059" max-vertical-offset="18792">
-          <caret line="701" column="12" selection-start-line="701" selection-start-column="12" selection-end-line="701" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.15353122" vertical-offset="3396" max-vertical-offset="18756">
+          <caret line="212" column="0" selection-start-line="212" selection-start-column="0" selection-end-line="212" selection-end-column="0" />
           <folding>
-            <element signature="e#32127#32128#0" expanded="true" />
-            <element signature="e#32164#32165#0" expanded="true" />
-            <element signature="e#35415#35433#0" expanded="true" />
+            <element signature="e#32671#32672#0" expanded="true" />
+            <element signature="e#32708#32709#0" expanded="true" />
+            <element signature="e#35948#35966#0" expanded="true" />
           </folding>
         </state>
       </provider>

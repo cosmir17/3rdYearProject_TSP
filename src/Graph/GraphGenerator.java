@@ -713,6 +713,9 @@ public class GraphGenerator extends Object implements Cloneable {
 
                     if (T < halt && onoff) {
                         noImprovementcantbemade = true;
+                        allEdgeRemover();
+                        drawFromEdgeList(edgesWithSourceAndTargetNodes);
+
                         System.out.println("The SA iteration is : " + howManyIteration);
                         break;
 
@@ -760,6 +763,8 @@ public class GraphGenerator extends Object implements Cloneable {
                                 // reverseDirectionfromJtoK(edgesWithSourceAndTargetNodes2, jtargetNode, ksourceNode);
 
                                 swapHappened = true;
+                                reverseDirectionfromJtoKadt(edgesWithSourceAndTargetNodes2, edgesWithSourceAndTargetNodes, jkeyToValue, ksourceNode, jtargetNode, isourceNode, ltargetNode);
+
                             } else {
 
 
@@ -770,12 +775,13 @@ public class GraphGenerator extends Object implements Cloneable {
                             }
 
                             {
-                                if (!swapHappened && onoff) {
+                                if (E < 0 && onoff) {
                                 double prob = Math.exp(E / T);
                                 double prob2 = Math.random();
 
 
                                 if (prob2 <= prob) {
+                                    edgesWithSourceAndTargetNodes.put(ksourceNode, -1);
 
                                     //  System.out.println("MathRandom : " + prob2 + "   exp Prob : " + prob);
                                     // edgeDrawerFromNodeItoJ(isourceNode, ksourceNode);
@@ -789,6 +795,8 @@ public class GraphGenerator extends Object implements Cloneable {
 
                                     //  HashMap<Integer, Integer> edgesWithSourceAndTargetNodes2 = sourceAndTargetNodeListWithEdges();
                                     // reverseDirectionfromJtoK(edgesWithSourceAndTargetNodes2, jtargetNode, ksourceNode);
+
+                                    reverseDirectionfromJtoKadt(edgesWithSourceAndTargetNodes2, edgesWithSourceAndTargetNodes, jkeyToValue, ksourceNode, jtargetNode, isourceNode, ltargetNode);
 
                                     swapHappened = true;
                                 } else {
@@ -809,7 +817,7 @@ public class GraphGenerator extends Object implements Cloneable {
                             if (swapHappened) {
                                 //reverseEdgeDirectionAdt(edgesWithSourceAndTargetNodes, edgesWithSourceAndTargetNodes2, ksourceNode, jtargetNode, isourceNode, numberCheck);
                                 // System.out.println(howManyIteration);
-                                reverseDirectionfromJtoKadt(edgesWithSourceAndTargetNodes2, edgesWithSourceAndTargetNodes, jkeyToValue, ksourceNode, jtargetNode, isourceNode, ltargetNode);
+                                // reverseDirectionfromJtoKadt(edgesWithSourceAndTargetNodes2, edgesWithSourceAndTargetNodes, jkeyToValue, ksourceNode, jtargetNode, isourceNode, ltargetNode);
 
                             }
 
