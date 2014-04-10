@@ -704,6 +704,8 @@ public class GraphGenerator extends Object implements Cloneable {
             howManyIteration++;
             if (onoff) {
                 System.out.println("Temperature T is : " + T);
+
+
             }
             for (int ii : edgesWithSourceAndTargetNodes.keySet()) {
                 if (!swapHappened) {
