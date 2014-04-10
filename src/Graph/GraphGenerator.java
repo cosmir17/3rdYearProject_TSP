@@ -2,6 +2,7 @@ package Graph; /**
  * Created by lloydp on 13/02/14.
  */
 
+import Algorithm.GeneticAlgorithm.PathDrawerIfSubgraphExist;
 import com.mxgraph.layout.hierarchical.mxHierarchicalLayout;
 import com.mxgraph.layout.mxFastOrganicLayout;
 import com.mxgraph.model.mxCell;
@@ -686,29 +687,31 @@ public class GraphGenerator extends Object implements Cloneable {
     }
 
 
-    public void sAadt(double INITIAL_T, double SCHEDULE, double halt, boolean on) {
+    public void sAadt(double INITIAL_T, double SCHEDULE, double halt, boolean onoff) {
         double T = INITIAL_T;
         boolean noImprovementcantbemade = false;
         int howManyIteration = 0;
+        ConcurrentHashMap<Integer, Integer> edgesWithSourceAndTargetNodes = sourceAndTargetNodeListWithEdgesadt();
+        ConcurrentHashMap<Integer, Integer> edgesWithSourceAndTargetNodes2 = new ConcurrentHashMap<Integer, Integer>(edgesWithSourceAndTargetNodes);
 
 
         while (!noImprovementcantbemade) {
             boolean swapHappened = false;
-            ConcurrentHashMap<Integer, Integer> edgesWithSourceAndTargetNodes = sourceAndTargetNodeListWithEdgesadt();
-            ConcurrentHashMap<Integer, Integer> edgesWithSourceAndTargetNodes2 = new ConcurrentHashMap<Integer, Integer>(edgesWithSourceAndTargetNodes);
+
 
             T = SCHEDULE * T;
 
             howManyIteration++;
-            System.out.println("Temperature T is : " + T);
-
+            if (onoff) {
+                System.out.println("Temperature T is : " + T);
+            }
             for (int ii : edgesWithSourceAndTargetNodes.keySet()) {
                 if (!swapHappened) {
                     int isourceNode = ii;
                     int jtargetNode = edgesWithSourceAndTargetNodes.get(ii);
 
 
-                    if (T < halt) {
+                    if (T < halt && onoff) {
                         noImprovementcantbemade = true;
                         System.out.println("The SA iteration is : " + howManyIteration);
                         break;
@@ -716,7 +719,7 @@ public class GraphGenerator extends Object implements Cloneable {
                     }
 
                     // edgeRemoverfromItoJ(isourceNode, jtargetNode);
-                    int jtargetInitialValue = edgesWithSourceAndTargetNodes.get(isourceNode);
+                    int jkeyToValue = edgesWithSourceAndTargetNodes.get(jtargetNode);
                     edgesWithSourceAndTargetNodes.put(isourceNode, -1);
 
                     for (int jj : edgesWithSourceAndTargetNodes.keySet()) {
@@ -731,7 +734,7 @@ public class GraphGenerator extends Object implements Cloneable {
                             int ksourceNode = jj;
                             int ltargetNode = edgesWithSourceAndTargetNodes.get(jj);
 
-                            //edgeRemoverfromItoJ(ksourceNode, ltargetNode);#
+                            //edgeRemoverfromItoJ(ksourceNode, ltargetNode);
                             int ltargetInitialValue = edgesWithSourceAndTargetNodes.get(ksourceNode);
                             edgesWithSourceAndTargetNodes.put(ksourceNode, -1);
 
@@ -740,11 +743,14 @@ public class GraphGenerator extends Object implements Cloneable {
 
                             double E = initialDistance - swapDistance;
                             // E -1
-                            if (E > 0 || !on) { // if on is false, SA option is tuned off, it always runs and can't reach to else statement.
+                            if (E > 0) { // if on is false, SA option is tuned off, it always runs and can't reach to else statement.
 
-                                int edgeGetJtargetInitial = edgesWithSourceAndTargetNodes.get(jtargetInitialValue);
+                                //  int edgeGetJtargetInitial = edgesWithSourceAndTargetNodes.get(jtargetInitialValue);
                                 edgesWithSourceAndTargetNodes.put(isourceNode, ksourceNode);
                                 edgesWithSourceAndTargetNodes.put(jtargetNode, ltargetNode);
+                                //edgesWithSourceAndTargetNodes.put(jkeyToValue, jtargetNode);
+
+                                // howManyIteration++;
 
                                 // edgeDrawerFromNodeItoJ(isourceNode, ksourceNode);
                                 // edgeDrawerFromNodeItoJ(jtargetNode, ltargetNode);
@@ -755,6 +761,16 @@ public class GraphGenerator extends Object implements Cloneable {
 
                                 swapHappened = true;
                             } else {
+
+
+                                edgesWithSourceAndTargetNodes.put(ksourceNode, ltargetNode);
+                                // edgeDrawerFromNodeItoJ(ksourceNode, ltargetNode);
+                                //swapHappened = false;
+
+                            }
+
+                            {
+                                if (!swapHappened && onoff) {
                                 double prob = Math.exp(E / T);
                                 double prob2 = Math.random();
 
@@ -765,7 +781,7 @@ public class GraphGenerator extends Object implements Cloneable {
                                     // edgeDrawerFromNodeItoJ(isourceNode, ksourceNode);
                                     //edgeDrawerFromNodeItoJ(jtargetNode, ltargetNode);
 
-                                    int edgeGetJtargetInitial = edgesWithSourceAndTargetNodes.get(jtargetInitialValue);
+                                    // int edgeGetJtargetInitial = edgesWithSourceAndTargetNodes.get(jtargetInitialValue);
                                     edgesWithSourceAndTargetNodes.put(isourceNode, ksourceNode);
                                     edgesWithSourceAndTargetNodes.put(jtargetNode, ltargetNode);
 
@@ -783,13 +799,18 @@ public class GraphGenerator extends Object implements Cloneable {
                                     //swapHappened = false;
 
                                 }
+
+                                }
                             }
 
 
                             //the direction of edges from ksource to jtarget needs to be reversed
                             //what is key that can produce ksource value?
                             if (swapHappened) {
-                                reverseEdgeDirectionAdt(edgesWithSourceAndTargetNodes, edgesWithSourceAndTargetNodes2, ksourceNode, jtargetNode, isourceNode);
+                                //reverseEdgeDirectionAdt(edgesWithSourceAndTargetNodes, edgesWithSourceAndTargetNodes2, ksourceNode, jtargetNode, isourceNode, numberCheck);
+                                // System.out.println(howManyIteration);
+                                reverseDirectionfromJtoKadt(edgesWithSourceAndTargetNodes2, edgesWithSourceAndTargetNodes, jkeyToValue, ksourceNode, jtargetNode, isourceNode, ltargetNode);
+
                             }
 
                         }
@@ -799,6 +820,7 @@ public class GraphGenerator extends Object implements Cloneable {
                         //edgeDrawerFromNodeItoJ(isourceNode, jtargetNode);
                         edgesWithSourceAndTargetNodes.put(isourceNode, jtargetNode);
 
+
                     }
 
 
@@ -807,29 +829,92 @@ public class GraphGenerator extends Object implements Cloneable {
             }
 
 
-            allEdgeRemover();
-            drawFromEdgeList(edgesWithSourceAndTargetNodes);
+            //  allEdgeRemover();
+            // drawFromEdgeList(edgesWithSourceAndTargetNodes);
+
+
+            if (!swapHappened && !onoff) {
+
+                noImprovementcantbemade = true;
+                System.out.println("Two opt, Iterations : " + howManyIteration);
+                allEdgeRemover();
+                drawFromEdgeList(edgesWithSourceAndTargetNodes);
+
+
+            }
+
+
         }
+    }
+
+
+    public static void reverseDirectionfromJtoKadt(ConcurrentHashMap<Integer, Integer> iniedge, ConcurrentHashMap<Integer, Integer> edgelists, int jkeytovalue, int k, int j, int i, int l) {
+
+
+        int jj = jkeytovalue;
+        ArrayList<Integer> nextNodelistfromEdge = new ArrayList<Integer>();
+        TreeMap<Integer, Integer> tree = new TreeMap<Integer, Integer>();
+        tree.putAll(edgelists);
+
+        nextNodelistfromEdge.add(jj);
+
+        while (k != jj) {
+
+            jj = edgelists.get(jj);
+            nextNodelistfromEdge.add(jj);
+        }
+
+        // nextNodelistfromEdge.add(k);
+
+        //System.out.println(nextNodelistfromEdge.size());
+
+
+        for (int ii = 0; ii < nextNodelistfromEdge.size() - 1; ii++) {
+            int source = nextNodelistfromEdge.get(ii);
+            int target = nextNodelistfromEdge.get(ii + 1);
+            // edgelists.put(source, target);
+            edgelists.put(target, source);
+
+            // tree.put(source, -1);
+            // tree.put(target, source);
+
+
+            //edgeRemoverfromItoJ(source, target);
+            //edgeDrawerFromNodeItoJ(target, source);
+        }
+        edgelists.put(jkeytovalue, j);
+        // edgelists.put(k, nextNodelistfromEdge.get(nextNodelistfromEdge.size()-1));
+
+        // System.out.println(edgelists);
+
     }
 
     public void twoOpt() {
         sAadt(0, 0, 0, false);
     }
 
-    private static void reverseEdgeDirectionAdt(ConcurrentHashMap<Integer, Integer> modifiedEdgelist, ConcurrentHashMap<Integer, Integer> initialEdgeList, int k, int j, int i) {
+    private static void reverseEdgeDirectionAdt(ConcurrentHashMap<Integer, Integer> modifiedEdgelist, ConcurrentHashMap<Integer, Integer> initialEdgeList, int k, int j, int i, ArrayList<Boolean> numberArray) {
+
 
         for (int keythatProducesksourceValue : modifiedEdgelist.keySet()) {
 
+            boolean noNotThatN = true;
+            if (numberArray.get(keythatProducesksourceValue) == true) {
+                noNotThatN = false;
+            }
 
-            if (k == initialEdgeList.get(keythatProducesksourceValue) && i != keythatProducesksourceValue && k != keythatProducesksourceValue && modifiedEdgelist.containsValue(-1)) {
+            if (initialEdgeList.get(keythatProducesksourceValue) == k && modifiedEdgelist.containsValue(-1) && noNotThatN) {
                 modifiedEdgelist.put(k, keythatProducesksourceValue);
+
+
                 if (keythatProducesksourceValue != j)
 
                 {
 
                     modifiedEdgelist.put(keythatProducesksourceValue, -1);
+                    numberArray.set(k, true);
                     k = keythatProducesksourceValue;
-                    reverseEdgeDirectionAdt(modifiedEdgelist, initialEdgeList, k, j, i);
+                    // reverseEdgeDirectionAdt(modifiedEdgelist, initialEdgeList, k, j, numberArray);
 
                 } else {
                     break;
@@ -901,9 +986,26 @@ public class GraphGenerator extends Object implements Cloneable {
 
         }
 
+        //   pathCheckerinGra(edgelist);
+
+
+
+
         return edgelist;
 
     }
+
+    private void pathCheckerinGra(ConcurrentHashMap<Integer, Integer> edgelist) {
+        TreeMap<Integer, Integer> edgelistTree = new TreeMap<Integer, Integer>();
+        edgelistTree.putAll(edgelist);
+
+        PathDrawerIfSubgraphExist pathChecker = new PathDrawerIfSubgraphExist(edgelistTree);
+
+        System.out.println("There are " + pathChecker.getHowmanyCycles() + " cycles");
+
+        //edgelist = pathChecker.getEdgelist();
+    }
+
 
     public void drawFromEdgeList(ConcurrentHashMap<Integer, Integer> edgelist) {
 
