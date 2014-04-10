@@ -708,8 +708,9 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
     private void checkBoxCheckedAndUnchecked() {
         if (insertionCheckBox.pushed) {
 
-            removeGraphfromPanel();
+
             // graphObectDuplicator();
+            removeGraphfromPanel();
             graphEdgeRemover();
             insertionAlgoRunner();
             // graph object appears or disappears by doing this
@@ -780,13 +781,14 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
     private void shortestButtonPushed() {
         if (shortestButton.pushed && shortestButton.getActionCommand().equals("Shortest Path")) {
 
+            /*
             try {
                 sAAlgo.setRunning(false);
                 graphSAalgoGraph.allEdgeRemover();
             } catch (NullPointerException e) {
 
             }
-
+*/
 
             // removeGraphfromPanel();
 
@@ -823,11 +825,25 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
             //simultedACheckBox.setColleagueEnabled(true);
             //geneCheckBox.setColleagueEnabled(true);
 
-/*           these were used.
+
             graphObectDuplicator();
+
+            removeGraphfromPanel();
+            graphEdgeRemover();
+            insertionAlgoRunner();
+
+            removeGraphfromPanel();
+            graphEdgeRemover();
+            nearestAlgorithmRunner();
+
+            removeGraphfromPanel();
+            graphEdgeRemover();
+            twoOptAlgorithmRunner();
+
+
+
             shortestButton.pushed = false;
             secondPanelElementsSwitch(true);
-*/
 
         }
 

@@ -25,10 +25,14 @@ public class NearestNeighbourAlgo extends Algorithm {
 
     @Override
     protected void drawer() {
+
+        nearestNeighbour();
+    }
+
+    private void nearestNeighbour() {
         int lastNode = drawerIterator(graphNodeArray.length - 2);
         edgeDrawerFromLastNodetotheFirstone(lastNode);
         //graphObject.repeatSwapping();
-
     }
 
 
