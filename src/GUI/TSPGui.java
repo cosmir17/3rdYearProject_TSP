@@ -707,6 +707,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
 
     private void checkBoxCheckedAndUnchecked() {
         if (insertionCheckBox.pushed) {
+
             removeGraphfromPanel();
             // graphObectDuplicator();
             graphEdgeRemover();
@@ -717,6 +718,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
             nnCheckBox.setSelected(false);
             optAlgoCheckBox.setSelected(false);
             simultedACheckBox.setSelected(false);
+
         }
 
 
@@ -856,33 +858,13 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
     }
 
     private void graphObectDuplicator() {
-        try {
-            graphGnearnAlgoGraph = (GraphGenerator) graphG.clone();
-        } catch (CloneNotSupportedException e) {
-            e.printStackTrace();
-        }
-        try {
-            graphInsertionAlgoGraph = (GraphGenerator) graphG.clone();
-        } catch (CloneNotSupportedException e) {
-            e.printStackTrace();
-        }
 
-        try {
-            graphTwoOptAlgoGraph = (GraphGenerator) graphG.clone();
-        } catch (CloneNotSupportedException e) {
-            e.printStackTrace();
-        }
-        try {
-            graphSAalgoGraph = (GraphGenerator) graphG.clone();
-        } catch (CloneNotSupportedException e) {
-            e.printStackTrace();
-        }
+        graphGnearnAlgoGraph = new GraphGenerator(graphG);
+        graphInsertionAlgoGraph = new GraphGenerator(graphG);
+        graphTwoOptAlgoGraph = new GraphGenerator(graphG);
+        graphSAalgoGraph = new GraphGenerator(graphG);
+        graphGeneticAlgoGraph = new GraphGenerator(graphG);
 
-        try {
-            graphGeneticAlgoGraph = (GraphGenerator) graphG.clone();
-        } catch (CloneNotSupportedException e) {
-            e.printStackTrace();
-        }
         //   GraphGenerator graphGnearnAlgoGraph = graphG;
         //   GraphGenerator graphGnearnAlgoGraph = graphG;
         //   GraphGenerator graphGnearnAlgoGraph = graphG;

@@ -18,7 +18,15 @@ public abstract class Algorithm extends Thread {
     edgeColors color;
     EdgeLayers layer;
 
+    public boolean isHasitBeenRun() {
+        return hasitBeenRun;
+    }
 
+    public void setHasitBeenRun(boolean hasitBeenRun) {
+        this.hasitBeenRun = hasitBeenRun;
+    }
+
+    boolean hasitBeenRun = false;
     boolean running = true;
     public Algorithm(GraphGenerator graphObject) {
         this.graphObject = graphObject;
@@ -41,6 +49,8 @@ public abstract class Algorithm extends Thread {
         while (running) {
             drawer();
             // getTotalDis();
+            running = false;
+            hasitBeenRun = true;
         }
     }
 

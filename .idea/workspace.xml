@@ -6,12 +6,12 @@
     </artifacts-to-build>
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/Graph/GraphGenerator.java" line="504" />
+    <bookmark url="file://$PROJECT_DIR$/src/Graph/GraphGenerator.java" line="512" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="Insertion works fine">
+    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="SA Thread can be stopped programmably however can't find an alternative way to join">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Algorithm/Algorithm.java" afterPath="$PROJECT_DIR$/src/Algorithm/Algorithm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Algorithm/SimulatedAnnealingAlgo.java" afterPath="$PROJECT_DIR$/src/Algorithm/SimulatedAnnealingAlgo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Graph/GraphGenerator.java" afterPath="$PROJECT_DIR$/src/Graph/GraphGenerator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/TSPGui.java" afterPath="$PROJECT_DIR$/src/GUI/TSPGui.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -173,10 +173,10 @@
       <file leaf-file-name="GraphGenerator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Graph/GraphGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="12425" max-vertical-offset="19386">
-              <caret line="716" column="16" selection-start-line="716" selection-start-column="16" selection-end-line="716" selection-end-column="16" />
+            <state vertical-scroll-proportion="-12.814815" vertical-offset="3326" max-vertical-offset="19566">
+              <caret line="217" column="0" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
               <folding>
-                <element signature="e#13756#13774#0" expanded="true" />
+                <element signature="e#13964#13982#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -185,8 +185,8 @@
       <file leaf-file-name="TSPGui.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/GUI/TSPGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6446837" vertical-offset="16333" max-vertical-offset="20898">
-              <caret line="949" column="50" selection-start-line="949" selection-start-column="50" selection-end-line="949" selection-end-column="50" />
+            <state vertical-scroll-proportion="-2.283984" vertical-offset="14387" max-vertical-offset="20502">
+              <caret line="720" column="0" selection-start-line="720" selection-start-column="0" selection-end-line="720" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -258,8 +258,8 @@
       <file leaf-file-name="InsertionAlgo.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Algorithm/InsertionAlgo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1109" max-vertical-offset="3204">
-              <caret line="88" column="51" selection-start-line="88" selection-start-column="51" selection-end-line="88" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="263" max-vertical-offset="3204">
+              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
               <folding>
                 <element signature="e#3586#3621#0" expanded="true" />
                 <element signature="e#4314#4332#0" expanded="true" />
@@ -271,11 +271,14 @@
       <file leaf-file-name="Algorithm.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Algorithm/Algorithm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="1206">
-              <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="1386">
+              <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
               <folding>
-                <element signature="e#928#929#0" expanded="true" />
-                <element signature="e#966#967#0" expanded="true" />
+                <element signature="e#552#553#0" expanded="true" />
+                <element signature="e#609#610#0" expanded="true" />
+                <element signature="e#657#658#0" expanded="true" />
+                <element signature="e#1140#1141#0" expanded="true" />
+                <element signature="e#1178#1179#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -340,11 +343,11 @@
         <option value="$PROJECT_DIR$/src/Algorithm/GeneticAlgorithm/PathDrawerIfSubgraphExist.java" />
         <option value="$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java" />
         <option value="$PROJECT_DIR$/src/Algorithm/TwoOptAlgo.java" />
-        <option value="$PROJECT_DIR$/src/Graph/GraphGenerator.java" />
         <option value="$PROJECT_DIR$/src/Algorithm/InsertionAlgo.java" />
         <option value="$PROJECT_DIR$/src/Algorithm/SimulatedAnnealingAlgo.java" />
         <option value="$PROJECT_DIR$/src/Algorithm/Algorithm.java" />
         <option value="$PROJECT_DIR$/src/GUI/TSPGui.java" />
+        <option value="$PROJECT_DIR$/src/Graph/GraphGenerator.java" />
       </list>
     </option>
   </component>
@@ -1157,7 +1160,11 @@
       <created>1397158267790</created>
       <updated>1397158267790</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="SA Thread can be stopped programmably however can't find an alternative way to join">
+      <created>1397161506766</created>
+      <updated>1397161506766</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1212,7 +1219,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="SA is working (indeed) but too slow :) The previous one doesn't work properly." />
     <MESSAGE value="Working in Threads. fantastic. showing result in real time" />
     <MESSAGE value="unknown indexoutof error" />
     <MESSAGE value="deleted dummy classes and thrid party libraries. added jgraphx rather than jgrapht. still unknwon error," />
@@ -1237,7 +1243,8 @@
     <MESSAGE value="SA, finding good values" />
     <MESSAGE value="SA, hope it becomes better" />
     <MESSAGE value="Insertion works fine" />
-    <option name="LAST_COMMIT_MESSAGE" value="Insertion works fine" />
+    <MESSAGE value="SA Thread can be stopped programmably however can't find an alternative way to join" />
+    <option name="LAST_COMMIT_MESSAGE" value="SA Thread can be stopped programmably however can't find an alternative way to join" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1246,13 +1253,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Graph/GraphGenerator.java</url>
-          <line>930</line>
+          <line>938</line>
           <properties />
           <option name="timeStamp" value="202" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Graph/GraphGenerator.java</url>
-          <line>908</line>
+          <line>916</line>
           <properties />
           <option name="timeStamp" value="204" />
         </line-breakpoint>
@@ -1298,11 +1305,17 @@
           <properties />
           <option name="timeStamp" value="211" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Graph/GraphGenerator.java</url>
+          <line>359</line>
+          <properties />
+          <option name="timeStamp" value="212" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="212" />
+      <option name="time" value="213" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1315,8 +1328,11 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="1224">
           <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding>
-            <element signature="e#928#929#0" expanded="true" />
-            <element signature="e#966#967#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#609#610#0" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#1140#1141#0" expanded="true" />
+            <element signature="e#1178#1179#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1337,8 +1353,11 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="1134">
           <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding>
-            <element signature="e#928#929#0" expanded="true" />
-            <element signature="e#966#967#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#609#610#0" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#1140#1141#0" expanded="true" />
+            <element signature="e#1178#1179#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1372,7 +1391,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="3258" max-vertical-offset="11826">
           <caret line="208" column="0" selection-start-line="208" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
           <folding>
-            <element signature="e#13756#13774#0" expanded="true" />
+            <element signature="e#13964#13982#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1401,8 +1420,11 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="1134">
           <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding>
-            <element signature="e#928#929#0" expanded="true" />
-            <element signature="e#966#967#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#609#610#0" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#1140#1141#0" expanded="true" />
+            <element signature="e#1178#1179#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1664,43 +1686,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithm/InsertionAlgo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1109" max-vertical-offset="3204">
-          <caret line="88" column="51" selection-start-line="88" selection-start-column="51" selection-end-line="88" selection-end-column="51" />
-          <folding>
-            <element signature="e#3586#3621#0" expanded="true" />
-            <element signature="e#4314#4332#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Graph/GraphGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="12425" max-vertical-offset="19386">
-          <caret line="716" column="16" selection-start-line="716" selection-start-column="16" selection-end-line="716" selection-end-column="16" />
-          <folding>
-            <element signature="e#13756#13774#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/ColleagueSecPanelTextF.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
           <caret line="9" column="66" selection-start-line="9" selection-start-column="66" selection-end-line="9" selection-end-column="66" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithm/Algorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="1206">
-          <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
-          <folding>
-            <element signature="e#928#929#0" expanded="true" />
-            <element signature="e#966#967#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1715,10 +1705,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/InsertionAlgo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="3204">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding>
+            <element signature="e#3586#3621#0" expanded="true" />
+            <element signature="e#4314#4332#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/Algorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="1386">
+          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+          <folding>
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#609#610#0" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#1140#1141#0" expanded="true" />
+            <element signature="e#1178#1179#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graph/GraphGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.814815" vertical-offset="3326" max-vertical-offset="19566">
+          <caret line="217" column="0" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
+          <folding>
+            <element signature="e#13964#13982#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/TSPGui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6446837" vertical-offset="16333" max-vertical-offset="20898">
-          <caret line="949" column="50" selection-start-line="949" selection-start-column="50" selection-end-line="949" selection-end-column="50" />
+        <state vertical-scroll-proportion="-2.283984" vertical-offset="14387" max-vertical-offset="20502">
+          <caret line="720" column="0" selection-start-line="720" selection-start-column="0" selection-end-line="720" selection-end-column="0" />
           <folding />
         </state>
       </provider>

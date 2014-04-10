@@ -12,13 +12,12 @@ import com.mxgraph.swing.mxGraphComponent;
 import com.mxgraph.view.mxGraph;
 
 import java.awt.*;
-import java.io.IOException;
 import java.text.DecimalFormat;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class GraphGenerator extends Object implements Cloneable {
-    public static mxGraph graph = new mxGraph();
+    public mxGraph graph = new mxGraph();
     Object parent = graph.getDefaultParent();
     public Object[] graphNodeArray;
     public edgeColors color;
@@ -33,17 +32,7 @@ public class GraphGenerator extends Object implements Cloneable {
     private mxGraphModel model;
 
 
-    public Object clone() throws CloneNotSupportedException {
-        return super.clone();
-    }
 
-    public void finalize() throws IOException {
-        try {
-            super.finalize();
-        } catch (Throwable throwable) {
-            throwable.printStackTrace();
-        }
-    }
 
     public GraphGenerator() {
         // mxGraph.getCellStyle(graph);
@@ -54,6 +43,20 @@ public class GraphGenerator extends Object implements Cloneable {
         graph.getModel() = new mxGraphModel(root);
         graph = new mxGraph(model);
   */
+    }
+
+
+    public GraphGenerator(GraphGenerator ggGraph) {
+        this.graph = ggGraph.graph;
+        this.parent = this.graph.getDefaultParent();
+        this.graphNodeArray = ggGraph.graphNodeArray;
+        this.color = ggGraph.color;
+        this.layer = ggGraph.layer;
+        this.colorString = ggGraph.colorString;
+        this.graphNodeArrayToIDtable = ggGraph.graphNodeArrayToIDtable;
+        this.theWholedisTable = ggGraph.theWholedisTable;
+
+
     }
 
     public void createGraph(int numberOfCity) {
@@ -212,6 +215,8 @@ public class GraphGenerator extends Object implements Cloneable {
             try {
                 graph.getModel().endUpdate();
             } catch (IndexOutOfBoundsException e) {
+            } catch (NullPointerException e) {
+
             }
         }
         return distanceFinder(i, j);
@@ -349,6 +354,7 @@ public class GraphGenerator extends Object implements Cloneable {
 
     public int edgeDrawerfromItoNextClosestNode(int i) {
         //System.out.println(i);
+
         int nodeJ = this.getIndexofClosesetNodefromIwithDistance(i).getValue();
         edgeDrawerFromNodeItoJ(i, nodeJ);
         return nodeJ;
