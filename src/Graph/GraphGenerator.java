@@ -749,7 +749,10 @@ public class GraphGenerator extends Object implements Cloneable {
                             double E = initialDistance - swapDistance;
                             // E -1
                             if (E > 0) { // if on is false, SA option is tuned off, it always runs and can't reach to else statement.
-
+                                if (T < 0.3 && onoff) {
+                                    System.out.println(E + "  improvement made");
+                                    System.out.println(gettingTotalDistanceFromTableAbstract(edgesWithSourceAndTargetNodes));
+                                }
                                 //  int edgeGetJtargetInitial = edgesWithSourceAndTargetNodes.get(jtargetInitialValue);
                                 edgesWithSourceAndTargetNodes.put(isourceNode, ksourceNode);
                                 edgesWithSourceAndTargetNodes.put(jtargetNode, ltargetNode);
