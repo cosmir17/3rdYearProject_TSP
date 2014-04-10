@@ -18,6 +18,8 @@ public abstract class Algorithm extends Thread {
     edgeColors color;
     EdgeLayers layer;
 
+
+    boolean running = true;
     public Algorithm(GraphGenerator graphObject) {
         this.graphObject = graphObject;
         this.graph = graphObject.graph;
@@ -30,9 +32,16 @@ public abstract class Algorithm extends Thread {
 
     }
 
+    public void setRunning(boolean running) {
+        this.running = running;
+    }
+
     public void run() {
-        drawer();
-        // getTotalDis();
+
+        while (running) {
+            drawer();
+            // getTotalDis();
+        }
     }
 
 

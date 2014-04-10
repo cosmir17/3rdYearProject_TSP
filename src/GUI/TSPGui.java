@@ -777,8 +777,19 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
 
     private void shortestButtonPushed() {
         if (shortestButton.pushed && shortestButton.getActionCommand().equals("Shortest Path")) {
+
+            try {
+                sAAlgo.setRunning(false);
+                graphSAalgoGraph.allEdgeRemover();
+            } catch (NullPointerException e) {
+
+            }
+
+
             // removeGraphfromPanel();
-            graphObectDuplicator();
+
+
+
 
             // graphEdgeRemover();
 
@@ -809,9 +820,12 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
             //advancedHeuLabel.setColleagueEnabled(true);
             //simultedACheckBox.setColleagueEnabled(true);
             //geneCheckBox.setColleagueEnabled(true);
+
+/*           these were used.
+            graphObectDuplicator();
             shortestButton.pushed = false;
             secondPanelElementsSwitch(true);
-
+*/
 
         }
 
@@ -917,6 +931,12 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
     private void sAAlgoRunner() {
         long start = System.currentTimeMillis();
 
+        if (!sADisTextF.getText().equals(SimulatedAnnealingAlgo.HALT) && !sATimeTextF.getText().equals(SimulatedAnnealingAlgo.SCHEDULE)) {
+
+            double schedule = Double.parseDouble(sATimeTextF.getText());
+            double halt = Double.parseDouble(sADisTextF.getText());
+            sAAlgo = new SimulatedAnnealingAlgo(graphSAalgoGraph, schedule, halt);
+        }
 
         sAAlgo = new SimulatedAnnealingAlgo(graphSAalgoGraph);
         sAAlgo.start();
@@ -1010,11 +1030,28 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
                 initButton.pushed = false;
                 graphObectDuplicator();
                 secondPanelElementsSwitch(true);
+
+                toFindBestsASettingValue();
+
+
                 //secondPanelElementsSwitch(false);
 
 
             }
         }
+    }
+
+    private void toFindBestsASettingValue() {
+
+
+        sATimeTextF.setEnabled(true);
+        sADisTextF.setEnabled(true);
+
+        sADisTextF.setEditable(true);
+        sATimeTextF.setEditable(true);
+
+        sATimeTextF.setText(String.valueOf(SimulatedAnnealingAlgo.SCHEDULE));
+        sADisTextF.setText(String.valueOf(SimulatedAnnealingAlgo.HALT));
     }
 
     private void insertGraphintoPanelMap(mxGraphComponent compo) {

@@ -7,9 +7,15 @@ import Graph.edgeColors;
  * Created by lloydp on 01/04/14.
  */
 public class SimulatedAnnealingAlgo extends Algorithm {
-    private static final double INITIAL_T = 2000000;
-    private static final double SCHEDULE = 0.9995;
-    private static final double HALT = 0.03;
+    public double INITIAL_T = 2000000;
+    public static double SCHEDULE = 0.9995;
+    public static double HALT = 0.03;
+
+    public SimulatedAnnealingAlgo(GraphGenerator graphObject, double schedule, double halt) {
+        super(graphObject);
+        this.SCHEDULE = schedule;
+        this.HALT = halt;
+    }
 
     public SimulatedAnnealingAlgo(GraphGenerator graphObject) {
         super(graphObject);
