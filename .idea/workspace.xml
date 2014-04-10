@@ -9,9 +9,8 @@
     <bookmark url="file://$PROJECT_DIR$/src/Graph/GraphGenerator.java" line="510" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="for a fair comparison, I switched random to nearestN for two opt and SA.">
+    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="GA can now have generations">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java" afterPath="$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Graph/GraphGenerator.java" afterPath="$PROJECT_DIR$/src/Graph/GraphGenerator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="3rd_year_project.iws" />
@@ -173,7 +172,7 @@
         <entry file="file://$PROJECT_DIR$/src/Graph/GraphGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-8.814815" vertical-offset="18518" max-vertical-offset="19764">
-              <caret line="1054" column="39" selection-start-line="1054" selection-start-column="30" selection-end-line="1054" selection-end-column="39" />
+              <caret line="1054" column="40" selection-start-line="1054" selection-start-column="31" selection-end-line="1054" selection-end-column="40" />
               <folding>
                 <element signature="e#13938#13956#0" expanded="true" />
                 <element signature="e#33985#33986#0" expanded="true" />
@@ -196,13 +195,23 @@
       <file leaf-file-name="GeneticAlgo.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41152263" vertical-offset="348" max-vertical-offset="6210">
-              <caret line="44" column="37" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.4278297" vertical-offset="830" max-vertical-offset="6120">
+              <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
               <folding>
                 <element signature="e#1074#1101#0" expanded="true" />
-                <element signature="e#1996#2031#0" expanded="true" />
-                <element signature="e#9080#9107#0" expanded="true" />
+                <element signature="e#2252#2287#0" expanded="true" />
+                <element signature="e#9297#9324#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Unsafe.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar:///usr/lib/java/jdk1.7.0_51/jre/lib/rt.jar!/sun/misc/Unsafe.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="5053" max-vertical-offset="6030">
+              <caret line="327" column="23" selection-start-line="327" selection-start-column="23" selection-end-line="327" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -268,22 +277,6 @@
               <folding>
                 <element signature="e#3586#3621#0" expanded="true" />
                 <element signature="e#4314#4332#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Algorithm.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Algorithm/Algorithm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="1386">
-              <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
-              <folding>
-                <element signature="e#552#553#0" expanded="true" />
-                <element signature="e#609#610#0" expanded="true" />
-                <element signature="e#657#658#0" expanded="true" />
-                <element signature="e#1140#1141#0" expanded="true" />
-                <element signature="e#1178#1179#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1177,7 +1170,11 @@
       <created>1397165689500</created>
       <updated>1397165689500</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="GA can now have generations">
+      <created>1397168999715</created>
+      <updated>1397168999716</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1204,7 +1201,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19914803" sideWeight="0.49840257" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22521655" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22521655" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="642" y="197" width="724" height="513" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1232,7 +1229,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="deleted dummy classes and thrid party libraries. added jgraphx rather than jgrapht. still unknwon error," />
     <MESSAGE value="mxgraph might not be thread safe." />
     <MESSAGE value="distance often wrongly printed because it's not rounded" />
     <MESSAGE value="GA started" />
@@ -1257,7 +1253,8 @@
     <MESSAGE value="SA Thread can be stopped programmably however can't find an alternative way to join" />
     <MESSAGE value="graph object now is not static" />
     <MESSAGE value="for a fair comparison, I switched random to nearestN for two opt and SA." />
-    <option name="LAST_COMMIT_MESSAGE" value="for a fair comparison, I switched random to nearestN for two opt and SA." />
+    <MESSAGE value="GA can now have generations" />
+    <option name="LAST_COMMIT_MESSAGE" value="GA can now have generations" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1324,11 +1321,47 @@
           <properties />
           <option name="timeStamp" value="212" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java</url>
+          <line>50</line>
+          <properties />
+          <option name="timeStamp" value="213" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java</url>
+          <line>51</line>
+          <properties />
+          <option name="timeStamp" value="214" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java</url>
+          <line>45</line>
+          <properties />
+          <option name="timeStamp" value="215" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java</url>
+          <line>299</line>
+          <properties />
+          <option name="timeStamp" value="218" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java</url>
+          <line>66</line>
+          <properties />
+          <option name="timeStamp" value="219" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java</url>
+          <line>77</line>
+          <properties />
+          <option name="timeStamp" value="221" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="213" />
+      <option name="time" value="222" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1336,20 +1369,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Algorithm/Algorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="1224">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding>
-            <element signature="e#552#553#0" expanded="true" />
-            <element signature="e#609#610#0" expanded="true" />
-            <element signature="e#657#658#0" expanded="true" />
-            <element signature="e#1140#1141#0" expanded="true" />
-            <element signature="e#1178#1179#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Algorithm/SimulatedAnnealingAlgo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="738">
@@ -1748,7 +1767,7 @@
     <entry file="file://$PROJECT_DIR$/src/Graph/GraphGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.814815" vertical-offset="18518" max-vertical-offset="19764">
-          <caret line="1054" column="39" selection-start-line="1054" selection-start-column="30" selection-end-line="1054" selection-end-column="39" />
+          <caret line="1054" column="40" selection-start-line="1054" selection-start-column="31" selection-end-line="1054" selection-end-column="40" />
           <folding>
             <element signature="e#13938#13956#0" expanded="true" />
             <element signature="e#33985#33986#0" expanded="true" />
@@ -1757,14 +1776,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///usr/lib/java/jdk1.7.0_51/jre/lib/rt.jar!/sun/misc/Unsafe.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5053" max-vertical-offset="6030">
+          <caret line="327" column="23" selection-start-line="327" selection-start-column="23" selection-end-line="327" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41152263" vertical-offset="348" max-vertical-offset="6210">
-          <caret line="44" column="37" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.4278297" vertical-offset="830" max-vertical-offset="6120">
+          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
           <folding>
             <element signature="e#1074#1101#0" expanded="true" />
-            <element signature="e#1996#2031#0" expanded="true" />
-            <element signature="e#9080#9107#0" expanded="true" />
+            <element signature="e#2252#2287#0" expanded="true" />
+            <element signature="e#9297#9324#0" expanded="true" />
           </folding>
         </state>
       </provider>

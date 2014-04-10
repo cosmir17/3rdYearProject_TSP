@@ -40,17 +40,20 @@ public class GeneticAlgo extends Algorithm implements Runnable {
         Vector<TreeMap<Integer, Integer>> selectedFourIndis2 = new Vector<TreeMap<Integer, Integer>>();
 
         int generationNumber = 0;
-        while (generationNumber < 200) {
+        while (generationNumber < 6000) {
 
             if (generationNumber > 0) {
-                selectedFourIndis = selectedFourIndis2;
+                // selectedFourIndis = selectedFourIndis2;
+                selectedFourIndis = new Vector<TreeMap<Integer, Integer>>(selectedFourIndis2);
+                //   selectedFourIndis2.clear();
             }
 
             TreeMap<Double, TreeMap<Integer, Integer>> secondGenerationList = crossoverIndividuals(selectedFourIndis); //select 4 indi and crossover and multiply to 100
-            selectedFourIndis2 = selectFourIndividualsafterFirstGeneration(secondGenerationList);
+            selectedFourIndis2 = new Vector<TreeMap<Integer, Integer>>(selectFourIndividualsafterFirstGeneration(secondGenerationList));
 
             generationNumber++;
-            graphObject.gettingTotalDistanceFromTableAbstract(selectedFourIndis2.get(0));
+//            selectedFourIndis.clear();
+            System.out.println("The distance is : " + graphObject.gettingTotalDistanceFromTableAbstract(selectedFourIndis2.get(0)));
         }
 
         graphObject.drawFromEdgeListTreeMap(selectedFourIndis2.get(0));
@@ -283,19 +286,18 @@ public class GeneticAlgo extends Algorithm implements Runnable {
 
     public Vector<TreeMap<Integer, Integer>> selectFourIndividualsafterFirstGeneration(TreeMap<Double, TreeMap<Integer, Integer>> generation) {
 
-        int fourTimes = 0;
-        Vector<TreeMap<Integer, Integer>> selectedIndividualsHash = new Vector<TreeMap<Integer, Integer>>();
-        for (double path : generation.keySet()) {
-            selectedIndividualsHash.add(generation.get(path));
 
-            fourTimes++;
-            if (fourTimes > 3) break;
-        }
 
         Vector<TreeMap<Integer, Integer>> selectedIndividuals = new Vector<TreeMap<Integer, Integer>>();
-        for (int i = 0; i < selectedIndividualsHash.size(); i++) {
-            selectedIndividuals.add(selectedIndividualsHash.get(i));
 
+        int onlyFourIteration = 0;
+        for (double gener : generation.keySet()) {
+            TreeMap<Integer, Integer> individual = generation.get(gener);
+            selectedIndividuals.add(individual);
+            onlyFourIteration++;
+            if (onlyFourIteration == 4) {
+                break;
+            }
         }
         return selectedIndividuals;
     }
