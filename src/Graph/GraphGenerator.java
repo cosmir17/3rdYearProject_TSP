@@ -1052,7 +1052,7 @@ public class GraphGenerator extends Object implements Cloneable {
 
         PathDrawerIfSubgraphExist pathChecker = new PathDrawerIfSubgraphExist(edgelistTree);
 
-        System.out.println("There are " + pathChecker.getHowmanyCycles() + " cycles");
+        // System.out.println("There are " + pathChecker.getHowmanyCycles() + " cycles");
 
         //edgelist = pathChecker.getEdgelist();
     }
@@ -1085,6 +1085,16 @@ public class GraphGenerator extends Object implements Cloneable {
     }
 
     public double gettingTotalDistanceFromTableAbstract(ConcurrentHashMap<Integer, Integer> edgelistPara) {
+        double distance = 0;
+        for (int nodes : edgelistPara.keySet()) {
+            distance += gettingDistanceFromDistanceTableAbstract(nodes, edgelistPara.get(nodes));
+
+        }
+        return distance;
+    }
+
+
+    public double gettingTotalDistanceFromTableAbstract(TreeMap<Integer, Integer> edgelistPara) {
         double distance = 0;
         for (int nodes : edgelistPara.keySet()) {
             distance += gettingDistanceFromDistanceTableAbstract(nodes, edgelistPara.get(nodes));

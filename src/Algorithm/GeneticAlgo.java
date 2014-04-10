@@ -34,15 +34,58 @@ public class GeneticAlgo extends Algorithm implements Runnable {
 
 
         TreeMap<Double, ConcurrentHashMap<Integer, Integer>> firstGeneration = produceAhundredIndividuals();
+        graphObject.allEdgeRemover();
+
         Vector<TreeMap<Integer, Integer>> selectedFourIndis = selectFourIndividuals(firstGeneration);
+        Vector<TreeMap<Integer, Integer>> selectedFourIndis2 = new Vector<TreeMap<Integer, Integer>>();
 
-        TreeMap<Integer, Integer> firstIndi = selectedFourIndis.get(0);
-        TreeMap<Integer, Integer> secondIndi = selectedFourIndis.get(1);
+        int generationNumber = 0;
+        while (generationNumber < 200) {
 
-        TreeMap<Integer, Integer> off = crossOver(firstIndi, secondIndi);
-        graphObject.drawFromEdgeListTreeMap(off);
+            if (generationNumber > 0) {
+                selectedFourIndis = selectedFourIndis2;
+            }
+
+            TreeMap<Double, TreeMap<Integer, Integer>> secondGenerationList = crossoverIndividuals(selectedFourIndis); //select 4 indi and crossover and multiply to 100
+            selectedFourIndis2 = selectFourIndividualsafterFirstGeneration(secondGenerationList);
+
+            generationNumber++;
+            graphObject.gettingTotalDistanceFromTableAbstract(selectedFourIndis2.get(0));
+        }
+
+        graphObject.drawFromEdgeListTreeMap(selectedFourIndis2.get(0));
 
     }
+
+
+    private TreeMap<Double, TreeMap<Integer, Integer>> crossoverIndividuals(Vector<TreeMap<Integer, Integer>> selectedFourIndis) {
+
+
+        TreeMap<Double, TreeMap<Integer, Integer>> distanceList = new TreeMap<Double, TreeMap<Integer, Integer>>(); //distance list of the total individuals
+
+
+        for (int i = 0; i < selectedFourIndis.size(); i++) {
+            for (int j = 0; j < selectedFourIndis.size(); j++) {
+                if (i != j) {
+                    TreeMap<Integer, Integer> first = selectedFourIndis.get(i);  //repetition of first individual
+                    TreeMap<Integer, Integer> second = selectedFourIndis.get(j); //repetition of second individual
+
+                    TreeMap<Integer, Integer> offspring = crossOver(first, second);
+                    double offspringDistance = graphObject.gettingTotalDistanceFromTableAbstract(offspring);
+                    distanceList.put(offspringDistance, offspring);
+                }
+            }
+
+        }
+
+
+        return distanceList;
+
+
+    }
+
+
+
 
     public TreeMap<Integer, Integer> crossOver(TreeMap<Integer, Integer> firstIndi, TreeMap<Integer, Integer> secondIndi) {
 
@@ -108,7 +151,7 @@ public class GeneticAlgo extends Algorithm implements Runnable {
 
         PathDrawerIfSubgraphExist pathChecker = new PathDrawerIfSubgraphExist(edgelist);
 
-        System.out.println("There are " + pathChecker.getHowmanyCycles() + " cycles");
+        //System.out.println("There are " + pathChecker.getHowmanyCycles() + " cycles");
 
         edgelist = pathChecker.getEdgelist();
 
@@ -233,6 +276,25 @@ public class GeneticAlgo extends Algorithm implements Runnable {
         Vector<TreeMap<Integer, Integer>> selectedIndividuals = new Vector<TreeMap<Integer, Integer>>();
         for (int i = 0; i < selectedIndividualsHash.size(); i++) {
             selectedIndividuals.add(hashmapSort(selectedIndividualsHash.get(i)));
+
+        }
+        return selectedIndividuals;
+    }
+
+    public Vector<TreeMap<Integer, Integer>> selectFourIndividualsafterFirstGeneration(TreeMap<Double, TreeMap<Integer, Integer>> generation) {
+
+        int fourTimes = 0;
+        Vector<TreeMap<Integer, Integer>> selectedIndividualsHash = new Vector<TreeMap<Integer, Integer>>();
+        for (double path : generation.keySet()) {
+            selectedIndividualsHash.add(generation.get(path));
+
+            fourTimes++;
+            if (fourTimes > 3) break;
+        }
+
+        Vector<TreeMap<Integer, Integer>> selectedIndividuals = new Vector<TreeMap<Integer, Integer>>();
+        for (int i = 0; i < selectedIndividualsHash.size(); i++) {
+            selectedIndividuals.add(selectedIndividualsHash.get(i));
 
         }
         return selectedIndividuals;
