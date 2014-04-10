@@ -4,6 +4,7 @@ import Graph.GraphGenerator;
 import Graph.edgeColors;
 
 import java.util.HashMap;
+import java.util.Map;
 import java.util.TreeMap;
 
 /**
@@ -43,24 +44,8 @@ public class InsertionAlgo extends Algorithm {
         graphObject.edgeDrawerfromijkwithoutRemovingEdgeFromIJ(0, nodeJ, minimumNodeMap.firstEntry().getKey());
 
 
-        while (graphObject.isNodeWithoutanEdge()) {
-            HashMap<Integer, Integer> sourceAndTarget = graphObject.sourceAndTargetNodeListWithEdges();
-
-            TreeMap<Integer, Double> minimumNodeMap2 = new TreeMap<Integer, Double>();
-
-            for (int i : sourceAndTarget.keySet()) {
-                int sourceNode = i;
-                int targetNode = sourceAndTarget.get(i);
-
-                if (graphObject.isNodeWithoutanEdge()) {
-                    minimumNodeMap2 = graphObject.findMinimumValueOfIJKiteratingManyNodes(sourceNode, targetNode);
-                    graphObject.edgeDrawerfromijk(sourceNode, targetNode, minimumNodeMap2.firstEntry().getKey());
-                }
-            }
-
-
-        }
-
+        // previousSetting();
+        newSetting();
         //  graphObject.repeatSwapping();
 
 /*
@@ -96,6 +81,97 @@ public class InsertionAlgo extends Algorithm {
         //int nodeKcandidatefromJ = graphObject.getIndexofClosesetNodefromIwithDistance(nodeJ).getValue();
 */
 
+    }
+
+    private void newSetting() {
+
+        boolean forDemonstration = true;
+        while (graphObject.isNodeWithoutanEdge()) {
+
+
+            boolean justonce = true;
+            HashMap<Integer, Integer> sourceAndTarget = graphObject.sourceAndTargetNodeListWithEdges();
+
+            TreeMap<Integer, Double> minimumNodeMap2 = new TreeMap<Integer, Double>();
+
+            for (int i : sourceAndTarget.keySet()) {
+                if (justonce) {
+                    int sourceNode = i;
+                    Map.Entry<Double, Integer> kCandidateList;
+                    kCandidateList = graphObject.getIndexofClosesetNodefromIwithDistance(sourceNode); //kCandindate needs to be redefined once drwan.
+                    int kcandidate = kCandidateList.getValue();
+
+                    TreeMap<Double, HashMap<Integer, Integer>> jkikMinusijListWithEdgeList = new TreeMap<Double, HashMap<Integer, Integer>>();
+
+                    for (int j : sourceAndTarget.keySet()) {
+                        if (justonce) {
+                            int sourceNode2 = j;
+                            int targetNode = sourceAndTarget.get(j);
+
+
+                            double jkDistance = graphObject.distanceFinder(sourceNode2, kcandidate);
+                            double ikDistance = graphObject.distanceFinder(targetNode, kcandidate);
+                            double ijDistance = graphObject.distanceFinder(sourceNode2, targetNode);
+
+                            double calculatedValue = jkDistance + ikDistance - ijDistance;
+
+                            HashMap<Integer, Integer> edge = new HashMap<Integer, Integer>();
+                            edge.put(sourceNode2, targetNode);
+                            jkikMinusijListWithEdgeList.put(calculatedValue, edge);
+
+                            if (graphObject.isNodeWithoutanEdge() && jkikMinusijListWithEdgeList.size() == sourceAndTarget.size()) {
+
+                                Map.Entry<Double, HashMap<Integer, Integer>> minimu = jkikMinusijListWithEdgeList.firstEntry();
+                                HashMap<Integer, Integer> minimEdge = minimu.getValue();
+
+                                int minimSource = -1;
+                                int minimTarget = -1;
+
+                                for (int minSource : minimEdge.keySet()) {
+                                    minimSource = minSource;
+                                    minimTarget = minimEdge.get(minimSource);
+
+                                }
+
+                                graphObject.edgeDrawerfromijk(minimSource, minimTarget, kcandidate);
+
+
+                                justonce = false;
+
+
+                            }
+
+
+                        }
+                    }
+
+
+                }
+            }
+
+
+        }
+    }
+
+    private void previousSetting() {
+
+        while (graphObject.isNodeWithoutanEdge()) {
+            HashMap<Integer, Integer> sourceAndTarget = graphObject.sourceAndTargetNodeListWithEdges();
+
+            TreeMap<Integer, Double> minimumNodeMap2 = new TreeMap<Integer, Double>();
+
+            for (int i : sourceAndTarget.keySet()) {
+                int sourceNode = i;
+                int targetNode = sourceAndTarget.get(i);
+
+                if (graphObject.isNodeWithoutanEdge()) {
+                    minimumNodeMap2 = graphObject.findMinimumValueOfIJKiteratingManyNodes(sourceNode, targetNode);
+                    graphObject.edgeDrawerfromijk(sourceNode, targetNode, minimumNodeMap2.firstEntry().getKey());
+                }
+            }
+
+
+        }
     }
 
 }

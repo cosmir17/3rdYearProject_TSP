@@ -502,6 +502,33 @@ public class GraphGenerator extends Object implements Cloneable {
         return minimumNode;
     }
 
+    public TreeMap<Integer, Double> findMinimumValueOfIJKiteratingOneNodeWithManyIJ(int i, int j) {
+
+
+        double minimum = 90000;
+        double ijk;
+        int bestKnode = graphNodeArray.length + 1;
+
+
+        for (int k = 0; k < graphNodeArray.length; k++) {
+            mxCell kNode = (mxCell) graphNodeArray[k];
+            if (kNode.getEdgeCount() < 1) {
+                ijk = findValueforikPlusjkMinusij(i, j, k);
+                if (ijk < minimum) {
+                    minimum = ijk;
+                    bestKnode = k;
+                }
+
+            }
+        }
+
+
+        TreeMap<Integer, Double> minimumNode = new TreeMap<Integer, Double>();
+        minimumNode.put(bestKnode, minimum);
+        return minimumNode;
+    }
+
+
 
     public void edgeDrawerfromijk(int i, int j, int k) {
         edgeDrawerFromNodeItoJ(i, k);
@@ -703,7 +730,7 @@ public class GraphGenerator extends Object implements Cloneable {
 
             howManyIteration++;
             if (onoff) {
-                System.out.println("Temperature T is : " + T);
+                //   System.out.println("Temperature T is : " + T);
 
 
             }
@@ -749,10 +776,7 @@ public class GraphGenerator extends Object implements Cloneable {
                             double E = initialDistance - swapDistance;
                             // E -1
                             if (E > 0) { // if on is false, SA option is tuned off, it always runs and can't reach to else statement.
-                                if (T < 0.3 && onoff) {
-                                    System.out.println(E + "  improvement made");
-                                    System.out.println(gettingTotalDistanceFromTableAbstract(edgesWithSourceAndTargetNodes));
-                                }
+
                                 //  int edgeGetJtargetInitial = edgesWithSourceAndTargetNodes.get(jtargetInitialValue);
                                 edgesWithSourceAndTargetNodes.put(isourceNode, ksourceNode);
                                 edgesWithSourceAndTargetNodes.put(jtargetNode, ltargetNode);
@@ -769,6 +793,14 @@ public class GraphGenerator extends Object implements Cloneable {
 
                                 swapHappened = true;
                                 reverseDirectionfromJtoKadt(edgesWithSourceAndTargetNodes2, edgesWithSourceAndTargetNodes, jkeyToValue, ksourceNode, jtargetNode, isourceNode, ltargetNode);
+
+                                if (T < 2000 && onoff) {
+
+
+                                    System.out.println("Temperature T is : " + T);
+                                    System.out.println(E + "  improvement made");
+                                    System.out.println(gettingTotalDistanceFromTableAbstract(edgesWithSourceAndTargetNodes));
+                                }
 
                             } else {
 
@@ -796,7 +828,7 @@ public class GraphGenerator extends Object implements Cloneable {
                                     edgesWithSourceAndTargetNodes.put(isourceNode, ksourceNode);
                                     edgesWithSourceAndTargetNodes.put(jtargetNode, ltargetNode);
 
-                                    System.out.println("sa works");
+                                    // System.out.println("sa works");
 
                                     //  HashMap<Integer, Integer> edgesWithSourceAndTargetNodes2 = sourceAndTargetNodeListWithEdges();
                                     // reverseDirectionfromJtoK(edgesWithSourceAndTargetNodes2, jtargetNode, ksourceNode);
