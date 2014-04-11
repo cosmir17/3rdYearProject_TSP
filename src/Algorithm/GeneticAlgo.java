@@ -49,7 +49,7 @@ public class GeneticAlgo extends Algorithm implements Runnable {
             }
 
             TreeMap<Double, TreeMap<Integer, Integer>> secondGenerationList = crossoverIndividuals(selectedFourIndis); //select 4 indi and crossover and multiply to 100
-            selectedFourIndis2 = new Vector<TreeMap<Integer, Integer>>(selectFourIndividualsafterFirstGeneration(secondGenerationList));
+            selectedFourIndis2 = new Vector<TreeMap<Integer, Integer>>(selectFourIndividualsafterFirstGeneration(secondGenerationList)); //This doesn't change.
 
             generationNumber++;
 //            selectedFourIndis.clear();
@@ -73,9 +73,31 @@ public class GeneticAlgo extends Algorithm implements Runnable {
                     TreeMap<Integer, Integer> first = selectedFourIndis.get(i);  //repetition of first individual
                     TreeMap<Integer, Integer> second = selectedFourIndis.get(j); //repetition of second individual
 
-                    TreeMap<Integer, Integer> offspring = crossOver(first, second);
-                    double offspringDistance = graphObject.gettingTotalDistanceFromTableAbstract(offspring);
-                    distanceList.put(offspringDistance, offspring);
+                    ConcurrentHashMap<Integer, Integer> randomCH = graphObject.randomCycleEdgeListGenerator();
+                    TreeMap<Integer, Integer> randomPat = new TreeMap<Integer, Integer>(randomCH);
+
+
+                    for (int iii = 0; iii < 20; iii++) {
+                        TreeMap<Integer, Integer> offspring = crossOver(first, randomPat); //crossover need randomisation
+                        double offspringDistance = graphObject.gettingTotalDistanceFromTableAbstract(offspring);
+
+                        if (distanceList.containsKey(offspringDistance)) {
+                            offspringDistance += 0.001;
+                        }
+                        distanceList.put(offspringDistance, offspring);
+                    }
+
+
+                    for (int jjj = 0; jjj < 20; jjj++) {
+                        TreeMap<Integer, Integer> offspring = crossOver(second, randomPat); //crossover need randomisation
+                        double offspringDistance = graphObject.gettingTotalDistanceFromTableAbstract(offspring);
+
+                        if (distanceList.containsKey(offspringDistance)) {
+                            offspringDistance += 0.001;
+                        }
+                        distanceList.put(offspringDistance, offspring);
+                    }
+
                 }
             }
 
@@ -239,7 +261,7 @@ public class GeneticAlgo extends Algorithm implements Runnable {
 
     public static void vectorShuffler(Vector<Integer> valueList) {
 
-        if (valueList.size() != 1 && valueList.size() != 0) {
+        if (valueList.size() > 1) {
             int swap = 0;
             boolean isSwapEnough = true;
 
