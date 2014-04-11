@@ -9,9 +9,8 @@
     <bookmark url="file://$PROJECT_DIR$/src/Graph/GraphGenerator.java" line="510" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="jkikMinusijListWithEdgeList.put(calculatedValue, edge);&#10;calculatedValue's' could be same for different nodes and it was causing a problem for path for more than 90 cities.">
+    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="GA, just one offs for a pair of parents =&gt; many offs.&#10;&#10;crossover(first, random)&#10;crossover(second,random)&#10;&#10;now arrayindexout">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java" afterPath="$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Graph/GraphGenerator.java" afterPath="$PROJECT_DIR$/src/Graph/GraphGenerator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="3rd_year_project.iws" />
@@ -172,7 +171,7 @@
       <file leaf-file-name="GraphGenerator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Graph/GraphGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="17190" max-vertical-offset="19764">
+            <state vertical-scroll-proportion="0.0" vertical-offset="17190" max-vertical-offset="19746">
               <caret line="1048" column="0" selection-start-line="1048" selection-start-column="0" selection-end-line="1048" selection-end-column="0" />
               <folding />
             </state>
@@ -189,13 +188,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GeneticAlgo.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="GeneticAlgo.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="824" max-vertical-offset="6570">
-              <caret line="92" column="89" selection-start-line="92" selection-start-column="89" selection-end-line="92" selection-end-column="89" />
+            <state vertical-scroll-proportion="0.4440843" vertical-offset="860" max-vertical-offset="6750">
+              <caret line="71" column="47" selection-start-line="71" selection-start-column="47" selection-end-line="71" selection-end-column="47" />
               <folding>
-                <element signature="e#2927#2945#0" expanded="true" />
+                <element signature="e#3253#3271#0" expanded="true" />
+                <element signature="e#4019#4037#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -211,10 +211,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PathDrawerIfSubgraphExist.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="PathDrawerIfSubgraphExist.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Algorithm/GeneticAlgorithm/PathDrawerIfSubgraphExist.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6505882" vertical-offset="1877" max-vertical-offset="3780">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2225" max-vertical-offset="3780">
               <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
               <folding />
             </state>
@@ -1177,7 +1177,11 @@
       <created>1397235861206</created>
       <updated>1397235861206</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="GA, just one offs for a pair of parents =&gt; many offs.&#10;&#10;crossover(first, random)&#10;crossover(second,random)&#10;&#10;now arrayindexout">
+      <created>1397238349412</created>
+      <updated>1397238349412</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1193,7 +1197,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32845894" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35899904" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35899904" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27344993" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.17371601" sideWeight="0.50159746" order="3" side_tool="true" content_ui="tabs" x="568" y="298" width="230" height="150" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6301587" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1204,7 +1208,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1400426" sideWeight="0.49840257" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13474494" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13474494" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="642" y="197" width="724" height="513" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1232,8 +1236,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="GA started" />
-    <MESSAGE value="randomCycleDrawer becomes really random" />
     <MESSAGE value="randomCycleDrawer becomes really random (now indeed)&#10;it's working properly." />
     <MESSAGE value="GA, first generation" />
     <MESSAGE value="SA, wrong random edge drawer method was selected" />
@@ -1257,96 +1259,104 @@
     <MESSAGE value="GA can now have generations" />
     <MESSAGE value="GA is strange." />
     <MESSAGE value="jkikMinusijListWithEdgeList.put(calculatedValue, edge);&#10;calculatedValue's' could be same for different nodes and it was causing a problem for path for more than 90 cities." />
-    <option name="LAST_COMMIT_MESSAGE" value="jkikMinusijListWithEdgeList.put(calculatedValue, edge);&#10;calculatedValue's' could be same for different nodes and it was causing a problem for path for more than 90 cities." />
+    <MESSAGE value="GA, just one offs for a pair of parents" />
+    <MESSAGE value="GA, just one offs for a pair of parents =&gt; many offs.&#10;&#10;crossover(first, random)&#10;crossover(second,random)&#10;&#10;now arrayindexout" />
+    <option name="LAST_COMMIT_MESSAGE" value="GA, just one offs for a pair of parents =&gt; many offs.&#10;&#10;crossover(first, random)&#10;crossover(second,random)&#10;&#10;now arrayindexout" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/Graph/GraphGenerator.java</url>
           <line>936</line>
           <properties />
           <option name="timeStamp" value="202" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/Graph/GraphGenerator.java</url>
           <line>914</line>
           <properties />
           <option name="timeStamp" value="204" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/Algorithm/InsertionAlgo.java</url>
           <line>140</line>
           <properties />
           <option name="timeStamp" value="242" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/Algorithm/InsertionAlgo.java</url>
           <line>136</line>
           <properties />
           <option name="timeStamp" value="243" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/Algorithm/InsertionAlgo.java</url>
           <line>128</line>
           <properties />
           <option name="timeStamp" value="244" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/Algorithm/InsertionAlgo.java</url>
           <line>129</line>
           <properties />
           <option name="timeStamp" value="245" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/Algorithm/InsertionAlgo.java</url>
           <line>126</line>
           <properties />
           <option name="timeStamp" value="246" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/Algorithm/InsertionAlgo.java</url>
           <line>105</line>
           <properties />
           <option name="timeStamp" value="247" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java</url>
-          <line>283</line>
+          <line>293</line>
           <properties />
           <option name="timeStamp" value="248" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java</url>
-          <line>266</line>
+          <line>276</line>
           <properties />
           <option name="timeStamp" value="249" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java</url>
-          <line>265</line>
+          <line>275</line>
           <properties />
           <option name="timeStamp" value="250" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java</url>
-          <line>219</line>
+          <line>229</line>
           <properties />
           <option name="timeStamp" value="251" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java</url>
-          <line>217</line>
+          <line>227</line>
           <properties />
           <option name="timeStamp" value="252" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Algorithm/GeneticAlgorithm/PathDrawerIfSubgraphExist.java</url>
+          <line>144</line>
+          <properties />
+          <option name="timeStamp" value="253" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="253" />
+      <option name="time" value="254" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1715,21 +1725,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java">
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/GeneticAlgorithm/PathDrawerIfSubgraphExist.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="824" max-vertical-offset="6570">
-          <caret line="92" column="89" selection-start-line="92" selection-start-column="89" selection-end-line="92" selection-end-column="89" />
-          <folding>
-            <element signature="e#2927#2945#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="2225" max-vertical-offset="3780">
+          <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithm/GeneticAlgorithm/PathDrawerIfSubgraphExist.java">
+    <entry file="file://$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6505882" vertical-offset="1877" max-vertical-offset="3780">
-          <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.4440843" vertical-offset="860" max-vertical-offset="6750">
+          <caret line="71" column="47" selection-start-line="71" selection-start-column="47" selection-end-line="71" selection-end-column="47" />
+          <folding>
+            <element signature="e#3253#3271#0" expanded="true" />
+            <element signature="e#4019#4037#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

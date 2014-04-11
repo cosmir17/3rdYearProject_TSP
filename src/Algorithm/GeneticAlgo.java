@@ -66,6 +66,13 @@ public class GeneticAlgo extends Algorithm implements Runnable {
 
         TreeMap<Double, TreeMap<Integer, Integer>> distanceList = new TreeMap<Double, TreeMap<Integer, Integer>>(); //distance list of the total individuals
 
+        for (int i = 0; i < 4; i++) {
+            TreeMap<Integer, Integer> indivi = selectedFourIndis.get(i);
+            double indiviDis = graphObject.gettingTotalDistanceFromTableAbstract(indivi);
+            distanceList.put(indiviDis, indivi);
+        }
+
+
 
         for (int i = 0; i < selectedFourIndis.size(); i++) {
             for (int j = 0; j < selectedFourIndis.size(); j++) {
@@ -73,11 +80,11 @@ public class GeneticAlgo extends Algorithm implements Runnable {
                     TreeMap<Integer, Integer> first = selectedFourIndis.get(i);  //repetition of first individual
                     TreeMap<Integer, Integer> second = selectedFourIndis.get(j); //repetition of second individual
 
-                    ConcurrentHashMap<Integer, Integer> randomCH = graphObject.randomCycleEdgeListGenerator();
-                    TreeMap<Integer, Integer> randomPat = new TreeMap<Integer, Integer>(randomCH);
-
-
                     for (int iii = 0; iii < 20; iii++) {
+
+                        ConcurrentHashMap<Integer, Integer> randomCH = graphObject.randomCycleEdgeListGenerator();
+                        TreeMap<Integer, Integer> randomPat = new TreeMap<Integer, Integer>(randomCH);
+
                         TreeMap<Integer, Integer> offspring = crossOver(first, randomPat); //crossover need randomisation
                         double offspringDistance = graphObject.gettingTotalDistanceFromTableAbstract(offspring);
 
@@ -89,6 +96,10 @@ public class GeneticAlgo extends Algorithm implements Runnable {
 
 
                     for (int jjj = 0; jjj < 20; jjj++) {
+
+                        ConcurrentHashMap<Integer, Integer> randomCH = graphObject.randomCycleEdgeListGenerator();
+                        TreeMap<Integer, Integer> randomPat = new TreeMap<Integer, Integer>(randomCH);
+
                         TreeMap<Integer, Integer> offspring = crossOver(second, randomPat); //crossover need randomisation
                         double offspringDistance = graphObject.gettingTotalDistanceFromTableAbstract(offspring);
 
