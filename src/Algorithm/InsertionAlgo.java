@@ -84,10 +84,10 @@ public class InsertionAlgo extends Algorithm {
     }
 
     private void newSetting() {
-
+        int iteration = 0;
         boolean forDemonstration = true;
         while (graphObject.isNodeWithoutanEdge()) {
-
+            iteration++;
 
             boolean justonce = true;
             HashMap<Integer, Integer> sourceAndTarget = graphObject.sourceAndTargetNodeListWithEdges();
@@ -117,7 +117,12 @@ public class InsertionAlgo extends Algorithm {
 
                             HashMap<Integer, Integer> edge = new HashMap<Integer, Integer>();
                             edge.put(sourceNode2, targetNode);
+
+                            if (jkikMinusijListWithEdgeList.containsKey(calculatedValue)) {
+                                calculatedValue += 0.001;
+                            }
                             jkikMinusijListWithEdgeList.put(calculatedValue, edge);
+
 
                             if (graphObject.isNodeWithoutanEdge() && jkikMinusijListWithEdgeList.size() == sourceAndTarget.size()) {
 
@@ -151,6 +156,9 @@ public class InsertionAlgo extends Algorithm {
 
 
         }
+
+
+        System.out.println("Iteration : " + iteration + "\nTotal dis : " + graphObject.findTotalDistance());
     }
 
     private void previousSetting() {
