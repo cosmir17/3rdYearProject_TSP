@@ -40,7 +40,9 @@ public class GeneticAlgo extends Algorithm implements Runnable {
         Vector<TreeMap<Integer, Integer>> selectedFourIndis2 = new Vector<TreeMap<Integer, Integer>>();
 
         int generationNumber = 0;
-        while (generationNumber < 6000) {
+        double distancesss = graphObject.gettingTotalDistanceFromTableAbstract(selectedFourIndis2.get(0));
+
+        while (distancesss < 2000) {
 
             if (generationNumber > 0) {
                 // selectedFourIndis = selectedFourIndis2;
@@ -53,7 +55,10 @@ public class GeneticAlgo extends Algorithm implements Runnable {
 
             generationNumber++;
 //            selectedFourIndis.clear();
-            System.out.println("The distance is : " + graphObject.gettingTotalDistanceFromTableAbstract(selectedFourIndis2.get(0)));
+            distancesss = graphObject.gettingTotalDistanceFromTableAbstract(selectedFourIndis2.get(0));
+
+            System.out.println("The distance is : " + distancesss);
+            System.out.println("Generation : " + generationNumber);
 
             /*
             if (graphObject.gettingTotalDistanceFromTableAbstract(selectedFourIndis2.get(0)) < 12700) {

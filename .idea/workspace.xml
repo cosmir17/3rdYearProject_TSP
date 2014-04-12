@@ -9,7 +9,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/Graph/GraphGenerator.java" line="510" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="GA, working. takes long time. I think it's because random path generator.">
+    <list default="true" id="c26d3743-220c-427a-b68b-e4ae01565a76" name="Default" comment="GA, crossover selected indis">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java" afterPath="$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -181,19 +181,9 @@
       <file leaf-file-name="GeneticAlgo.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6252285" vertical-offset="1710" max-vertical-offset="7344">
-              <caret line="122" column="20" selection-start-line="122" selection-start-column="20" selection-end-line="122" selection-end-column="20" />
-              <folding>
-                <element signature="e#2484#2519#0" expanded="true" />
-                <element signature="e#5611#5629#0" expanded="true" />
-                <element signature="e#7908#7917#0" expanded="true" />
-                <element signature="e#10922#10959#0" expanded="true" />
-                <element signature="e#11235#11262#0" expanded="true" />
-                <element signature="e#11690#11717#0" expanded="true" />
-                <element signature="e#12383#12428#0" expanded="true" />
-                <element signature="e#12934#12979#0" expanded="true" />
-                <element signature="e#13225#13243#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.36330274" vertical-offset="738" max-vertical-offset="7434">
+              <caret line="60" column="67" selection-start-line="60" selection-start-column="67" selection-end-line="60" selection-end-column="67" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -384,16 +374,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Default">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -522,6 +502,16 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Default">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -640,6 +630,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -666,19 +669,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1202,7 +1192,11 @@
       <created>1397268165772</created>
       <updated>1397268165773</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="GA, crossover selected indis">
+      <created>1397269307071</created>
+      <updated>1397269307072</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1222,6 +1216,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27344993" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.17371601" sideWeight="0.50159746" order="3" side_tool="true" content_ui="tabs" x="568" y="298" width="230" height="150" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6301587" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.307026" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1237,7 +1232,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32488114" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.307026" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3974563" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1257,7 +1251,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="GA, generating individuals =&gt; not by graphObject, by generating tables" />
     <MESSAGE value="GA, generating individuals =&gt; not by graphObject, by generating tables (still in progress), mixing" />
     <MESSAGE value="GA, path splits (not good)" />
     <MESSAGE value="path test (recursion)" />
@@ -1282,7 +1275,8 @@
     <MESSAGE value="GA, 4 selected individuals are added to the next generation and randomPath becomes a random path at every iteration." />
     <MESSAGE value="GA, Path connector seems working fine" />
     <MESSAGE value="GA, working. takes long time. I think it's because random path generator." />
-    <option name="LAST_COMMIT_MESSAGE" value="GA, working. takes long time. I think it's because random path generator." />
+    <MESSAGE value="GA, crossover selected indis" />
+    <option name="LAST_COMMIT_MESSAGE" value="GA, crossover selected indis" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1339,31 +1333,31 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java</url>
-          <line>326</line>
+          <line>331</line>
           <properties />
           <option name="timeStamp" value="248" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java</url>
-          <line>309</line>
+          <line>314</line>
           <properties />
           <option name="timeStamp" value="249" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java</url>
-          <line>308</line>
+          <line>313</line>
           <properties />
           <option name="timeStamp" value="250" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java</url>
-          <line>262</line>
+          <line>267</line>
           <properties />
           <option name="timeStamp" value="251" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java</url>
-          <line>260</line>
+          <line>265</line>
           <properties />
           <option name="timeStamp" value="252" />
         </line-breakpoint>
@@ -1429,67 +1423,67 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java</url>
-          <line>211</line>
+          <line>216</line>
           <properties />
           <option name="timeStamp" value="314" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java</url>
-          <line>222</line>
+          <line>227</line>
           <properties />
           <option name="timeStamp" value="315" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java</url>
-          <line>214</line>
+          <line>219</line>
           <properties />
           <option name="timeStamp" value="316" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java</url>
-          <line>53</line>
+          <line>55</line>
           <properties />
           <option name="timeStamp" value="319" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java</url>
-          <line>51</line>
+          <line>53</line>
           <properties />
           <option name="timeStamp" value="320" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java</url>
-          <line>50</line>
+          <line>52</line>
           <properties />
           <option name="timeStamp" value="321" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java</url>
-          <line>72</line>
+          <line>77</line>
           <properties />
           <option name="timeStamp" value="325" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java</url>
-          <line>139</line>
+          <line>144</line>
           <properties />
           <option name="timeStamp" value="328" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java</url>
-          <line>75</line>
+          <line>80</line>
           <properties />
           <option name="timeStamp" value="332" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java</url>
-          <line>98</line>
+          <line>103</line>
           <properties />
           <option name="timeStamp" value="333" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java</url>
-          <line>100</line>
+          <line>105</line>
           <properties />
           <option name="timeStamp" value="334" />
         </line-breakpoint>
@@ -1880,19 +1874,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Algorithm/GeneticAlgo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6252285" vertical-offset="1710" max-vertical-offset="7344">
-          <caret line="122" column="20" selection-start-line="122" selection-start-column="20" selection-end-line="122" selection-end-column="20" />
-          <folding>
-            <element signature="e#2484#2519#0" expanded="true" />
-            <element signature="e#5611#5629#0" expanded="true" />
-            <element signature="e#7908#7917#0" expanded="true" />
-            <element signature="e#10922#10959#0" expanded="true" />
-            <element signature="e#11235#11262#0" expanded="true" />
-            <element signature="e#11690#11717#0" expanded="true" />
-            <element signature="e#12383#12428#0" expanded="true" />
-            <element signature="e#12934#12979#0" expanded="true" />
-            <element signature="e#13225#13243#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.36330274" vertical-offset="738" max-vertical-offset="7434">
+          <caret line="60" column="67" selection-start-line="60" selection-start-column="67" selection-end-line="60" selection-end-column="67" />
+          <folding />
         </state>
       </provider>
     </entry>
