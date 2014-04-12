@@ -984,7 +984,7 @@ public class GraphGenerator extends Object implements Cloneable {
         Random source = new Random();
         int sourceNode = source.nextInt((graphNodeArray.length) - 0);
 
-        while (firstLoop) {
+        while (firstLoop) { // It produces first pair in order not to make a self loop
 
             Random target = new Random();
 
@@ -1046,6 +1046,39 @@ public class GraphGenerator extends Object implements Cloneable {
 
     }
 
+    public TreeMap<Integer, Integer> randomTreeCycleGenerator() {
+        TreeMap<Integer, Integer> edgelist = new TreeMap<Integer, Integer>();
+        boolean untilFull = true;
+        while (untilFull) {
+
+            boolean firstLoop = true;
+
+            while (firstLoop) { // It produces first pair in order not to make a self loop
+                Random source = new Random();
+                int sourceNode = source.nextInt((graphNodeArray.length) + 0);
+
+                Random target = new Random();
+
+                int targetNode = target.nextInt((graphNodeArray.length) + 0);
+
+                if (sourceNode != targetNode && !edgelist.containsValue(targetNode)) {
+                    edgelist.put(sourceNode, targetNode);
+                    firstLoop = false;
+                }
+
+            }
+
+            if (edgelist.size() == graphNodeArray.length) {
+                untilFull = false;
+            }
+
+        }
+
+
+        return edgelist;
+
+    }
+
 
     private void pathCheckerinGra(ConcurrentHashMap<Integer, Integer> edgelist) {
         TreeMap<Integer, Integer> edgelistTree = new TreeMap<Integer, Integer>();
@@ -1080,9 +1113,14 @@ public class GraphGenerator extends Object implements Cloneable {
     public double gettingDistanceFromDistanceTableAbstract(int i, int j) {
 
         HashMap<Integer, Double> distanceTableForOneNode = theWholedisTable.get(i);
-        double distance = distanceTableForOneNode.get(j);
+        try {
+            double distance = distanceTableForOneNode.get(j);
+            return distance;
+        } catch (NullPointerException e) {
+            //   System.out.println("j value is = " + j);
+        }
 
-        return distance;
+        return 0;
     }
 
     public double gettingTotalDistanceFromTableAbstract(ConcurrentHashMap<Integer, Integer> edgelistPara) {

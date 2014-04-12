@@ -21,24 +21,29 @@ public class PathDrawerIfSubgraphExist {
     private ArrayList<Integer> otherPathList;
     private boolean[] numberArray;
     private ArrayList<Integer> nodelistChecked;
-    private int howmanyCycles;
-
+    TreeMap<Integer, Boolean> cycleNumberandCompleted;
+    int howmanyCycles = 0;
+    boolean[] numberCheckArray;
 
     public PathDrawerIfSubgraphExist(TreeMap<Integer, Integer> edgelist) {
+
         this.edgelist = edgelist;
         this.number = edgelist.size() - 1;
         pathList = new ArrayList<Integer>();
         otherPathList = new ArrayList<Integer>();
         numberArray = new boolean[edgelist.size()];
-        nodelistChecked = new ArrayList<Integer>();
-        howmanyCycles = 0;
 
-        edgelistDuplicator();
+
+        cycleNumberandCompleted = new TreeMap<Integer, Boolean>();
+
+
         runner();
     }
 
 
     private void edgelistDuplicator() {
+        nodelistChecked = new ArrayList<Integer>();
+
         for (int i = 0; i < edgelist.size(); i++) {
             nodelistChecked.add(i, -1);
         }
@@ -46,14 +51,52 @@ public class PathDrawerIfSubgraphExist {
     }
 
     public int getHowmanyCycles() {
-        return howmanyCycles;
+        return cycleNumberandCompleted.size();
     }
 
 
     public void runner() {
-        findHowmanyCyclesAndNodeListProducer();
-        if (howmanyCycles > 1) {
+        boolean untilThereisonlyCycles = true;
+
+        while (untilThereisonlyCycles) {
+            findHowmanyCyclesAndNodeListProducer();
+            if (cycleNumberandCompleted.containsValue(false)) {
+
+                disconnectedRouteConnecttoOtherroute();
+        }
+            findHowmanyCyclesAndNodeListProducer();
+            if (!cycleNumberandCompleted.containsValue(false)) {
+                untilThereisonlyCycles = false;
+            }
+        }
+
+
+        if (cycleNumberandCompleted.size() > 1) {
             routeConnector();
+        }
+    }
+
+    private void disconnectedRouteConnecttoOtherroute() {
+        numberCheckArray = new boolean[edgelist.size()];
+        ArrayList<Integer> numbernotused = new ArrayList<Integer>();
+        for (int node : edgelist.keySet()) {
+            if (edgelist.get(node) > -1) {
+                numberCheckArray[edgelist.get(node)] = true;
+            }
+        }
+
+        for (int i = 0; i < numberCheckArray.length; i++) {
+            if (numberCheckArray[i] == false) {
+                numbernotused.add(i);
+            }
+        }
+
+
+        for (int node : edgelist.keySet()) {
+            if (edgelist.get(node) == -1) {
+                edgelist.put(node, numbernotused.get(0));
+                numbernotused.remove(0);
+            }
         }
     }
 
@@ -70,7 +113,7 @@ public class PathDrawerIfSubgraphExist {
 
         while (ifAllarenotSame) {
 
-            for (int i = 0; i < howmanyCycles - 1; i++) {
+            for (int i = 0; i < cycleNumberandCompleted.size() - 1; i++) {
                 int firstNodeI = tableA.get(i);
                 int firstNodeJ = edgelist.get(firstNodeI);
 
@@ -105,11 +148,16 @@ public class PathDrawerIfSubgraphExist {
 
     }
 
-    private void findHowmanyCyclesAndNodeListProducer() {
+    private void findHowmanyCyclesAndNodeListProducer() { //this will find how many path is there
         try {
+
+            howmanyCycles = 0;
+            cycleNumberandCompleted = new TreeMap<Integer, Boolean>();
+            edgelistDuplicator();
+
             while (nodelistChecked.contains(-1)) {
                 Random randomN = new Random();
-                int rNumber = randomN.nextInt(edgelist.size() - 1);
+                int rNumber = randomN.nextInt(edgelist.size());
 
                 if (nodelistChecked.get(rNumber) == -1) {
                     pathChecker(rNumber);
@@ -119,6 +167,7 @@ public class PathDrawerIfSubgraphExist {
         } catch (StackOverflowError e) {
             System.out.println("stackOverFlow");
         }
+
     }
 
 
@@ -141,20 +190,40 @@ public class PathDrawerIfSubgraphExist {
     }
 
     public int pathChecker(int a) {
+        try {
+            if (edgelist.get(a) == -1) {
+                nodelistChecked.set(a, howmanyCycles);
+                cycleNumberandCompleted.put(howmanyCycles, false);
+                howmanyCycles++;
+                return a;
+            }
 
-        if (nodelistChecked.get(a) > -1) {
-            // System.out.println(howManyRecusion);
-            // System.out.println(a);
+            if (nodelistChecked.get(a) > -1) {
+                // System.out.println(howManyRecusion);
+                // System.out.println(a);
+                nodelistChecked.set(a, howmanyCycles);
+                cycleNumberandCompleted.put(howmanyCycles, true);
+                howmanyCycles++;
+
+
+                return a;
+
+
+    }
+
+
             nodelistChecked.set(a, howmanyCycles);
-            howmanyCycles++;
-            return a;
+            int b = edgelist.get(a);
+
+            return pathChecker(b);
 
 
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("working fine   " + a);
+            System.out.println("array size : " + nodelistChecked.size() + "   'a' value : " + a);
         }
 
-        nodelistChecked.set(a, howmanyCycles);
-        int b = edgelist.get(a);
-        return pathChecker(b);
+        return 1;
     }
 
     public int findaNodeDoesnotBelongtoThePath() {

@@ -82,10 +82,11 @@ public class GeneticAlgo extends Algorithm implements Runnable {
 
                     for (int iii = 0; iii < 20; iii++) {
 
-                        ConcurrentHashMap<Integer, Integer> randomCH = graphObject.randomCycleEdgeListGenerator();
-                        TreeMap<Integer, Integer> randomPat = new TreeMap<Integer, Integer>(randomCH);
+                        TreeMap<Integer, Integer> randomCH = graphObject.randomTreeCycleGenerator();
+                        pathConnectorIfitssaperated(randomCH);
 
-                        TreeMap<Integer, Integer> offspring = crossOver(first, randomPat); //crossover need randomisation
+
+                        TreeMap<Integer, Integer> offspring = crossOver(first, randomCH); //crossover need randomisation
                         double offspringDistance = graphObject.gettingTotalDistanceFromTableAbstract(offspring);
 
                         if (distanceList.containsKey(offspringDistance)) {
@@ -97,10 +98,10 @@ public class GeneticAlgo extends Algorithm implements Runnable {
 
                     for (int jjj = 0; jjj < 20; jjj++) {
 
-                        ConcurrentHashMap<Integer, Integer> randomCH = graphObject.randomCycleEdgeListGenerator();
-                        TreeMap<Integer, Integer> randomPat = new TreeMap<Integer, Integer>(randomCH);
+                        TreeMap<Integer, Integer> randomCH = graphObject.randomTreeCycleGenerator();
+                        pathConnectorIfitssaperated(randomCH);
 
-                        TreeMap<Integer, Integer> offspring = crossOver(second, randomPat); //crossover need randomisation
+                        TreeMap<Integer, Integer> offspring = crossOver(second, randomCH); //crossover need randomisation
                         double offspringDistance = graphObject.gettingTotalDistanceFromTableAbstract(offspring);
 
                         if (distanceList.containsKey(offspringDistance)) {
@@ -161,7 +162,7 @@ public class GeneticAlgo extends Algorithm implements Runnable {
 
         mixedIndi = removingRepeatPartsANDrandomisingArrangement(mixedIndi);
 
-        alwaysPairofArrows(mixedIndi);
+        // alwaysPairofArrows(mixedIndi); //'pathConnector' works it will be ok
 
         pathConnectorIfitssaperated(mixedIndi);
 
@@ -184,12 +185,24 @@ public class GeneticAlgo extends Algorithm implements Runnable {
     }
 
     public static void pathConnectorIfitssaperated(TreeMap<Integer, Integer> edgelist) {
+        PathDrawerIfSubgraphExist pathChecker = null;
+        try {
+            if (edgelist.containsValue(-1)) {
+                System.out.println("ops");
+            }
 
-        PathDrawerIfSubgraphExist pathChecker = new PathDrawerIfSubgraphExist(edgelist);
+            pathChecker = new PathDrawerIfSubgraphExist(edgelist);
 
-        //System.out.println("There are " + pathChecker.getHowmanyCycles() + " cycles");
 
-        edgelist = pathChecker.getEdgelist();
+            edgelist = pathChecker.getEdgelist();
+
+        } catch (Exception e) {
+
+
+            System.out.println("There are " + pathChecker.getHowmanyCycles() + " cycles");
+        }
+
+
 
 
     }
