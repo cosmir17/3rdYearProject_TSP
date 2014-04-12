@@ -74,6 +74,8 @@ public class PathDrawerIfSubgraphExist {
         if (cycleNumberandCompleted.size() > 1) {
             routeConnector();
         }
+
+        findHowmanyCyclesAndNodeListProducer();
     }
 
     private void disconnectedRouteConnecttoOtherroute() {

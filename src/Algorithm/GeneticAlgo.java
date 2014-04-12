@@ -188,18 +188,17 @@ public class GeneticAlgo extends Algorithm implements Runnable {
         PathDrawerIfSubgraphExist pathChecker = null;
         try {
             if (edgelist.containsValue(-1)) {
-                System.out.println("ops");
+                //   System.out.println("ops");
             }
 
             pathChecker = new PathDrawerIfSubgraphExist(edgelist);
-
-
             edgelist = pathChecker.getEdgelist();
+            //  System.out.println("There are " + pathChecker.getHowmanyCycles() + " cycles");
+
 
         } catch (Exception e) {
 
 
-            System.out.println("There are " + pathChecker.getHowmanyCycles() + " cycles");
         }
 
 
