@@ -54,6 +54,10 @@ public class GeneticAlgo extends Algorithm implements Runnable {
             generationNumber++;
 //            selectedFourIndis.clear();
             System.out.println("The distance is : " + graphObject.gettingTotalDistanceFromTableAbstract(selectedFourIndis2.get(0)));
+
+            if (graphObject.gettingTotalDistanceFromTableAbstract(selectedFourIndis2.get(0)) < 12700) {
+                System.out.println(" it becomes slow");
+            }
         }
 
         graphObject.drawFromEdgeListTreeMap(selectedFourIndis2.get(0));
@@ -80,7 +84,7 @@ public class GeneticAlgo extends Algorithm implements Runnable {
                     TreeMap<Integer, Integer> first = selectedFourIndis.get(i);  //repetition of first individual
                     TreeMap<Integer, Integer> second = selectedFourIndis.get(j); //repetition of second individual
 
-                    for (int iii = 0; iii < 20; iii++) {
+                    for (int iii = 0; iii < 10; iii++) {
 
                         TreeMap<Integer, Integer> randomCH = graphObject.randomTreeCycleGenerator();
                         pathConnectorIfitssaperated(randomCH);
@@ -93,10 +97,12 @@ public class GeneticAlgo extends Algorithm implements Runnable {
                             offspringDistance += 0.001;
                         }
                         distanceList.put(offspringDistance, offspring);
+
+
                     }
 
 
-                    for (int jjj = 0; jjj < 20; jjj++) {
+                    for (int jjj = 0; jjj < 10; jjj++) {
 
                         TreeMap<Integer, Integer> randomCH = graphObject.randomTreeCycleGenerator();
                         pathConnectorIfitssaperated(randomCH);
@@ -108,10 +114,14 @@ public class GeneticAlgo extends Algorithm implements Runnable {
                             offspringDistance += 0.001;
                         }
                         distanceList.put(offspringDistance, offspring);
+
+
                     }
 
                 }
             }
+
+            // System.out.println("ite");
 
         }
 
