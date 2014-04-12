@@ -55,9 +55,11 @@ public class GeneticAlgo extends Algorithm implements Runnable {
 //            selectedFourIndis.clear();
             System.out.println("The distance is : " + graphObject.gettingTotalDistanceFromTableAbstract(selectedFourIndis2.get(0)));
 
+            /*
             if (graphObject.gettingTotalDistanceFromTableAbstract(selectedFourIndis2.get(0)) < 12700) {
                 System.out.println(" it becomes slow");
             }
+            */
         }
 
         graphObject.drawFromEdgeListTreeMap(selectedFourIndis2.get(0));
@@ -84,7 +86,7 @@ public class GeneticAlgo extends Algorithm implements Runnable {
                     TreeMap<Integer, Integer> first = selectedFourIndis.get(i);  //repetition of first individual
                     TreeMap<Integer, Integer> second = selectedFourIndis.get(j); //repetition of second individual
 
-                    for (int iii = 0; iii < 10; iii++) {
+                    for (int iii = 0; iii < 5; iii++) {
 
                         TreeMap<Integer, Integer> randomCH = graphObject.randomTreeCycleGenerator();
                         pathConnectorIfitssaperated(randomCH);
@@ -102,7 +104,7 @@ public class GeneticAlgo extends Algorithm implements Runnable {
                     }
 
 
-                    for (int jjj = 0; jjj < 10; jjj++) {
+                    for (int jjj = 0; jjj < 5; jjj++) {
 
                         TreeMap<Integer, Integer> randomCH = graphObject.randomTreeCycleGenerator();
                         pathConnectorIfitssaperated(randomCH);
@@ -117,6 +119,15 @@ public class GeneticAlgo extends Algorithm implements Runnable {
 
 
                     }
+
+
+                    TreeMap<Integer, Integer> offspring3 = crossOver(first, second); //crossover need randomisation
+                    double offspringDistance3 = graphObject.gettingTotalDistanceFromTableAbstract(offspring3);
+
+                    if (distanceList.containsKey(offspringDistance3)) {
+                        offspringDistance3 += 0.001;
+                    }
+                    distanceList.put(offspringDistance3, offspring3);
 
                 }
             }
