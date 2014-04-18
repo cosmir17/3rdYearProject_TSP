@@ -38,14 +38,11 @@ public class InsertionAlgo extends Algorithm {
     protected void drawer() {
 
 
-        int nodeJ = graphObject.edgeDrawerfromItoNextClosestNode(0);
-        // O-----O
-        TreeMap<Integer, Double> minimumNodeMap = graphObject.findMinimumValueOfIJKiteratingManyNodes(0, nodeJ);
-        graphObject.edgeDrawerfromijkwithoutRemovingEdgeFromIJ(0, nodeJ, minimumNodeMap.firstEntry().getKey());
-
-
+        makingAtriangle();
         // previousSetting();
         newSetting();
+
+
         //  graphObject.repeatSwapping();
 
 /*
@@ -81,6 +78,14 @@ public class InsertionAlgo extends Algorithm {
         //int nodeKcandidatefromJ = graphObject.getIndexofClosesetNodefromIwithDistance(nodeJ).getValue();
 */
 
+    }
+
+    private void makingAtriangle() {
+
+        int nodeJ = graphObject.edgeDrawerfromItoNextClosestNode(0);
+        // O-----O
+        TreeMap<Integer, Double> minimumNodeMap = graphObject.findMinimumValueOfIJKiteratingManyNodes(0, nodeJ);
+        graphObject.edgeDrawerfromijkwithoutRemovingEdgeFromIJ(0, nodeJ, minimumNodeMap.firstEntry().getKey());
     }
 
     private void newSetting() {
