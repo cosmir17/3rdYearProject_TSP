@@ -91,7 +91,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
         nnTimeTextF = new ColleagueSecPanelTextF();
         nnDistanceTextF = new ColleagueSecPanelTextF();
         panel10 = new JPanel();
-        optAlgoCheckBox = new ColleagueCheckBox("2 opt & 3 opt");
+        optAlgoCheckBox = new ColleagueCheckBox("2 opt");
         optTimeText = new ColleagueSecPanelTextF();
         optDistanceTextF = new ColleagueSecPanelTextF();
         panel11 = new JPanel();
@@ -397,7 +397,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
                         panel10.setBorder(null);
 
                         //---- optAlgoCheckBox ----
-                        optAlgoCheckBox.setText("2 opt & 3 opt");
+                        optAlgoCheckBox.setText("2 Opt");
                         optAlgoCheckBox.setEnabled(false);
                         optAlgoCheckBox.setMediator(this);
                         optAlgoCheckBox.addItemListener(optAlgoCheckBox);
