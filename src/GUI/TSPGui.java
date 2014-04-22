@@ -262,7 +262,7 @@ public class TSPGui extends JFrame implements ActionListener, Mediator {
 
                 //======== resultPanel ========
                 {
-                    resultPanel.setBorder(new TitledBorder("Results"));
+                    resultPanel.setBorder(new TitledBorder("Results  : !uncheck boxes before you click!"));
                     resultPanel.setLayout(new GridLayout(8, 0));
 
                     //======== panel7 ========
